@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html xml:lang="es">
+<html lang="es">
   <head>
-    <title>Sumador</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindU - Acceso Administrador</title>
   </head>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
+    <header>
+      <h1>FindU</h1>
+      <p>Lo que perdiste, a un clic de volver.</p>
+    </header>
+
+    <main>
+      <section id="view-login">
+        <h2>Acceso Administrador</h2>
+        
+        <div id="login-error" style="display: none;"></div>
+
+        <form id="login-form">
+          <p>
+            <label for="login-email">Correo institucional:</label><br />
+            <input 
+              type="email" 
+              id="login-email" 
+              placeholder="ejemplo@ucb.edu.bo" 
+            />
+          </p>
+
+          <p>
+            <label for="login-pass">Contraseña:</label><br />
+            <input 
+              type="password" 
+              id="login-pass" 
+              placeholder="••••••••" 
+            />
+          </p>
+
+          <button type="submit" id="btn-login-submit">Ingresar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Atención presencial en Bienestar Estudiantil. Horario: 8:00 - 16:00. Lugar: Bloque C. La entrega se verifica en persona.
+    </footer>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

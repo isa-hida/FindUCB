@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-15T14:08:44.000Z",
+      "message": "fea: validacion de correo intitucional",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 103,
+      "additions": 81,
+      "deletions": 22,
+      "date": "2026-10-15"
+    },
+    "coverage": 80,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
