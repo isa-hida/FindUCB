@@ -294,9 +294,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e39f84daee7ea8c92c7993ee95b34410b887d229",
     "commitName": "feat(HU02): limpiar el error anterior al iniciar sesion",
     "commitTimestamp": 1792288237784,
     "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): crear la vista del login de administrador",
+    "commitTimestamp": 1792288465506,
+    "testId": 14
   }
 ]

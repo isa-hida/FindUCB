@@ -247,16 +247,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e39f84daee7ea8c92c7993ee95b34410b887d229",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:50:35.000Z",
       "message": "feat(HU02): limpiar el error anterior al iniciar sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e39f84daee7ea8c92c7993ee95b34410b887d229"
     },
     "stats": {
       "total": 14,
       "additions": 14,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:54:22.000Z",
+      "message": "feat(HU02): crear la vista del login de administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 29,
       "deletions": 0,
       "date": "2026-10-18"
     },
