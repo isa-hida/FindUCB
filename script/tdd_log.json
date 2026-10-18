@@ -148,9 +148,23 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "115ab3f47974432802dc4b1601ac66766ad8280b",
     "commitName": "feat(HU02): mostrar credenciales invalidas si el login falla",
     "commitTimestamp": 1792286395404,
     "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1792286723022,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU02): correo inexistente muestra credenciales invalidas",
+    "commitTimestamp": 1792286829571,
+    "testId": 7
   }
 ]

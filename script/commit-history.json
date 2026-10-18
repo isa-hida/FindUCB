@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "115ab3f47974432802dc4b1601ac66766ad8280b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:19:52.000Z",
       "message": "feat(HU02): mostrar credenciales invalidas si el login falla",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/115ab3f47974432802dc4b1601ac66766ad8280b"
     },
     "stats": {
       "total": 19,
@@ -129,6 +129,25 @@
     },
     "coverage": 94.74,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:27:06.000Z",
+      "message": "test(HU02): correo inexistente muestra credenciales invalidas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 23,
+      "deletions": 4,
+      "date": "2026-10-18"
+    },
+    "coverage": 94.74,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
