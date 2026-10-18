@@ -176,9 +176,39 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "031efb7fe9ccfee42f88690c457ad115e24a305f",
     "commitName": "chore(HU02): AuthEnMemoria con administradores y sesion",
     "commitTimestamp": 1792287010247,
     "testId": 8
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1792287122026,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 2,
+    "numTotalTests": 8,
+    "timestamp": 1792287181389,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792287322901,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): cerrar sesion y rechazar a quien no es administrador",
+    "commitTimestamp": 1792287372230,
+    "testId": 9
   }
 ]

@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "031efb7fe9ccfee42f88690c457ad115e24a305f",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:30:07.000Z",
       "message": "chore(HU02): AuthEnMemoria con administradores y sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/031efb7fe9ccfee42f88690c457ad115e24a305f"
     },
     "stats": {
       "total": 16,
@@ -167,6 +167,25 @@
     },
     "coverage": 83.33,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:36:09.000Z",
+      "message": "feat(HU02): cerrar sesion y rechazar a quien no es administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

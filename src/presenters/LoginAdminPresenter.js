@@ -16,6 +16,12 @@ export class LoginAdminPresenter {
         const resultado = await this.auth.iniciarSesionAdmin(correo, password);
         if (!resultado.ok) {
             this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
+            return;
+        }
+        const usuario = await this.auth.obtenerUsuario();
+        if (!usuario || !usuario.esAdmin) {
+            await this.auth.cerrarSesion();
+            this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
         }
     }
 }
