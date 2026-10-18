@@ -264,9 +264,39 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4a65c9868a43ae8af09ca885d861fad6a68bbc16",
     "commitName": "feat(HU02): recortar espacios del correo al iniciar sesion",
     "commitTimestamp": 1792288016997,
     "testId": 12
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1792288111151,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1792288160795,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1792288210915,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): limpiar el error anterior al iniciar sesion",
+    "commitTimestamp": 1792288237784,
+    "testId": 13
   }
 ]

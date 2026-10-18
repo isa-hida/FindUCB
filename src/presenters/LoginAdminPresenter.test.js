@@ -15,6 +15,9 @@ const crearEscenario = () => {
         mostrarError(mensaje) {
             this.errores.push(mensaje);
         },
+        limpiarError() {
+            this.errores = [];
+        },
         redirigir(url) {
             this.redirecciones.push(url);
         },
@@ -78,5 +81,15 @@ describe('LoginAdminPresenter', () => {
 
         expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
         expect(vista.errores).toEqual([]);
+    });
+
+    it('limpia el error anterior en cada intento', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('admin@ucb.edu.bo', 'incorrecta');
+        await presenter.ingresar('admin@ucb.edu.bo', 'Admin123');
+
+        expect(vista.errores).toEqual([]);
+        expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
     });
 });

@@ -9,6 +9,7 @@ export class LoginAdminPresenter {
     }
 
     async ingresar(correo, password) {
+        this.vista.limpiarError();
         const errores = validarLoginAdmin({ correo, password });
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
