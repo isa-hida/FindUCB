@@ -84,9 +84,23 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ebb329d364d006ac87f3cc1a4562c2e6421ead88",
     "commitName": "feat(HU02): validar campos vacios en el login",
     "commitTimestamp": 1792285331934,
     "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1792285369955,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU02): falta solo correo o solo contrasena",
+    "commitTimestamp": 1792285463753,
+    "testId": 3
   }
 ]

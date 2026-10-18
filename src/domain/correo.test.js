@@ -13,4 +13,16 @@ describe('validarLoginAdmin', () => {
 
         expect(errores).toEqual([MENSAJES.CAMPOS_LOGIN_VACIOS]);
     });
+
+    it('pide correo y contrasena si solo falta el correo', () => {
+        const errores = validarLoginAdmin({ correo: '', password: 'Admin123' });
+
+        expect(errores).toEqual([MENSAJES.CAMPOS_LOGIN_VACIOS]);
+    });
+
+    it('pide correo y contrasena si solo falta la contrasena', () => {
+        const errores = validarLoginAdmin({ correo: 'admin@ucb.edu.bo', password: '' });
+
+        expect(errores).toEqual([MENSAJES.CAMPOS_LOGIN_VACIOS]);
+    });
 });
