@@ -120,9 +120,15 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "85a5839e1b2105aede58193fef65d49549ea3ccf",
     "commitName": "feat(HU02): mostrar mensaje de campos vacios en el login",
     "commitTimestamp": 1792285707360,
     "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU02): agregar AuthEnMemoria",
+    "commitTimestamp": 1792286158345,
+    "testId": 5
   }
 ]

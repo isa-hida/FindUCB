@@ -1,8 +1,6 @@
 export class AuthEnMemoria {
-    constructor({ cuentas = [], administradores = [] } = {}) {
+    constructor({ cuentas = [] } = {}) {
         this.cuentas = cuentas;
-        this.administradores = administradores;
-        this.usuario = null;
     }
 
     async iniciarSesionAdmin(correo, password) {
@@ -10,15 +8,6 @@ export class AuthEnMemoria {
         if (!cuenta) {
             return { ok: false };
         }
-        this.usuario = { correo: cuenta.correo, esAdmin: this.administradores.includes(cuenta.correo) };
         return { ok: true };
-    }
-
-    async obtenerUsuario() {
-        return this.usuario;
-    }
-
-    async cerrarSesion() {
-        this.usuario = null;
     }
 }

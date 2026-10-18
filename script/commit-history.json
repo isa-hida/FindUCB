@@ -76,17 +76,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "85a5839e1b2105aede58193fef65d49549ea3ccf",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:08:25.000Z",
       "message": "feat(HU02): mostrar mensaje de campos vacios en el login",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/85a5839e1b2105aede58193fef65d49549ea3ccf"
     },
     "stats": {
       "total": 28,
       "additions": 28,
       "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:15:54.000Z",
+      "message": "chore(HU02): agregar AuthEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 1,
+      "deletions": 12,
       "date": "2026-10-18"
     },
     "coverage": 100,
