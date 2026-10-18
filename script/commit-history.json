@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c0954060e280e19ebe51d3e1b993038436fc8c7c",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:27:06.000Z",
       "message": "test(HU02): correo inexistente muestra credenciales invalidas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c0954060e280e19ebe51d3e1b993038436fc8c7c"
     },
     "stats": {
       "total": 27,
@@ -147,6 +147,25 @@
       "date": "2026-10-18"
     },
     "coverage": 94.74,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:30:07.000Z",
+      "message": "chore(HU02): AuthEnMemoria con administradores y sesion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 83.33,
     "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
