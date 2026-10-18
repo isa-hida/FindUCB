@@ -1,6 +1,7 @@
 import { LoginAdminPresenter } from './LoginAdminPresenter';
 import { AuthEnMemoria } from '../services/memoria/AuthEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 const CUENTAS = [
     { correo: 'admin@ucb.edu.bo', password: 'Admin123' },
@@ -59,5 +60,14 @@ describe('LoginAdminPresenter', () => {
         expect(vista.errores).toEqual([MENSAJES.CREDENCIALES_INVALIDAS]);
         expect(vista.redirecciones).toEqual([]);
         expect(await auth.obtenerUsuario()).toBeNull();
+    });
+
+    it('lleva al panel si es un administrador con contrasena correcta', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('admin@ucb.edu.bo', 'Admin123');
+
+        expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
+        expect(vista.errores).toEqual([]);
     });
 });

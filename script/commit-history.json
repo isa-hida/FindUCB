@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "461b5a61800d196b12956c5d0f2ee90ef9c04777",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:39:38.000Z",
       "message": "refactor(HU02): compartir el escenario de pruebas del login",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/461b5a61800d196b12956c5d0f2ee90ef9c04777"
     },
     "stats": {
       "total": 58,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:43:21.000Z",
+      "message": "feat(HU02): llevar al panel al administrador que inicia sesion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

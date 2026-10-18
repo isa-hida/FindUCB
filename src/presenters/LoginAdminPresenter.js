@@ -1,5 +1,6 @@
 import { validarLoginAdmin } from '../domain/correo';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 export class LoginAdminPresenter {
     constructor(vista, auth) {
@@ -22,6 +23,8 @@ export class LoginAdminPresenter {
         if (!usuario || !usuario.esAdmin) {
             await this.auth.cerrarSesion();
             this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
+            return;
         }
+        this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 }

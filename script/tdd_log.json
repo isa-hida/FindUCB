@@ -220,9 +220,31 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "461b5a61800d196b12956c5d0f2ee90ef9c04777",
     "commitName": "refactor(HU02): compartir el escenario de pruebas del login",
     "commitTimestamp": 1792287581476,
     "testId": 10
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1792287705734,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1792287768908,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): llevar al panel al administrador que inicia sesion",
+    "commitTimestamp": 1792287804505,
+    "testId": 11
   }
 ]
