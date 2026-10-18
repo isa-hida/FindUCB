@@ -304,17 +304,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "869ba19439c59ffe8ce5197dd4cd72ed9f2acc93",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T02:02:43.000Z",
       "message": "feat(HU02): agregar estilos de la pantalla de login",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/869ba19439c59ffe8ce5197dd4cd72ed9f2acc93"
     },
     "stats": {
       "total": 138,
       "additions": 138,
       "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T02:08:31.000Z",
+      "message": "feat(HU02): conectar la pagina de login con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 18,
+      "deletions": 1,
       "date": "2026-10-18"
     },
     "coverage": 100,

@@ -312,9 +312,15 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "869ba19439c59ffe8ce5197dd4cd72ed9f2acc93",
     "commitName": "feat(HU02): agregar estilos de la pantalla de login",
     "commitTimestamp": 1792288966105,
     "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): conectar la pagina de login con el presenter",
+    "commitTimestamp": 1792289314574,
+    "testId": 17
   }
 ]
