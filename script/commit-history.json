@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "301f940b1de2aac7eb58742d5a91a1dfd11a22a5",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T00:23:19.000Z",
       "message": "chore: preparar rutas, eslint y scripts para HU02",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/301f940b1de2aac7eb58742d5a91a1dfd11a22a5"
     },
     "stats": {
       "total": 84,
@@ -17,5 +17,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T00:57:19.000Z",
+      "message": "feat(HU02): crear validarLoginAdmin",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 52,
+      "additions": 52,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
