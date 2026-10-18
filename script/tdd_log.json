@@ -126,9 +126,31 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0fe92022ac8733580cfcba91dcadf4945833a421",
     "commitName": "chore(HU02): agregar AuthEnMemoria",
     "commitTimestamp": 1792286158345,
     "testId": 5
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1792286241238,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1792286355918,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): mostrar credenciales invalidas si el login falla",
+    "commitTimestamp": 1792286395404,
+    "testId": 6
   }
 ]

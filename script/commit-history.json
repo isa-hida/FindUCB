@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0fe92022ac8733580cfcba91dcadf4945833a421",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:15:54.000Z",
       "message": "chore(HU02): agregar AuthEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0fe92022ac8733580cfcba91dcadf4945833a421"
     },
     "stats": {
       "total": 13,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:19:52.000Z",
+      "message": "feat(HU02): mostrar credenciales invalidas si el login falla",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 94.74,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
