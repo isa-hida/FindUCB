@@ -98,9 +98,31 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ca43379ddeb38d5b2ae414f7bda75807e5a91bd7",
     "commitName": "test(HU02): falta solo correo o solo contrasena",
     "commitTimestamp": 1792285463753,
     "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1792285605401,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1792285641376,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): mostrar mensaje de campos vacios en el login",
+    "commitTimestamp": 1792285707360,
+    "testId": 4
   }
 ]
