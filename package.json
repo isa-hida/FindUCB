@@ -5,15 +5,16 @@
   "default": "index.html",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel index.html admin/login.html admin/index.html",
+    "build": "parcel build index.html admin/login.html admin/index.html",
     "test": "node ./script/tddScript.js",
     "cypress": "cypress open",
     "cypress-run": "cypress run",
     "lint": "eslint .",
     "postinstall": "git init && npx husky",
     "semantic-commits-on": "node semantic-commits.js enable",
-    "semantic-commits-off": "node semantic-commits.js disabled"
+    "semantic-commits-off": "node semantic-commits.js disabled",
+    "test-once": "jest"
   },
   "author": "Israel Antezana R.",
   "license": "ISC",

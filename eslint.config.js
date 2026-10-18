@@ -5,6 +5,8 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
+        jest: 'readonly',
+        beforeEach: 'readonly',
         require: 'readonly',
         module: 'readonly',
         describe: 'readonly',
