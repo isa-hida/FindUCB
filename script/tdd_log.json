@@ -54,9 +54,39 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ecde97740a7db8e20fc4f786285b4fbb34ad2730",
     "commitName": "feat(HU02): crear validarLoginAdmin",
     "commitTimestamp": 1792285041625,
     "testId": 1
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1792285065474,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1792285224861,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1792285299142,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): validar campos vacios en el login",
+    "commitTimestamp": 1792285331934,
+    "testId": 2
   }
 ]

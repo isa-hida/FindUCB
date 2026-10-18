@@ -19,12 +19,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "ecde97740a7db8e20fc4f786285b4fbb34ad2730",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T00:57:19.000Z",
       "message": "feat(HU02): crear validarLoginAdmin",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ecde97740a7db8e20fc4f786285b4fbb34ad2730"
     },
     "stats": {
       "total": 52,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:02:09.000Z",
+      "message": "feat(HU02): validar campos vacios en el login",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
