@@ -242,9 +242,31 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "39cbc9ca9a9ec0bcd44c677d5fca16a02c77aad6",
     "commitName": "feat(HU02): llevar al panel al administrador que inicia sesion",
     "commitTimestamp": 1792287804505,
     "testId": 11
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1792287896005,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1792287983182,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): recortar espacios del correo al iniciar sesion",
+    "commitTimestamp": 1792288016997,
+    "testId": 12
   }
 ]

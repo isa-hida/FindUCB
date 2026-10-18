@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "39cbc9ca9a9ec0bcd44c677d5fca16a02c77aad6",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:43:21.000Z",
       "message": "feat(HU02): llevar al panel al administrador que inicia sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/39cbc9ca9a9ec0bcd44c677d5fca16a02c77aad6"
     },
     "stats": {
       "total": 13,
@@ -224,6 +224,25 @@
     },
     "coverage": 100,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T01:46:54.000Z",
+      "message": "feat(HU02): recortar espacios del correo al iniciar sesion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }

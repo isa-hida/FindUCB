@@ -70,4 +70,13 @@ describe('LoginAdminPresenter', () => {
         expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
         expect(vista.errores).toEqual([]);
     });
+
+    it('ignora los espacios alrededor del correo', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('  admin@ucb.edu.bo  ', 'Admin123');
+
+        expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
+        expect(vista.errores).toEqual([]);
+    });
 });

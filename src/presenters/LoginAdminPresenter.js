@@ -14,7 +14,7 @@ export class LoginAdminPresenter {
             this.vista.mostrarError(errores[0]);
             return;
         }
-        const resultado = await this.auth.iniciarSesionAdmin(correo, password);
+        const resultado = await this.auth.iniciarSesionAdmin(correo.trim(), password);
         if (!resultado.ok) {
             this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
             return;
