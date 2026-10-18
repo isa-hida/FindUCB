@@ -306,9 +306,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fa4231c9b6099656dff0e020fe9b0a24b42673bb",
     "commitName": "feat(HU02): crear el html del login y del panel",
     "commitTimestamp": 1792288658694,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): agregar estilos de la pantalla de login",
+    "commitTimestamp": 1792288966105,
+    "testId": 16
   }
 ]

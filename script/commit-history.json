@@ -285,16 +285,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fa4231c9b6099656dff0e020fe9b0a24b42673bb",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T01:57:36.000Z",
       "message": "feat(HU02): crear el html del login y del panel",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/fa4231c9b6099656dff0e020fe9b0a24b42673bb"
     },
     "stats": {
       "total": 60,
       "additions": 60,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-18T02:02:43.000Z",
+      "message": "feat(HU02): agregar estilos de la pantalla de login",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 138,
       "deletions": 0,
       "date": "2026-10-18"
     },
