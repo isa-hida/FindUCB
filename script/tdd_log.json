@@ -206,9 +206,23 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ae44d709bebfa742597c3145b7c9b4e2c26ca15d",
     "commitName": "feat(HU02): cerrar sesion y rechazar a quien no es administrador",
     "commitTimestamp": 1792287372230,
     "testId": 9
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792287536672,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU02): compartir el escenario de pruebas del login",
+    "commitTimestamp": 1792287581476,
+    "testId": 10
   }
 ]
