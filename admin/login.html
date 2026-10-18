@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acceso de administrador | FindU</title>
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/login.css" />
+</head>
+
+<body>
+    <main class="login">
+        <header class="login__marca">
+            <h1 class="login__titulo">FindU</h1>
+            <p class="login__subtitulo">Objetos perdidos UCB Cochabamba</p>
+        </header>
+
+        <section class="tarjeta">
+            <h2 class="tarjeta__titulo">Acceso de administrador</h2>
+            <p class="tarjeta__ayuda">Solo personal autorizado de Bienestar Estudiantil.</p>
+
+            <form id="login-form" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" autocomplete="username" />
+                </div>
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" />
+                </div>
+
+                <p id="error-mensaje" class="error" role="alert" hidden></p>
+
+                <button type="submit" id="ingresar-button" class="boton">Ingresar</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

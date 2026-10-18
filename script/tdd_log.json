@@ -300,9 +300,15 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69b483f042b70589e46f248f2c61f2ed32face61",
     "commitName": "feat(HU02): crear la vista del login de administrador",
     "commitTimestamp": 1792288465506,
     "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU02): crear el html del login y del panel",
+    "commitTimestamp": 1792288658694,
+    "testId": 15
   }
 ]
