@@ -1330,17 +1330,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:05:45.000Z",
       "message": "feat(HU09): mostrar las categorias del catalogo en el listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8"
     },
     "stats": {
       "total": 2,
       "additions": 2,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:54.000Z",
+      "message": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
       "date": "2026-10-19"
     },
     "coverage": 100,

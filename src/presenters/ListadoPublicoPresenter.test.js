@@ -21,7 +21,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
             this.mensajesVacio.push(mensaje);
         },
         mostrarTarjetas(tarjetas) {
-            this.tarjetas.push(...tarjetas);
+            this.tarjetas = tarjetas;
         },
         mostrarCategorias(categorias) {
             this.categorias.push(...categorias);
@@ -54,6 +54,7 @@ describe('ListadoPublicoPresenter', () => {
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
         expect(vista.mensajesVacio).toEqual([]);
     });
+
     it('cada tarjeta trae la url de su foto', async () => {
         const { vista, presenter } = crearEscenario(
             [

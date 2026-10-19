@@ -812,9 +812,23 @@
     "testId": 70
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8",
     "commitName": "feat(HU09): mostrar las categorias del catalogo en el listado",
     "commitTimestamp": 1792386345955,
     "testId": 70
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792386354298,
+    "success": true,
+    "testId": 71
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
+    "commitTimestamp": 1792386354745,
+    "testId": 71
   }
 ]
