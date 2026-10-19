@@ -5,4 +5,7 @@ import { ListadoPublicoPresenter } from '../presenters/ListadoPublicoPresenter.j
 const vista = new ListadoPublicoVista(document);
 const presenter = new ListadoPublicoPresenter(vista, objetosRepository, fotosStorage);
 
+vista.alFiltrar((filtros) => presenter.filtrar(filtros));
+vista.alLimpiarFiltros(() => presenter.limpiarFiltros());
+
 presenter.cargar();

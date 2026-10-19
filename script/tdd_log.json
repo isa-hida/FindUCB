@@ -1028,9 +1028,15 @@
     "testId": 85
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f3c09706269a8a963de8644cd54174d571b6ee93",
     "commitName": "feat(HU09): agregar estilos de los filtros del listado",
     "commitTimestamp": 1792386483851,
     "testId": 86
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): conectar los filtros de la pagina con el presenter",
+    "commitTimestamp": 1792386484641,
+    "testId": 87
   }
 ]

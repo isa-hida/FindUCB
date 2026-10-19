@@ -1634,16 +1634,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3c09706269a8a963de8644cd54174d571b6ee93",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:08:03.000Z",
       "message": "feat(HU09): agregar estilos de los filtros del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f3c09706269a8a963de8644cd54174d571b6ee93"
     },
     "stats": {
       "total": 61,
       "additions": 61,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:04.000Z",
+      "message": "feat(HU09): conectar los filtros de la pagina con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
       "deletions": 0,
       "date": "2026-10-19"
     },
