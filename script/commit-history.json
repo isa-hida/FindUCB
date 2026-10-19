@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e765ab340fb4438bf917522b604b0723a0b5e56a",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T01:07:48.000Z",
       "message": "test(HU08): listado vacio devuelve lista vacia",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e765ab340fb4438bf917522b604b0723a0b5e56a"
     },
     "stats": {
       "total": 7,
@@ -357,6 +357,25 @@
     },
     "coverage": 100,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:09:58.000Z",
+      "message": "feat(HU08): crear prepararListado que devuelve lista vacia",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }
