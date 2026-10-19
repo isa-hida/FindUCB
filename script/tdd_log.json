@@ -378,9 +378,15 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce",
     "commitName": "refactor(HU08): crear objetos de prueba con valores por defecto",
     "commitTimestamp": 1792380149551,
     "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): la tarjeta del listado solo lleva datos publicos",
+    "commitTimestamp": 1792381515609,
+    "testId": 28
   }
 ]

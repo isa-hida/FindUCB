@@ -42,4 +42,25 @@ describe('prepararListado', () => {
 
         expect(idsDe(prepararListado(objetos))).toEqual([3, 1, 2]);
     });
+
+        it('cada tarjeta lleva solo id, categoria, fecha y foto', () => {
+        const objeto = crearObjeto({
+            id: 7,
+            numero: 7,
+            fechaHallazgo: '2026-10-10',
+            lugar: 'Biblioteca',
+            categoria: 'Mochila',
+            color: 'Negro',
+            marca: 'Totto',
+            descripcion: 'Mochila con cierre roto',
+            senas: 'Llavero de llama',
+            fotoPath: 'objetos/7.jpg',
+            encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
+        });
+
+        expect(prepararListado([objeto])).toEqual([
+            { id: 7, categoria: 'Mochila', fechaHallazgo: '2026-10-10', fotoPath: 'objetos/7.jpg' },
+        ]);
+    });
+
 });

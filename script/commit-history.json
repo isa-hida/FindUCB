@@ -513,12 +513,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:22:29.000Z",
       "message": "refactor(HU08): crear objetos de prueba con valores por defecto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce"
     },
     "stats": {
       "total": 38,
@@ -530,5 +530,24 @@
     "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:45:15.000Z",
+      "message": "test(HU08): la tarjeta del listado solo lleva datos publicos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
