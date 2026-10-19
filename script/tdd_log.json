@@ -500,9 +500,15 @@
     "testId": 45
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bb5cd37f3cd66885806278f63567ad05fca0649a",
     "commitName": "feat(HU08): crear el html del listado publico",
     "commitTimestamp": 1792385964707,
     "testId": 46
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): agregar estilos del listado publico",
+    "commitTimestamp": 1792385965741,
+    "testId": 47
   }
 ]
