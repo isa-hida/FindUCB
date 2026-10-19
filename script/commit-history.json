@@ -1558,12 +1558,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5e397b5992c250a4c58ed3135d96fe8b7d13f228",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:07:26.000Z",
       "message": "test(HU09): sin objetos publicados el filtro mantiene el mensaje de vacio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5e397b5992c250a4c58ed3135d96fe8b7d13f228"
     },
     "stats": {
       "total": 9,
@@ -1575,5 +1575,24 @@
     "test_count": 38,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:28.000Z",
+      "message": "feat(HU09): mantener el mensaje de vacio si no hay objetos publicados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

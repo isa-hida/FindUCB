@@ -980,9 +980,23 @@
     "testId": 82
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e397b5992c250a4c58ed3135d96fe8b7d13f228",
     "commitName": "test(HU09): sin objetos publicados el filtro mantiene el mensaje de vacio",
     "commitTimestamp": 1792386447096,
     "testId": 82
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386448275,
+    "success": true,
+    "testId": 83
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): mantener el mensaje de vacio si no hay objetos publicados",
+    "commitTimestamp": 1792386448725,
+    "testId": 83
   }
 ]

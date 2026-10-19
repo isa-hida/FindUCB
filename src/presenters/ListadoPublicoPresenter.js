@@ -37,6 +37,10 @@ export class ListadoPublicoPresenter {
             this.vista.mostrarError(errores[0]);
             return;
         }
+        if (this.tarjetas.length === 0) {
+            this.vista.mostrarVacio(MENSAJES.SIN_OBJETOS_HALLADOS);
+            return;
+        }
         const filtradas = filtrarListado(this.tarjetas, filtros);
         if (filtradas.length === 0) {
             this.vista.mostrarVacio(MENSAJES.SIN_COINCIDENCIAS);
