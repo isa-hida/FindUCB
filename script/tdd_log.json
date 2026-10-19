@@ -1188,9 +1188,23 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a6c4f6681902a6c9328a8d95ce033f33a64f757e",
     "commitName": "feat(HU10): agregar la fecha formateada al detalle",
     "commitTimestamp": 1792386643625,
     "testId": 98
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 1,
+    "numTotalTests": 44,
+    "timestamp": 1792386656930,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): el detalle trae la url de la foto",
+    "commitTimestamp": 1792386657373,
+    "testId": 99
   }
 ]

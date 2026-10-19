@@ -1,5 +1,6 @@
 import { DetalleObjetoPresenter } from './DetalleObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
+import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 
 const crearObjeto = (datos) => ({
@@ -18,7 +19,7 @@ const crearObjeto = (datos) => ({
     ...datos,
 });
 
-const crearEscenario = (objetos = []) => {
+const crearEscenario = (objetos = [], urls = {}) => {
     const vista = {
         noEncontrados: [],
         detalles: [],
@@ -30,7 +31,8 @@ const crearEscenario = (objetos = []) => {
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new DetalleObjetoPresenter(vista, objetosRepository);
+    const fotosStorage = new FotosEnMemoria({ urls });
+    const presenter = new DetalleObjetoPresenter(vista, objetosRepository, fotosStorage);
     return { vista, presenter };
 };
 
@@ -75,5 +77,16 @@ describe('DetalleObjetoPresenter', () => {
         await presenter.cargar('4');
 
         expect(vista.detalles[0].fechaTexto).toEqual('05/03/2026');
+    });
+
+    it('muestra la url de la foto del objeto', async () => {
+        const { vista, presenter } = crearEscenario(
+            [crearObjeto({ fotoPath: 'objetos/4.jpg' })],
+            { 'objetos/4.jpg': 'https://fotos.test/4.jpg' },
+        );
+
+        await presenter.cargar('4');
+
+        expect(vista.detalles[0].fotoUrl).toEqual('https://fotos.test/4.jpg');
     });
 });

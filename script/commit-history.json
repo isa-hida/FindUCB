@@ -1862,12 +1862,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6c4f6681902a6c9328a8d95ce033f33a64f757e",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:10:43.000Z",
       "message": "feat(HU10): agregar la fecha formateada al detalle",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a6c4f6681902a6c9328a8d95ce033f33a64f757e"
     },
     "stats": {
       "total": 7,
@@ -1879,5 +1879,24 @@
     "test_count": 43,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:57.000Z",
+      "message": "test(HU10): el detalle trae la url de la foto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 15,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 44,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
