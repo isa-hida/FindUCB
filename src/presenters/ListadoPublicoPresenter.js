@@ -31,6 +31,7 @@ export class ListadoPublicoPresenter {
     }
 
     filtrar(filtros) {
+        this.vista.limpiarError();
         const errores = validarFiltros(filtros);
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
