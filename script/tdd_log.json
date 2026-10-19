@@ -506,9 +506,23 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c4e8d5f8bcf41e58802c10572639e849894ca94e",
     "commitName": "feat(HU08): agregar estilos del listado publico",
     "commitTimestamp": 1792385965741,
     "testId": 47
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386015523,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU08): conectar objetos y fotos de ejemplo en services",
+    "commitTimestamp": 1792386015959,
+    "testId": 48
   }
 ]

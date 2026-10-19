@@ -893,17 +893,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c4e8d5f8bcf41e58802c10572639e849894ca94e",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:59:25.000Z",
       "message": "feat(HU08): agregar estilos del listado publico",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c4e8d5f8bcf41e58802c10572639e849894ca94e"
     },
     "stats": {
       "total": 92,
       "additions": 92,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:00:15.000Z",
+      "message": "chore(HU08): conectar objetos y fotos de ejemplo en services",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 132,
+      "additions": 131,
+      "deletions": 1,
       "date": "2026-10-19"
     },
     "coverage": 100,
