@@ -952,9 +952,23 @@
     "testId": 80
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e5b11582a48334f52b74027c3c9bbb92af9f587b",
     "commitName": "test(HU09): limpiar los filtros muestra de nuevo todo el listado",
     "commitTimestamp": 1792386421960,
     "testId": 80
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792386423148,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): limpiar los filtros del listado",
+    "commitTimestamp": 1792386423593,
+    "testId": 81
   }
 ]

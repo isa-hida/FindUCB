@@ -44,4 +44,9 @@ export class ListadoPublicoPresenter {
         }
         this.vista.mostrarTarjetas(filtradas);
     }
+
+    limpiarFiltros() {
+        this.vista.limpiarFiltros();
+        this.filtrar({});
+    }
 }
