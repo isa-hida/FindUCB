@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d43c77c3f8f8d956570b7a6f9bbb6220b1fff133",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:02:34.000Z",
       "message": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/d43c77c3f8f8d956570b7a6f9bbb6220b1fff133"
     },
     "stats": {
       "total": 12,
@@ -625,5 +625,24 @@
     "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:09:21.000Z",
+      "message": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 95.35,
+    "test_count": 18,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

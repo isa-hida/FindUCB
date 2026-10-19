@@ -408,9 +408,15 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d43c77c3f8f8d956570b7a6f9bbb6220b1fff133",
     "commitName": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
     "commitTimestamp": 1792382554186,
     "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
+    "commitTimestamp": 1792382961637,
+    "testId": 33
   }
 ]
