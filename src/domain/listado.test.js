@@ -104,4 +104,8 @@ describe('validarFiltros', () => {
     it('no da error si la fecha de inicio es anterior a la final', () => {
         expect(validarFiltros({ desde: '2026-10-01', hasta: '2026-10-15' })).toEqual([]);
     });
+
+    it('no da error si solo hay fecha de inicio', () => {
+        expect(validarFiltros({ desde: '2026-10-10', hasta: '' })).toEqual([]);
+    });
 });

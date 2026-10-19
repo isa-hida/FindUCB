@@ -742,9 +742,23 @@
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "976ccacb846aec323c0bfad881bdec95ecf17dde",
     "commitName": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
     "commitTimestamp": 1792386286579,
     "testId": 65
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1792386295258,
+    "success": false,
+    "testId": 66
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): una sola fecha en el filtro no da error",
+    "commitTimestamp": 1792386295679,
+    "testId": 66
   }
 ]

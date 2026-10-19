@@ -1235,12 +1235,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "976ccacb846aec323c0bfad881bdec95ecf17dde",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:46.000Z",
       "message": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/976ccacb846aec323c0bfad881bdec95ecf17dde"
     },
     "stats": {
       "total": 7,
@@ -1252,5 +1252,24 @@
     "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:55.000Z",
+      "message": "test(HU09): una sola fecha en el filtro no da error",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 30,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
