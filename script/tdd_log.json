@@ -770,9 +770,23 @@
     "testId": 67
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9ecee9fae15827ba530f9a273fb75ef25532fc31",
     "commitName": "feat(HU09): validar el rango solo cuando hay ambas fechas",
     "commitTimestamp": 1792386297260,
     "testId": 67
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792386305772,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): la misma fecha de inicio y final es valida",
+    "commitTimestamp": 1792386306180,
+    "testId": 68
   }
 ]

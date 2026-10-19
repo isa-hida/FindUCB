@@ -1273,12 +1273,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "9ecee9fae15827ba530f9a273fb75ef25532fc31",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:57.000Z",
       "message": "feat(HU09): validar el rango solo cuando hay ambas fechas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9ecee9fae15827ba530f9a273fb75ef25532fc31"
     },
     "stats": {
       "total": 2,
@@ -1288,6 +1288,25 @@
     },
     "coverage": 100,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:06.000Z",
+      "message": "test(HU09): la misma fecha de inicio y final es valida",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

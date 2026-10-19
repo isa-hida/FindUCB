@@ -108,4 +108,8 @@ describe('validarFiltros', () => {
     it('no da error si solo hay fecha de inicio', () => {
         expect(validarFiltros({ desde: '2026-10-10', hasta: '' })).toEqual([]);
     });
+
+    it('permite la misma fecha de inicio y final para buscar un solo dia', () => {
+        expect(validarFiltros({ desde: '2026-10-10', hasta: '2026-10-10' })).toEqual([]);
+    });
 });
