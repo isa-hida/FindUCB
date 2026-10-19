@@ -1,5 +1,6 @@
 import { crearFilaAdmin ,filtrarPublicados } from '../domain/listaAdmin';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 
 export class ListaObjetosAdminPresenter {
@@ -11,7 +12,11 @@ export class ListaObjetosAdminPresenter {
     async cargar() {
         const objetos = await this.objetosRepository.listarParaAdmin();
         const publicados = filtrarPublicados(objetos);
-        this.vista.mostrarFilas(publicados.map(crearFilaAdmin));
+        const filas = publicados.map((objeto) => ({
+            ...crearFilaAdmin(objeto),
+            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
+        }));
+        this.vista.mostrarFilas(filas);
         if (publicados.length === 0) {
             this.vista.mostrarMensajeVacio(MENSAJES.SIN_OBJETOS_PUBLICADOS);
         }

@@ -1,6 +1,7 @@
 import { ListaObjetosAdminPresenter } from './ListaObjetosAdminPresenter';
 import { ObjetosRepositoryEnMemoria } from '../services/memoria/ObjetosRepositoryEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 const crearEscenario = (objetos = []) => {
     const vista = {
@@ -47,4 +48,15 @@ describe('ListaObjetosAdminPresenter', () => {
         expect(vista.mensajes).toEqual([MENSAJES.SIN_OBJETOS_PUBLICADOS]);
     });
     
+    it('cada fila trae el enlace para registrar la entrega de su objeto', async () => {
+        const { vista, presenter } = crearEscenario([
+            { id: 3, numero: 7, estado: 'publicado' },
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.filas.map((fila) => fila.urlEntrega)).toEqual([
+            `${RUTAS.REGISTRAR_ENTREGA}?id=3`,
+        ]);
+    });
 });
