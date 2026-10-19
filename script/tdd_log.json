@@ -1276,9 +1276,15 @@
     "testId": 105
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2d73074bb3d11f9eab88a471fadd859e316a9da6",
     "commitName": "chore(HU10): agregar detalle.html a los scripts start y build",
     "commitTimestamp": 1792386736010,
     "testId": 106
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): conectar la pagina del detalle con el presenter",
+    "commitTimestamp": 1792386736794,
+    "testId": 107
   }
 ]

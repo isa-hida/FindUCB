@@ -2014,17 +2014,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2d73074bb3d11f9eab88a471fadd859e316a9da6",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:12:15.000Z",
       "message": "chore(HU10): agregar detalle.html a los scripts start y build",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2d73074bb3d11f9eab88a471fadd859e316a9da6"
     },
     "stats": {
       "total": 4,
       "additions": 2,
       "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:16.000Z",
+      "message": "feat(HU10): conectar la pagina del detalle con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
       "date": "2026-10-19"
     },
     "coverage": 100,
