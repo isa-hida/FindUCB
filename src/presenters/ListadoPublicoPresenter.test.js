@@ -118,4 +118,15 @@ describe('ListadoPublicoPresenter', () => {
 
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([1]);
     });
+
+    it('muestra que no hay coincidencias si ningun objeto cumple los filtros', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, categoria: 'Llaves' }),
+        ]);
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: 'Documentos', desde: '', hasta: '' });
+
+        expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_COINCIDENCIAS]);
+    });
 });

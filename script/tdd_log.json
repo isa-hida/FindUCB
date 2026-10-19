@@ -854,9 +854,23 @@
     "testId": 73
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71762f4c664086b022e8217758037e1c28a5e571",
     "commitName": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
     "commitTimestamp": 1792386369359,
     "testId": 73
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1792386379233,
+    "success": false,
+    "testId": 74
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): filtro sin coincidencias muestra su mensaje",
+    "commitTimestamp": 1792386379693,
+    "testId": 74
   }
 ]

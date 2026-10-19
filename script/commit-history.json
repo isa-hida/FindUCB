@@ -1387,12 +1387,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "71762f4c664086b022e8217758037e1c28a5e571",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:09.000Z",
       "message": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/71762f4c664086b022e8217758037e1c28a5e571"
     },
     "stats": {
       "total": 12,
@@ -1404,5 +1404,24 @@
     "test_count": 33,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:19.000Z",
+      "message": "test(HU09): filtro sin coincidencias muestra su mensaje",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 34,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
