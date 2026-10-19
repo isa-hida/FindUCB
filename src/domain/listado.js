@@ -15,6 +15,9 @@ export function filtrarListado(tarjetas, { categoria, desde, hasta }) {
         (!hasta || tarjeta.fechaHallazgo <= hasta));
 }
 
-export function validarFiltros() {
-    return [MENSAJES.FECHAS_INVERTIDAS];
+export function validarFiltros({ desde, hasta }) {
+    if (desde > hasta) {
+        return [MENSAJES.FECHAS_INVERTIDAS];
+    }
+    return [];
 }

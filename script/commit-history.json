@@ -1216,12 +1216,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8c75fe8d30aa50f4209959adbd5b16389548f120",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:44.000Z",
       "message": "test(HU09): fechas en orden no dan error",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8c75fe8d30aa50f4209959adbd5b16389548f120"
     },
     "stats": {
       "total": 4,
@@ -1233,5 +1233,24 @@
     "test_count": 29,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:46.000Z",
+      "message": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

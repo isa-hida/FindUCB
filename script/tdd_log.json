@@ -728,9 +728,23 @@
     "testId": 64
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8c75fe8d30aa50f4209959adbd5b16389548f120",
     "commitName": "test(HU09): fechas en orden no dan error",
     "commitTimestamp": 1792386285005,
     "testId": 64
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1792386286157,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
+    "commitTimestamp": 1792386286579,
+    "testId": 65
   }
 ]
