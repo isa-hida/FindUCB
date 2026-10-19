@@ -700,9 +700,23 @@
     "testId": 62
   },
   {
-    "commitId": "HEAD",
+    "commitId": "138fbad6eae80023c3485c7fc2f113ede35fed2f",
     "commitName": "test(HU09): fecha de inicio posterior a la final da error",
     "commitTimestamp": 1792386274579,
     "testId": 62
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1792386275822,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): crear validarFiltros con el error de fechas invertidas",
+    "commitTimestamp": 1792386276234,
+    "testId": 63
   }
 ]

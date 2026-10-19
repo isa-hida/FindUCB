@@ -1178,12 +1178,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "138fbad6eae80023c3485c7fc2f113ede35fed2f",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:34.000Z",
       "message": "test(HU09): fecha de inicio posterior a la final da error",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/138fbad6eae80023c3485c7fc2f113ede35fed2f"
     },
     "stats": {
       "total": 9,
@@ -1195,5 +1195,24 @@
     "test_count": 28,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:36.000Z",
+      "message": "feat(HU09): crear validarFiltros con el error de fechas invertidas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
