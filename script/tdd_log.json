@@ -390,9 +390,15 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "610f52140c479269b8fb0790dd88fff308b8f0d8",
     "commitName": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
     "commitTimestamp": 1792381678657,
     "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
+    "commitTimestamp": 1792382080710,
+    "testId": 30
   }
 ]

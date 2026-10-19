@@ -551,17 +551,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "610f52140c479269b8fb0790dd88fff308b8f0d8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:47:58.000Z",
       "message": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/610f52140c479269b8fb0790dd88fff308b8f0d8"
     },
     "stats": {
       "total": 3,
       "additions": 2,
       "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:54:40.000Z",
+      "message": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
       "date": "2026-10-19"
     },
     "coverage": 100,
