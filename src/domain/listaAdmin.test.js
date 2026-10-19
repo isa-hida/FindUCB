@@ -36,4 +36,10 @@ describe('crearFilaAdmin', () => {
 
         expect(fila.categoria).toBe('Billetera');
     });
+     
+    it('incluye la fecha de hallazgo del objeto', () => {
+        const fila = crearFilaAdmin({ fechaHallazgo: '2026-10-01' });
+
+        expect(fila.fechaHallazgo).toBe('2026-10-01');
+    });
 });
