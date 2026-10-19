@@ -1463,12 +1463,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "5f7555df296ee01803c0f9bd8e9a552b793e60c2",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:36.000Z",
       "message": "feat(HU09): validar las fechas antes de filtrar el listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5f7555df296ee01803c0f9bd8e9a552b793e60c2"
     },
     "stats": {
       "total": 7,
@@ -1480,5 +1480,24 @@
     "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:47.000Z",
+      "message": "test(HU09): un filtro valido quita el error anterior",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 36,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

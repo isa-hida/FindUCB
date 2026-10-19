@@ -910,9 +910,23 @@
     "testId": 77
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f7555df296ee01803c0f9bd8e9a552b793e60c2",
     "commitName": "feat(HU09): validar las fechas antes de filtrar el listado",
     "commitTimestamp": 1792386396817,
     "testId": 77
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 1,
+    "numTotalTests": 36,
+    "timestamp": 1792386407063,
+    "success": false,
+    "testId": 78
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): un filtro valido quita el error anterior",
+    "commitTimestamp": 1792386407523,
+    "testId": 78
   }
 ]

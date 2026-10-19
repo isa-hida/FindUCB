@@ -30,6 +30,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         mostrarError(mensaje) {
             this.errores.push(mensaje);
         },
+        limpiarError() {
+            this.errores = [];
+        },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
     const fotosStorage = new FotosEnMemoria({ urls });
@@ -145,5 +148,17 @@ describe('ListadoPublicoPresenter', () => {
 
         expect(vista.errores).toEqual([MENSAJES.FECHAS_INVERTIDAS]);
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
+    });
+
+    it('al filtrar con fechas validas quita el error anterior', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, fechaHallazgo: '2026-10-05' }),
+        ]);
+        await presenter.cargar();
+        presenter.filtrar({ categoria: '', desde: '2026-10-15', hasta: '2026-10-01' });
+
+        presenter.filtrar({ categoria: '', desde: '2026-10-01', hasta: '2026-10-15' });
+
+        expect(vista.errores).toEqual([]);
     });
 });
