@@ -1202,9 +1202,23 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f57435eddc50e5f52dbdcd15bedcea718420afb4",
     "commitName": "test(HU10): el detalle trae la url de la foto",
     "commitTimestamp": 1792386657373,
     "testId": 99
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1792386658590,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): agregar la url de la foto al detalle",
+    "commitTimestamp": 1792386659035,
+    "testId": 100
   }
 ]

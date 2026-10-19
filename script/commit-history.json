@@ -1881,12 +1881,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f57435eddc50e5f52dbdcd15bedcea718420afb4",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:10:57.000Z",
       "message": "test(HU10): el detalle trae la url de la foto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f57435eddc50e5f52dbdcd15bedcea718420afb4"
     },
     "stats": {
       "total": 17,
@@ -1898,5 +1898,24 @@
     "test_count": 44,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:58.000Z",
+      "message": "feat(HU10): agregar la url de la foto al detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 44,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

@@ -3,9 +3,10 @@ import { prepararDetalle } from '../domain/detalle';
 import { formatearFecha } from '../domain/fecha';
 
 export class DetalleObjetoPresenter {
-    constructor(vista, objetosRepository) {
+    constructor(vista, objetosRepository, fotosStorage) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
+        this.fotosStorage = fotosStorage;
     }
 
     async cargar(id) {
@@ -15,8 +16,10 @@ export class DetalleObjetoPresenter {
             return;
         }
         const detalle = prepararDetalle(objeto);
+        const [fotoUrl] = await this.fotosStorage.urlsFirmadas([detalle.fotoPath]);
         this.vista.mostrarDetalle({
             ...detalle,
+            fotoUrl,
             fechaTexto: formatearFecha(detalle.fechaHallazgo),
         });
     }
