@@ -2033,16 +2033,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fc969c22b9c2167d54e8ab3ebe197336a6581d36",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:12:16.000Z",
       "message": "feat(HU10): conectar la pagina del detalle con el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/fc969c22b9c2167d54e8ab3ebe197336a6581d36"
     },
     "stats": {
       "total": 8,
       "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:13:09.000Z",
+      "message": "test(HU10): agregar prueba e2e del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
       "deletions": 0,
       "date": "2026-10-19"
     },

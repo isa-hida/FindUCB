@@ -1282,9 +1282,23 @@
     "testId": 106
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fc969c22b9c2167d54e8ab3ebe197336a6581d36",
     "commitName": "feat(HU10): conectar la pagina del detalle con el presenter",
     "commitTimestamp": 1792386736794,
     "testId": 107
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386789575,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): agregar prueba e2e del detalle del objeto",
+    "commitTimestamp": 1792386790011,
+    "testId": 108
   }
 ]
