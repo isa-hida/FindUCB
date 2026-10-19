@@ -1,4 +1,4 @@
-import { prepararListado } from './listado';
+import { prepararListado, filtrarListado } from './listado';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -63,4 +63,16 @@ describe('prepararListado', () => {
         ]);
     });
 
+});
+
+describe('filtrarListado', () => {
+    const TARJETAS = [
+        { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-14' },
+        { id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-10' },
+        { id: 3, categoria: 'Llaves', fechaHallazgo: '2026-10-02' },
+    ];
+
+    it('sin filtros devuelve todas las tarjetas', () => {
+        expect(idsDe(filtrarListado(TARJETAS, {}))).toEqual([1, 2, 3]);
+    });
 });

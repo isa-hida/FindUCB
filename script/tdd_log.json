@@ -560,9 +560,23 @@
     "testId": 51
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ed3a6197b05075064c63ccefe6b7a86bccf0790a",
     "commitName": "chore(HU09): agregar el catalogo de categorias",
     "commitTimestamp": 1792386185019,
     "testId": 52
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792386205533,
+    "success": false,
+    "testId": 53
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): sin filtros el listado muestra todas las tarjetas",
+    "commitTimestamp": 1792386212951,
+    "testId": 53
   }
 ]
