@@ -474,9 +474,15 @@
     "testId": 42
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cb9178942e3a4f0ac4a5f17bcdb58d9b75ee70a8",
     "commitName": "test(HU08): cada tarjeta del listado trae la fecha formateada",
     "commitTimestamp": 1792385145860,
     "testId": 43
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
+    "commitTimestamp": 1792385299693,
+    "testId": 44
   }
 ]

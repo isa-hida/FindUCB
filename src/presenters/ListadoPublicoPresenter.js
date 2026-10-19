@@ -1,5 +1,6 @@
 import { MENSAJES } from '../domain/mensajes';
 import { prepararListado } from '../domain/listado';
+import { formatearFecha } from '../domain/fecha';
 import { RUTAS } from '../config';
 
 export class ListadoPublicoPresenter {
@@ -21,6 +22,7 @@ export class ListadoPublicoPresenter {
             ...tarjeta,
             fotoUrl: urls[indice],
             url: `${RUTAS.DETALLE}?id=${tarjeta.id}`,
+            fechaTexto: formatearFecha(tarjeta.fechaHallazgo),
         })));
     }
 }
