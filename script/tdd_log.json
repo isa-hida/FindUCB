@@ -1034,9 +1034,23 @@
     "testId": 86
   },
   {
-    "commitId": "HEAD",
+    "commitId": "49a14ab5e6cebe789e857dbbe2dbdca455c564d7",
     "commitName": "feat(HU09): conectar los filtros de la pagina con el presenter",
     "commitTimestamp": 1792386484641,
     "testId": 87
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386537613,
+    "success": true,
+    "testId": 88
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): agregar prueba e2e de los filtros del listado",
+    "commitTimestamp": 1792386538061,
+    "testId": 88
   }
 ]
