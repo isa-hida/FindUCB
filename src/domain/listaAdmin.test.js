@@ -14,4 +14,12 @@ describe('filtrarPublicados', () => {
 
         expect(resultado).toEqual([publicado]);
     });
+     
+    it('no devuelve el objeto si ya fue entregado', () => {
+        const entregado = { id: 2, estado: 'entregado' };
+
+        const resultado = filtrarPublicados([entregado]);
+
+        expect(resultado).toEqual([]);
+    });
 });
