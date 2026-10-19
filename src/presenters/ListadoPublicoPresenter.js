@@ -1,6 +1,7 @@
 import { MENSAJES } from '../domain/mensajes';
 import { prepararListado } from '../domain/listado';
 import { formatearFecha } from '../domain/fecha';
+import { CATEGORIAS } from '../domain/catalogos';
 import { RUTAS } from '../config';
 
 export class ListadoPublicoPresenter {
@@ -11,6 +12,7 @@ export class ListadoPublicoPresenter {
     }
 
     async cargar() {
+        this.vista.mostrarCategorias(CATEGORIAS);
         const objetos = await this.objetosRepository.listarPublicados();
         const tarjetas = prepararListado(objetos);
         if (tarjetas.length === 0) {

@@ -798,9 +798,23 @@
     "testId": 69
   },
   {
-    "commitId": "HEAD",
+    "commitId": "15ba15d5f22a2e655a6a2ee685f7ca6549d4472f",
     "commitName": "test(HU09): el listado muestra las categorias para filtrar",
     "commitTimestamp": 1792386344282,
     "testId": 69
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792386345512,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): mostrar las categorias del catalogo en el listado",
+    "commitTimestamp": 1792386345955,
+    "testId": 70
   }
 ]
