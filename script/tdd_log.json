@@ -1048,9 +1048,263 @@
     "testId": 88
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b110ef9920afd9d9b8fca0cd7489f06abdb8cf65",
     "commitName": "test(HU09): agregar prueba e2e de los filtros del listado",
     "commitTimestamp": 1792386538061,
     "testId": 88
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386581994,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "60fb45561594349e9b6a00c99cfc79c59abeb44a",
+    "commitName": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
+    "commitTimestamp": 1792386582448,
+    "testId": 89
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386592881,
+    "success": false,
+    "testId": 90
+  },
+  {
+    "commitId": "130f378a0501665764e54c2f01449f06e150c18a",
+    "commitName": "test(HU10): el detalle solo lleva datos publicos del objeto",
+    "commitTimestamp": 1792386593302,
+    "testId": 90
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386594465,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "76c0560457dc6a5e10c38b0568942636664deb67",
+    "commitName": "feat(HU10): crear prepararDetalle con los datos publicos",
+    "commitTimestamp": 1792386594862,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386605346,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "commitId": "3d2a53b05facd8740bb33cc44822c5b2af0237ea",
+    "commitName": "test(HU10): un id inexistente muestra objeto no encontrado",
+    "commitTimestamp": 1792386605792,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792386606938,
+    "success": true,
+    "testId": 93
+  },
+  {
+    "commitId": "647bd7853bdd82ea0f97b4f65280530978d39ef8",
+    "commitName": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
+    "commitTimestamp": 1792386607430,
+    "testId": 93
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 1,
+    "numTotalTests": 41,
+    "timestamp": 1792386621335,
+    "success": false,
+    "testId": 94
+  },
+  {
+    "commitId": "3ce28ddd5d09edd532182e83e240ba0d585779c5",
+    "commitName": "test(HU10): el detalle muestra la informacion del objeto",
+    "commitTimestamp": 1792386621775,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 0,
+    "numTotalTests": 41,
+    "timestamp": 1792386622919,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "commitId": "00819deeb112f52eca7afd729d45b1630f3d6ebd",
+    "commitName": "feat(HU10): mostrar el detalle del objeto desde el repositorio",
+    "commitTimestamp": 1792386623351,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1792386631860,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "5d85204bfd04a1b6e7d802d4eef8a065d0e5ea47",
+    "commitName": "test(HU10): un objeto entregado no muestra su detalle",
+    "commitTimestamp": 1792386632294,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1792386641588,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "commitId": "56085852355fab036662e2f13a58e3ebe0715b84",
+    "commitName": "test(HU10): el detalle muestra la fecha formateada",
+    "commitTimestamp": 1792386642029,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1792386643189,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "a6c4f6681902a6c9328a8d95ce033f33a64f757e",
+    "commitName": "feat(HU10): agregar la fecha formateada al detalle",
+    "commitTimestamp": 1792386643625,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 1,
+    "numTotalTests": 44,
+    "timestamp": 1792386656930,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "commitId": "f57435eddc50e5f52dbdcd15bedcea718420afb4",
+    "commitName": "test(HU10): el detalle trae la url de la foto",
+    "commitTimestamp": 1792386657373,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1792386658590,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "a85378fd41c240e0266f8fdc616e25e4b453d90f",
+    "commitName": "feat(HU10): agregar la url de la foto al detalle",
+    "commitTimestamp": 1792386659035,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386669653,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9",
+    "commitName": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
+    "commitTimestamp": 1792386670097,
+    "testId": 101
+  },
+  {
+    "commitId": "87a5a9689d2093e9f34ad67eb66e71d350f657e8",
+    "commitName": "refactor(HU10): mover los estilos del encabezado a base.css",
+    "commitTimestamp": 1792386698012,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386709959,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "964854fe9c16f22c93fef7d0b5fad66c2923859b",
+    "commitName": "feat(HU10): crear la vista del detalle del objeto",
+    "commitTimestamp": 1792386710336,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386734054,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "8463a83315a7abb9a8d8662c2a19a4560952a0d1",
+    "commitName": "feat(HU10): crear el html del detalle del objeto",
+    "commitTimestamp": 1792386734448,
+    "testId": 104
+  },
+  {
+    "commitId": "a6bdaf1127b1400472769a0de46a802d09c307ad",
+    "commitName": "feat(HU10): agregar estilos del detalle del objeto",
+    "commitTimestamp": 1792386735227,
+    "testId": 105
+  },
+  {
+    "commitId": "2d73074bb3d11f9eab88a471fadd859e316a9da6",
+    "commitName": "chore(HU10): agregar detalle.html a los scripts start y build",
+    "commitTimestamp": 1792386736010,
+    "testId": 106
+  },
+  {
+    "commitId": "fc969c22b9c2167d54e8ab3ebe197336a6581d36",
+    "commitName": "feat(HU10): conectar la pagina del detalle con el presenter",
+    "commitTimestamp": 1792386736794,
+    "testId": 107
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386789575,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "935152db06aae2e19f90a4e3f6e81c7bdecf7b93",
+    "commitName": "test(HU10): agregar prueba e2e del detalle del objeto",
+    "commitTimestamp": 1792386790011,
+    "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU10): ignorar capturas de cypress",
+    "commitTimestamp": 1792387253296,
+    "testId": 109
   }
 ]

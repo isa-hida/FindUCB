@@ -1672,12 +1672,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b110ef9920afd9d9b8fca0cd7489f06abdb8cf65",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:08:57.000Z",
       "message": "test(HU09): agregar prueba e2e de los filtros del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b110ef9920afd9d9b8fca0cd7489f06abdb8cf65"
     },
     "stats": {
       "total": 66,
@@ -1687,6 +1687,405 @@
     },
     "coverage": 100,
     "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "60fb45561594349e9b6a00c99cfc79c59abeb44a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:09:42.000Z",
+      "message": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/60fb45561594349e9b6a00c99cfc79c59abeb44a"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.19,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "130f378a0501665764e54c2f01449f06e150c18a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:09:53.000Z",
+      "message": "test(HU10): el detalle solo lleva datos publicos del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/130f378a0501665764e54c2f01449f06e150c18a"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 33,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.19,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "76c0560457dc6a5e10c38b0568942636664deb67",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:09:54.000Z",
+      "message": "feat(HU10): crear prepararDetalle con los datos publicos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/76c0560457dc6a5e10c38b0568942636664deb67"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.25,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3d2a53b05facd8740bb33cc44822c5b2af0237ea",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:05.000Z",
+      "message": "test(HU10): un id inexistente muestra objeto no encontrado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/3d2a53b05facd8740bb33cc44822c5b2af0237ea"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.25,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "647bd7853bdd82ea0f97b4f65280530978d39ef8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:07.000Z",
+      "message": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/647bd7853bdd82ea0f97b4f65280530978d39ef8"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.44,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3ce28ddd5d09edd532182e83e240ba0d585779c5",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:21.000Z",
+      "message": "test(HU10): el detalle muestra la informacion del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/3ce28ddd5d09edd532182e83e240ba0d585779c5"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 37,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.44,
+    "test_count": 41,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "00819deeb112f52eca7afd729d45b1630f3d6ebd",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:23.000Z",
+      "message": "feat(HU10): mostrar el detalle del objeto desde el repositorio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/00819deeb112f52eca7afd729d45b1630f3d6ebd"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 41,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5d85204bfd04a1b6e7d802d4eef8a065d0e5ea47",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:32.000Z",
+      "message": "test(HU10): un objeto entregado no muestra su detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/5d85204bfd04a1b6e7d802d4eef8a065d0e5ea47"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "56085852355fab036662e2f13a58e3ebe0715b84",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:41.000Z",
+      "message": "test(HU10): el detalle muestra la fecha formateada",
+      "url": "https://github.com/isa-hida/FindUCB/commit/56085852355fab036662e2f13a58e3ebe0715b84"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 43,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a6c4f6681902a6c9328a8d95ce033f33a64f757e",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:43.000Z",
+      "message": "feat(HU10): agregar la fecha formateada al detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a6c4f6681902a6c9328a8d95ce033f33a64f757e"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 43,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f57435eddc50e5f52dbdcd15bedcea718420afb4",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:57.000Z",
+      "message": "test(HU10): el detalle trae la url de la foto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f57435eddc50e5f52dbdcd15bedcea718420afb4"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 15,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 44,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a85378fd41c240e0266f8fdc616e25e4b453d90f",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:58.000Z",
+      "message": "feat(HU10): agregar la url de la foto al detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a85378fd41c240e0266f8fdc616e25e4b453d90f"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 44,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:11:10.000Z",
+      "message": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "87a5a9689d2093e9f34ad67eb66e71d350f657e8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:11:37.000Z",
+      "message": "refactor(HU10): mover los estilos del encabezado a base.css",
+      "url": "https://github.com/isa-hida/FindUCB/commit/87a5a9689d2093e9f34ad67eb66e71d350f657e8"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 20,
+      "deletions": 20,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "964854fe9c16f22c93fef7d0b5fad66c2923859b",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:11:50.000Z",
+      "message": "feat(HU10): crear la vista del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/964854fe9c16f22c93fef7d0b5fad66c2923859b"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 41,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8463a83315a7abb9a8d8662c2a19a4560952a0d1",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:14.000Z",
+      "message": "feat(HU10): crear el html del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8463a83315a7abb9a8d8662c2a19a4560952a0d1"
+    },
+    "stats": {
+      "total": 67,
+      "additions": 67,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a6bdaf1127b1400472769a0de46a802d09c307ad",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:15.000Z",
+      "message": "feat(HU10): agregar estilos del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a6bdaf1127b1400472769a0de46a802d09c307ad"
+    },
+    "stats": {
+      "total": 110,
+      "additions": 110,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2d73074bb3d11f9eab88a471fadd859e316a9da6",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:15.000Z",
+      "message": "chore(HU10): agregar detalle.html a los scripts start y build",
+      "url": "https://github.com/isa-hida/FindUCB/commit/2d73074bb3d11f9eab88a471fadd859e316a9da6"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fc969c22b9c2167d54e8ab3ebe197336a6581d36",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:16.000Z",
+      "message": "feat(HU10): conectar la pagina del detalle con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/fc969c22b9c2167d54e8ab3ebe197336a6581d36"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "935152db06aae2e19f90a4e3f6e81c7bdecf7b93",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:13:09.000Z",
+      "message": "test(HU10): agregar prueba e2e del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/935152db06aae2e19f90a4e3f6e81c7bdecf7b93"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:20:53.000Z",
+      "message": "chore(HU10): ignorar capturas de cypress",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
     "failed_tests": 0,
     "conclusion": "success"
   }
