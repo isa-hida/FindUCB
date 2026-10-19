@@ -342,9 +342,15 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "754d52577c8e2448a060e0f6c02dcbcc61e185e2",
     "commitName": "feat(HU08): filtrar solo objetos publicados en el listado",
     "commitTimestamp": 1792372439260,
     "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): el listado se ordena del mas reciente al mas antiguo",
+    "commitTimestamp": 1792372663332,
+    "testId": 22
   }
 ]
