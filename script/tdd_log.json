@@ -396,9 +396,15 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a42df2c56d355384b374920bb5049ad09cba4d74",
     "commitName": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
     "commitTimestamp": 1792382080710,
     "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): listado sin objetos muestra el mensaje de vacio",
+    "commitTimestamp": 1792382309958,
+    "testId": 31
   }
 ]

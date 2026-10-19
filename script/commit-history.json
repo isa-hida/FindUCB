@@ -570,16 +570,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a42df2c56d355384b374920bb5049ad09cba4d74",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:54:40.000Z",
       "message": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a42df2c56d355384b374920bb5049ad09cba4d74"
     },
     "stats": {
       "total": 18,
       "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:58:29.000Z",
+      "message": "test(HU08): listado sin objetos muestra el mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
       "deletions": 0,
       "date": "2026-10-19"
     },
