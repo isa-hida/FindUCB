@@ -882,9 +882,23 @@
     "testId": 75
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f",
     "commitName": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
     "commitTimestamp": 1792386381331,
     "testId": 75
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 1,
+    "numTotalTests": 35,
+    "timestamp": 1792386394730,
+    "success": false,
+    "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
+    "commitTimestamp": 1792386395190,
+    "testId": 76
   }
 ]

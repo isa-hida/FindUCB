@@ -17,6 +17,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         mensajesVacio: [],
         tarjetas: [],
         categorias: [],
+        errores: [],
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
         },
@@ -25,6 +26,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         mostrarCategorias(categorias) {
             this.categorias.push(...categorias);
+        },
+        mostrarError(mensaje) {
+            this.errores.push(mensaje);
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -128,5 +132,18 @@ describe('ListadoPublicoPresenter', () => {
         presenter.filtrar({ categoria: 'Documentos', desde: '', hasta: '' });
 
         expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_COINCIDENCIAS]);
+    });
+
+    it('muestra un error y no cambia el listado si la fecha de inicio es posterior a la final', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, fechaHallazgo: '2026-10-01' }),
+            crearObjeto({ id: 2, fechaHallazgo: '2026-10-15' }),
+        ]);
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: '', desde: '2026-10-15', hasta: '2026-10-01' });
+
+        expect(vista.errores).toEqual([MENSAJES.FECHAS_INVERTIDAS]);
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
     });
 });

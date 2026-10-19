@@ -1425,12 +1425,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:21.000Z",
       "message": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f"
     },
     "stats": {
       "total": 7,
@@ -1442,5 +1442,24 @@
     "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:35.000Z",
+      "message": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 35,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
