@@ -1767,12 +1767,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "647bd7853bdd82ea0f97b4f65280530978d39ef8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:10:07.000Z",
       "message": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/647bd7853bdd82ea0f97b4f65280530978d39ef8"
     },
     "stats": {
       "total": 12,
@@ -1784,5 +1784,24 @@
     "test_count": 40,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:21.000Z",
+      "message": "test(HU10): el detalle muestra la informacion del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 37,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.44,
+    "test_count": 41,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

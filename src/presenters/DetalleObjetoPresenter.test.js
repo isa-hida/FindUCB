@@ -2,11 +2,31 @@ import { DetalleObjetoPresenter } from './DetalleObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 
+const crearObjeto = (datos) => ({
+    id: 4,
+    numero: 4,
+    fechaHallazgo: '2026-10-14',
+    lugar: 'Coliseo',
+    categoria: 'Botellas y termos',
+    color: 'Rojo',
+    marca: 'Stanley',
+    descripcion: 'Termo de acero',
+    senas: 'Tapa negra con un rayon',
+    fotoPath: 'objetos/4.jpg',
+    estado: 'publicado',
+    encontradoPor: { nombre: 'Jorge Mamani', celular: '70044444' },
+    ...datos,
+});
+
 const crearEscenario = (objetos = []) => {
     const vista = {
         noEncontrados: [],
+        detalles: [],
         mostrarNoEncontrado(mensaje) {
             this.noEncontrados.push(mensaje);
+        },
+        mostrarDetalle(detalle) {
+            this.detalles.push(detalle);
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -21,5 +41,22 @@ describe('DetalleObjetoPresenter', () => {
         await presenter.cargar('99');
 
         expect(vista.noEncontrados).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
+    });
+
+    it('muestra numero, categoria, color, marca, descripcion, senas y lugar del objeto', async () => {
+        const { vista, presenter } = crearEscenario([crearObjeto()]);
+
+        await presenter.cargar('4');
+
+        expect(vista.detalles[0]).toMatchObject({
+            numero: 4,
+            categoria: 'Botellas y termos',
+            color: 'Rojo',
+            marca: 'Stanley',
+            descripcion: 'Termo de acero',
+            senas: 'Tapa negra con un rayon',
+            lugar: 'Coliseo',
+        });
+        expect(vista.noEncontrados).toEqual([]);
     });
 });
