@@ -1729,16 +1729,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "76c0560457dc6a5e10c38b0568942636664deb67",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:09:54.000Z",
       "message": "feat(HU10): crear prepararDetalle con los datos publicos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/76c0560457dc6a5e10c38b0568942636664deb67"
     },
     "stats": {
       "total": 3,
       "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.25,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:05.000Z",
+      "message": "test(HU10): un id inexistente muestra objeto no encontrado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
       "deletions": 0,
       "date": "2026-10-19"
     },

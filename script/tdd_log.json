@@ -1090,9 +1090,23 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "76c0560457dc6a5e10c38b0568942636664deb67",
     "commitName": "feat(HU10): crear prepararDetalle con los datos publicos",
     "commitTimestamp": 1792386594862,
     "testId": 91
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386605346,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): un id inexistente muestra objeto no encontrado",
+    "commitTimestamp": 1792386605792,
+    "testId": 92
   }
 ]
