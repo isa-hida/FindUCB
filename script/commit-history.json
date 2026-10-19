@@ -323,18 +323,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2a2e679202200ea9e315bdd3be4367df4cc9630b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T02:08:31.000Z",
       "message": "feat(HU02): conectar la pagina de login con el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2a2e679202200ea9e315bdd3be4367df4cc9630b"
     },
     "stats": {
       "total": 19,
       "additions": 18,
       "deletions": 1,
       "date": "2026-10-18"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:07:48.000Z",
+      "message": "test(HU08): listado vacio devuelve lista vacia",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-19"
     },
     "coverage": 100,
     "test_count": 11,

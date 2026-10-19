@@ -318,9 +318,15 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a2e679202200ea9e315bdd3be4367df4cc9630b",
     "commitName": "feat(HU02): conectar la pagina de login con el presenter",
     "commitTimestamp": 1792289314574,
     "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): listado vacio devuelve lista vacia",
+    "commitTimestamp": 1792372069909,
+    "testId": 18
   }
 ]
