@@ -1,3 +1,3 @@
-export function filtrarPublicados(_objetos) {
-    return [];
+export function filtrarPublicados(objetos) {
+    return objetos;
 }

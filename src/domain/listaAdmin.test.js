@@ -6,4 +6,12 @@ describe('filtrarPublicados', () => {
 
         expect(resultado).toEqual([]);
     });
+
+    it('devuelve el objeto si esta publicado', () => {
+        const publicado = { id: 1, estado: 'publicado' };
+
+        const resultado = filtrarPublicados([publicado]);
+
+        expect(resultado).toEqual([publicado]);
+    });
 });
