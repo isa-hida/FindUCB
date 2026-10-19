@@ -1083,12 +1083,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8161eb10a116ae300cb90e43eecb6f11123d84d0",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:03:55.000Z",
       "message": "test(HU09): filtrar el listado desde una fecha de inicio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8161eb10a116ae300cb90e43eecb6f11123d84d0"
     },
     "stats": {
       "total": 4,
@@ -1100,5 +1100,24 @@
     "test_count": 25,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:57.000Z",
+      "message": "feat(HU09): filtrar las tarjetas desde una fecha de inicio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 4,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
