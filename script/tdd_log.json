@@ -330,9 +330,15 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "87d7f65e5fd75f4ddcd51b9cc924779f67b82215",
     "commitName": "feat(HU08): crear prepararListado que devuelve lista vacia",
     "commitTimestamp": 1792372198177,
     "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): el listado no incluye objetos entregados",
+    "commitTimestamp": 1792372370690,
+    "testId": 20
   }
 ]

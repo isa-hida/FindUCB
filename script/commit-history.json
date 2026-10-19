@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "87d7f65e5fd75f4ddcd51b9cc924779f67b82215",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T01:09:58.000Z",
       "message": "feat(HU08): crear prepararListado que devuelve lista vacia",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/87d7f65e5fd75f4ddcd51b9cc924779f67b82215"
     },
     "stats": {
       "total": 3,
@@ -378,5 +378,24 @@
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:12:50.000Z",
+      "message": "test(HU08): el listado no incluye objetos entregados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
