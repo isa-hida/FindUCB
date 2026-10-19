@@ -966,9 +966,23 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1852d382d83add435a27aee3ffef086bc6d6f073",
     "commitName": "feat(HU09): limpiar los filtros del listado",
     "commitTimestamp": 1792386423593,
     "testId": 81
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1792386446629,
+    "success": false,
+    "testId": 82
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): sin objetos publicados el filtro mantiene el mensaje de vacio",
+    "commitTimestamp": 1792386447096,
+    "testId": 82
   }
 ]

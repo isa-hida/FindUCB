@@ -179,4 +179,13 @@ describe('ListadoPublicoPresenter', () => {
         expect(vista.filtrosLimpiados).toEqual(true);
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
     });
+
+    it('si no hay objetos publicados al filtrar sigue mostrando que no hay objetos hallados', async () => {
+        const { vista, presenter } = crearEscenario();
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: 'Llaves', desde: '', hasta: '' });
+
+        expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_OBJETOS_HALLADOS, MENSAJES.SIN_OBJETOS_HALLADOS]);
+    });
 });
