@@ -31,6 +31,11 @@ export class ListadoPublicoPresenter {
     }
 
     filtrar(filtros) {
-        this.vista.mostrarTarjetas(filtrarListado(this.tarjetas, filtros));
+        const filtradas = filtrarListado(this.tarjetas, filtros);
+        if (filtradas.length === 0) {
+            this.vista.mostrarVacio(MENSAJES.SIN_COINCIDENCIAS);
+            return;
+        }
+        this.vista.mostrarTarjetas(filtradas);
     }
 }

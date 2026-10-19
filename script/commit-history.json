@@ -1406,12 +1406,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2f30c779f1334f10c7f9e2958e6f758a95ecbe2e",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:19.000Z",
       "message": "test(HU09): filtro sin coincidencias muestra su mensaje",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2f30c779f1334f10c7f9e2958e6f758a95ecbe2e"
     },
     "stats": {
       "total": 11,
@@ -1423,5 +1423,24 @@
     "test_count": 34,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:21.000Z",
+      "message": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

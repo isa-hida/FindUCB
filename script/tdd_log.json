@@ -868,9 +868,23 @@
     "testId": 74
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2f30c779f1334f10c7f9e2958e6f758a95ecbe2e",
     "commitName": "test(HU09): filtro sin coincidencias muestra su mensaje",
     "commitTimestamp": 1792386379693,
     "testId": 74
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1792386380885,
+    "success": true,
+    "testId": 75
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
+    "commitTimestamp": 1792386381331,
+    "testId": 75
   }
 ]
