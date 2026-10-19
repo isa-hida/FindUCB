@@ -1132,9 +1132,23 @@
     "testId": 94
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3ce28ddd5d09edd532182e83e240ba0d585779c5",
     "commitName": "test(HU10): el detalle muestra la informacion del objeto",
     "commitTimestamp": 1792386621775,
     "testId": 94
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 0,
+    "numTotalTests": 41,
+    "timestamp": 1792386622919,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): mostrar el detalle del objeto desde el repositorio",
+    "commitTimestamp": 1792386623351,
+    "testId": 95
   }
 ]

@@ -1,4 +1,5 @@
 import { MENSAJES } from '../domain/mensajes';
+import { prepararDetalle } from '../domain/detalle';
 
 export class DetalleObjetoPresenter {
     constructor(vista, objetosRepository) {
@@ -6,7 +7,12 @@ export class DetalleObjetoPresenter {
         this.objetosRepository = objetosRepository;
     }
 
-    async cargar() {
-        this.vista.mostrarNoEncontrado(MENSAJES.OBJETO_NO_ENCONTRADO);
+    async cargar(id) {
+        const objeto = await this.objetosRepository.obtenerPorId(id);
+        if (!objeto) {
+            this.vista.mostrarNoEncontrado(MENSAJES.OBJETO_NO_ENCONTRADO);
+            return;
+        }
+        this.vista.mostrarDetalle(prepararDetalle(objeto));
     }
 }
