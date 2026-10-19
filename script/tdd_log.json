@@ -348,9 +348,15 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "47bc4cf30a9675aa34b3a1c762c09609528d0472",
     "commitName": "test(HU08): el listado se ordena del mas reciente al mas antiguo",
     "commitTimestamp": 1792372663332,
     "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): ordenar el listado por fecha de hallazgo descendente",
+    "commitTimestamp": 1792372722009,
+    "testId": 23
   }
 ]
