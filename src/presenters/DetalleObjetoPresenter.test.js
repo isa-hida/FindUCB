@@ -68,4 +68,12 @@ describe('DetalleObjetoPresenter', () => {
         expect(vista.noEncontrados).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
         expect(vista.detalles).toEqual([]);
     });
+
+    it('muestra la fecha de hallazgo en formato DD/MM/AAAA', async () => {
+        const { vista, presenter } = crearEscenario([crearObjeto({ fechaHallazgo: '2026-03-05' })]);
+
+        await presenter.cargar('4');
+
+        expect(vista.detalles[0].fechaTexto).toEqual('05/03/2026');
+    });
 });

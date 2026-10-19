@@ -1160,9 +1160,23 @@
     "testId": 96
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5d85204bfd04a1b6e7d802d4eef8a065d0e5ea47",
     "commitName": "test(HU10): un objeto entregado no muestra su detalle",
     "commitTimestamp": 1792386632294,
     "testId": 96
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1792386641588,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): el detalle muestra la fecha formateada",
+    "commitTimestamp": 1792386642029,
+    "testId": 97
   }
 ]
