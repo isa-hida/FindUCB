@@ -554,9 +554,15 @@
     "testId": 51
   },
   {
-    "commitId": "HEAD",
+    "commitId": "032c59de762ac89e4fbb875d70608aa98f36fca8",
     "commitName": "chore(HU09): agregar mensajes de los filtros del listado",
     "commitTimestamp": 1792386184197,
     "testId": 51
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU09): agregar el catalogo de categorias",
+    "commitTimestamp": 1792386185019,
+    "testId": 52
   }
 ]

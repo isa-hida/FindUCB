@@ -969,16 +969,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "032c59de762ac89e4fbb875d70608aa98f36fca8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:03:04.000Z",
       "message": "chore(HU09): agregar mensajes de los filtros del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/032c59de762ac89e4fbb875d70608aa98f36fca8"
     },
     "stats": {
       "total": 2,
       "additions": 2,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:04.000Z",
+      "message": "chore(HU09): agregar el catalogo de categorias",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
       "deletions": 0,
       "date": "2026-10-19"
     },
