@@ -1062,9 +1062,23 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "60fb45561594349e9b6a00c99cfc79c59abeb44a",
     "commitName": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
     "commitTimestamp": 1792386582448,
     "testId": 89
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386592881,
+    "success": false,
+    "testId": 90
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): el detalle solo lleva datos publicos del objeto",
+    "commitTimestamp": 1792386593302,
+    "testId": 90
   }
 ]

@@ -1691,16 +1691,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60fb45561594349e9b6a00c99cfc79c59abeb44a",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:09:42.000Z",
       "message": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/60fb45561594349e9b6a00c99cfc79c59abeb44a"
     },
     "stats": {
       "total": 8,
       "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.19,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:09:53.000Z",
+      "message": "test(HU10): el detalle solo lleva datos publicos del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 33,
       "deletions": 0,
       "date": "2026-10-19"
     },
