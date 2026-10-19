@@ -75,4 +75,8 @@ describe('filtrarListado', () => {
     it('sin filtros devuelve todas las tarjetas', () => {
         expect(idsDe(filtrarListado(TARJETAS, {}))).toEqual([1, 2, 3]);
     });
+
+    it('filtra por categoria', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { categoria: 'Llaves' }))).toEqual([1, 3]);
+    });
 });

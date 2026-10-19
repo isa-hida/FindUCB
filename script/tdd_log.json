@@ -588,9 +588,23 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0eff008d2ddb4f13ec35a81ac4fc656b2bc56703",
     "commitName": "feat(HU09): crear filtrarListado que devuelve todas las tarjetas",
     "commitTimestamp": 1792386214502,
     "testId": 54
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1792386223792,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): filtrar el listado por categoria",
+    "commitTimestamp": 1792386224209,
+    "testId": 55
   }
 ]
