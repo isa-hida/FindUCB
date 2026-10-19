@@ -5,12 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FindU: objetos perdidos UCB Cochabamba</title>
+  <link rel="stylesheet" href="./src/styles/base.css" />
+  <link rel="stylesheet" href="./src/styles/listado.css" />
 </head>
 
 <body>
-  <h1>FindU</h1>
-  <div id="listado"></div>
-  <!-- Se conectará a src/pages/listado.js (HU-08) -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <h1 class="encabezado__titulo">FindU</h1>
+      <p class="encabezado__subtitulo">Objetos perdidos UCB Cochabamba</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <p id="sin-objetos-mensaje" class="listado__vacio" role="status" hidden></p>
+    <div id="listado" class="listado"></div>
+  </main>
+
+  <script type="module" src="./src/pages/listado.js"></script>
 </body>
 
 </html>

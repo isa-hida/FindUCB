@@ -855,17 +855,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4a0a5fdc37f3580349fcf8660df8ea2230dcb8de",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:59:07.000Z",
       "message": "feat(HU08): crear la vista del listado publico",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/4a0a5fdc37f3580349fcf8660df8ea2230dcb8de"
     },
     "stats": {
       "total": 48,
       "additions": 48,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:59:24.000Z",
+      "message": "feat(HU08): crear el html del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 16,
+      "deletions": 4,
       "date": "2026-10-19"
     },
     "coverage": 100,

@@ -494,9 +494,15 @@
     "testId": 45
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4a0a5fdc37f3580349fcf8660df8ea2230dcb8de",
     "commitName": "feat(HU08): crear la vista del listado publico",
     "commitTimestamp": 1792385947546,
     "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): crear el html del listado publico",
+    "commitTimestamp": 1792385964707,
+    "testId": 46
   }
 ]
