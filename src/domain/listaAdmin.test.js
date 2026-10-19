@@ -1,4 +1,4 @@
-import { filtrarPublicados } from './listaAdmin';
+import { filtrarPublicados, crearFilaAdmin } from './listaAdmin';
 
 describe('filtrarPublicados', () => {
     it('devuelve una lista vacia si no hay objetos', () => {
@@ -21,5 +21,13 @@ describe('filtrarPublicados', () => {
         const resultado = filtrarPublicados([entregado]);
 
         expect(resultado).toEqual([]);
+    });
+});
+
+describe('crearFilaAdmin', () => {
+    it('incluye el numero del objeto', () => {
+        const fila = crearFilaAdmin({ numero: 7 });
+
+        expect(fila.numero).toBe(7);
     });
 });
