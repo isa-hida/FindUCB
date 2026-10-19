@@ -1368,12 +1368,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e3301ce98cad59c1b3519a062972f798f5cebc98",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:07.000Z",
       "message": "test(HU09): filtrar el listado por categoria desde la pantalla",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e3301ce98cad59c1b3519a062972f798f5cebc98"
     },
     "stats": {
       "total": 12,
@@ -1385,5 +1385,24 @@
     "test_count": 33,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:09.000Z",
+      "message": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 9,
+      "deletions": 3,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

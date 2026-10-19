@@ -840,9 +840,23 @@
     "testId": 72
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e3301ce98cad59c1b3519a062972f798f5cebc98",
     "commitName": "test(HU09): filtrar el listado por categoria desde la pantalla",
     "commitTimestamp": 1792386367708,
     "testId": 72
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1792386368907,
+    "success": true,
+    "testId": 73
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
+    "commitTimestamp": 1792386369359,
+    "testId": 73
   }
 ]
