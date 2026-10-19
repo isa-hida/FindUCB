@@ -1,6 +1,7 @@
 import { ListadoPublicoPresenter } from './ListadoPublicoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
+import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -9,7 +10,7 @@ const crearObjeto = (datos) => ({
     ...datos,
 });
 
-const crearEscenario = (objetos = []) => {
+const crearEscenario = (objetos = [], urls = {}) => {
     const vista = {
         mensajesVacio: [],
         tarjetas: [],
@@ -21,7 +22,8 @@ const crearEscenario = (objetos = []) => {
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new ListadoPublicoPresenter(vista, objetosRepository);
+    const fotosStorage = new FotosEnMemoria({ urls });
+    const presenter = new ListadoPublicoPresenter(vista, objetosRepository, fotosStorage);
     return { vista, presenter };
 };
 
@@ -45,5 +47,24 @@ describe('ListadoPublicoPresenter', () => {
 
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
         expect(vista.mensajesVacio).toEqual([]);
+    });
+    it('cada tarjeta trae la url de su foto', async () => {
+        const { vista, presenter } = crearEscenario(
+            [
+                crearObjeto({ id: 1, fechaHallazgo: '2026-10-01', fotoPath: 'objetos/1.jpg' }),
+                crearObjeto({ id: 2, fechaHallazgo: '2026-10-15', fotoPath: 'objetos/2.jpg' }),
+            ],
+            {
+                'objetos/1.jpg': 'https://fotos.test/1.jpg',
+                'objetos/2.jpg': 'https://fotos.test/2.jpg',
+            },
+        );
+
+        await presenter.cargar();
+
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.fotoUrl)).toEqual([
+            'https://fotos.test/2.jpg',
+            'https://fotos.test/1.jpg',
+        ]);
     });
 });

@@ -665,12 +665,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "8d279d1edd96df240238d615c3b207cebdbc28ea",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:18:19.000Z",
       "message": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8d279d1edd96df240238d615c3b207cebdbc28ea"
     },
     "stats": {
       "total": 2,
@@ -682,5 +682,24 @@
     "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:25:09.000Z",
+      "message": "test(HU08): cada tarjeta del listado trae la url de su foto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 23,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 96.08,
+    "test_count": 19,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

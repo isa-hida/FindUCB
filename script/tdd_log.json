@@ -426,9 +426,15 @@
     "testId": 34
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8d279d1edd96df240238d615c3b207cebdbc28ea",
     "commitName": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
     "commitTimestamp": 1792383499148,
     "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): cada tarjeta del listado trae la url de su foto",
+    "commitTimestamp": 1792383909763,
+    "testId": 36
   }
 ]
