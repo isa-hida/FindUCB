@@ -1,4 +1,4 @@
-import { crearFilaAdmin } from '../domain/listaAdmin';
+import { crearFilaAdmin ,filtrarPublicados } from '../domain/listaAdmin';
 
 export class ListaObjetosAdminPresenter {
     constructor(vista, objetosRepository) {
@@ -8,6 +8,7 @@ export class ListaObjetosAdminPresenter {
 
     async cargar() {
         const objetos = await this.objetosRepository.listarParaAdmin();
-        this.vista.mostrarFilas(objetos.map(crearFilaAdmin));
+        const publicados = filtrarPublicados(objetos);
+        this.vista.mostrarFilas(publicados.map(crearFilaAdmin));
     }
 }

@@ -23,4 +23,16 @@ describe('ListaObjetosAdminPresenter', () => {
 
         expect(vista.filas.map((fila) => fila.numero)).toEqual([7]);
     });
+  
+    it('no muestra un objeto que ya fue entregado', async () => {
+        const { vista, presenter } = crearEscenario([
+            { id: 2, numero: 8, estado: 'entregado' },
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.filas).toEqual([]);
+    });
+
+    
 });
