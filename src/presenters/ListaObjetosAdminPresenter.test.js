@@ -31,7 +31,7 @@ describe('ListaObjetosAdminPresenter', () => {
 
         expect(vista.filas.map((fila) => fila.numero)).toEqual([7]);
     });
-  
+
     it('no muestra un objeto que ya fue entregado', async () => {
         const { vista, presenter } = crearEscenario([
             { id: 2, numero: 8, estado: 'entregado' },
@@ -49,7 +49,7 @@ describe('ListaObjetosAdminPresenter', () => {
 
         expect(vista.mensajes).toEqual([MENSAJES.SIN_OBJETOS_PUBLICADOS]);
     });
-    
+
     it('cada fila trae el enlace para registrar la entrega de su objeto', async () => {
         const { vista, presenter } = crearEscenario([
             { id: 3, numero: 7, estado: 'publicado' },
