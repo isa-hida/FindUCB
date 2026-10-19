@@ -826,9 +826,23 @@
     "testId": 71
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5a660baa559705b8fe977ac1e1bcbb5f10feefbd",
     "commitName": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
     "commitTimestamp": 1792386354745,
     "testId": 71
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 1,
+    "numTotalTests": 33,
+    "timestamp": 1792386367233,
+    "success": false,
+    "testId": 72
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): filtrar el listado por categoria desde la pantalla",
+    "commitTimestamp": 1792386367708,
+    "testId": 72
   }
 ]

@@ -106,4 +106,16 @@ describe('ListadoPublicoPresenter', () => {
 
         expect(vista.categorias).toEqual(CATEGORIAS);
     });
+
+    it('al filtrar por categoria muestra solo esas tarjetas', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-01' }),
+            crearObjeto({ id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-15' }),
+        ]);
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: 'Llaves', desde: '', hasta: '' });
+
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([1]);
+    });
 });

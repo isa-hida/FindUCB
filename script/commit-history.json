@@ -1349,12 +1349,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5a660baa559705b8fe977ac1e1bcbb5f10feefbd",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:05:54.000Z",
       "message": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5a660baa559705b8fe977ac1e1bcbb5f10feefbd"
     },
     "stats": {
       "total": 3,
@@ -1366,5 +1366,24 @@
     "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:07.000Z",
+      "message": "test(HU09): filtrar el listado por categoria desde la pantalla",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 33,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
