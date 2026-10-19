@@ -494,17 +494,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "b47ceaad816e37735de727015e3170448edd930d",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:13:31.000Z",
       "message": "feat(HU08): desempatar por numero cuando la fecha es igual",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b47ceaad816e37735de727015e3170448edd930d"
     },
     "stats": {
       "total": 3,
       "additions": 2,
       "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:22:29.000Z",
+      "message": "refactor(HU08): crear objetos de prueba con valores por defecto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 20,
+      "deletions": 18,
       "date": "2026-10-19"
     },
     "coverage": 100,

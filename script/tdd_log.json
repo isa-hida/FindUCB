@@ -372,9 +372,15 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b47ceaad816e37735de727015e3170448edd930d",
     "commitName": "feat(HU08): desempatar por numero cuando la fecha es igual",
     "commitTimestamp": 1792379611135,
     "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU08): crear objetos de prueba con valores por defecto",
+    "commitTimestamp": 1792380149551,
+    "testId": 27
   }
 ]
