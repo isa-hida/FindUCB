@@ -1270,9 +1270,15 @@
     "testId": 104
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a6bdaf1127b1400472769a0de46a802d09c307ad",
     "commitName": "feat(HU10): agregar estilos del detalle del objeto",
     "commitTimestamp": 1792386735227,
     "testId": 105
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU10): agregar detalle.html a los scripts start y build",
+    "commitTimestamp": 1792386736010,
+    "testId": 106
   }
 ]

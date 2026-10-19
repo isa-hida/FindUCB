@@ -1995,17 +1995,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6bdaf1127b1400472769a0de46a802d09c307ad",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:12:15.000Z",
       "message": "feat(HU10): agregar estilos del detalle del objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a6bdaf1127b1400472769a0de46a802d09c307ad"
     },
     "stats": {
       "total": 110,
       "additions": 110,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:15.000Z",
+      "message": "chore(HU10): agregar detalle.html a los scripts start y build",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2026-10-19"
     },
     "coverage": 100,
