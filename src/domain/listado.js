@@ -16,7 +16,7 @@ export function filtrarListado(tarjetas, { categoria, desde, hasta }) {
 }
 
 export function validarFiltros({ desde, hasta }) {
-    if (desde > hasta) {
+    if (desde && hasta && desde > hasta) {
         return [MENSAJES.FECHAS_INVERTIDAS];
     }
     return [];

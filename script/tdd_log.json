@@ -756,9 +756,23 @@
     "testId": 66
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4ad92e6087c58c8d468a3a11460bed4aed59bd8e",
     "commitName": "test(HU09): una sola fecha en el filtro no da error",
     "commitTimestamp": 1792386295679,
     "testId": 66
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792386296854,
+    "success": true,
+    "testId": 67
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): validar el rango solo cuando hay ambas fechas",
+    "commitTimestamp": 1792386297260,
+    "testId": 67
   }
 ]
