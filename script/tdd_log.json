@@ -1250,9 +1250,23 @@
     "testId": 103
   },
   {
-    "commitId": "HEAD",
+    "commitId": "964854fe9c16f22c93fef7d0b5fad66c2923859b",
     "commitName": "feat(HU10): crear la vista del detalle del objeto",
     "commitTimestamp": 1792386710336,
     "testId": 103
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386734054,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): crear el html del detalle del objeto",
+    "commitTimestamp": 1792386734448,
+    "testId": 104
   }
 ]

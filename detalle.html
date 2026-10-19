@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle del objeto | FindU</title>
+  <link rel="stylesheet" href="./src/styles/base.css" />
+  <link rel="stylesheet" href="./src/styles/detalle.css" />
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <h1 class="encabezado__titulo">FindU</h1>
+      <p class="encabezado__subtitulo">Objetos perdidos UCB Cochabamba</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <a id="volver-link" class="volver" href="./index.html">← Volver al listado</a>
+
+    <p id="no-encontrado-mensaje" class="detalle__no-encontrado" role="alert" hidden></p>
+
+    <article id="detalle" class="detalle" hidden>
+      <div class="detalle__marco-foto">
+        <img id="detalle-foto" class="detalle__foto" alt="" />
+      </div>
+
+      <div class="detalle__info">
+        <p class="detalle__numero">N° de objeto <span id="detalle-numero"></span></p>
+        <h2 id="detalle-categoria" class="detalle__categoria"></h2>
+
+        <dl class="detalle__datos">
+          <div class="detalle__fila">
+            <dt>Color</dt>
+            <dd id="detalle-color"></dd>
+          </div>
+          <div id="fila-marca" class="detalle__fila">
+            <dt>Marca</dt>
+            <dd id="detalle-marca"></dd>
+          </div>
+          <div class="detalle__fila">
+            <dt>Descripción</dt>
+            <dd id="detalle-descripcion"></dd>
+          </div>
+          <div class="detalle__fila">
+            <dt>Señas particulares</dt>
+            <dd id="detalle-senas"></dd>
+          </div>
+          <div class="detalle__fila">
+            <dt>Lugar de hallazgo</dt>
+            <dd id="detalle-lugar"></dd>
+          </div>
+          <div class="detalle__fila">
+            <dt>Fecha de hallazgo</dt>
+            <dd><time id="detalle-fecha"></time></dd>
+          </div>
+        </dl>
+      </div>
+    </article>
+  </main>
+
+  <script type="module" src="./src/pages/detalle.js"></script>
+</body>
+
+</html>

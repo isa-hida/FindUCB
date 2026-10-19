@@ -1957,16 +1957,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "964854fe9c16f22c93fef7d0b5fad66c2923859b",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:11:50.000Z",
       "message": "feat(HU10): crear la vista del detalle del objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/964854fe9c16f22c93fef7d0b5fad66c2923859b"
     },
     "stats": {
       "total": 41,
       "additions": 41,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:12:14.000Z",
+      "message": "feat(HU10): crear el html del detalle del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 67,
+      "additions": 67,
       "deletions": 0,
       "date": "2026-10-19"
     },
