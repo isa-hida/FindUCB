@@ -1022,9 +1022,15 @@
     "testId": 85
   },
   {
-    "commitId": "HEAD",
+    "commitId": "01ff5543a1cab4745aeb9729ab8701c7bfb3ed1d",
     "commitName": "feat(HU09): agregar el formulario de filtros al html del listado",
     "commitTimestamp": 1792386483067,
     "testId": 85
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): agregar estilos de los filtros del listado",
+    "commitTimestamp": 1792386483851,
+    "testId": 86
   }
 ]

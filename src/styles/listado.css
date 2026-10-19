@@ -17,6 +17,67 @@
     opacity: 0.9;
 }
 
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px 16px;
+    align-items: end;
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    background: var(--superficie);
+}
+
+.filtros__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filtros__campo label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.filtros__campo select,
+.filtros__campo input {
+    padding: 10px 12px;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    background: var(--superficie);
+    color: var(--texto);
+    font: inherit;
+}
+
+.filtros__campo select:focus-visible {
+    outline: 3px solid rgba(15, 85, 165, 0.4);
+    outline-offset: 2px;
+}
+
+.filtros__acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.filtros__acciones .boton {
+    padding: 10px 12px;
+}
+
+.boton--secundario {
+    border: 1px solid var(--azul);
+    background: var(--superficie);
+    color: var(--azul);
+}
+
+.boton--secundario:hover {
+    background: var(--fondo);
+}
+
+.filtros__error {
+    grid-column: 1 / -1;
+}
+
 .listado {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
