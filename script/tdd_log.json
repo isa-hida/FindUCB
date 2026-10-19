@@ -444,9 +444,15 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "024db09f96e84251bbe7fd0245f9e04b72b0e8d3",
     "commitName": "chore(HU08): agregar la ruta del detalle en RUTAS",
     "commitTimestamp": 1792384345955,
     "testId": 38
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
+    "commitTimestamp": 1792384444735,
+    "testId": 39
   }
 ]

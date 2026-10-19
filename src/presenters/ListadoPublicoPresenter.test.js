@@ -2,6 +2,7 @@ import { ListadoPublicoPresenter } from './ListadoPublicoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
+import { RUTAS } from '../config';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -65,6 +66,20 @@ describe('ListadoPublicoPresenter', () => {
         expect(vista.tarjetas.map((tarjeta) => tarjeta.fotoUrl)).toEqual([
             'https://fotos.test/2.jpg',
             'https://fotos.test/1.jpg',
+        ]);
+    });
+
+    it('cada tarjeta lleva la url de su detalle', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, fechaHallazgo: '2026-10-01' }),
+            crearObjeto({ id: 2, fechaHallazgo: '2026-10-15' }),
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.url)).toEqual([
+            `${RUTAS.DETALLE}?id=2`,
+            `${RUTAS.DETALLE}?id=1`,
         ]);
     });
 });

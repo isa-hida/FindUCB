@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "024db09f96e84251bbe7fd0245f9e04b72b0e8d3",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:32:25.000Z",
       "message": "chore(HU08): agregar la ruta del detalle en RUTAS",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/024db09f96e84251bbe7fd0245f9e04b72b0e8d3"
     },
     "stats": {
       "total": 1,
@@ -739,5 +739,24 @@
     "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:34:04.000Z",
+      "message": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
