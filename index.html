@@ -18,6 +18,28 @@
   </header>
 
   <main class="contenedor">
+    <form id="filtros-form" class="filtros" novalidate>
+      <div class="filtros__campo">
+        <label for="filtro-categoria">Categoría</label>
+        <select id="filtro-categoria" name="categoria">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="filtros__campo">
+        <label for="filtro-desde">Desde</label>
+        <input type="date" id="filtro-desde" name="desde" />
+      </div>
+      <div class="filtros__campo">
+        <label for="filtro-hasta">Hasta</label>
+        <input type="date" id="filtro-hasta" name="hasta" />
+      </div>
+      <div class="filtros__acciones">
+        <button type="submit" id="filtrar-button" class="boton">Filtrar</button>
+        <button type="button" id="limpiar-filtros-button" class="boton boton--secundario">Limpiar filtros</button>
+      </div>
+      <p id="error-filtros" class="error filtros__error" role="alert" hidden></p>
+    </form>
+
     <p id="sin-objetos-mensaje" class="listado__vacio" role="status" hidden></p>
     <div id="listado" class="listado"></div>
   </main>

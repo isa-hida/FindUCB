@@ -1008,9 +1008,23 @@
     "testId": 84
   },
   {
-    "commitId": "HEAD",
+    "commitId": "78c981d48132aa6738347fb194f35726357644a1",
     "commitName": "feat(HU09): agregar los filtros a la vista del listado",
     "commitTimestamp": 1792386466832,
     "testId": 84
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386482693,
+    "success": true,
+    "testId": 85
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): agregar el formulario de filtros al html del listado",
+    "commitTimestamp": 1792386483067,
+    "testId": 85
   }
 ]

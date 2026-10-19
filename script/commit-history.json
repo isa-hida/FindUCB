@@ -1596,16 +1596,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "78c981d48132aa6738347fb194f35726357644a1",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:07:46.000Z",
       "message": "feat(HU09): agregar los filtros a la vista del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/78c981d48132aa6738347fb194f35726357644a1"
     },
     "stats": {
       "total": 45,
       "additions": 45,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:02.000Z",
+      "message": "feat(HU09): agregar el formulario de filtros al html del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
       "deletions": 0,
       "date": "2026-10-19"
     },
