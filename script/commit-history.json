@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b70cbda1c8b6f6e3e68a61bcc010af8be03b066e",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:11:16.000Z",
       "message": "test(HU08): con la misma fecha se muestra primero el mayor numero",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b70cbda1c8b6f6e3e68a61bcc010af8be03b066e"
     },
     "stats": {
       "total": 13,
@@ -492,5 +492,24 @@
     "test_count": 15,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:13:31.000Z",
+      "message": "feat(HU08): desempatar por numero cuando la fecha es igual",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

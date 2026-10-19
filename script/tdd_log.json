@@ -366,9 +366,15 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b70cbda1c8b6f6e3e68a61bcc010af8be03b066e",
     "commitName": "test(HU08): con la misma fecha se muestra primero el mayor numero",
     "commitTimestamp": 1792379476780,
     "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): desempatar por numero cuando la fecha es igual",
+    "commitTimestamp": 1792379611135,
+    "testId": 26
   }
 ]
