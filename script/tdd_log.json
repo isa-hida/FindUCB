@@ -384,9 +384,15 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2637350baa3b88b6994dbdec97830bedc75700b5",
     "commitName": "test(HU08): la tarjeta del listado solo lleva datos publicos",
     "commitTimestamp": 1792381515609,
     "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
+    "commitTimestamp": 1792381678657,
+    "testId": 29
   }
 ]

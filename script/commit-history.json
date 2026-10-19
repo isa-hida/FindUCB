@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2637350baa3b88b6994dbdec97830bedc75700b5",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:45:15.000Z",
       "message": "test(HU08): la tarjeta del listado solo lleva datos publicos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2637350baa3b88b6994dbdec97830bedc75700b5"
     },
     "stats": {
       "total": 21,
@@ -549,5 +549,24 @@
     "test_count": 16,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:47:58.000Z",
+      "message": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
