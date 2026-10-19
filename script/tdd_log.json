@@ -336,9 +336,15 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "76cdbae8f3f8a8b4367481639ac42132cccce6f6",
     "commitName": "test(HU08): el listado no incluye objetos entregados",
     "commitTimestamp": 1792372370690,
     "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): filtrar solo objetos publicados en el listado",
+    "commitTimestamp": 1792372439260,
+    "testId": 21
   }
 ]
