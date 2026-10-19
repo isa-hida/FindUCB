@@ -13,4 +13,6 @@ export const MENSAJES = {
     ENTREGA_REGISTRADA: 'Entrega registrada correctamente',
     SIN_OBJETOS_HALLADOS: 'No hay objetos hallados publicados',
     OBJETO_NO_ENCONTRADO: 'Objeto no encontrado',
+    FECHAS_INVERTIDAS: 'La fecha de inicio debe ser anterior a la fecha final',
+    SIN_COINCIDENCIAS: 'No hay objetos con esas características',
 };

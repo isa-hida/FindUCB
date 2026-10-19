@@ -3,6 +3,51 @@ export class ListadoPublicoVista {
         this.documento = documento;
         this.contenedor = documento.getElementById('listado');
         this.mensajeVacio = documento.getElementById('sin-objetos-mensaje');
+        this.formularioFiltros = documento.getElementById('filtros-form');
+        this.campoCategoria = documento.getElementById('filtro-categoria');
+        this.campoDesde = documento.getElementById('filtro-desde');
+        this.campoHasta = documento.getElementById('filtro-hasta');
+        this.botonLimpiar = documento.getElementById('limpiar-filtros-button');
+        this.cajaError = documento.getElementById('error-filtros');
+    }
+
+    alFiltrar(manejador) {
+        this.formularioFiltros.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            manejador({
+                categoria: this.campoCategoria.value,
+                desde: this.campoDesde.value,
+                hasta: this.campoHasta.value,
+            });
+        });
+    }
+
+    alLimpiarFiltros(manejador) {
+        this.botonLimpiar.addEventListener('click', () => manejador());
+    }
+
+    mostrarCategorias(categorias) {
+        const opciones = categorias.map((categoria) => {
+            const opcion = this.documento.createElement('option');
+            opcion.value = categoria;
+            opcion.textContent = categoria;
+            return opcion;
+        });
+        this.campoCategoria.append(...opciones);
+    }
+
+    limpiarFiltros() {
+        this.formularioFiltros.reset();
+    }
+
+    mostrarError(mensaje) {
+        this.cajaError.textContent = mensaje;
+        this.cajaError.hidden = false;
+    }
+
+    limpiarError() {
+        this.cajaError.textContent = '';
+        this.cajaError.hidden = true;
     }
 
     mostrarVacio(mensaje) {

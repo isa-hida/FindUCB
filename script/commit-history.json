@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f965f182b7aca5ce2b4df5f8d646706aa34f77d8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:02:04.000Z",
       "message": "test(HU08): agregar prueba e2e del listado publico",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f965f182b7aca5ce2b4df5f8d646706aa34f77d8"
     },
     "stats": {
       "total": 39,
@@ -965,6 +965,728 @@
     },
     "coverage": 100,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "032c59de762ac89e4fbb875d70608aa98f36fca8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:04.000Z",
+      "message": "chore(HU09): agregar mensajes de los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/032c59de762ac89e4fbb875d70608aa98f36fca8"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ed3a6197b05075064c63ccefe6b7a86bccf0790a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:04.000Z",
+      "message": "chore(HU09): agregar el catalogo de categorias",
+      "url": "https://github.com/isa-hida/FindUCB/commit/ed3a6197b05075064c63ccefe6b7a86bccf0790a"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a34bc3358b03aa7011b449e6fa707b7dfbd9e71f",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:32.000Z",
+      "message": "test(HU09): sin filtros el listado muestra todas las tarjetas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a34bc3358b03aa7011b449e6fa707b7dfbd9e71f"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 23,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "0eff008d2ddb4f13ec35a81ac4fc656b2bc56703",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:34.000Z",
+      "message": "feat(HU09): crear filtrarListado que devuelve todas las tarjetas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/0eff008d2ddb4f13ec35a81ac4fc656b2bc56703"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1da3470187119f85424d0d5c07067d3120c0619d",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:44.000Z",
+      "message": "test(HU09): filtrar el listado por categoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/1da3470187119f85424d0d5c07067d3120c0619d"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 24,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "139e484549e047338ca27c27e99272178f11b5e0",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:45.000Z",
+      "message": "feat(HU09): filtrar las tarjetas por categoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/139e484549e047338ca27c27e99272178f11b5e0"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8161eb10a116ae300cb90e43eecb6f11123d84d0",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:55.000Z",
+      "message": "test(HU09): filtrar el listado desde una fecha de inicio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8161eb10a116ae300cb90e43eecb6f11123d84d0"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 25,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "d9524f577d20b69a2adbdea43b5fdd9946e4181b",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:57.000Z",
+      "message": "feat(HU09): filtrar las tarjetas desde una fecha de inicio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d9524f577d20b69a2adbdea43b5fdd9946e4181b"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 4,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "34ee78452b721969ca50a77cd069d32d93865d33",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:06.000Z",
+      "message": "test(HU09): filtrar el listado hasta una fecha final",
+      "url": "https://github.com/isa-hida/FindUCB/commit/34ee78452b721969ca50a77cd069d32d93865d33"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 26,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "0e2c06791ac557da72b1af593fe2c3719765c589",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:07.000Z",
+      "message": "feat(HU09): filtrar las tarjetas hasta una fecha final",
+      "url": "https://github.com/isa-hida/FindUCB/commit/0e2c06791ac557da72b1af593fe2c3719765c589"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e0d1675b2c656f9b9de47c4f364e6f57fac2c111",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:16.000Z",
+      "message": "test(HU09): combinar categoria y rango de fechas en el filtro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e0d1675b2c656f9b9de47c4f364e6f57fac2c111"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "138fbad6eae80023c3485c7fc2f113ede35fed2f",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:34.000Z",
+      "message": "test(HU09): fecha de inicio posterior a la final da error",
+      "url": "https://github.com/isa-hida/FindUCB/commit/138fbad6eae80023c3485c7fc2f113ede35fed2f"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 28,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "ebccb975b816a2bdd67e9b2bf29c56c6af12fb84",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:36.000Z",
+      "message": "feat(HU09): crear validarFiltros con el error de fechas invertidas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/ebccb975b816a2bdd67e9b2bf29c56c6af12fb84"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8c75fe8d30aa50f4209959adbd5b16389548f120",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:44.000Z",
+      "message": "test(HU09): fechas en orden no dan error",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8c75fe8d30aa50f4209959adbd5b16389548f120"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 29,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "976ccacb846aec323c0bfad881bdec95ecf17dde",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:46.000Z",
+      "message": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
+      "url": "https://github.com/isa-hida/FindUCB/commit/976ccacb846aec323c0bfad881bdec95ecf17dde"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4ad92e6087c58c8d468a3a11460bed4aed59bd8e",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:55.000Z",
+      "message": "test(HU09): una sola fecha en el filtro no da error",
+      "url": "https://github.com/isa-hida/FindUCB/commit/4ad92e6087c58c8d468a3a11460bed4aed59bd8e"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 30,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "9ecee9fae15827ba530f9a273fb75ef25532fc31",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:57.000Z",
+      "message": "feat(HU09): validar el rango solo cuando hay ambas fechas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9ecee9fae15827ba530f9a273fb75ef25532fc31"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e32c64fe62e9c68af2f579af92da0cf18d4260ed",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:06.000Z",
+      "message": "test(HU09): la misma fecha de inicio y final es valida",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e32c64fe62e9c68af2f579af92da0cf18d4260ed"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "15ba15d5f22a2e655a6a2ee685f7ca6549d4472f",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:44.000Z",
+      "message": "test(HU09): el listado muestra las categorias para filtrar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/15ba15d5f22a2e655a6a2ee685f7ca6549d4472f"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 32,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:45.000Z",
+      "message": "feat(HU09): mostrar las categorias del catalogo en el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5a660baa559705b8fe977ac1e1bcbb5f10feefbd",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:05:54.000Z",
+      "message": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/5a660baa559705b8fe977ac1e1bcbb5f10feefbd"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e3301ce98cad59c1b3519a062972f798f5cebc98",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:07.000Z",
+      "message": "test(HU09): filtrar el listado por categoria desde la pantalla",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e3301ce98cad59c1b3519a062972f798f5cebc98"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 33,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "71762f4c664086b022e8217758037e1c28a5e571",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:09.000Z",
+      "message": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/71762f4c664086b022e8217758037e1c28a5e571"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 9,
+      "deletions": 3,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2f30c779f1334f10c7f9e2958e6f758a95ecbe2e",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:19.000Z",
+      "message": "test(HU09): filtro sin coincidencias muestra su mensaje",
+      "url": "https://github.com/isa-hida/FindUCB/commit/2f30c779f1334f10c7f9e2958e6f758a95ecbe2e"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 34,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:21.000Z",
+      "message": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ea5b73423089cabf9c5b4e5c53048e67d9a46d09",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:35.000Z",
+      "message": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/ea5b73423089cabf9c5b4e5c53048e67d9a46d09"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 35,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "5f7555df296ee01803c0f9bd8e9a552b793e60c2",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:36.000Z",
+      "message": "feat(HU09): validar las fechas antes de filtrar el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/5f7555df296ee01803c0f9bd8e9a552b793e60c2"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8623d7e7667e7cb48dd5cca5d1492e131579b093",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:47.000Z",
+      "message": "test(HU09): un filtro valido quita el error anterior",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8623d7e7667e7cb48dd5cca5d1492e131579b093"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 36,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "826cf31e8d0e9b56acb21f3a2ab50edd90f393a0",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:49.000Z",
+      "message": "feat(HU09): limpiar el error anterior al filtrar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/826cf31e8d0e9b56acb21f3a2ab50edd90f393a0"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e5b11582a48334f52b74027c3c9bbb92af9f587b",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:01.000Z",
+      "message": "test(HU09): limpiar los filtros muestra de nuevo todo el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e5b11582a48334f52b74027c3c9bbb92af9f587b"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 37,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "1852d382d83add435a27aee3ffef086bc6d6f073",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:03.000Z",
+      "message": "feat(HU09): limpiar los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/1852d382d83add435a27aee3ffef086bc6d6f073"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5e397b5992c250a4c58ed3135d96fe8b7d13f228",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:26.000Z",
+      "message": "test(HU09): sin objetos publicados el filtro mantiene el mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/5e397b5992c250a4c58ed3135d96fe8b7d13f228"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "b28c143e2477016a4b5f686a8412a75e7896a8ba",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:28.000Z",
+      "message": "feat(HU09): mantener el mensaje de vacio si no hay objetos publicados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b28c143e2477016a4b5f686a8412a75e7896a8ba"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "78c981d48132aa6738347fb194f35726357644a1",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:46.000Z",
+      "message": "feat(HU09): agregar los filtros a la vista del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/78c981d48132aa6738347fb194f35726357644a1"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 45,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "01ff5543a1cab4745aeb9729ab8701c7bfb3ed1d",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:02.000Z",
+      "message": "feat(HU09): agregar el formulario de filtros al html del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/01ff5543a1cab4745aeb9729ab8701c7bfb3ed1d"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f3c09706269a8a963de8644cd54174d571b6ee93",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:03.000Z",
+      "message": "feat(HU09): agregar estilos de los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f3c09706269a8a963de8644cd54174d571b6ee93"
+    },
+    "stats": {
+      "total": 61,
+      "additions": 61,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "49a14ab5e6cebe789e857dbbe2dbdca455c564d7",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:04.000Z",
+      "message": "feat(HU09): conectar los filtros de la pagina con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/49a14ab5e6cebe789e857dbbe2dbdca455c564d7"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:08:57.000Z",
+      "message": "test(HU09): agregar prueba e2e de los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 66,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 38,
     "failed_tests": 0,
     "conclusion": "success"
   }

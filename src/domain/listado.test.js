@@ -1,4 +1,5 @@
-import { prepararListado } from './listado';
+import { prepararListado, filtrarListado, validarFiltros } from './listado';
+import { MENSAJES } from './mensajes';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -63,4 +64,52 @@ describe('prepararListado', () => {
         ]);
     });
 
+});
+
+describe('filtrarListado', () => {
+    const TARJETAS = [
+        { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-14' },
+        { id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-10' },
+        { id: 3, categoria: 'Llaves', fechaHallazgo: '2026-10-02' },
+    ];
+
+    it('sin filtros devuelve todas las tarjetas', () => {
+        expect(idsDe(filtrarListado(TARJETAS, {}))).toEqual([1, 2, 3]);
+    });
+
+    it('filtra por categoria', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { categoria: 'Llaves' }))).toEqual([1, 3]);
+    });
+
+    it('filtra desde una fecha de inicio incluyendo ese dia', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { desde: '2026-10-10' }))).toEqual([1, 2]);
+    });
+
+    it('filtra hasta una fecha final incluyendo ese dia', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { hasta: '2026-10-10' }))).toEqual([2, 3]);
+    });
+
+    it('combina categoria y rango de fechas', () => {
+        const filtros = { categoria: 'Llaves', desde: '2026-10-05', hasta: '2026-10-20' };
+
+        expect(idsDe(filtrarListado(TARJETAS, filtros))).toEqual([1]);
+    });
+});
+
+describe('validarFiltros', () => {
+    it('da error si la fecha de inicio es posterior a la final', () => {
+        expect(validarFiltros({ desde: '2026-10-15', hasta: '2026-10-01' })).toEqual([MENSAJES.FECHAS_INVERTIDAS]);
+    });
+
+    it('no da error si la fecha de inicio es anterior a la final', () => {
+        expect(validarFiltros({ desde: '2026-10-01', hasta: '2026-10-15' })).toEqual([]);
+    });
+
+    it('no da error si solo hay fecha de inicio', () => {
+        expect(validarFiltros({ desde: '2026-10-10', hasta: '' })).toEqual([]);
+    });
+
+    it('permite la misma fecha de inicio y final para buscar un solo dia', () => {
+        expect(validarFiltros({ desde: '2026-10-10', hasta: '2026-10-10' })).toEqual([]);
+    });
 });
