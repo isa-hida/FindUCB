@@ -526,9 +526,15 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "be6e36152fcdd3c0a5e3ec1d7e1e6e86f3c456c6",
     "commitName": "feat(HU08): conectar la pagina del listado con el presenter",
     "commitTimestamp": 1792386016744,
     "testId": 49
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): agregar prueba e2e del listado publico",
+    "commitTimestamp": 1792386124909,
+    "testId": 50
   }
 ]
