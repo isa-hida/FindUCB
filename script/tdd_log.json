@@ -784,9 +784,23 @@
     "testId": 68
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e32c64fe62e9c68af2f579af92da0cf18d4260ed",
     "commitName": "test(HU09): la misma fecha de inicio y final es valida",
     "commitTimestamp": 1792386306180,
     "testId": 68
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1792386343811,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): el listado muestra las categorias para filtrar",
+    "commitTimestamp": 1792386344282,
+    "testId": 69
   }
 ]

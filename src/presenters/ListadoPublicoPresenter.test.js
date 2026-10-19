@@ -3,6 +3,7 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { RUTAS } from '../config';
+import { CATEGORIAS } from '../domain/catalogos';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -15,11 +16,15 @@ const crearEscenario = (objetos = [], urls = {}) => {
     const vista = {
         mensajesVacio: [],
         tarjetas: [],
+        categorias: [],
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
         },
         mostrarTarjetas(tarjetas) {
             this.tarjetas.push(...tarjetas);
+        },
+        mostrarCategorias(categorias) {
+            this.categorias.push(...categorias);
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -91,5 +96,13 @@ describe('ListadoPublicoPresenter', () => {
         await presenter.cargar();
 
         expect(vista.tarjetas.map((tarjeta) => tarjeta.fechaTexto)).toEqual(['05/03/2026']);
+    });
+
+    it('muestra las categorias del catalogo para filtrar', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.cargar();
+
+        expect(vista.categorias).toEqual(CATEGORIAS);
     });
 });
