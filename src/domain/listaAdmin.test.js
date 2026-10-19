@@ -14,7 +14,7 @@ describe('filtrarPublicados', () => {
 
         expect(resultado).toEqual([publicado]);
     });
-     
+
     it('no devuelve el objeto si ya fue entregado', () => {
         const entregado = { id: 2, estado: 'entregado' };
 
@@ -30,19 +30,19 @@ describe('crearFilaAdmin', () => {
 
         expect(fila.numero).toBe(7);
     });
-    
+
     it('incluye la categoria del objeto', () => {
         const fila = crearFilaAdmin({ categoria: 'Billetera' });
 
         expect(fila.categoria).toBe('Billetera');
     });
-     
+
     it('incluye la fecha de hallazgo del objeto', () => {
         const fila = crearFilaAdmin({ fechaHallazgo: '2026-10-01' });
 
         expect(fila.fechaHallazgo).toBe('2026-10-01');
     });
-    
+
     it('incluye la ruta de la foto del objeto', () => {
         const fila = crearFilaAdmin({ fotoPath: 'fotos/1.jpg' });
 

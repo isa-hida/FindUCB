@@ -1,10 +1,10 @@
 export function filtrarPublicados(objetos) {
-    return objetos .filter(objeto => objeto.estado === 'publicado');
+    return objetos.filter(objeto => objeto.estado === 'publicado');
 }
 
 export function crearFilaAdmin(objeto) {
-    return { 
+    return {
         id: objeto.id,
-        numero: objeto.numero, categoria: objeto.categoria , 
+        numero: objeto.numero, categoria: objeto.categoria ,
         fechaHallazgo: objeto.fechaHallazgo , fotoPath: objeto.fotoPath };
 }
