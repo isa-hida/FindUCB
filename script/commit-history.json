@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a34bc3358b03aa7011b449e6fa707b7dfbd9e71f",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:03:32.000Z",
       "message": "test(HU09): sin filtros el listado muestra todas las tarjetas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a34bc3358b03aa7011b449e6fa707b7dfbd9e71f"
     },
     "stats": {
       "total": 14,
@@ -1024,5 +1024,24 @@
     "test_count": 23,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:34.000Z",
+      "message": "feat(HU09): crear filtrarListado que devuelve todas las tarjetas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

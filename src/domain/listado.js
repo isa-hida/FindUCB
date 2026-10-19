@@ -5,3 +5,7 @@ export function prepararListado(objetos) {
             segundo.fechaHallazgo.localeCompare(primero.fechaHallazgo) || segundo.numero - primero.numero)
         .map(({ id, categoria, fechaHallazgo, fotoPath }) => ({ id, categoria, fechaHallazgo, fotoPath }));
 }
+
+export function filtrarListado(tarjetas) {
+    return tarjetas;
+}
