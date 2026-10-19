@@ -432,9 +432,15 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae",
     "commitName": "test(HU08): cada tarjeta del listado trae la url de su foto",
     "commitTimestamp": 1792383909763,
     "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): agregar la url de la foto a cada tarjeta del listado",
+    "commitTimestamp": 1792384131048,
+    "testId": 37
   }
 ]

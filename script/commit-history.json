@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:25:09.000Z",
       "message": "test(HU08): cada tarjeta del listado trae la url de su foto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae"
     },
     "stats": {
       "total": 25,
@@ -701,5 +701,24 @@
     "test_count": 19,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:28:50.000Z",
+      "message": "feat(HU08): agregar la url de la foto a cada tarjeta del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 4,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

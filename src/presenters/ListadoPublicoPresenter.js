@@ -2,9 +2,10 @@ import { MENSAJES } from '../domain/mensajes';
 import { prepararListado } from '../domain/listado';
 
 export class ListadoPublicoPresenter {
-    constructor(vista, objetosRepository) {
+    constructor(vista, objetosRepository, fotosStorage) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
+        this.fotosStorage = fotosStorage;
     }
 
     async cargar() {
@@ -14,6 +15,7 @@ export class ListadoPublicoPresenter {
             this.vista.mostrarVacio(MENSAJES.SIN_OBJETOS_HALLADOS);
             return;
         }
-        this.vista.mostrarTarjetas(tarjetas);
+        const urls = await this.fotosStorage.urlsFirmadas(tarjetas.map((tarjeta) => tarjeta.fotoPath));
+        this.vista.mostrarTarjetas(tarjetas.map((tarjeta, indice) => ({ ...tarjeta, fotoUrl: urls[indice] })));
     }
 }
