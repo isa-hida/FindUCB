@@ -462,9 +462,15 @@
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7dd62796865efe11b24bd91aaed8482113429f57",
     "commitName": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
     "commitTimestamp": 1792384936437,
     "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
+    "commitTimestamp": 1792385026028,
+    "testId": 42
   }
 ]

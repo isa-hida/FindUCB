@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7dd62796865efe11b24bd91aaed8482113429f57",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:42:16.000Z",
       "message": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/7dd62796865efe11b24bd91aaed8482113429f57"
     },
     "stats": {
       "total": 7,
@@ -794,6 +794,25 @@
     },
     "coverage": 100,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:43:45.000Z",
+      "message": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }
