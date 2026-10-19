@@ -1236,9 +1236,23 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "87a5a9689d2093e9f34ad67eb66e71d350f657e8",
     "commitName": "refactor(HU10): mover los estilos del encabezado a base.css",
     "commitTimestamp": 1792386698012,
     "testId": 102
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386709959,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): crear la vista del detalle del objeto",
+    "commitTimestamp": 1792386710336,
+    "testId": 103
   }
 ]
