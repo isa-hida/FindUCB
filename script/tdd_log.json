@@ -1104,9 +1104,23 @@
     "testId": 92
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3d2a53b05facd8740bb33cc44822c5b2af0237ea",
     "commitName": "test(HU10): un id inexistente muestra objeto no encontrado",
     "commitTimestamp": 1792386605792,
     "testId": 92
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792386606938,
+    "success": true,
+    "testId": 93
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
+    "commitTimestamp": 1792386607430,
+    "testId": 93
   }
 ]

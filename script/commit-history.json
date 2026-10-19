@@ -1748,12 +1748,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3d2a53b05facd8740bb33cc44822c5b2af0237ea",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:10:05.000Z",
       "message": "test(HU10): un id inexistente muestra objeto no encontrado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3d2a53b05facd8740bb33cc44822c5b2af0237ea"
     },
     "stats": {
       "total": 25,
@@ -1763,6 +1763,25 @@
     },
     "coverage": 94.25,
     "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:07.000Z",
+      "message": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.44,
+    "test_count": 40,
     "failed_tests": 0,
     "conclusion": "success"
   }
