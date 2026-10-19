@@ -456,9 +456,15 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7fd213ceee6eceb35893f4d4181b1106d744e405",
     "commitName": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
     "commitTimestamp": 1792384810114,
     "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
+    "commitTimestamp": 1792384936437,
+    "testId": 41
   }
 ]

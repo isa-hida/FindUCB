@@ -760,17 +760,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "7fd213ceee6eceb35893f4d4181b1106d744e405",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:40:10.000Z",
       "message": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/7fd213ceee6eceb35893f4d4181b1106d744e405"
     },
     "stats": {
       "total": 7,
       "additions": 6,
       "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:42:16.000Z",
+      "message": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
       "date": "2026-10-19"
     },
     "coverage": 100,
