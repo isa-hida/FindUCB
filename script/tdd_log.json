@@ -1216,9 +1216,23 @@
     "testId": 100
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a85378fd41c240e0266f8fdc616e25e4b453d90f",
     "commitName": "feat(HU10): agregar la url de la foto al detalle",
     "commitTimestamp": 1792386659035,
     "testId": 100
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386669653,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
+    "commitTimestamp": 1792386670097,
+    "testId": 101
   }
 ]

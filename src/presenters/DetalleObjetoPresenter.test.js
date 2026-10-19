@@ -89,4 +89,15 @@ describe('DetalleObjetoPresenter', () => {
 
         expect(vista.detalles[0].fotoUrl).toEqual('https://fotos.test/4.jpg');
     });
+
+    it('no muestra datos de quien encontro ni de quien recibio el objeto', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ entrega: { nombre: 'Maria Lopez', ci: '1234567', celular: '71111111' } }),
+        ]);
+
+        await presenter.cargar('4');
+
+        expect(vista.detalles[0]).not.toHaveProperty('encontradoPor');
+        expect(vista.detalles[0]).not.toHaveProperty('entrega');
+    });
 });
