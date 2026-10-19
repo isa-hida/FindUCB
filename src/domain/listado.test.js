@@ -27,4 +27,17 @@ describe('prepararListado', () => {
 
         expect(ids).toEqual([2, 3, 1]);
     });
+
+        it('con la misma fecha muestra primero el de mayor numero', () => {
+        const objetos = [
+            { id: 1, numero: 8, fechaHallazgo: '2026-10-05', estado: 'publicado' },
+            { id: 2, numero: 5, fechaHallazgo: '2026-10-05', estado: 'publicado' },
+            { id: 3, numero: 9, fechaHallazgo: '2026-10-05', estado: 'publicado' },
+        ];
+
+        const ids = prepararListado(objetos).map((objeto) => objeto.id);
+
+        expect(ids).toEqual([3, 1, 2]);
+    });
+
 });

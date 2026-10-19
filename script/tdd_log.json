@@ -360,9 +360,15 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b4abba93cea416d51a6c48b5353887a7cc5a4997",
     "commitName": "style(HU08): corregir espacios en el test del listado",
     "commitTimestamp": 1792372940760,
     "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): con la misma fecha se muestra primero el mayor numero",
+    "commitTimestamp": 1792379476780,
+    "testId": 25
   }
 ]

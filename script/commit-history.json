@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b4abba93cea416d51a6c48b5353887a7cc5a4997",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T01:22:20.000Z",
       "message": "style(HU08): corregir espacios en el test del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b4abba93cea416d51a6c48b5353887a7cc5a4997"
     },
     "stats": {
       "total": 5,
@@ -473,5 +473,24 @@
     "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:11:16.000Z",
+      "message": "test(HU08): con la misma fecha se muestra primero el mayor numero",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
