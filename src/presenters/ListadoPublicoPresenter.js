@@ -14,6 +14,6 @@ export class ListadoPublicoPresenter {
             this.vista.mostrarVacio(MENSAJES.SIN_OBJETOS_HALLADOS);
             return;
         }
-        this.vista.mostrarVacio(MENSAJES.SIN_OBJETOS_HALLADOS);
+        this.vista.mostrarTarjetas(tarjetas);
     }
 }

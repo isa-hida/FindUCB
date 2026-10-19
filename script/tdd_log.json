@@ -420,9 +420,15 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "51c2917a51b170dd8f4f221f7e4f9673a9dd614a",
     "commitName": "feat(HU08): mostrar las tarjetas del listado desde el repositorio",
     "commitTimestamp": 1792383218048,
     "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
+    "commitTimestamp": 1792383499148,
+    "testId": 35
   }
 ]
