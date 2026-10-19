@@ -18,6 +18,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         tarjetas: [],
         categorias: [],
         errores: [],
+        filtrosLimpiados: false,
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
         },
@@ -32,6 +33,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         limpiarError() {
             this.errores = [];
+        },
+        limpiarFiltros() {
+            this.filtrosLimpiados = true;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -160,5 +164,19 @@ describe('ListadoPublicoPresenter', () => {
         presenter.filtrar({ categoria: '', desde: '2026-10-01', hasta: '2026-10-15' });
 
         expect(vista.errores).toEqual([]);
+    });
+
+    it('al limpiar los filtros vacia el formulario y vuelve a mostrar todas las tarjetas', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-01' }),
+            crearObjeto({ id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-15' }),
+        ]);
+        await presenter.cargar();
+        presenter.filtrar({ categoria: 'Llaves', desde: '', hasta: '' });
+
+        presenter.limpiarFiltros();
+
+        expect(vista.filtrosLimpiados).toEqual(true);
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
     });
 });

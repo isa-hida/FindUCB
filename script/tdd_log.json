@@ -938,9 +938,23 @@
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "826cf31e8d0e9b56acb21f3a2ab50edd90f393a0",
     "commitName": "feat(HU09): limpiar el error anterior al filtrar",
     "commitTimestamp": 1792386409198,
     "testId": 79
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 1,
+    "numTotalTests": 37,
+    "timestamp": 1792386421505,
+    "success": false,
+    "testId": 80
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): limpiar los filtros muestra de nuevo todo el listado",
+    "commitTimestamp": 1792386421960,
+    "testId": 80
   }
 ]

@@ -1501,12 +1501,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "826cf31e8d0e9b56acb21f3a2ab50edd90f393a0",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:49.000Z",
       "message": "feat(HU09): limpiar el error anterior al filtrar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/826cf31e8d0e9b56acb21f3a2ab50edd90f393a0"
     },
     "stats": {
       "total": 1,
@@ -1518,5 +1518,24 @@
     "test_count": 36,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:07:01.000Z",
+      "message": "test(HU09): limpiar los filtros muestra de nuevo todo el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 37,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
