@@ -1174,9 +1174,23 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "56085852355fab036662e2f13a58e3ebe0715b84",
     "commitName": "test(HU10): el detalle muestra la fecha formateada",
     "commitTimestamp": 1792386642029,
     "testId": 97
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1792386643189,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): agregar la fecha formateada al detalle",
+    "commitTimestamp": 1792386643625,
+    "testId": 98
   }
 ]

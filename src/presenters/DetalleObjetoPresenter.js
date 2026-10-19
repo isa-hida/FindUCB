@@ -1,5 +1,6 @@
 import { MENSAJES } from '../domain/mensajes';
 import { prepararDetalle } from '../domain/detalle';
+import { formatearFecha } from '../domain/fecha';
 
 export class DetalleObjetoPresenter {
     constructor(vista, objetosRepository) {
@@ -13,6 +14,10 @@ export class DetalleObjetoPresenter {
             this.vista.mostrarNoEncontrado(MENSAJES.OBJETO_NO_ENCONTRADO);
             return;
         }
-        this.vista.mostrarDetalle(prepararDetalle(objeto));
+        const detalle = prepararDetalle(objeto);
+        this.vista.mostrarDetalle({
+            ...detalle,
+            fechaTexto: formatearFecha(detalle.fechaHallazgo),
+        });
     }
 }
