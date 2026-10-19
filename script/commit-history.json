@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2a2e679202200ea9e315bdd3be4367df4cc9630b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-18T02:08:31.000Z",
       "message": "feat(HU02): conectar la pagina de login con el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2a2e679202200ea9e315bdd3be4367df4cc9630b"
     },
     "stats": {
       "total": 19,
@@ -338,6 +338,633 @@
     },
     "coverage": 100,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e765ab340fb4438bf917522b604b0723a0b5e56a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:07:48.000Z",
+      "message": "test(HU08): listado vacio devuelve lista vacia",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e765ab340fb4438bf917522b604b0723a0b5e56a"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "87d7f65e5fd75f4ddcd51b9cc924779f67b82215",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:09:58.000Z",
+      "message": "feat(HU08): crear prepararListado que devuelve lista vacia",
+      "url": "https://github.com/isa-hida/FindUCB/commit/87d7f65e5fd75f4ddcd51b9cc924779f67b82215"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "76cdbae8f3f8a8b4367481639ac42132cccce6f6",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:12:50.000Z",
+      "message": "test(HU08): el listado no incluye objetos entregados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/76cdbae8f3f8a8b4367481639ac42132cccce6f6"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "754d52577c8e2448a060e0f6c02dcbcc61e185e2",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:13:59.000Z",
+      "message": "feat(HU08): filtrar solo objetos publicados en el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/754d52577c8e2448a060e0f6c02dcbcc61e185e2"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "47bc4cf30a9675aa34b3a1c762c09609528d0472",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:17:43.000Z",
+      "message": "test(HU08): el listado se ordena del mas reciente al mas antiguo",
+      "url": "https://github.com/isa-hida/FindUCB/commit/47bc4cf30a9675aa34b3a1c762c09609528d0472"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 14,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "bdb34e8a08d5f56aa892bff0a16f95eda4862218",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:18:41.000Z",
+      "message": "feat(HU08): ordenar el listado por fecha de hallazgo descendente",
+      "url": "https://github.com/isa-hida/FindUCB/commit/bdb34e8a08d5f56aa892bff0a16f95eda4862218"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b4abba93cea416d51a6c48b5353887a7cc5a4997",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T01:22:20.000Z",
+      "message": "style(HU08): corregir espacios en el test del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b4abba93cea416d51a6c48b5353887a7cc5a4997"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 2,
+      "deletions": 3,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b70cbda1c8b6f6e3e68a61bcc010af8be03b066e",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:11:16.000Z",
+      "message": "test(HU08): con la misma fecha se muestra primero el mayor numero",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b70cbda1c8b6f6e3e68a61bcc010af8be03b066e"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "b47ceaad816e37735de727015e3170448edd930d",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:13:31.000Z",
+      "message": "feat(HU08): desempatar por numero cuando la fecha es igual",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b47ceaad816e37735de727015e3170448edd930d"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:22:29.000Z",
+      "message": "refactor(HU08): crear objetos de prueba con valores por defecto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 20,
+      "deletions": 18,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2637350baa3b88b6994dbdec97830bedc75700b5",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:45:15.000Z",
+      "message": "test(HU08): la tarjeta del listado solo lleva datos publicos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/2637350baa3b88b6994dbdec97830bedc75700b5"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "610f52140c479269b8fb0790dd88fff308b8f0d8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:47:58.000Z",
+      "message": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/610f52140c479269b8fb0790dd88fff308b8f0d8"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a42df2c56d355384b374920bb5049ad09cba4d74",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:54:40.000Z",
+      "message": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a42df2c56d355384b374920bb5049ad09cba4d74"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f346a1aa4c004c98536dc6859eb916703621db33",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T03:58:29.000Z",
+      "message": "test(HU08): listado sin objetos muestra el mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f346a1aa4c004c98536dc6859eb916703621db33"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d43c77c3f8f8d956570b7a6f9bbb6220b1fff133",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:02:34.000Z",
+      "message": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d43c77c3f8f8d956570b7a6f9bbb6220b1fff133"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 95.35,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4a89a0f2f1220d259b3eb61448410bfba408b9e8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:09:21.000Z",
+      "message": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/4a89a0f2f1220d259b3eb61448410bfba408b9e8"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 95.35,
+    "test_count": 18,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "51c2917a51b170dd8f4f221f7e4f9673a9dd614a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:13:37.000Z",
+      "message": "feat(HU08): mostrar las tarjetas del listado desde el repositorio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/51c2917a51b170dd8f4f221f7e4f9673a9dd614a"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 18,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "8d279d1edd96df240238d615c3b207cebdbc28ea",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:18:19.000Z",
+      "message": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8d279d1edd96df240238d615c3b207cebdbc28ea"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:25:09.000Z",
+      "message": "test(HU08): cada tarjeta del listado trae la url de su foto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 23,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 96.08,
+    "test_count": 19,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "c26f82baf51586c10862f2015d078f0718e3e2f4",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:28:50.000Z",
+      "message": "feat(HU08): agregar la url de la foto a cada tarjeta del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/c26f82baf51586c10862f2015d078f0718e3e2f4"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 4,
+      "deletions": 2,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "024db09f96e84251bbe7fd0245f9e04b72b0e8d3",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:32:25.000Z",
+      "message": "chore(HU08): agregar la ruta del detalle en RUTAS",
+      "url": "https://github.com/isa-hida/FindUCB/commit/024db09f96e84251bbe7fd0245f9e04b72b0e8d3"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ad2aa07b247e8a17fac39e7128c40635b1f2401c",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:34:04.000Z",
+      "message": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/ad2aa07b247e8a17fac39e7128c40635b1f2401c"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "7fd213ceee6eceb35893f4d4181b1106d744e405",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:40:10.000Z",
+      "message": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/7fd213ceee6eceb35893f4d4181b1106d744e405"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7dd62796865efe11b24bd91aaed8482113429f57",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:42:16.000Z",
+      "message": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
+      "url": "https://github.com/isa-hida/FindUCB/commit/7dd62796865efe11b24bd91aaed8482113429f57"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9bf9e5568eddb410209352d65a95c43a70e4d5e8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:43:45.000Z",
+      "message": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9bf9e5568eddb410209352d65a95c43a70e4d5e8"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cb9178942e3a4f0ac4a5f17bcdb58d9b75ee70a8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:45:45.000Z",
+      "message": "test(HU08): cada tarjeta del listado trae la fecha formateada",
+      "url": "https://github.com/isa-hida/FindUCB/commit/cb9178942e3a4f0ac4a5f17bcdb58d9b75ee70a8"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:48:19.000Z",
+      "message": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4a0a5fdc37f3580349fcf8660df8ea2230dcb8de",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:59:07.000Z",
+      "message": "feat(HU08): crear la vista del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/4a0a5fdc37f3580349fcf8660df8ea2230dcb8de"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 48,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bb5cd37f3cd66885806278f63567ad05fca0649a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:59:24.000Z",
+      "message": "feat(HU08): crear el html del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/bb5cd37f3cd66885806278f63567ad05fca0649a"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 16,
+      "deletions": 4,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c4e8d5f8bcf41e58802c10572639e849894ca94e",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:59:25.000Z",
+      "message": "feat(HU08): agregar estilos del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/c4e8d5f8bcf41e58802c10572639e849894ca94e"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 92,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3c773129864b1c63b8bcb46bde4d19985112c518",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:00:15.000Z",
+      "message": "chore(HU08): conectar objetos y fotos de ejemplo en services",
+      "url": "https://github.com/isa-hida/FindUCB/commit/3c773129864b1c63b8bcb46bde4d19985112c518"
+    },
+    "stats": {
+      "total": 132,
+      "additions": 131,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "be6e36152fcdd3c0a5e3ec1d7e1e6e86f3c456c6",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:00:16.000Z",
+      "message": "feat(HU08): conectar la pagina del listado con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/be6e36152fcdd3c0a5e3ec1d7e1e6e86f3c456c6"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:02:04.000Z",
+      "message": "test(HU08): agregar prueba e2e del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

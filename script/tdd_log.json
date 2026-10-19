@@ -318,9 +318,223 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a2e679202200ea9e315bdd3be4367df4cc9630b",
     "commitName": "feat(HU02): conectar la pagina de login con el presenter",
     "commitTimestamp": 1792289314574,
     "testId": 17
+  },
+  {
+    "commitId": "e765ab340fb4438bf917522b604b0723a0b5e56a",
+    "commitName": "test(HU08): listado vacio devuelve lista vacia",
+    "commitTimestamp": 1792372069909,
+    "testId": 18
+  },
+  {
+    "commitId": "87d7f65e5fd75f4ddcd51b9cc924779f67b82215",
+    "commitName": "feat(HU08): crear prepararListado que devuelve lista vacia",
+    "commitTimestamp": 1792372198177,
+    "testId": 19
+  },
+  {
+    "commitId": "76cdbae8f3f8a8b4367481639ac42132cccce6f6",
+    "commitName": "test(HU08): el listado no incluye objetos entregados",
+    "commitTimestamp": 1792372370690,
+    "testId": 20
+  },
+  {
+    "commitId": "754d52577c8e2448a060e0f6c02dcbcc61e185e2",
+    "commitName": "feat(HU08): filtrar solo objetos publicados en el listado",
+    "commitTimestamp": 1792372439260,
+    "testId": 21
+  },
+  {
+    "commitId": "47bc4cf30a9675aa34b3a1c762c09609528d0472",
+    "commitName": "test(HU08): el listado se ordena del mas reciente al mas antiguo",
+    "commitTimestamp": 1792372663332,
+    "testId": 22
+  },
+  {
+    "commitId": "bdb34e8a08d5f56aa892bff0a16f95eda4862218",
+    "commitName": "feat(HU08): ordenar el listado por fecha de hallazgo descendente",
+    "commitTimestamp": 1792372722009,
+    "testId": 23
+  },
+  {
+    "commitId": "b4abba93cea416d51a6c48b5353887a7cc5a4997",
+    "commitName": "style(HU08): corregir espacios en el test del listado",
+    "commitTimestamp": 1792372940760,
+    "testId": 24
+  },
+  {
+    "commitId": "b70cbda1c8b6f6e3e68a61bcc010af8be03b066e",
+    "commitName": "test(HU08): con la misma fecha se muestra primero el mayor numero",
+    "commitTimestamp": 1792379476780,
+    "testId": 25
+  },
+  {
+    "commitId": "b47ceaad816e37735de727015e3170448edd930d",
+    "commitName": "feat(HU08): desempatar por numero cuando la fecha es igual",
+    "commitTimestamp": 1792379611135,
+    "testId": 26
+  },
+  {
+    "commitId": "dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce",
+    "commitName": "refactor(HU08): crear objetos de prueba con valores por defecto",
+    "commitTimestamp": 1792380149551,
+    "testId": 27
+  },
+  {
+    "commitId": "2637350baa3b88b6994dbdec97830bedc75700b5",
+    "commitName": "test(HU08): la tarjeta del listado solo lleva datos publicos",
+    "commitTimestamp": 1792381515609,
+    "testId": 28
+  },
+  {
+    "commitId": "610f52140c479269b8fb0790dd88fff308b8f0d8",
+    "commitName": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
+    "commitTimestamp": 1792381678657,
+    "testId": 29
+  },
+  {
+    "commitId": "a42df2c56d355384b374920bb5049ad09cba4d74",
+    "commitName": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
+    "commitTimestamp": 1792382080710,
+    "testId": 30
+  },
+  {
+    "commitId": "f346a1aa4c004c98536dc6859eb916703621db33",
+    "commitName": "test(HU08): listado sin objetos muestra el mensaje de vacio",
+    "commitTimestamp": 1792382309958,
+    "testId": 31
+  },
+  {
+    "commitId": "d43c77c3f8f8d956570b7a6f9bbb6220b1fff133",
+    "commitName": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
+    "commitTimestamp": 1792382554186,
+    "testId": 32
+  },
+  {
+    "commitId": "4a89a0f2f1220d259b3eb61448410bfba408b9e8",
+    "commitName": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
+    "commitTimestamp": 1792382961637,
+    "testId": 33
+  },
+  {
+    "commitId": "51c2917a51b170dd8f4f221f7e4f9673a9dd614a",
+    "commitName": "feat(HU08): mostrar las tarjetas del listado desde el repositorio",
+    "commitTimestamp": 1792383218048,
+    "testId": 34
+  },
+  {
+    "commitId": "8d279d1edd96df240238d615c3b207cebdbc28ea",
+    "commitName": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
+    "commitTimestamp": 1792383499148,
+    "testId": 35
+  },
+  {
+    "commitId": "5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae",
+    "commitName": "test(HU08): cada tarjeta del listado trae la url de su foto",
+    "commitTimestamp": 1792383909763,
+    "testId": 36
+  },
+  {
+    "commitId": "c26f82baf51586c10862f2015d078f0718e3e2f4",
+    "commitName": "feat(HU08): agregar la url de la foto a cada tarjeta del listado",
+    "commitTimestamp": 1792384131048,
+    "testId": 37
+  },
+  {
+    "commitId": "024db09f96e84251bbe7fd0245f9e04b72b0e8d3",
+    "commitName": "chore(HU08): agregar la ruta del detalle en RUTAS",
+    "commitTimestamp": 1792384345955,
+    "testId": 38
+  },
+  {
+    "commitId": "ad2aa07b247e8a17fac39e7128c40635b1f2401c",
+    "commitName": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
+    "commitTimestamp": 1792384444735,
+    "testId": 39
+  },
+  {
+    "commitId": "7fd213ceee6eceb35893f4d4181b1106d744e405",
+    "commitName": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
+    "commitTimestamp": 1792384810114,
+    "testId": 40
+  },
+  {
+    "commitId": "7dd62796865efe11b24bd91aaed8482113429f57",
+    "commitName": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
+    "commitTimestamp": 1792384936437,
+    "testId": 41
+  },
+  {
+    "commitId": "9bf9e5568eddb410209352d65a95c43a70e4d5e8",
+    "commitName": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
+    "commitTimestamp": 1792385026028,
+    "testId": 42
+  },
+  {
+    "commitId": "cb9178942e3a4f0ac4a5f17bcdb58d9b75ee70a8",
+    "commitName": "test(HU08): cada tarjeta del listado trae la fecha formateada",
+    "commitTimestamp": 1792385145860,
+    "testId": 43
+  },
+  {
+    "commitId": "57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11",
+    "commitName": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
+    "commitTimestamp": 1792385299693,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792385947086,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "4a0a5fdc37f3580349fcf8660df8ea2230dcb8de",
+    "commitName": "feat(HU08): crear la vista del listado publico",
+    "commitTimestamp": 1792385947546,
+    "testId": 45
+  },
+  {
+    "commitId": "bb5cd37f3cd66885806278f63567ad05fca0649a",
+    "commitName": "feat(HU08): crear el html del listado publico",
+    "commitTimestamp": 1792385964707,
+    "testId": 46
+  },
+  {
+    "commitId": "c4e8d5f8bcf41e58802c10572639e849894ca94e",
+    "commitName": "feat(HU08): agregar estilos del listado publico",
+    "commitTimestamp": 1792385965741,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386015523,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "3c773129864b1c63b8bcb46bde4d19985112c518",
+    "commitName": "chore(HU08): conectar objetos y fotos de ejemplo en services",
+    "commitTimestamp": 1792386015959,
+    "testId": 48
+  },
+  {
+    "commitId": "be6e36152fcdd3c0a5e3ec1d7e1e6e86f3c456c6",
+    "commitName": "feat(HU08): conectar la pagina del listado con el presenter",
+    "commitTimestamp": 1792386016744,
+    "testId": 49
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): agregar prueba e2e del listado publico",
+    "commitTimestamp": 1792386124909,
+    "testId": 50
   }
 ]
