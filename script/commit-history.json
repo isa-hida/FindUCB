@@ -912,17 +912,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3c773129864b1c63b8bcb46bde4d19985112c518",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:00:15.000Z",
       "message": "chore(HU08): conectar objetos y fotos de ejemplo en services",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3c773129864b1c63b8bcb46bde4d19985112c518"
     },
     "stats": {
       "total": 132,
       "additions": 131,
       "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:00:16.000Z",
+      "message": "feat(HU08): conectar la pagina del listado con el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
       "date": "2026-10-19"
     },
     "coverage": 100,

@@ -520,9 +520,15 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3c773129864b1c63b8bcb46bde4d19985112c518",
     "commitName": "chore(HU08): conectar objetos y fotos de ejemplo en services",
     "commitTimestamp": 1792386015959,
     "testId": 48
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): conectar la pagina del listado con el presenter",
+    "commitTimestamp": 1792386016744,
+    "testId": 49
   }
 ]
