@@ -686,9 +686,23 @@
     "testId": 61
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e0d1675b2c656f9b9de47c4f364e6f57fac2c111",
     "commitName": "test(HU09): combinar categoria y rango de fechas en el filtro",
     "commitTimestamp": 1792386256236,
     "testId": 61
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1792386274160,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): fecha de inicio posterior a la final da error",
+    "commitTimestamp": 1792386274579,
+    "testId": 62
   }
 ]

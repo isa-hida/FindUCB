@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e0d1675b2c656f9b9de47c4f364e6f57fac2c111",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:16.000Z",
       "message": "test(HU09): combinar categoria y rango de fechas en el filtro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e0d1675b2c656f9b9de47c4f364e6f57fac2c111"
     },
     "stats": {
       "total": 6,
@@ -1176,5 +1176,24 @@
     "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:34.000Z",
+      "message": "test(HU09): fecha de inicio posterior a la final da error",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 28,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

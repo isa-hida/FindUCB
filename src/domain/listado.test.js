@@ -1,4 +1,5 @@
-import { prepararListado, filtrarListado } from './listado';
+import { prepararListado, filtrarListado, validarFiltros } from './listado';
+import { MENSAJES } from './mensajes';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -92,5 +93,11 @@ describe('filtrarListado', () => {
         const filtros = { categoria: 'Llaves', desde: '2026-10-05', hasta: '2026-10-20' };
 
         expect(idsDe(filtrarListado(TARJETAS, filtros))).toEqual([1]);
+    });
+});
+
+describe('validarFiltros', () => {
+    it('da error si la fecha de inicio es posterior a la final', () => {
+        expect(validarFiltros({ desde: '2026-10-15', hasta: '2026-10-01' })).toEqual([MENSAJES.FECHAS_INVERTIDAS]);
     });
 });
