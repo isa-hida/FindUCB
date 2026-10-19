@@ -836,16 +836,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:48:19.000Z",
       "message": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11"
     },
     "stats": {
       "total": 2,
       "additions": 2,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:59:07.000Z",
+      "message": "feat(HU08): crear la vista del listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 48,
       "deletions": 0,
       "date": "2026-10-19"
     },

@@ -480,9 +480,23 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11",
     "commitName": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
     "commitTimestamp": 1792385299693,
     "testId": 44
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792385947086,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): crear la vista del listado publico",
+    "commitTimestamp": 1792385947546,
+    "testId": 45
   }
 ]
