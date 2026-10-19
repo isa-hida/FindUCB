@@ -950,16 +950,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f965f182b7aca5ce2b4df5f8d646706aa34f77d8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:02:04.000Z",
       "message": "test(HU08): agregar prueba e2e del listado publico",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f965f182b7aca5ce2b4df5f8d646706aa34f77d8"
     },
     "stats": {
       "total": 39,
       "additions": 39,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:03:04.000Z",
+      "message": "chore(HU09): agregar mensajes de los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
       "deletions": 0,
       "date": "2026-10-19"
     },

@@ -532,9 +532,31 @@
     "testId": 49
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f965f182b7aca5ce2b4df5f8d646706aa34f77d8",
     "commitName": "test(HU08): agregar prueba e2e del listado publico",
     "commitTimestamp": 1792386124909,
     "testId": 50
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386168517,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386183774,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU09): agregar mensajes de los filtros del listado",
+    "commitTimestamp": 1792386184197,
+    "testId": 51
   }
 ]
