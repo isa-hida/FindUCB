@@ -6,6 +6,6 @@ export function prepararListado(objetos) {
         .map(({ id, categoria, fechaHallazgo, fotoPath }) => ({ id, categoria, fechaHallazgo, fotoPath }));
 }
 
-export function filtrarListado(tarjetas) {
-    return tarjetas;
+export function filtrarListado(tarjetas, { categoria }) {
+    return tarjetas.filter((tarjeta) => !categoria || tarjeta.categoria === categoria);
 }

@@ -602,9 +602,23 @@
     "testId": 55
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1da3470187119f85424d0d5c07067d3120c0619d",
     "commitName": "test(HU09): filtrar el listado por categoria",
     "commitTimestamp": 1792386224209,
     "testId": 55
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1792386225378,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): filtrar las tarjetas por categoria",
+    "commitTimestamp": 1792386225782,
+    "testId": 56
   }
 ]
