@@ -1444,12 +1444,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ea5b73423089cabf9c5b4e5c53048e67d9a46d09",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:06:35.000Z",
       "message": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ea5b73423089cabf9c5b4e5c53048e67d9a46d09"
     },
     "stats": {
       "total": 17,
@@ -1461,5 +1461,24 @@
     "test_count": 35,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:06:36.000Z",
+      "message": "feat(HU09): validar las fechas antes de filtrar el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

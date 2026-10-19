@@ -1,5 +1,5 @@
 import { MENSAJES } from '../domain/mensajes';
-import { prepararListado, filtrarListado } from '../domain/listado';
+import { prepararListado, filtrarListado, validarFiltros } from '../domain/listado';
 import { formatearFecha } from '../domain/fecha';
 import { CATEGORIAS } from '../domain/catalogos';
 import { RUTAS } from '../config';
@@ -31,6 +31,11 @@ export class ListadoPublicoPresenter {
     }
 
     filtrar(filtros) {
+        const errores = validarFiltros(filtros);
+        if (errores.length > 0) {
+            this.vista.mostrarError(errores[0]);
+            return;
+        }
         const filtradas = filtrarListado(this.tarjetas, filtros);
         if (filtradas.length === 0) {
             this.vista.mostrarVacio(MENSAJES.SIN_COINCIDENCIAS);

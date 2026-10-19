@@ -896,9 +896,23 @@
     "testId": 76
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ea5b73423089cabf9c5b4e5c53048e67d9a46d09",
     "commitName": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
     "commitTimestamp": 1792386395190,
     "testId": 76
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1792386396373,
+    "success": true,
+    "testId": 77
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU09): validar las fechas antes de filtrar el listado",
+    "commitTimestamp": 1792386396817,
+    "testId": 77
   }
 ]
