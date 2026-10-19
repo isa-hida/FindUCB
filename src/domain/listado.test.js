@@ -83,4 +83,8 @@ describe('filtrarListado', () => {
     it('filtra desde una fecha de inicio incluyendo ese dia', () => {
         expect(idsDe(filtrarListado(TARJETAS, { desde: '2026-10-10' }))).toEqual([1, 2]);
     });
+
+    it('filtra hasta una fecha final incluyendo ese dia', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { hasta: '2026-10-10' }))).toEqual([2, 3]);
+    });
 });

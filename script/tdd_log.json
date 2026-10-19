@@ -644,9 +644,23 @@
     "testId": 58
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d9524f577d20b69a2adbdea43b5fdd9946e4181b",
     "commitName": "feat(HU09): filtrar las tarjetas desde una fecha de inicio",
     "commitTimestamp": 1792386237331,
     "testId": 58
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792386245807,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): filtrar el listado hasta una fecha final",
+    "commitTimestamp": 1792386246234,
+    "testId": 59
   }
 ]
