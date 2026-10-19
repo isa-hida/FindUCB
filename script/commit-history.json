@@ -1805,12 +1805,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "00819deeb112f52eca7afd729d45b1630f3d6ebd",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:10:23.000Z",
       "message": "feat(HU10): mostrar el detalle del objeto desde el repositorio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/00819deeb112f52eca7afd729d45b1630f3d6ebd"
     },
     "stats": {
       "total": 10,
@@ -1820,6 +1820,25 @@
     },
     "coverage": 100,
     "test_count": 41,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:10:32.000Z",
+      "message": "test(HU10): un objeto entregado no muestra su detalle",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"
   }

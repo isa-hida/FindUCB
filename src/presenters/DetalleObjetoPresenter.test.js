@@ -59,4 +59,13 @@ describe('DetalleObjetoPresenter', () => {
         });
         expect(vista.noEncontrados).toEqual([]);
     });
+
+    it('muestra objeto no encontrado si el objeto ya fue entregado', async () => {
+        const { vista, presenter } = crearEscenario([crearObjeto({ estado: 'entregado' })]);
+
+        await presenter.cargar('4');
+
+        expect(vista.noEncontrados).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
+        expect(vista.detalles).toEqual([]);
+    });
 });
