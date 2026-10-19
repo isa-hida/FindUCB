@@ -1672,12 +1672,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b110ef9920afd9d9b8fca0cd7489f06abdb8cf65",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:08:57.000Z",
       "message": "test(HU09): agregar prueba e2e de los filtros del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b110ef9920afd9d9b8fca0cd7489f06abdb8cf65"
     },
     "stats": {
       "total": 66,
@@ -1686,6 +1686,25 @@
       "date": "2026-10-19"
     },
     "coverage": 100,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:09:42.000Z",
+      "message": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 94.19,
     "test_count": 38,
     "failed_tests": 0,
     "conclusion": "success"

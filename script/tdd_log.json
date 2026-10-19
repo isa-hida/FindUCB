@@ -1048,9 +1048,23 @@
     "testId": 88
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b110ef9920afd9d9b8fca0cd7489f06abdb8cf65",
     "commitName": "test(HU09): agregar prueba e2e de los filtros del listado",
     "commitTimestamp": 1792386538061,
     "testId": 88
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386581994,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
+    "commitTimestamp": 1792386582448,
+    "testId": 89
   }
 ]
