@@ -354,9 +354,15 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bdb34e8a08d5f56aa892bff0a16f95eda4862218",
     "commitName": "feat(HU08): ordenar el listado por fecha de hallazgo descendente",
     "commitTimestamp": 1792372722009,
     "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style(HU08): corregir espacios en el test del listado",
+    "commitTimestamp": 1792372940760,
+    "testId": 24
   }
 ]
