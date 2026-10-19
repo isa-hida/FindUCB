@@ -1,5 +1,6 @@
 import { ListaObjetosAdminPresenter } from './ListaObjetosAdminPresenter';
 import { ObjetosRepositoryEnMemoria } from '../services/memoria/ObjetosRepositoryEnMemoria';
+import { FotosStorageEnMemoria } from '../services/memoria/FotosStorageEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
@@ -15,7 +16,8 @@ const crearEscenario = (objetos = []) => {
         },
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
-    const presenter = new ListaObjetosAdminPresenter(vista, objetosRepository);
+    const fotosStorage = new FotosStorageEnMemoria();
+    const presenter = new ListaObjetosAdminPresenter(vista, objetosRepository, fotosStorage);
     return { vista, presenter };
 };
 
@@ -58,5 +60,15 @@ describe('ListaObjetosAdminPresenter', () => {
         expect(vista.filas.map((fila) => fila.urlEntrega)).toEqual([
             `${RUTAS.REGISTRAR_ENTREGA}?id=3`,
         ]);
+    });
+
+    it('cada fila trae la url de la foto de su objeto', async () => {
+        const { vista, presenter } = crearEscenario([
+            { id: 1, numero: 7, estado: 'publicado', fotoPath: 'fotos/1.jpg' },
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.filas.map((fila) => fila.fotoUrl)).toEqual(['memoria/fotos/1.jpg']);
     });
 });
