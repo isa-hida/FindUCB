@@ -49,4 +49,10 @@ describe('crearFilaAdmin', () => {
         expect(fila.fotoPath).toBe('fotos/1.jpg');
     });
 
+    it('incluye el id del objeto', () => {
+        const fila = crearFilaAdmin({ id: 3 });
+
+        expect(fila.id).toBe(3);
+    });
+
 });

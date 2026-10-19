@@ -3,6 +3,8 @@ export function filtrarPublicados(objetos) {
 }
 
 export function crearFilaAdmin(objeto) {
-    return { numero: objeto.numero, categoria: objeto.categoria , 
+    return { 
+        id: objeto.id,
+        numero: objeto.numero, categoria: objeto.categoria , 
         fechaHallazgo: objeto.fechaHallazgo , fotoPath: objeto.fotoPath };
 }
