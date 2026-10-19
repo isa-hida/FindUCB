@@ -1076,9 +1076,23 @@
     "testId": 90
   },
   {
-    "commitId": "HEAD",
+    "commitId": "130f378a0501665764e54c2f01449f06e150c18a",
     "commitName": "test(HU10): el detalle solo lleva datos publicos del objeto",
     "commitTimestamp": 1792386593302,
     "testId": 90
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386594465,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): crear prepararDetalle con los datos publicos",
+    "commitTimestamp": 1792386594862,
+    "testId": 91
   }
 ]
