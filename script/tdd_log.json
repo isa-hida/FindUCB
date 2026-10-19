@@ -402,9 +402,15 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f346a1aa4c004c98536dc6859eb916703621db33",
     "commitName": "test(HU08): listado sin objetos muestra el mensaje de vacio",
     "commitTimestamp": 1792382309958,
     "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
+    "commitTimestamp": 1792382554186,
+    "testId": 32
   }
 ]

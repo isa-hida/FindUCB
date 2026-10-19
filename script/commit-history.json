@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f346a1aa4c004c98536dc6859eb916703621db33",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T03:58:29.000Z",
       "message": "test(HU08): listado sin objetos muestra el mensaje de vacio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f346a1aa4c004c98536dc6859eb916703621db33"
     },
     "stats": {
       "total": 25,
@@ -604,6 +604,25 @@
     },
     "coverage": 100,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:02:34.000Z",
+      "message": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 95.35,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }
