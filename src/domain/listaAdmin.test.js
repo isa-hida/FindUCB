@@ -30,4 +30,10 @@ describe('crearFilaAdmin', () => {
 
         expect(fila.numero).toBe(7);
     });
+    
+    it('incluye la categoria del objeto', () => {
+        const fila = crearFilaAdmin({ categoria: 'Billetera' });
+
+        expect(fila.categoria).toBe('Billetera');
+    });
 });

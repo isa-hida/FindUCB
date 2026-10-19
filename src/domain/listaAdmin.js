@@ -3,5 +3,5 @@ export function filtrarPublicados(objetos) {
 }
 
 export function crearFilaAdmin(objeto) {
-    return { numero: objeto.numero };
+    return { numero: objeto.numero, categoria: objeto.categoria };
 }
