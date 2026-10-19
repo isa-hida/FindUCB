@@ -1264,9 +1264,15 @@
     "testId": 104
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8463a83315a7abb9a8d8662c2a19a4560952a0d1",
     "commitName": "feat(HU10): crear el html del detalle del objeto",
     "commitTimestamp": 1792386734448,
     "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU10): agregar estilos del detalle del objeto",
+    "commitTimestamp": 1792386735227,
+    "testId": 105
   }
 ]
