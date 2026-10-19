@@ -672,9 +672,23 @@
     "testId": 60
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0e2c06791ac557da72b1af593fe2c3719765c589",
     "commitName": "feat(HU09): filtrar las tarjetas hasta una fecha final",
     "commitTimestamp": 1792386247845,
     "testId": 60
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792386255833,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU09): combinar categoria y rango de fechas en el filtro",
+    "commitTimestamp": 1792386256236,
+    "testId": 61
   }
 ]

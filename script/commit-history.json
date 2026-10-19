@@ -1140,12 +1140,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "0e2c06791ac557da72b1af593fe2c3719765c589",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:04:07.000Z",
       "message": "feat(HU09): filtrar las tarjetas hasta una fecha final",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0e2c06791ac557da72b1af593fe2c3719765c589"
     },
     "stats": {
       "total": 5,
@@ -1155,6 +1155,25 @@
     },
     "coverage": 100,
     "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:04:16.000Z",
+      "message": "test(HU09): combinar categoria y rango de fechas en el filtro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
   }
