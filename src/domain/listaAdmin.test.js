@@ -42,4 +42,11 @@ describe('crearFilaAdmin', () => {
 
         expect(fila.fechaHallazgo).toBe('2026-10-01');
     });
+    
+    it('incluye la ruta de la foto del objeto', () => {
+        const fila = crearFilaAdmin({ fotoPath: 'fotos/1.jpg' });
+
+        expect(fila.fotoPath).toBe('fotos/1.jpg');
+    });
+
 });

@@ -4,5 +4,5 @@ export function filtrarPublicados(objetos) {
 
 export function crearFilaAdmin(objeto) {
     return { numero: objeto.numero, categoria: objeto.categoria , 
-        fechaHallazgo: objeto.fechaHallazgo };
+        fechaHallazgo: objeto.fechaHallazgo , fotoPath: objeto.fotoPath };
 }
