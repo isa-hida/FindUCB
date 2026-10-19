@@ -1,5 +1,6 @@
 import { MENSAJES } from '../domain/mensajes';
 import { prepararListado } from '../domain/listado';
+import { RUTAS } from '../config';
 
 export class ListadoPublicoPresenter {
     constructor(vista, objetosRepository, fotosStorage) {
@@ -16,6 +17,10 @@ export class ListadoPublicoPresenter {
             return;
         }
         const urls = await this.fotosStorage.urlsFirmadas(tarjetas.map((tarjeta) => tarjeta.fotoPath));
-        this.vista.mostrarTarjetas(tarjetas.map((tarjeta, indice) => ({ ...tarjeta, fotoUrl: urls[indice] })));
+        this.vista.mostrarTarjetas(tarjetas.map((tarjeta, indice) => ({
+            ...tarjeta,
+            fotoUrl: urls[indice],
+            url: `${RUTAS.DETALLE}?id=${tarjeta.id}`,
+        })));
     }
 }

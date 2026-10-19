@@ -450,9 +450,15 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ad2aa07b247e8a17fac39e7128c40635b1f2401c",
     "commitName": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
     "commitTimestamp": 1792384444735,
     "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
+    "commitTimestamp": 1792384810114,
+    "testId": 40
   }
 ]

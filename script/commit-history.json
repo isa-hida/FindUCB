@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ad2aa07b247e8a17fac39e7128c40635b1f2401c",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:34:04.000Z",
       "message": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ad2aa07b247e8a17fac39e7128c40635b1f2401c"
     },
     "stats": {
       "total": 15,
@@ -758,5 +758,24 @@
     "test_count": 20,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:40:10.000Z",
+      "message": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
