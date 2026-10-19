@@ -79,4 +79,8 @@ describe('filtrarListado', () => {
     it('filtra por categoria', () => {
         expect(idsDe(filtrarListado(TARJETAS, { categoria: 'Llaves' }))).toEqual([1, 3]);
     });
+
+    it('filtra desde una fecha de inicio incluyendo ese dia', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { desde: '2026-10-10' }))).toEqual([1, 2]);
+    });
 });
