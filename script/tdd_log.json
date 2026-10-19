@@ -1230,9 +1230,15 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9",
     "commitName": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
     "commitTimestamp": 1792386670097,
     "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU10): mover los estilos del encabezado a base.css",
+    "commitTimestamp": 1792386698012,
+    "testId": 102
   }
 ]

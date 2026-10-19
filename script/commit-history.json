@@ -1919,17 +1919,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:11:10.000Z",
       "message": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9"
     },
     "stats": {
       "total": 11,
       "additions": 11,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:11:37.000Z",
+      "message": "refactor(HU10): mover los estilos del encabezado a base.css",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 20,
+      "deletions": 20,
       "date": "2026-10-19"
     },
     "coverage": 100,
