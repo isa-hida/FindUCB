@@ -7,3 +7,5 @@ dist
 report.json
 ./.husky/_
 .husky/.commit-state
+cypress/screenshots
+cypress/videos

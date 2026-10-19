@@ -2052,17 +2052,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "935152db06aae2e19f90a4e3f6e81c7bdecf7b93",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:13:09.000Z",
       "message": "test(HU10): agregar prueba e2e del detalle del objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/935152db06aae2e19f90a4e3f6e81c7bdecf7b93"
     },
     "stats": {
       "total": 50,
       "additions": 50,
       "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T05:20:53.000Z",
+      "message": "chore(HU10): ignorar capturas de cypress",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
       "date": "2026-10-19"
     },
     "coverage": 100,

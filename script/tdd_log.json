@@ -1296,9 +1296,15 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "935152db06aae2e19f90a4e3f6e81c7bdecf7b93",
     "commitName": "test(HU10): agregar prueba e2e del detalle del objeto",
     "commitTimestamp": 1792386790011,
     "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU10): ignorar capturas de cypress",
+    "commitTimestamp": 1792387253296,
+    "testId": 109
   }
 ]
