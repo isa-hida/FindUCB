@@ -414,9 +414,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4a89a0f2f1220d259b3eb61448410bfba408b9e8",
     "commitName": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
     "commitTimestamp": 1792382961637,
     "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU08): mostrar las tarjetas del listado desde el repositorio",
+    "commitTimestamp": 1792383218048,
+    "testId": 34
   }
 ]
