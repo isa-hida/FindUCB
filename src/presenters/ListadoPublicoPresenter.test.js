@@ -82,4 +82,14 @@ describe('ListadoPublicoPresenter', () => {
             `${RUTAS.DETALLE}?id=1`,
         ]);
     });
+
+    it('cada tarjeta trae la fecha de hallazgo en formato DD/MM/AAAA', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, fechaHallazgo: '2026-03-05' }),
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.tarjetas.map((tarjeta) => tarjeta.fechaTexto)).toEqual(['05/03/2026']);
+    });
 });

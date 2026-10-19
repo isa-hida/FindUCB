@@ -468,9 +468,15 @@
     "testId": 41
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9bf9e5568eddb410209352d65a95c43a70e4d5e8",
     "commitName": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
     "commitTimestamp": 1792385026028,
     "testId": 42
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU08): cada tarjeta del listado trae la fecha formateada",
+    "commitTimestamp": 1792385145860,
+    "testId": 43
   }
 ]

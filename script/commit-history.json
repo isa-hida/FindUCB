@@ -798,12 +798,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9bf9e5568eddb410209352d65a95c43a70e4d5e8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T04:43:45.000Z",
       "message": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9bf9e5568eddb410209352d65a95c43a70e4d5e8"
     },
     "stats": {
       "total": 4,
@@ -815,5 +815,24 @@
     "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-10-19T04:45:45.000Z",
+      "message": "test(HU08): cada tarjeta del listado trae la fecha formateada",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-19"
+    },
+    "coverage": 100,
+    "test_count": 22,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
