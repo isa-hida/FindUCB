@@ -1,12 +1,14 @@
 import { RegistrarEntregaPresenter } from './RegistrarEntregaPresenter';
 import { ObjetosRepositoryEnMemoria } from '../services/memoria/ObjetosRepositoryEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 const crearEscenario = (objetos = []) => {
     const vista = {
         fechas: [],
         errores: [],
         exitos: [],
+        redirecciones: [],
         mostrarFechaEntrega(fecha) {
             this.fechas.push(fecha);
         },
@@ -18,6 +20,9 @@ const crearEscenario = (objetos = []) => {
         },
         mostrarExito(mensaje) {
             this.exitos.push(mensaje);
+        },
+        redirigir(url) {
+            this.redirecciones.push(url);
         },
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
@@ -108,5 +113,12 @@ describe('RegistrarEntregaPresenter', () => {
         expect(await objetosRepository.listarParaAdmin()).toEqual([
             { ...objeto, estado: 'entregado', entrega: datos },
         ]);
+    });
+    it('al cancelar vuelve al panel', () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+
+        presenter.cancelar();
+
+        expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
     });
 });

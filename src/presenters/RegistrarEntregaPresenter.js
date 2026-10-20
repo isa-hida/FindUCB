@@ -1,5 +1,6 @@
 import { fechaEntregaPorDefecto , validarEntrega } from '../domain/entrega';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 export class RegistrarEntregaPresenter {
     constructor(vista, objetosRepository) {
@@ -27,5 +28,8 @@ export class RegistrarEntregaPresenter {
         }
         await this.objetosRepository.registrarEntrega(this.objetoId, datos);
         this.vista.mostrarExito(MENSAJES.ENTREGA_REGISTRADA);
+    }
+    cancelar() {
+        this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 }
