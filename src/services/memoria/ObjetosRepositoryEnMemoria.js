@@ -11,6 +11,7 @@ export class ObjetosRepositoryEnMemoria {
         return filtrarPublicados(this.objetos);
     }
     async obtenerPorId(id) {
-        return this.objetos.find((objeto) => objeto.id === id);
+        const objeto = this.objetos.find((o) => o.id === id);
+        return objeto || null;
     }
 }

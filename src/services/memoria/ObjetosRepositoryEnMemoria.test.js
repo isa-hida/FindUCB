@@ -37,5 +37,12 @@ describe('ObjetosRepositoryEnMemoria', () => {
 
             expect(resultado).toEqual(publicado);
         });
+        it('devuelve null si el id no existe', async () => {
+            const repositorio = new ObjetosRepositoryEnMemoria({ objetos: [crearObjeto({ id: 1 })] });
+
+            const resultado = await repositorio.obtenerPorId(99);
+
+            expect(resultado).toBeNull();
+        });
     });
 });
