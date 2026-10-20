@@ -54,4 +54,17 @@ describe('ObjetosRepositoryEnMemoria', () => {
             expect(resultado).toBeNull();
         });
     });
+
+    describe('registrarEntrega', () => {
+        it('saca el objeto del listado de publicados', async () => {
+            const objeto = crearObjeto({ id: 1, numero: 1 });
+            const otro = crearObjeto({ id: 2, numero: 2 });
+            const repositorio = new ObjetosRepositoryEnMemoria({ objetos: [objeto, otro] });
+
+            await repositorio.registrarEntrega(1, { nombre: 'Ana Perez', ci: '1234567' });
+            const resultado = await repositorio.listarPublicados();
+
+            expect(resultado).toEqual([otro]);
+        });
+    });
 });
