@@ -1468,9 +1468,31 @@
     "testId": 114
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
     "commitName": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
     "commitTimestamp": 1792498236361,
     "testId": 114
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498356317,
+    "success": false,
+    "testId": 115
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792498477355,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
+    "commitTimestamp": 1792498577445,
+    "testId": 115
   }
 ]

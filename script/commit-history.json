@@ -2166,12 +2166,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T12:10:35.000Z",
       "message": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a0d013cb4811fff6252117fcdae8e5ccca160a72"
     },
     "stats": {
       "total": 15,
@@ -2181,6 +2181,25 @@
     },
     "coverage": 99.12,
     "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:16:16.000Z",
+      "message": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 88,
+      "additions": 88,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
     "failed_tests": 0,
     "conclusion": "success"
   }
