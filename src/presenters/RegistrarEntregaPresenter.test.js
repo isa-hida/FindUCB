@@ -91,4 +91,22 @@ describe('RegistrarEntregaPresenter', () => {
 
         expect(vista.exitos).toEqual([MENSAJES.ENTREGA_REGISTRADA]);
     });
+
+    it('conserva el objeto con los datos de la entrega', async () => {
+        const objeto = { id: 1, estado: 'publicado' };
+        const { objetosRepository, presenter } = crearEscenario([objeto]);
+        const datos = {
+            nombre: 'Ana Perez',
+            ci: '1234567',
+            celular: '70000000',
+            fechaEntrega: '2026-10-20',
+        };
+        await presenter.cargar(1);
+
+        await presenter.confirmar(datos);
+
+        expect(await objetosRepository.listarParaAdmin()).toEqual([
+            { ...objeto, estado: 'entregado', entrega: datos },
+        ]);
+    });
 });
