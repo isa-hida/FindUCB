@@ -1,53 +1,77 @@
 export class RegistrarObjetoVista {
     constructor(documento) {
+        this.documento = documento;
         this.formulario = documento.getElementById('nuevo-objeto-form');
-        this.campoCategoria = documento.getElementById('categoria');
-        this.campoDescripcion = documento.getElementById('descripcion');
-        this.campoSenas = documento.getElementById('senas');
-        this.campoFecha = documento.getElementById('fecha-hallazgo');
-        this.campoLugar = documento.getElementById('lugar');
-        this.campoColor = documento.getElementById('color');
-        this.campoMarca = documento.getElementById('marca');
-        this.campoNombreEncontro = documento.getElementById('encontrado-nombre');
-        this.campoCelularEncontro = documento.getElementById('encontrado-celular');
-        this.cajaError = document.getElementById('error-mensaje');
-        this.cajaExito = document.getElementById('exito-mensaje');
+        this.errorElemento = documento.getElementById('error-mensaje');
+        this.exitoElemento = documento.getElementById('exito-mensaje');
+        this.fotoInput = documento.getElementById('foto-input');
+        this.previewImagen = documento.getElementById('foto-preview');
+        this.fotoPathActual = '';
+
+        this._inicializarEventos();
     }
 
-    alEnviar(manejador) {
-        this.formulario.addEventListener('submit', (evento) => {
-            evento.preventDefault();
-            manejador({
-                categoria: this.campoCategoria.value,
-                descripcion: this.campoDescripcion.value,
-                senas: this.campoSenas.value,
-                fechaHallazgo: this.campoFecha.value,
-                lugar: this.campoLugar.value,
-                color: this.campoColor.value,
-                marca: this.campoMarca.value,
+    _inicializarEventos() {
+        if (this.fotoInput) {
+            this.fotoInput.addEventListener('change', (e) => {
+                const archivo = e.target.files[0];
+                if (archivo) {
+                    this.fotoPathActual = archivo.name;
+                    if (this.previewImagen) {
+                        this.previewImagen.src = URL.createObjectURL(archivo);
+                        this.previewImagen.hidden = false;
+                    }
+                } else {
+                    this.fotoPathActual = '';
+                    if (this.previewImagen) {
+                        this.previewImagen.hidden = true;
+                    }
+                }
+            });
+        }
+    }
+
+    alEnviar(callback) {
+        this.formulario.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(this.formulario);
+            callback({
+                categoria: formData.get('categoria'),
+                descripcion: formData.get('descripcion'),
+                senas: formData.get('senas'),
+                fechaHallazgo: formData.get('fechaHallazgo'),
+                lugar: formData.get('lugar'),
+                color: formData.get('color'),
+                marca: formData.get('marca'),
+                fotoPath: this.fotoPathActual || formData.get('fotoPath') || '',
                 encontradoPor: {
-                    nombre: this.campoNombreEncontro.value,
-                    celular: this.campoCelularEncontro.value,
+                    nombre: formData.get('encontradoNombre'),
+                    celular: formData.get('encontradoCelular'),
                 },
             });
         });
     }
 
-    limpiarError() {
-        this.cajaError.textContent = '';
-        this.cajaError.hidden = true;
-        this.cajaExito.textContent = '';
-        this.cajaExito.hidden = true;
+    mostrarError(mensaje) {
+        this.errorElemento.textContent = mensaje;
+        this.errorElemento.hidden = false;
+        this.exitoElemento.hidden = true;
     }
 
-    mostrarError(mensaje) {
-        this.cajaError.textContent = mensaje;
-        this.cajaError.hidden = false;
+    limpiarError() {
+        this.errorElemento.textContent = '';
+        this.errorElemento.hidden = true;
     }
 
     mostrarExito(mensaje) {
-        this.cajaExito.textContent = mensaje;
-        this.cajaExito.hidden = false;
+        this.exitoElemento.textContent = mensaje;
+        this.exitoElemento.hidden = false;
+        this.errorElemento.hidden = true;
         this.formulario.reset();
+        this.fotoPathActual = '';
+        if (this.previewImagen) {
+            this.previewImagen.hidden = true;
+            this.previewImagen.src = '';
+        }
     }
 }

@@ -76,12 +76,23 @@
                     <label for="encontrado-celular">Encontrado por (Celular)</label>
                     <input type="text" id="encontrado-celular" name="encontradoCelular" />
                 </div>
+                <div class="campo">
+                    <label for="foto-input">Foto del objeto (JPG/PNG)</label>
+                    <input type="file" id="foto-input" name="foto" accept="image/png, image/jpeg, image/jpg" />
+                </div>
+
+                <div class="campo">
+                    <img id="foto-preview" alt="Vista previa de la foto"
+                        style="max-width: 100%; max-height: 200px; margin-top: 10px;" hidden />
+                </div>
 
                 <p id="error-mensaje" class="error" role="alert" hidden></p>
                 <p id="exito-mensaje" class="error" style="background: #e6f4ea; color: #137333;" role="status" hidden>
                 </p>
 
                 <button type="submit" id="registrar-button" class="boton">Registrar objeto</button>
+
+
             </form>
         </section>
     </main>

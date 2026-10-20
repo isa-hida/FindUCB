@@ -2280,12 +2280,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6874900d76d4bb90f70a038234a5d9a1190079d6",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T17:42:46.000Z",
       "message": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/6874900d76d4bb90f70a038234a5d9a1190079d6"
     },
     "stats": {
       "total": 28,
@@ -2295,6 +2295,25 @@
     },
     "coverage": 99.19,
     "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T17:56:24.000Z",
+      "message": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 129,
+      "additions": 95,
+      "deletions": 34,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.22,
+    "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"
   }

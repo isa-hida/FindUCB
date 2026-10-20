@@ -27,4 +27,24 @@ describe('validarObjetoHallado', () => {
 
         expect(errores).toEqual([]);
     });
+
+    it('da error si el formato de la foto no es JPG ni PNG', () => {
+        const errores = validarObjetoHallado({
+            categoria: 'Llaves',
+            descripcion: 'Llaves de oficina',
+            fotoPath: '/fotos/animacion.gif',
+        });
+
+        expect(errores).toEqual(['El formato de la foto debe ser JPG o PNG']);
+    });
+
+    it('acepta la foto si tiene formato JPG, JPEG o PNG', () => {
+        const errores = validarObjetoHallado({
+            categoria: 'Llaves',
+            descripcion: 'Llaves de oficina',
+            fotoPath: '/fotos/objeto.png',
+        });
+
+        expect(errores).toEqual([]);
+    });
 });

@@ -1592,9 +1592,39 @@
     "testId": 120
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6874900d76d4bb90f70a038234a5d9a1190079d6",
     "commitName": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
     "commitTimestamp": 1792518168034,
     "testId": 120
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1792518241893,
+    "success": false,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518317803,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518950245,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
+    "commitTimestamp": 1792518986068,
+    "testId": 121
   }
 ]
