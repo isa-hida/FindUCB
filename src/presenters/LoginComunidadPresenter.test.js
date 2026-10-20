@@ -1,5 +1,6 @@
 import { LoginComunidadPresenter } from './LoginComunidadPresenter';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 const crearEscenario = () => {
     const vista = {
@@ -16,7 +17,7 @@ const crearEscenario = () => {
         },
     };
     const auth = {
-        iniciarSesionComunidad(_correo) {
+        async iniciarSesionComunidad(_correo) {
             return { ok: true };
         },
     };
@@ -31,5 +32,14 @@ describe('LoginComunidadPresenter', () => {
         await presenter.ingresar('usuario@gmail.com');
 
         expect(vista.errores).toEqual([MENSAJES.CORREO_NO_INSTITUCIONAL]);
+    });
+
+    it('redirige al listado si el correo es institucional valido', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('estudiante@ucb.edu.bo');
+
+        expect(vista.errores).toEqual([]);
+        expect(vista.redirecciones).toEqual([RUTAS.LISTADO_PUBLICO || '/index.html']);
     });
 });

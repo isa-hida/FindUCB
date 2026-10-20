@@ -2128,12 +2128,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7af4ac0f73668c9afef12a46344b463eed9ec044",
     "author": "Natalia",
     "commit": {
       "date": "2026-10-20T01:45:42.000Z",
       "message": "feat(HU01): validar dominio de correo institucional",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/7af4ac0f73668c9afef12a46344b463eed9ec044"
     },
     "stats": {
       "total": 65,
@@ -2143,6 +2143,25 @@
     },
     "coverage": 98.18,
     "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T01:53:09.000Z",
+      "message": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.12,
+    "test_count": 47,
     "failed_tests": 0,
     "conclusion": "success"
   }

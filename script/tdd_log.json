@@ -1360,9 +1360,31 @@
     "testId": 111
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7af4ac0f73668c9afef12a46344b463eed9ec044",
     "commitName": "feat(HU01): validar dominio de correo institucional",
     "commitTimestamp": 1792460743087,
     "testId": 112
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792460903623,
+    "success": false,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792461120985,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792461189624,
+    "testId": 113
   }
 ]
