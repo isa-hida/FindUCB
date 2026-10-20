@@ -44,5 +44,14 @@ describe('ObjetosRepositoryEnMemoria', () => {
 
             expect(resultado).toBeNull();
         });
+
+        it('devuelve null si el objeto ya fue entregado', async () => {
+            const entregado = crearObjeto({ id: 1, estado: 'entregado' });
+            const repositorio = new ObjetosRepositoryEnMemoria({ objetos: [entregado] });
+
+            const resultado = await repositorio.obtenerPorId(1);
+
+            expect(resultado).toBeNull();
+        });
     });
 });
