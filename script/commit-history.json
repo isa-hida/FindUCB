@@ -2185,12 +2185,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "812c45fb6f090b896f0e4936cbe5f7a538438ffc",
     "author": "Natalia",
     "commit": {
       "date": "2026-10-20T16:39:56.000Z",
       "message": "feat(HU01): login de comunidad con TDD y sessionStorage",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/812c45fb6f090b896f0e4936cbe5f7a538438ffc"
     },
     "stats": {
       "total": 85,
@@ -2200,6 +2200,25 @@
     },
     "coverage": 96.64,
     "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T17:14:55.000Z",
+      "message": "fix: resolver conflictos de merge en feature/HU-01",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 95.93,
+    "test_count": 48,
     "failed_tests": 0,
     "conclusion": "success"
   }

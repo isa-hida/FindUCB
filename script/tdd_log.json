@@ -1410,9 +1410,15 @@
     "testId": 115
   },
   {
-    "commitId": "HEAD",
+    "commitId": "812c45fb6f090b896f0e4936cbe5f7a538438ffc",
     "commitName": "feat(HU01): login de comunidad con TDD y sessionStorage",
     "commitTimestamp": 1792514396763,
     "testId": 115
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: resolver conflictos de merge en feature/HU-01",
+    "commitTimestamp": 1792516495926,
+    "testId": 116
   }
 ]
