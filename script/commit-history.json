@@ -2128,12 +2128,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bf0bfa6039fc92165e436e3585ec0c5961d24e60",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T12:01:58.000Z",
       "message": "feat(HU04): validar longitud maxima de descripcion y senas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/bf0bfa6039fc92165e436e3585ec0c5961d24e60"
     },
     "stats": {
       "total": 14,
@@ -2143,6 +2143,25 @@
     },
     "coverage": 99.04,
     "test_count": 48,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:07:49.000Z",
+      "message": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.12,
+    "test_count": 49,
     "failed_tests": 0,
     "conclusion": "success"
   }
