@@ -11,6 +11,7 @@ export const auth = new AuthEnMemoria({
 });
 
 export const objetosRepository = new ObjetosRepositoryEnMemoria({
+    almacen: window.localStorage,
     objetos: [
         {
             id: 1,
