@@ -14,6 +14,15 @@ const crearObjeto = (datos) => ({
     estado: 'publicado',
     ...datos,
 });
+const crearAlmacen = () => ({
+    datos: {},
+    getItem(clave) {
+        return this.datos[clave] === undefined ? null : this.datos[clave];
+    },
+    setItem(clave, valor) {
+        this.datos[clave] = valor;
+    },
+});
 
 describe('ObjetosRepositoryEnMemoria', () => {
     describe('listarPublicados', () => {
@@ -81,6 +90,16 @@ describe('ObjetosRepositoryEnMemoria', () => {
             const resultado = await repositorio.listarParaAdmin();
 
             expect(resultado).toEqual([{ ...objeto, estado: 'entregado', entrega }]);
+        });
+        it('recuerda la entrega en otro repositorio que use el mismo almacen', async () => {
+            const almacen = crearAlmacen();
+            const objeto = crearObjeto({ id: 1, numero: 1 });
+            const primero = new ObjetosRepositoryEnMemoria({ objetos: [objeto], almacen });
+
+            await primero.registrarEntrega(1, { nombre: 'Ana Perez', ci: '1234567' });
+            const segundo = new ObjetosRepositoryEnMemoria({ objetos: [objeto], almacen });
+
+            expect(await segundo.listarPublicados()).toEqual([]);
         });
     });
 });

@@ -1,7 +1,12 @@
 import { filtrarPublicados } from '../../domain/listaAdmin';
+
+const CLAVE_ALMACEN = 'findu.objetos';
+
 export class ObjetosRepositoryEnMemoria {
-    constructor({ objetos = [] } = {}) {
-        this.objetos = objetos;
+    constructor({ objetos = [], almacen = null } = {}) {
+        this.almacen = almacen;
+        const guardados = almacen ? almacen.getItem(CLAVE_ALMACEN) : null;
+        this.objetos = guardados ? JSON.parse(guardados) : objetos;
     }
 
     async listarParaAdmin() {
@@ -21,5 +26,11 @@ export class ObjetosRepositoryEnMemoria {
         this.objetos = this.objetos.map((o) => (
             o.id === objetoId ? { ...o, estado: 'entregado', entrega } : o
         ));
+        this.guardar();
+    }
+    guardar() {
+        if (this.almacen) {
+            this.almacen.setItem(CLAVE_ALMACEN, JSON.stringify(this.objetos));
+        }
     }
 }
