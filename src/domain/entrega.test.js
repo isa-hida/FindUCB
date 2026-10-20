@@ -31,6 +31,11 @@ describe('validarEntrega', () => {
 
         expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
     });
+    it('da un solo mensaje si faltan el nombre y la C.I.', () => {
+        const errores = validarEntrega({ nombre: '', ci: '' });
+
+        expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
 });
 
 describe('fechaEntregaPorDefecto', () => {
