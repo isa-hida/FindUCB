@@ -2299,17 +2299,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "248f83997a1683ca9b5bfa4f4e979adbacb8f9ca",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T17:56:24.000Z",
       "message": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/248f83997a1683ca9b5bfa4f4e979adbacb8f9ca"
     },
     "stats": {
       "total": 129,
       "additions": 95,
       "deletions": 34,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.22,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T18:11:57.000Z",
+      "message": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 38,
+      "deletions": 6,
       "date": "2026-10-20"
     },
     "coverage": 99.22,

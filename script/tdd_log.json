@@ -1622,9 +1622,15 @@
     "testId": 121
   },
   {
-    "commitId": "HEAD",
+    "commitId": "248f83997a1683ca9b5bfa4f4e979adbacb8f9ca",
     "commitName": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
     "commitTimestamp": 1792518986068,
     "testId": 121
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
+    "commitTimestamp": 1792519919617,
+    "testId": 122
   }
 ]
