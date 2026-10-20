@@ -2147,12 +2147,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a597dcae0808b13e3071eccd1cce46143ceaea96",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T12:07:49.000Z",
       "message": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a597dcae0808b13e3071eccd1cce46143ceaea96"
     },
     "stats": {
       "total": 40,
@@ -2162,6 +2162,25 @@
     },
     "coverage": 99.12,
     "test_count": 49,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:10:35.000Z",
+      "message": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.12,
+    "test_count": 50,
     "failed_tests": 0,
     "conclusion": "success"
   }

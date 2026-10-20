@@ -20,4 +20,19 @@ describe('ObjetosEnMemoria - registrar', () => {
             categoria: 'Llaves',
         });
     });
+
+    it('almacena los datos de quien encontro el objeto de forma privada para el administrador', async () => {
+        const repo = new ObjetosEnMemoria();
+
+        const registrado = await repo.registrar({
+            categoria: 'Celular',
+            descripcion: 'Samsung negro',
+            encontradoPor: { nombre: 'Carla Rojas', celular: '70011111' },
+        });
+
+        expect(registrado.encontradoPor).toEqual({
+            nombre: 'Carla Rojas',
+            celular: '70011111',
+        });
+    });
 });

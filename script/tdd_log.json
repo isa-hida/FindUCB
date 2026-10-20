@@ -1454,9 +1454,23 @@
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a597dcae0808b13e3071eccd1cce46143ceaea96",
     "commitName": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
     "commitTimestamp": 1792498071503,
     "testId": 113
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498177361,
+    "success": true,
+    "testId": 114
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
+    "commitTimestamp": 1792498236361,
+    "testId": 114
   }
 ]
