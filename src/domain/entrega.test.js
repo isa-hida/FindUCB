@@ -19,4 +19,10 @@ describe('validarEntrega', () => {
 
         expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
     });
+
+    it('pide nombre y C.I. si el nombre tiene solo espacios', () => {
+        const errores = validarEntrega({ nombre: '   ', ci: '1234567' });
+
+        expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
 });
