@@ -10,4 +10,7 @@ export class ObjetosRepositoryEnMemoria {
     async listarPublicados() {
         return filtrarPublicados(this.objetos);
     }
+    async obtenerPorId(id) {
+        return this.objetos.find((objeto) => objeto.id === id);
+    }
 }
