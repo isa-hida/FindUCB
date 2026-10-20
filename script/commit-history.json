@@ -2071,12 +2071,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:20:53.000Z",
       "message": "chore(HU10): ignorar capturas de cypress",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4"
     },
     "stats": {
       "total": 4,
@@ -2086,6 +2086,63 @@
     },
     "coverage": 100,
     "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T01:39:35.000Z",
+      "message": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 65,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 98.18,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T01:43:27.000Z",
+      "message": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 65,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 98.18,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T01:45:42.000Z",
+      "message": "feat(HU01): validar dominio de correo institucional",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 65,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 98.18,
+    "test_count": 46,
     "failed_tests": 0,
     "conclusion": "success"
   }

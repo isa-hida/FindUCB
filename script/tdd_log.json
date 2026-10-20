@@ -1302,9 +1302,67 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "commitName": "chore(HU10): ignorar capturas de cypress",
     "commitTimestamp": 1792387253296,
     "testId": 109
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792458748694,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792458852929,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792458903526,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792459406599,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792459564544,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792460376051,
+    "testId": 110
+  },
+  {
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792460607958,
+    "testId": 111
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU01): validar dominio de correo institucional",
+    "commitTimestamp": 1792460743087,
+    "testId": 112
   }
 ]
