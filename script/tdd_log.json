@@ -1396,9 +1396,23 @@
     "testId": 114
   },
   {
-    "commitId": "HEAD",
+    "commitId": "63f415b5375f6646f3cdc16117f216d03e0ee648",
     "commitName": "feat(HU01): agregar interfaz de usuario login.html vista y script de pagina",
     "commitTimestamp": 1792463135268,
     "testId": 114
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792463454069,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU01): login de comunidad con TDD y sessionStorage",
+    "commitTimestamp": 1792514396763,
+    "testId": 115
   }
 ]

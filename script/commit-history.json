@@ -2166,12 +2166,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "63f415b5375f6646f3cdc16117f216d03e0ee648",
     "author": "Natalia",
     "commit": {
       "date": "2026-10-20T02:25:34.000Z",
       "message": "feat(HU01): agregar interfaz de usuario login.html vista y script de pagina",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/63f415b5375f6646f3cdc16117f216d03e0ee648"
     },
     "stats": {
       "total": 92,
@@ -2180,6 +2180,25 @@
       "date": "2026-10-20"
     },
     "coverage": 97.39,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T16:39:56.000Z",
+      "message": "feat(HU01): login de comunidad con TDD y sessionStorage",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 85,
+      "additions": 64,
+      "deletions": 21,
+      "date": "2026-10-20"
+    },
+    "coverage": 96.64,
     "test_count": 47,
     "failed_tests": 0,
     "conclusion": "success"

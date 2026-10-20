@@ -8,7 +8,9 @@ export function validarLoginAdmin({ correo, password }) {
 }
 
 export function esCorreoInstitucional(correo) {
-    if (!correo) return false;
+    if (!correo) {
+        return false;
+    }
     return correo.trim().toLowerCase().endsWith('@ucb.edu.bo');
 }
 

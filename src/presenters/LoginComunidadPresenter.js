@@ -1,5 +1,4 @@
-import { validarCorreoComunidad } from '../domain/correo';
-import { RUTAS } from '../config';
+import { validarCorreoComunidad } from '../domain/correo.js';
 
 export class LoginComunidadPresenter {
     constructor(vista, auth) {
@@ -15,8 +14,9 @@ export class LoginComunidadPresenter {
             this.vista.mostrarError(errores[0]);
             return;
         }
+
         const correoLimpio = correo.trim();
         await this.auth.iniciarSesionComunidad(correoLimpio);
-        this.vista.redirigir(RUTAS.LISTADO_PUBLICO || '/index.html');
+        this.vista.redirigir('/index.html');
     }
 }

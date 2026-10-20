@@ -20,13 +20,18 @@ export class LoginComunidadVista {
     }
 
     redirigir(url) {
-        window.location.href = url;
+        window.location.assign(url);
     }
 
     alEnviar(callback) {
-        this.form.addEventListener('submit', (e) => {
+        if (!this.form) {
+            return;
+        }
+
+        this.form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            callback();
+            e.stopPropagation();
+            await callback();
         });
     }
 }
