@@ -50,4 +50,12 @@ describe('fechaEntregaPorDefecto', () => {
 
         expect(fecha).toBe('2026-10-20');
     });
+
+    it('usa la fecha de hoy si no se le da ninguna', () => {
+        jest.useFakeTimers({ now: new Date(2026, 9, 20) });
+
+        const fecha = fechaEntregaPorDefecto();
+
+        expect(fecha).toBe('2026-10-20');
+    });
 });
