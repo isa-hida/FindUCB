@@ -2071,12 +2071,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:20:53.000Z",
       "message": "chore(HU10): ignorar capturas de cypress",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4"
     },
     "stats": {
       "total": 4,
@@ -2086,6 +2086,158 @@
     },
     "coverage": 100,
     "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "300d2281e1e9aa0b1c8e7e8460ed6e20bb83fa89",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T11:33:02.000Z",
+      "message": "feat(HU04): validar categoria y descripcion obligatorias",
+      "url": "https://github.com/isa-hida/FindUCB/commit/300d2281e1e9aa0b1c8e7e8460ed6e20bb83fa89"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T11:49:23.000Z",
+      "message": "feat(HU04): validar que la fecha de hallazgo no sea futura",
+      "url": "https://github.com/isa-hida/FindUCB/commit/71e2903ed28c5e4a941b159f7b18eb8a4847bec1"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.02,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bf0bfa6039fc92165e436e3585ec0c5961d24e60",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:01:58.000Z",
+      "message": "feat(HU04): validar longitud maxima de descripcion y senas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/bf0bfa6039fc92165e436e3585ec0c5961d24e60"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.04,
+    "test_count": 48,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a597dcae0808b13e3071eccd1cce46143ceaea96",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:07:49.000Z",
+      "message": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a597dcae0808b13e3071eccd1cce46143ceaea96"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.12,
+    "test_count": 49,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:10:35.000Z",
+      "message": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a0d013cb4811fff6252117fcdae8e5ccca160a72"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.12,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a86a8452a52f67ae7900f814a0430b721b08750c",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:16:16.000Z",
+      "message": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a86a8452a52f67ae7900f814a0430b721b08750c"
+    },
+    "stats": {
+      "total": 88,
+      "additions": 88,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:20:20.000Z",
+      "message": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d5dc2612c5ef5a8100e00fca3a0923589fafc1af"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 53,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:25:10.000Z",
+      "message": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 104,
+      "additions": 102,
+      "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
     "failed_tests": 0,
     "conclusion": "success"
   }

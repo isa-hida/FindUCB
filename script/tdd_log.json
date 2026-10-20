@@ -1302,9 +1302,209 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "commitName": "chore(HU10): ignorar capturas de cypress",
     "commitTimestamp": 1792387253296,
     "testId": 109
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792437428196,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792495869015,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792495958612,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "commitId": "300d2281e1e9aa0b1c8e7e8460ed6e20bb83fa89",
+    "commitName": "feat(HU04): validar categoria y descripcion obligatorias",
+    "commitTimestamp": 1792495985711,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496071179,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496109672,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496322094,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496429310,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496498522,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792496588924,
+    "success": true,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792496746212,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792496939294,
+    "success": true,
+    "testId": 111
+  },
+  {
+    "commitId": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
+    "commitName": "feat(HU04): validar que la fecha de hallazgo no sea futura",
+    "commitTimestamp": 1792496965959,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497018327,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497062781,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792497116946,
+    "success": true,
+    "testId": 112
+  },
+  {
+    "commitId": "bf0bfa6039fc92165e436e3585ec0c5961d24e60",
+    "commitName": "feat(HU04): validar longitud maxima de descripcion y senas",
+    "commitTimestamp": 1792497719194,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 1,
+    "numTotalTests": 49,
+    "timestamp": 1792497887230,
+    "success": false,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 0,
+    "numTotalTests": 49,
+    "timestamp": 1792497975136,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "commitId": "a597dcae0808b13e3071eccd1cce46143ceaea96",
+    "commitName": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
+    "commitTimestamp": 1792498071503,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498177361,
+    "success": true,
+    "testId": 114
+  },
+  {
+    "commitId": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
+    "commitName": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
+    "commitTimestamp": 1792498236361,
+    "testId": 114
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498356317,
+    "success": false,
+    "testId": 115
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792498477355,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "a86a8452a52f67ae7900f814a0430b721b08750c",
+    "commitName": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
+    "commitTimestamp": 1792498577445,
+    "testId": 115
+  },
+  {
+    "commitId": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
+    "commitName": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
+    "commitTimestamp": 1792498822030,
+    "testId": 116
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+    "commitTimestamp": 1792499111879,
+    "testId": 117
   }
 ]
