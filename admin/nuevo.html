@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrar objeto hallado | FindU</title>
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/login.css" />
+</head>
+
+<body>
+    <main class="contenedor">
+        <header class="login__marca">
+            <h1 class="login__titulo">FindU</h1>
+            <p class="login__subtitulo">Panel de Bienestar Estudiantil</p>
+        </header>
+
+        <section class="tarjeta" style="max-width: 600px; margin: 0 auto;">
+            <h2 class="tarjeta__titulo">Registrar objeto hallado</h2>
+            <p class="tarjeta__ayuda">Llena los datos del objeto recibido en el campus.</p>
+
+            <form id="nuevo-objeto-form" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Electrónicos">Electrónicos</option>
+                        <option value="Documentos">Documentos</option>
+                        <option value="Llaves">Llaves</option>
+                        <option value="Ropa">Ropa</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Mochilas y bolsos">Mochilas y bolsos</option>
+                        <option value="Útiles">Útiles</option>
+                        <option value="Botellas y termos">Botellas y termos</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion" />
+                </div>
+
+                <div class="campo">
+                    <label for="senas">Señas particulares</label>
+                    <input type="text" id="senas" name="senas" />
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-hallazgo">Fecha de hallazgo</label>
+                    <input type="date" id="fecha-hallazgo" name="fechaHallazgo" />
+                </div>
+
+                <div class="campo">
+                    <label for="lugar">Lugar de hallazgo</label>
+                    <input type="text" id="lugar" name="lugar" />
+                </div>
+
+                <div class="campo">
+                    <label for="color">Color</label>
+                    <input type="text" id="color" name="color" />
+                </div>
+
+                <div class="campo">
+                    <label for="marca">Marca (opcional)</label>
+                    <input type="text" id="marca" name="marca" />
+                </div>
+
+                <div class="campo">
+                    <label for="encontrado-nombre">Encontrado por (Nombre)</label>
+                    <input type="text" id="encontrado-nombre" name="encontradoNombre" />
+                </div>
+
+                <div class="campo">
+                    <label for="encontrado-celular">Encontrado por (Celular)</label>
+                    <input type="text" id="encontrado-celular" name="encontradoCelular" />
+                </div>
+
+                <p id="error-mensaje" class="error" role="alert" hidden></p>
+                <p id="exito-mensaje" class="error" style="background: #e6f4ea; color: #137333;" role="status" hidden>
+                </p>
+
+                <button type="submit" id="registrar-button" class="boton">Registrar objeto</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../src/pages/admin-nuevo.js"></script>
+</body>
+
+</html>

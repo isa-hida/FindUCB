@@ -1496,9 +1496,15 @@
     "testId": 115
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
     "commitName": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
     "commitTimestamp": 1792498822030,
     "testId": 116
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+    "commitTimestamp": 1792499111879,
+    "testId": 117
   }
 ]

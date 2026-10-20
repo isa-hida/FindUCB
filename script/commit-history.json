@@ -2204,17 +2204,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T12:20:20.000Z",
       "message": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/d5dc2612c5ef5a8100e00fca3a0923589fafc1af"
     },
     "stats": {
       "total": 53,
       "additions": 53,
       "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:25:10.000Z",
+      "message": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 104,
+      "additions": 102,
+      "deletions": 2,
       "date": "2026-10-20"
     },
     "coverage": 100,
