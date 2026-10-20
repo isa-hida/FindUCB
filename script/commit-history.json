@@ -2109,12 +2109,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T11:49:23.000Z",
       "message": "feat(HU04): validar que la fecha de hallazgo no sea futura",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/71e2903ed28c5e4a941b159f7b18eb8a4847bec1"
     },
     "stats": {
       "total": 17,
@@ -2124,6 +2124,25 @@
     },
     "coverage": 99.02,
     "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T12:01:58.000Z",
+      "message": "feat(HU04): validar longitud maxima de descripcion y senas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.04,
+    "test_count": 48,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -18,5 +18,14 @@ describe('validarObjetoHallado', () => {
 
         expect(errores).toEqual([MENSAJES.FECHA_FUTURA]);
     });
+    it('da error si la descripcion o las senas superan los 500 caracteres', () => {
+        const textoLargo = 'a'.repeat(501);
+        const errores = validarObjetoHallado({
+            categoria: 'Llaves',
+            descripcion: textoLargo,
+            senas: '',
+        });
 
+        expect(errores).toEqual([MENSAJES.TEXTO_MUY_LARGO]);
+    });
 });

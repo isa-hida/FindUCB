@@ -1402,9 +1402,39 @@
     "testId": 111
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
     "commitName": "feat(HU04): validar que la fecha de hallazgo no sea futura",
     "commitTimestamp": 1792496965959,
     "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497018327,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497062781,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792497116946,
+    "success": true,
+    "testId": 112
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): validar longitud maxima de descripcion y senas",
+    "commitTimestamp": 1792497719194,
+    "testId": 112
   }
 ]
