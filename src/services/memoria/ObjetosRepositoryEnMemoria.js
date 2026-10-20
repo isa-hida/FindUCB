@@ -1,3 +1,4 @@
+import { filtrarPublicados } from '../../domain/listaAdmin';
 export class ObjetosRepositoryEnMemoria {
     constructor({ objetos = [] } = {}) {
         this.objetos = objetos;
@@ -5,5 +6,8 @@ export class ObjetosRepositoryEnMemoria {
 
     async listarParaAdmin() {
         return [...this.objetos];
+    }
+    async listarPublicados() {
+        return filtrarPublicados(this.objetos);
     }
 }

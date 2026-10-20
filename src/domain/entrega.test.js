@@ -1,4 +1,4 @@
-import { validarEntrega ,fechaEntregaPorDefecto} from './entrega';
+import { validarEntrega , fechaEntregaPorDefecto } from './entrega';
 import { MENSAJES } from './mensajes';
 
 describe('validarEntrega', () => {
