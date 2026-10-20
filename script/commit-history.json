@@ -2242,16 +2242,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T13:27:03.000Z",
       "message": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907"
     },
     "stats": {
       "total": 0,
       "additions": 0,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T13:33:24.000Z",
+      "message": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 37,
       "deletions": 0,
       "date": "2026-10-20"
     },

@@ -1516,9 +1516,15 @@
     "testId": 118
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907",
     "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
     "commitTimestamp": 1792502825871,
     "testId": 118
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
+    "commitTimestamp": 1792503207538,
+    "testId": 119
   }
 ]
