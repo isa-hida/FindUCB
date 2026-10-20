@@ -15,4 +15,11 @@ export class RegistrarEntregaPresenter {
         }
         this.vista.mostrarFechaEntrega(fechaEntregaPorDefecto(hoy));
     }
+
+    async confirmar(datos) {
+        const errores = validarEntrega(datos);
+        if (errores.length > 0) {
+            this.vista.mostrarError(errores[0]);
+        }
+    }
 }

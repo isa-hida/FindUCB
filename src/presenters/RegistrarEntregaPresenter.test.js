@@ -41,4 +41,12 @@ describe('RegistrarEntregaPresenter', () => {
         expect(vista.errores).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
         expect(vista.fechas).toEqual([]);
     });
+
+    it('muestra el aviso si falta el nombre o la C.I.', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+
+        await presenter.confirmar({ nombre: '', ci: '1234567' });
+
+        expect(vista.errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
 });
