@@ -2071,12 +2071,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-10-19T05:20:53.000Z",
       "message": "chore(HU10): ignorar capturas de cypress",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4"
     },
     "stats": {
       "total": 4,
@@ -2086,6 +2086,25 @@
     },
     "coverage": 100,
     "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T11:33:02.000Z",
+      "message": "feat(HU04): validar categoria y descripcion obligatorias",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 99,
+    "test_count": 46,
     "failed_tests": 0,
     "conclusion": "success"
   }

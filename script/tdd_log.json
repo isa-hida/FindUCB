@@ -1302,9 +1302,39 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
     "commitName": "chore(HU10): ignorar capturas de cypress",
     "commitTimestamp": 1792387253296,
     "testId": 109
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792437428196,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792495869015,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792495958612,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): validar categoria y descripcion obligatorias",
+    "commitTimestamp": 1792495985711,
+    "testId": 110
   }
 ]
