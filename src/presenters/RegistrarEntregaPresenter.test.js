@@ -121,4 +121,14 @@ describe('RegistrarEntregaPresenter', () => {
 
         expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN]);
     });
+
+    it('al cancelar el objeto sigue publicado', async () => {
+        const objeto = { id: 1, estado: 'publicado' };
+        const { objetosRepository, presenter } = crearEscenario([objeto]);
+        await presenter.cargar(1);
+
+        presenter.cancelar();
+
+        expect(await objetosRepository.listarPublicados()).toEqual([objeto]);
+    });
 });
