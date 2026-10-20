@@ -1490,9 +1490,15 @@
     "testId": 115
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a86a8452a52f67ae7900f814a0430b721b08750c",
     "commitName": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
     "commitTimestamp": 1792498577445,
     "testId": 115
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
+    "commitTimestamp": 1792498822030,
+    "testId": 116
   }
 ]
