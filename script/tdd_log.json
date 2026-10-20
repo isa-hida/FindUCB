@@ -1502,9 +1502,135 @@
     "testId": 116
   },
   {
-    "commitId": "HEAD",
+    "commitId": "02ef3bb7db6684a08e44383e037097e55e9e6400",
     "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
     "commitTimestamp": 1792499111879,
     "testId": 117
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792501898803,
+    "success": true,
+    "testId": 118
+  },
+  {
+    "commitId": "ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907",
+    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+    "commitTimestamp": 1792502825871,
+    "testId": 118
+  },
+  {
+    "commitId": "42e65bb30c1002a4ee255f1646c123a628f9cd40",
+    "commitName": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
+    "commitTimestamp": 1792503207538,
+    "testId": 119
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 1,
+    "numTotalTests": 54,
+    "timestamp": 1792503939706,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 5,
+    "numTotalTests": 54,
+    "timestamp": 1792504005008,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504040359,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504445673,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 51,
+    "failedTests": 2,
+    "numTotalTests": 53,
+    "timestamp": 1792504513548,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517497710,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517630341,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792518035382,
+    "success": true,
+    "testId": 120
+  },
+  {
+    "commitId": "6874900d76d4bb90f70a038234a5d9a1190079d6",
+    "commitName": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
+    "commitTimestamp": 1792518168034,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1792518241893,
+    "success": false,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518317803,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518950245,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "commitId": "248f83997a1683ca9b5bfa4f4e979adbacb8f9ca",
+    "commitName": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
+    "commitTimestamp": 1792518986068,
+    "testId": 121
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
+    "commitTimestamp": 1792519919617,
+    "testId": 122
   }
 ]

@@ -77,11 +77,19 @@
                     <input type="text" id="encontrado-celular" name="encontradoCelular" />
                 </div>
 
+                <div class="campo">
+                    <label for="foto-input">Foto del objeto (Tomar foto o subir archivo)</label>
+                    <input type="file" id="foto-input" name="foto" accept="image/png, image/jpeg, image/jpg"
+                        capture="environment" />
+                </div>
+
                 <p id="error-mensaje" class="error" role="alert" hidden></p>
                 <p id="exito-mensaje" class="error" style="background: #e6f4ea; color: #137333;" role="status" hidden>
                 </p>
 
                 <button type="submit" id="registrar-button" class="boton">Registrar objeto</button>
+
+
             </form>
         </section>
     </main>
