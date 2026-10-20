@@ -13,4 +13,10 @@ describe('validarEntrega', () => {
 
         expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
     });
+
+    it('pide nombre y C.I. si falta la C.I.', () => {
+        const errores = validarEntrega({ nombre: 'Ana Perez', ci: '' });
+
+        expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
 });
