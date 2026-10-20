@@ -318,9 +318,1319 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a2e679202200ea9e315bdd3be4367df4cc9630b",
     "commitName": "feat(HU02): conectar la pagina de login con el presenter",
     "commitTimestamp": 1792289314574,
     "testId": 17
+  },
+  {
+    "commitId": "e765ab340fb4438bf917522b604b0723a0b5e56a",
+    "commitName": "test(HU08): listado vacio devuelve lista vacia",
+    "commitTimestamp": 1792372069909,
+    "testId": 18
+  },
+  {
+    "commitId": "87d7f65e5fd75f4ddcd51b9cc924779f67b82215",
+    "commitName": "feat(HU08): crear prepararListado que devuelve lista vacia",
+    "commitTimestamp": 1792372198177,
+    "testId": 19
+  },
+  {
+    "commitId": "76cdbae8f3f8a8b4367481639ac42132cccce6f6",
+    "commitName": "test(HU08): el listado no incluye objetos entregados",
+    "commitTimestamp": 1792372370690,
+    "testId": 20
+  },
+  {
+    "commitId": "754d52577c8e2448a060e0f6c02dcbcc61e185e2",
+    "commitName": "feat(HU08): filtrar solo objetos publicados en el listado",
+    "commitTimestamp": 1792372439260,
+    "testId": 21
+  },
+  {
+    "commitId": "47bc4cf30a9675aa34b3a1c762c09609528d0472",
+    "commitName": "test(HU08): el listado se ordena del mas reciente al mas antiguo",
+    "commitTimestamp": 1792372663332,
+    "testId": 22
+  },
+  {
+    "commitId": "bdb34e8a08d5f56aa892bff0a16f95eda4862218",
+    "commitName": "feat(HU08): ordenar el listado por fecha de hallazgo descendente",
+    "commitTimestamp": 1792372722009,
+    "testId": 23
+  },
+  {
+    "commitId": "b4abba93cea416d51a6c48b5353887a7cc5a4997",
+    "commitName": "style(HU08): corregir espacios en el test del listado",
+    "commitTimestamp": 1792372940760,
+    "testId": 24
+  },
+  {
+    "commitId": "b70cbda1c8b6f6e3e68a61bcc010af8be03b066e",
+    "commitName": "test(HU08): con la misma fecha se muestra primero el mayor numero",
+    "commitTimestamp": 1792379476780,
+    "testId": 25
+  },
+  {
+    "commitId": "b47ceaad816e37735de727015e3170448edd930d",
+    "commitName": "feat(HU08): desempatar por numero cuando la fecha es igual",
+    "commitTimestamp": 1792379611135,
+    "testId": 26
+  },
+  {
+    "commitId": "dfc6d5e39e3cc7ef5f15ca0b8a81255843e99bce",
+    "commitName": "refactor(HU08): crear objetos de prueba con valores por defecto",
+    "commitTimestamp": 1792380149551,
+    "testId": 27
+  },
+  {
+    "commitId": "2637350baa3b88b6994dbdec97830bedc75700b5",
+    "commitName": "test(HU08): la tarjeta del listado solo lleva datos publicos",
+    "commitTimestamp": 1792381515609,
+    "testId": 28
+  },
+  {
+    "commitId": "610f52140c479269b8fb0790dd88fff308b8f0d8",
+    "commitName": "feat(HU08): convertir los objetos en tarjetas con datos publicos",
+    "commitTimestamp": 1792381678657,
+    "testId": 29
+  },
+  {
+    "commitId": "a42df2c56d355384b374920bb5049ad09cba4d74",
+    "commitName": "chore(HU08): agregar ObjetosEnMemoria y FotosEnMemoria",
+    "commitTimestamp": 1792382080710,
+    "testId": 30
+  },
+  {
+    "commitId": "f346a1aa4c004c98536dc6859eb916703621db33",
+    "commitName": "test(HU08): listado sin objetos muestra el mensaje de vacio",
+    "commitTimestamp": 1792382309958,
+    "testId": 31
+  },
+  {
+    "commitId": "d43c77c3f8f8d956570b7a6f9bbb6220b1fff133",
+    "commitName": "feat(HU08): crear ListadoPublicoPresenter que muestra el mensaje de vacio",
+    "commitTimestamp": 1792382554186,
+    "testId": 32
+  },
+  {
+    "commitId": "4a89a0f2f1220d259b3eb61448410bfba408b9e8",
+    "commitName": "test(HU08): el listado muestra tarjetas ordenadas y sin entregados",
+    "commitTimestamp": 1792382961637,
+    "testId": 33
+  },
+  {
+    "commitId": "51c2917a51b170dd8f4f221f7e4f9673a9dd614a",
+    "commitName": "feat(HU08): mostrar las tarjetas del listado desde el repositorio",
+    "commitTimestamp": 1792383218048,
+    "testId": 34
+  },
+  {
+    "commitId": "8d279d1edd96df240238d615c3b207cebdbc28ea",
+    "commitName": "fix(HU08): mostrar las tarjetas en lugar del mensaje de vacio",
+    "commitTimestamp": 1792383499148,
+    "testId": 35
+  },
+  {
+    "commitId": "5d3235bb5ce25cac8e9ebe2ac461bd91e32555ae",
+    "commitName": "test(HU08): cada tarjeta del listado trae la url de su foto",
+    "commitTimestamp": 1792383909763,
+    "testId": 36
+  },
+  {
+    "commitId": "c26f82baf51586c10862f2015d078f0718e3e2f4",
+    "commitName": "feat(HU08): agregar la url de la foto a cada tarjeta del listado",
+    "commitTimestamp": 1792384131048,
+    "testId": 37
+  },
+  {
+    "commitId": "024db09f96e84251bbe7fd0245f9e04b72b0e8d3",
+    "commitName": "chore(HU08): agregar la ruta del detalle en RUTAS",
+    "commitTimestamp": 1792384345955,
+    "testId": 38
+  },
+  {
+    "commitId": "ad2aa07b247e8a17fac39e7128c40635b1f2401c",
+    "commitName": "test(HU08): cada tarjeta del listado lleva la url de su detalle",
+    "commitTimestamp": 1792384444735,
+    "testId": 39
+  },
+  {
+    "commitId": "7fd213ceee6eceb35893f4d4181b1106d744e405",
+    "commitName": "feat(HU08): agregar la url del detalle a cada tarjeta del listado",
+    "commitTimestamp": 1792384810114,
+    "testId": 40
+  },
+  {
+    "commitId": "7dd62796865efe11b24bd91aaed8482113429f57",
+    "commitName": "test(HU08): formatear la fecha de hallazgo como DD/MM/AAAA",
+    "commitTimestamp": 1792384936437,
+    "testId": 41
+  },
+  {
+    "commitId": "9bf9e5568eddb410209352d65a95c43a70e4d5e8",
+    "commitName": "feat(HU08): crear formatearFecha para mostrar fechas al publico",
+    "commitTimestamp": 1792385026028,
+    "testId": 42
+  },
+  {
+    "commitId": "cb9178942e3a4f0ac4a5f17bcdb58d9b75ee70a8",
+    "commitName": "test(HU08): cada tarjeta del listado trae la fecha formateada",
+    "commitTimestamp": 1792385145860,
+    "testId": 43
+  },
+  {
+    "commitId": "57feab1ac6eb5e311c9e5235bf9b3aba13ab2a11",
+    "commitName": "feat(HU08): agregar la fecha formateada a cada tarjeta del listado",
+    "commitTimestamp": 1792385299693,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792385947086,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "4a0a5fdc37f3580349fcf8660df8ea2230dcb8de",
+    "commitName": "feat(HU08): crear la vista del listado publico",
+    "commitTimestamp": 1792385947546,
+    "testId": 45
+  },
+  {
+    "commitId": "bb5cd37f3cd66885806278f63567ad05fca0649a",
+    "commitName": "feat(HU08): crear el html del listado publico",
+    "commitTimestamp": 1792385964707,
+    "testId": 46
+  },
+  {
+    "commitId": "c4e8d5f8bcf41e58802c10572639e849894ca94e",
+    "commitName": "feat(HU08): agregar estilos del listado publico",
+    "commitTimestamp": 1792385965741,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386015523,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "3c773129864b1c63b8bcb46bde4d19985112c518",
+    "commitName": "chore(HU08): conectar objetos y fotos de ejemplo en services",
+    "commitTimestamp": 1792386015959,
+    "testId": 48
+  },
+  {
+    "commitId": "be6e36152fcdd3c0a5e3ec1d7e1e6e86f3c456c6",
+    "commitName": "feat(HU08): conectar la pagina del listado con el presenter",
+    "commitTimestamp": 1792386016744,
+    "testId": 49
+  },
+  {
+    "commitId": "f965f182b7aca5ce2b4df5f8d646706aa34f77d8",
+    "commitName": "test(HU08): agregar prueba e2e del listado publico",
+    "commitTimestamp": 1792386124909,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386168517,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792386183774,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "032c59de762ac89e4fbb875d70608aa98f36fca8",
+    "commitName": "chore(HU09): agregar mensajes de los filtros del listado",
+    "commitTimestamp": 1792386184197,
+    "testId": 51
+  },
+  {
+    "commitId": "ed3a6197b05075064c63ccefe6b7a86bccf0790a",
+    "commitName": "chore(HU09): agregar el catalogo de categorias",
+    "commitTimestamp": 1792386185019,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792386205533,
+    "success": false,
+    "testId": 53
+  },
+  {
+    "commitId": "a34bc3358b03aa7011b449e6fa707b7dfbd9e71f",
+    "commitName": "test(HU09): sin filtros el listado muestra todas las tarjetas",
+    "commitTimestamp": 1792386212951,
+    "testId": 53
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1792386214101,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "0eff008d2ddb4f13ec35a81ac4fc656b2bc56703",
+    "commitName": "feat(HU09): crear filtrarListado que devuelve todas las tarjetas",
+    "commitTimestamp": 1792386214502,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1792386223792,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "commitId": "1da3470187119f85424d0d5c07067d3120c0619d",
+    "commitName": "test(HU09): filtrar el listado por categoria",
+    "commitTimestamp": 1792386224209,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1792386225378,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "139e484549e047338ca27c27e99272178f11b5e0",
+    "commitName": "feat(HU09): filtrar las tarjetas por categoria",
+    "commitTimestamp": 1792386225782,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1792386235252,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "commitId": "8161eb10a116ae300cb90e43eecb6f11123d84d0",
+    "commitName": "test(HU09): filtrar el listado desde una fecha de inicio",
+    "commitTimestamp": 1792386235679,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792386236923,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "d9524f577d20b69a2adbdea43b5fdd9946e4181b",
+    "commitName": "feat(HU09): filtrar las tarjetas desde una fecha de inicio",
+    "commitTimestamp": 1792386237331,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792386245807,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "commitId": "34ee78452b721969ca50a77cd069d32d93865d33",
+    "commitName": "test(HU09): filtrar el listado hasta una fecha final",
+    "commitTimestamp": 1792386246234,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792386247443,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "0e2c06791ac557da72b1af593fe2c3719765c589",
+    "commitName": "feat(HU09): filtrar las tarjetas hasta una fecha final",
+    "commitTimestamp": 1792386247845,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792386255833,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "e0d1675b2c656f9b9de47c4f364e6f57fac2c111",
+    "commitName": "test(HU09): combinar categoria y rango de fechas en el filtro",
+    "commitTimestamp": 1792386256236,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1792386274160,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "commitId": "138fbad6eae80023c3485c7fc2f113ede35fed2f",
+    "commitName": "test(HU09): fecha de inicio posterior a la final da error",
+    "commitTimestamp": 1792386274579,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1792386275822,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "ebccb975b816a2bdd67e9b2bf29c56c6af12fb84",
+    "commitName": "feat(HU09): crear validarFiltros con el error de fechas invertidas",
+    "commitTimestamp": 1792386276234,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 1,
+    "numTotalTests": 29,
+    "timestamp": 1792386284589,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "commitId": "8c75fe8d30aa50f4209959adbd5b16389548f120",
+    "commitName": "test(HU09): fechas en orden no dan error",
+    "commitTimestamp": 1792386285005,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1792386286157,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "commitId": "976ccacb846aec323c0bfad881bdec95ecf17dde",
+    "commitName": "feat(HU09): validar que la fecha de inicio no sea posterior a la final",
+    "commitTimestamp": 1792386286579,
+    "testId": 65
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 1,
+    "numTotalTests": 30,
+    "timestamp": 1792386295258,
+    "success": false,
+    "testId": 66
+  },
+  {
+    "commitId": "4ad92e6087c58c8d468a3a11460bed4aed59bd8e",
+    "commitName": "test(HU09): una sola fecha en el filtro no da error",
+    "commitTimestamp": 1792386295679,
+    "testId": 66
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792386296854,
+    "success": true,
+    "testId": 67
+  },
+  {
+    "commitId": "9ecee9fae15827ba530f9a273fb75ef25532fc31",
+    "commitName": "feat(HU09): validar el rango solo cuando hay ambas fechas",
+    "commitTimestamp": 1792386297260,
+    "testId": 67
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792386305772,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "e32c64fe62e9c68af2f579af92da0cf18d4260ed",
+    "commitName": "test(HU09): la misma fecha de inicio y final es valida",
+    "commitTimestamp": 1792386306180,
+    "testId": 68
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1792386343811,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "15ba15d5f22a2e655a6a2ee685f7ca6549d4472f",
+    "commitName": "test(HU09): el listado muestra las categorias para filtrar",
+    "commitTimestamp": 1792386344282,
+    "testId": 69
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792386345512,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "a922fb5a7da4ccf2b3e5dd27d828d9ed8cadf7c8",
+    "commitName": "feat(HU09): mostrar las categorias del catalogo en el listado",
+    "commitTimestamp": 1792386345955,
+    "testId": 70
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792386354298,
+    "success": true,
+    "testId": 71
+  },
+  {
+    "commitId": "5a660baa559705b8fe977ac1e1bcbb5f10feefbd",
+    "commitName": "refactor(HU09): la vista de prueba reemplaza las tarjetas mostradas",
+    "commitTimestamp": 1792386354745,
+    "testId": 71
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 1,
+    "numTotalTests": 33,
+    "timestamp": 1792386367233,
+    "success": false,
+    "testId": 72
+  },
+  {
+    "commitId": "e3301ce98cad59c1b3519a062972f798f5cebc98",
+    "commitName": "test(HU09): filtrar el listado por categoria desde la pantalla",
+    "commitTimestamp": 1792386367708,
+    "testId": 72
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1792386368907,
+    "success": true,
+    "testId": 73
+  },
+  {
+    "commitId": "71762f4c664086b022e8217758037e1c28a5e571",
+    "commitName": "feat(HU09): filtrar las tarjetas cargadas en el presenter",
+    "commitTimestamp": 1792386369359,
+    "testId": 73
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1792386379233,
+    "success": false,
+    "testId": 74
+  },
+  {
+    "commitId": "2f30c779f1334f10c7f9e2958e6f758a95ecbe2e",
+    "commitName": "test(HU09): filtro sin coincidencias muestra su mensaje",
+    "commitTimestamp": 1792386379693,
+    "testId": 74
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1792386380885,
+    "success": true,
+    "testId": 75
+  },
+  {
+    "commitId": "0e5d76dd432a44d194a5ddaf4ab65e8c3c49ac3f",
+    "commitName": "feat(HU09): mostrar sin coincidencias cuando el filtro no encuentra objetos",
+    "commitTimestamp": 1792386381331,
+    "testId": 75
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 1,
+    "numTotalTests": 35,
+    "timestamp": 1792386394730,
+    "success": false,
+    "testId": 76
+  },
+  {
+    "commitId": "ea5b73423089cabf9c5b4e5c53048e67d9a46d09",
+    "commitName": "test(HU09): fechas invertidas muestran error sin cambiar el listado",
+    "commitTimestamp": 1792386395190,
+    "testId": 76
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1792386396373,
+    "success": true,
+    "testId": 77
+  },
+  {
+    "commitId": "5f7555df296ee01803c0f9bd8e9a552b793e60c2",
+    "commitName": "feat(HU09): validar las fechas antes de filtrar el listado",
+    "commitTimestamp": 1792386396817,
+    "testId": 77
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 1,
+    "numTotalTests": 36,
+    "timestamp": 1792386407063,
+    "success": false,
+    "testId": 78
+  },
+  {
+    "commitId": "8623d7e7667e7cb48dd5cca5d1492e131579b093",
+    "commitName": "test(HU09): un filtro valido quita el error anterior",
+    "commitTimestamp": 1792386407523,
+    "testId": 78
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1792386408742,
+    "success": true,
+    "testId": 79
+  },
+  {
+    "commitId": "826cf31e8d0e9b56acb21f3a2ab50edd90f393a0",
+    "commitName": "feat(HU09): limpiar el error anterior al filtrar",
+    "commitTimestamp": 1792386409198,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 1,
+    "numTotalTests": 37,
+    "timestamp": 1792386421505,
+    "success": false,
+    "testId": 80
+  },
+  {
+    "commitId": "e5b11582a48334f52b74027c3c9bbb92af9f587b",
+    "commitName": "test(HU09): limpiar los filtros muestra de nuevo todo el listado",
+    "commitTimestamp": 1792386421960,
+    "testId": 80
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792386423148,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "1852d382d83add435a27aee3ffef086bc6d6f073",
+    "commitName": "feat(HU09): limpiar los filtros del listado",
+    "commitTimestamp": 1792386423593,
+    "testId": 81
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1792386446629,
+    "success": false,
+    "testId": 82
+  },
+  {
+    "commitId": "5e397b5992c250a4c58ed3135d96fe8b7d13f228",
+    "commitName": "test(HU09): sin objetos publicados el filtro mantiene el mensaje de vacio",
+    "commitTimestamp": 1792386447096,
+    "testId": 82
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386448275,
+    "success": true,
+    "testId": 83
+  },
+  {
+    "commitId": "b28c143e2477016a4b5f686a8412a75e7896a8ba",
+    "commitName": "feat(HU09): mantener el mensaje de vacio si no hay objetos publicados",
+    "commitTimestamp": 1792386448725,
+    "testId": 83
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386466454,
+    "success": true,
+    "testId": 84
+  },
+  {
+    "commitId": "78c981d48132aa6738347fb194f35726357644a1",
+    "commitName": "feat(HU09): agregar los filtros a la vista del listado",
+    "commitTimestamp": 1792386466832,
+    "testId": 84
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386482693,
+    "success": true,
+    "testId": 85
+  },
+  {
+    "commitId": "01ff5543a1cab4745aeb9729ab8701c7bfb3ed1d",
+    "commitName": "feat(HU09): agregar el formulario de filtros al html del listado",
+    "commitTimestamp": 1792386483067,
+    "testId": 85
+  },
+  {
+    "commitId": "f3c09706269a8a963de8644cd54174d571b6ee93",
+    "commitName": "feat(HU09): agregar estilos de los filtros del listado",
+    "commitTimestamp": 1792386483851,
+    "testId": 86
+  },
+  {
+    "commitId": "49a14ab5e6cebe789e857dbbe2dbdca455c564d7",
+    "commitName": "feat(HU09): conectar los filtros de la pagina con el presenter",
+    "commitTimestamp": 1792386484641,
+    "testId": 87
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386537613,
+    "success": true,
+    "testId": 88
+  },
+  {
+    "commitId": "b110ef9920afd9d9b8fca0cd7489f06abdb8cf65",
+    "commitName": "test(HU09): agregar prueba e2e de los filtros del listado",
+    "commitTimestamp": 1792386538061,
+    "testId": 88
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386581994,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "60fb45561594349e9b6a00c99cfc79c59abeb44a",
+    "commitName": "chore(HU10): agregar obtenerPorId a ObjetosEnMemoria",
+    "commitTimestamp": 1792386582448,
+    "testId": 89
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792386592881,
+    "success": false,
+    "testId": 90
+  },
+  {
+    "commitId": "130f378a0501665764e54c2f01449f06e150c18a",
+    "commitName": "test(HU10): el detalle solo lleva datos publicos del objeto",
+    "commitTimestamp": 1792386593302,
+    "testId": 90
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386594465,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "76c0560457dc6a5e10c38b0568942636664deb67",
+    "commitName": "feat(HU10): crear prepararDetalle con los datos publicos",
+    "commitTimestamp": 1792386594862,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792386605346,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "commitId": "3d2a53b05facd8740bb33cc44822c5b2af0237ea",
+    "commitName": "test(HU10): un id inexistente muestra objeto no encontrado",
+    "commitTimestamp": 1792386605792,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792386606938,
+    "success": true,
+    "testId": 93
+  },
+  {
+    "commitId": "647bd7853bdd82ea0f97b4f65280530978d39ef8",
+    "commitName": "feat(HU10): crear DetalleObjetoPresenter que muestra objeto no encontrado",
+    "commitTimestamp": 1792386607430,
+    "testId": 93
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 1,
+    "numTotalTests": 41,
+    "timestamp": 1792386621335,
+    "success": false,
+    "testId": 94
+  },
+  {
+    "commitId": "3ce28ddd5d09edd532182e83e240ba0d585779c5",
+    "commitName": "test(HU10): el detalle muestra la informacion del objeto",
+    "commitTimestamp": 1792386621775,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 0,
+    "numTotalTests": 41,
+    "timestamp": 1792386622919,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "commitId": "00819deeb112f52eca7afd729d45b1630f3d6ebd",
+    "commitName": "feat(HU10): mostrar el detalle del objeto desde el repositorio",
+    "commitTimestamp": 1792386623351,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1792386631860,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "5d85204bfd04a1b6e7d802d4eef8a065d0e5ea47",
+    "commitName": "test(HU10): un objeto entregado no muestra su detalle",
+    "commitTimestamp": 1792386632294,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1792386641588,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "commitId": "56085852355fab036662e2f13a58e3ebe0715b84",
+    "commitName": "test(HU10): el detalle muestra la fecha formateada",
+    "commitTimestamp": 1792386642029,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1792386643189,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "a6c4f6681902a6c9328a8d95ce033f33a64f757e",
+    "commitName": "feat(HU10): agregar la fecha formateada al detalle",
+    "commitTimestamp": 1792386643625,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 1,
+    "numTotalTests": 44,
+    "timestamp": 1792386656930,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "commitId": "f57435eddc50e5f52dbdcd15bedcea718420afb4",
+    "commitName": "test(HU10): el detalle trae la url de la foto",
+    "commitTimestamp": 1792386657373,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1792386658590,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "a85378fd41c240e0266f8fdc616e25e4b453d90f",
+    "commitName": "feat(HU10): agregar la url de la foto al detalle",
+    "commitTimestamp": 1792386659035,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386669653,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "afa7a4d1d8f0e2d0fd4822a6a47ab5b8add1ddc9",
+    "commitName": "test(HU10): el detalle no muestra datos de quien encontro ni recibio",
+    "commitTimestamp": 1792386670097,
+    "testId": 101
+  },
+  {
+    "commitId": "87a5a9689d2093e9f34ad67eb66e71d350f657e8",
+    "commitName": "refactor(HU10): mover los estilos del encabezado a base.css",
+    "commitTimestamp": 1792386698012,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386709959,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "964854fe9c16f22c93fef7d0b5fad66c2923859b",
+    "commitName": "feat(HU10): crear la vista del detalle del objeto",
+    "commitTimestamp": 1792386710336,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386734054,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "8463a83315a7abb9a8d8662c2a19a4560952a0d1",
+    "commitName": "feat(HU10): crear el html del detalle del objeto",
+    "commitTimestamp": 1792386734448,
+    "testId": 104
+  },
+  {
+    "commitId": "a6bdaf1127b1400472769a0de46a802d09c307ad",
+    "commitName": "feat(HU10): agregar estilos del detalle del objeto",
+    "commitTimestamp": 1792386735227,
+    "testId": 105
+  },
+  {
+    "commitId": "2d73074bb3d11f9eab88a471fadd859e316a9da6",
+    "commitName": "chore(HU10): agregar detalle.html a los scripts start y build",
+    "commitTimestamp": 1792386736010,
+    "testId": 106
+  },
+  {
+    "commitId": "fc969c22b9c2167d54e8ab3ebe197336a6581d36",
+    "commitName": "feat(HU10): conectar la pagina del detalle con el presenter",
+    "commitTimestamp": 1792386736794,
+    "testId": 107
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792386789575,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "935152db06aae2e19f90a4e3f6e81c7bdecf7b93",
+    "commitName": "test(HU10): agregar prueba e2e del detalle del objeto",
+    "commitTimestamp": 1792386790011,
+    "testId": 108
+  },
+  {
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "commitName": "chore(HU10): ignorar capturas de cypress",
+    "commitTimestamp": 1792387253296,
+    "testId": 109
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792437428196,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792495869015,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792495958612,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "commitId": "300d2281e1e9aa0b1c8e7e8460ed6e20bb83fa89",
+    "commitName": "feat(HU04): validar categoria y descripcion obligatorias",
+    "commitTimestamp": 1792495985711,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496071179,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496109672,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496322094,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496429310,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792496498522,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792496588924,
+    "success": true,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792496746212,
+    "success": false,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792496939294,
+    "success": true,
+    "testId": 111
+  },
+  {
+    "commitId": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
+    "commitName": "feat(HU04): validar que la fecha de hallazgo no sea futura",
+    "commitTimestamp": 1792496965959,
+    "testId": 111
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497018327,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 1,
+    "numTotalTests": 48,
+    "timestamp": 1792497062781,
+    "success": false,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792497116946,
+    "success": true,
+    "testId": 112
+  },
+  {
+    "commitId": "bf0bfa6039fc92165e436e3585ec0c5961d24e60",
+    "commitName": "feat(HU04): validar longitud maxima de descripcion y senas",
+    "commitTimestamp": 1792497719194,
+    "testId": 112
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 1,
+    "numTotalTests": 49,
+    "timestamp": 1792497887230,
+    "success": false,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 0,
+    "numTotalTests": 49,
+    "timestamp": 1792497975136,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "commitId": "a597dcae0808b13e3071eccd1cce46143ceaea96",
+    "commitName": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
+    "commitTimestamp": 1792498071503,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498177361,
+    "success": true,
+    "testId": 114
+  },
+  {
+    "commitId": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
+    "commitName": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
+    "commitTimestamp": 1792498236361,
+    "testId": 114
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792498356317,
+    "success": false,
+    "testId": 115
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792498477355,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "a86a8452a52f67ae7900f814a0430b721b08750c",
+    "commitName": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
+    "commitTimestamp": 1792498577445,
+    "testId": 115
+  },
+  {
+    "commitId": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
+    "commitName": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
+    "commitTimestamp": 1792498822030,
+    "testId": 116
+  },
+  {
+    "commitId": "02ef3bb7db6684a08e44383e037097e55e9e6400",
+    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+    "commitTimestamp": 1792499111879,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792501898803,
+    "success": true,
+    "testId": 118
+  },
+  {
+    "commitId": "ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907",
+    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+    "commitTimestamp": 1792502825871,
+    "testId": 118
+  },
+  {
+    "commitId": "42e65bb30c1002a4ee255f1646c123a628f9cd40",
+    "commitName": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
+    "commitTimestamp": 1792503207538,
+    "testId": 119
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 1,
+    "numTotalTests": 54,
+    "timestamp": 1792503939706,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 5,
+    "numTotalTests": 54,
+    "timestamp": 1792504005008,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504040359,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504445673,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 51,
+    "failedTests": 2,
+    "numTotalTests": 53,
+    "timestamp": 1792504513548,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517497710,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517630341,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792518035382,
+    "success": true,
+    "testId": 120
+  },
+  {
+    "commitId": "6874900d76d4bb90f70a038234a5d9a1190079d6",
+    "commitName": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
+    "commitTimestamp": 1792518168034,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1792518241893,
+    "success": false,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518317803,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792518950245,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "commitId": "248f83997a1683ca9b5bfa4f4e979adbacb8f9ca",
+    "commitName": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
+    "commitTimestamp": 1792518986068,
+    "testId": 121
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
+    "commitTimestamp": 1792519919617,
+    "testId": 122
   }
 ]
