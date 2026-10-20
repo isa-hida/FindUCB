@@ -7,4 +7,16 @@ describe('validarObjetoHallado', () => {
 
         expect(errores).toEqual([MENSAJES.FALTA_CATEGORIA_DESCRIPCION]);
     });
+
+    it('da error si la fecha de hallazgo es posterior a hoy', () => {
+        const errores = validarObjetoHallado({
+            categoria: 'Llaves',
+            descripcion: 'Llave con llavero',
+            fechaHallazgo: '2026-10-21',
+            hoy: '2026-10-20',
+        });
+
+        expect(errores).toEqual([MENSAJES.FECHA_FUTURA]);
+    });
+
 });
