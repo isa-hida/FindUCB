@@ -33,4 +33,12 @@ describe('RegistrarEntregaPresenter', () => {
         expect(vista.errores).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
         expect(vista.fechas).toEqual([]);
     });
+    it('avisa que el objeto no fue encontrado si ya fue entregado', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'entregado' }]);
+
+        await presenter.cargar(1);
+
+        expect(vista.errores).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
+        expect(vista.fechas).toEqual([]);
+    });
 });
