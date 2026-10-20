@@ -67,3 +67,22 @@ input:focus-visible {
 .error[hidden] {
     display: none;
 }
+
+.encabezado {
+    background: var(--azul);
+    color: #ffffff;
+}
+
+.encabezado__contenido {
+    padding-block: 20px;
+}
+
+.encabezado__titulo {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.encabezado__subtitulo {
+    margin: 0;
+    opacity: 0.9;
+}
