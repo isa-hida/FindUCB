@@ -70,4 +70,13 @@ describe('RegistrarEntregaPresenter', () => {
 
         expect(await objetosRepository.listarPublicados()).toEqual([]);
     });
+    it('no registra la entrega si falta el nombre o la C.I.', async () => {
+        const objeto = { id: 1, estado: 'publicado' };
+        const { objetosRepository, presenter } = crearEscenario([objeto]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: '', ci: '' });
+
+        expect(await objetosRepository.listarPublicados()).toEqual([objeto]);
+    });
 });

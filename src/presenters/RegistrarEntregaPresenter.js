@@ -23,6 +23,7 @@ export class RegistrarEntregaPresenter {
         const errores = validarEntrega(datos);
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
+            return;
         }
         await this.objetosRepository.registrarEntrega(this.objetoId, datos);
     }
