@@ -17,9 +17,9 @@ export class ObjetosRepositoryEnMemoria {
         }
         return objeto;
     }
-    async registrarEntrega(objetoId, _entrega) {
+    async registrarEntrega(objetoId, entrega) {
         this.objetos = this.objetos.map((o) => (
-            o.id === objetoId ? { ...o, estado: 'entregado' } : o
+            o.id === objetoId ? { ...o, estado: 'entregado', entrega } : o
         ));
     }
 }

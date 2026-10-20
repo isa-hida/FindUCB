@@ -66,5 +66,21 @@ describe('ObjetosRepositoryEnMemoria', () => {
 
             expect(resultado).toEqual([otro]);
         });
+
+        it('conserva el objeto con los datos de la entrega para el administrador', async () => {
+            const objeto = crearObjeto({ id: 1, numero: 1 });
+            const repositorio = new ObjetosRepositoryEnMemoria({ objetos: [objeto] });
+            const entrega = {
+                nombre: 'Ana Perez',
+                ci: '1234567',
+                celular: '70000000',
+                fechaEntrega: '2026-10-20',
+            };
+
+            await repositorio.registrarEntrega(1, entrega);
+            const resultado = await repositorio.listarParaAdmin();
+
+            expect(resultado).toEqual([{ ...objeto, estado: 'entregado', entrega }]);
+        });
     });
 });
