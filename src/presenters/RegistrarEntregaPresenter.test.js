@@ -9,6 +9,7 @@ const crearEscenario = (objetos = []) => {
         errores: [],
         exitos: [],
         redirecciones: [],
+        formularioVisible: true,
         mostrarFechaEntrega(fecha) {
             this.fechas.push(fecha);
         },
@@ -23,6 +24,9 @@ const crearEscenario = (objetos = []) => {
         },
         redirigir(url) {
             this.redirecciones.push(url);
+        },
+        ocultarFormulario() {
+            this.formularioVisible = false;
         },
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
@@ -130,5 +134,13 @@ describe('RegistrarEntregaPresenter', () => {
         presenter.cancelar();
 
         expect(await objetosRepository.listarPublicados()).toEqual([objeto]);
+    });
+
+    it('oculta el formulario si el objeto no existe', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+
+        await presenter.cargar(99);
+
+        expect(vista.formularioVisible).toBe(false);
     });
 });

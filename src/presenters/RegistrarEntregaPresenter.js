@@ -13,6 +13,7 @@ export class RegistrarEntregaPresenter {
         const objeto = await this.objetosRepository.obtenerPorId(objetoId);
         if (!objeto) {
             this.vista.mostrarError(MENSAJES.OBJETO_NO_ENCONTRADO);
+            this.vista.ocultarFormulario();
             return;
         }
         this.objetoId = objetoId;
