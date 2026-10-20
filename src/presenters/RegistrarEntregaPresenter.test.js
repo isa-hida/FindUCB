@@ -143,4 +143,12 @@ describe('RegistrarEntregaPresenter', () => {
 
         expect(vista.formularioVisible).toBe(false);
     });
+    it('oculta el formulario despues de registrar la entrega', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
+
+        expect(vista.formularioVisible).toBe(false);
+    });
 });
