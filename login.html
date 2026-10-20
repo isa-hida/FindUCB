@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión Comunidad | FindU</title>
+  <link rel="stylesheet" href="./src/styles/base.css" />
+  <link rel="stylesheet" href="./src/styles/login.css" />
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <h1 class="encabezado__titulo">FindU</h1>
+      <p class="encabezado__subtitulo">Objetos perdidos UCB Cochabamba</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="tarjeta-login">
+      <h2 class="tarjeta-login__titulo">Acceso Comunidad UCB</h2>
+      <p class="tarjeta-login__descripcion">Ingresa tu correo institucional para consultar los objetos hallados.</p>
+
+      <form id="login-form" class="formulario" novalidate>
+        <div class="formulario__campo">
+          <label for="correo-input">Correo institucional</label>
+          <input type="email" id="correo-input" name="correo" placeholder="ejemplo@ucb.edu.bo" required />
+        </div>
+
+        <p id="error-mensaje" class="error" role="alert" hidden></p>
+
+        <button type="submit" id="ingresar-button" class="boton">Ingresar</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="./src/pages/login.js"></script>
+</body>
+
+</html>

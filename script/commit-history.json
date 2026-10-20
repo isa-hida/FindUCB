@@ -2147,12 +2147,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "292e6a20bcf843780544204e13827a55f48ea7a5",
     "author": "Natalia",
     "commit": {
       "date": "2026-10-20T01:53:09.000Z",
       "message": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/292e6a20bcf843780544204e13827a55f48ea7a5"
     },
     "stats": {
       "total": 16,
@@ -2161,6 +2161,25 @@
       "date": "2026-10-20"
     },
     "coverage": 99.12,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T02:25:34.000Z",
+      "message": "feat(HU01): agregar interfaz de usuario login.html vista y script de pagina",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 92,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 97.39,
     "test_count": 47,
     "failed_tests": 0,
     "conclusion": "success"

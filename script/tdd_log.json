@@ -1382,9 +1382,23 @@
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "292e6a20bcf843780544204e13827a55f48ea7a5",
     "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
     "commitTimestamp": 1792461189624,
     "testId": 113
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792463082604,
+    "success": true,
+    "testId": 114
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU01): agregar interfaz de usuario login.html vista y script de pagina",
+    "commitTimestamp": 1792463135268,
+    "testId": 114
   }
 ]

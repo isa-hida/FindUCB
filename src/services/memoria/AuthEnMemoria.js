@@ -17,6 +17,14 @@ export class AuthEnMemoria {
         return { ok: true };
     }
 
+    async iniciarSesionComunidad(correo) {
+        this.usuario = {
+            correo: correo.trim(),
+            esAdmin: false,
+        };
+        return { ok: true };
+    }
+
     async obtenerUsuario() {
         return this.usuario;
     }
