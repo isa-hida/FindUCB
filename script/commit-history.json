@@ -2223,17 +2223,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "02ef3bb7db6684a08e44383e037097e55e9e6400",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T12:25:10.000Z",
       "message": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/02ef3bb7db6684a08e44383e037097e55e9e6400"
     },
     "stats": {
       "total": 104,
       "additions": 102,
       "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T13:27:03.000Z",
+      "message": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2026-10-20"
     },
     "coverage": 100,
