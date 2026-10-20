@@ -39,6 +39,7 @@ describe('RegistrarObjetoPresenter', () => {
             descripcion: 'Llaves de oficina',
             fechaHallazgo: '2026-10-21',
             hoy: '2026-10-20',
+            fotoPath: '/fotos/llaves.jpg',
         });
 
         expect(vista.errores).toEqual([MENSAJES.FECHA_FUTURA]);
@@ -54,6 +55,7 @@ describe('RegistrarObjetoPresenter', () => {
             fechaHallazgo: '2026-10-18',
             lugar: 'Biblioteca',
             color: 'Dorado',
+            fotoPath: '/fotos/llaves.jpg',
             encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
         });
 

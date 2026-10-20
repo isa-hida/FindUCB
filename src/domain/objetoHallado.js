@@ -1,8 +1,11 @@
 import { MENSAJES } from './mensajes';
 
-export function validarObjetoHallado({ categoria, descripcion, senas, fechaHallazgo, hoy }) {
+export function validarObjetoHallado({ categoria, descripcion, senas, fechaHallazgo, hoy, fotoPath }) {
     if (!categoria || !descripcion) {
         return [MENSAJES.FALTA_CATEGORIA_DESCRIPCION];
+    }
+    if (!fotoPath) {
+        return [MENSAJES.FOTO_OBLIGATORIA];
     }
     if ((descripcion && descripcion.length > 500) || (senas && senas.length > 500)) {
         return [MENSAJES.TEXTO_MUY_LARGO];

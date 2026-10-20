@@ -2261,12 +2261,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "42e65bb30c1002a4ee255f1646c123a628f9cd40",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T13:33:24.000Z",
       "message": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/42e65bb30c1002a4ee255f1646c123a628f9cd40"
     },
     "stats": {
       "total": 37,
@@ -2275,6 +2275,25 @@
       "date": "2026-10-20"
     },
     "coverage": 100,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-20T17:42:46.000Z",
+      "message": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 16,
+      "deletions": 12,
+      "date": "2026-10-20"
+    },
+    "coverage": 99.19,
     "test_count": 53,
     "failed_tests": 0,
     "conclusion": "success"

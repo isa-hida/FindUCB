@@ -1522,9 +1522,79 @@
     "testId": 118
   },
   {
-    "commitId": "HEAD",
+    "commitId": "42e65bb30c1002a4ee255f1646c123a628f9cd40",
     "commitName": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
     "commitTimestamp": 1792503207538,
     "testId": 119
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 1,
+    "numTotalTests": 54,
+    "timestamp": 1792503939706,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 5,
+    "numTotalTests": 54,
+    "timestamp": 1792504005008,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504040359,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 4,
+    "numTotalTests": 54,
+    "timestamp": 1792504445673,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 51,
+    "failedTests": 2,
+    "numTotalTests": 53,
+    "timestamp": 1792504513548,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517497710,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792517630341,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792518035382,
+    "success": true,
+    "testId": 120
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
+    "commitTimestamp": 1792518168034,
+    "testId": 120
   }
 ]
