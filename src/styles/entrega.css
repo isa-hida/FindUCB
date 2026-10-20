@@ -2,35 +2,146 @@
     display: none;
 }
 
+/* Contenedor principal centrado */
 .entrega {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
+    max-width: 540px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Tarjeta contenedora blanca y limpia */
+.tarjeta {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.tarjeta__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+}
+
+.tarjeta__ayuda {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: 0 0 2rem 0;
+}
+
+/* Mensajes de Estado */
 .exito {
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem 0;
     padding: 0.75rem 1rem;
-    border: 1px solid #2e7d32;
-    border-radius: 6px;
-    background: #e8f5e9;
-    color: #1b5e20;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    background: #f0fdf4;
+    color: #166534;
+    font-size: 0.9rem;
 }
 
+.error {
+    margin: 0 0 1.5rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #991b1b;
+    font-size: 0.9rem;
+}
+
+/* Estructura del Formulario y Campos */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campo label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Cuadros de entrada estilizados como en tu captura */
+.campo input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #334155;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto de enfoque limpio */
+.campo input:focus {
+    border-color: #1a66ff;
+    box-shadow: 0 0 0 3px rgba(26, 102, 255, 0.1);
+}
+
+/* Zona de botones inferiores */
 .entrega__acciones {
     display: flex;
+    flex-direction: column; /* Apilados para que el botón azul ocupe el ancho inferior */
     gap: 0.75rem;
-    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
+/* El botón azul llamativo de tu última captura */
+.boton {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: #1a66ff;
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background: #0052cc;
+}
+
+/* Botón secundario en formato transparente/gris */
 .boton--secundario {
     background: transparent;
-    color: inherit;
-    border: 1px solid currentColor;
+    color: #64748b;
+    border: 1px solid #cbd5e1;
 }
 
+.boton--secundario:hover {
+    background: #f8fafc;
+    color: #334155;
+    border-color: #94a3b8;
+}
+
+/* Enlace para regresar */
 .entrega__volver {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    color: #1a66ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+
+.entrega__volver:hover {
+    text-decoration: underline;
 }
