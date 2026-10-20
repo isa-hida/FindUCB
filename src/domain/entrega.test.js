@@ -44,4 +44,10 @@ describe('fechaEntregaPorDefecto', () => {
 
         expect(fechaEntregaPorDefecto(hoy)).toBe('2026-03-05');
     });
+
+    it('devuelve la fecha dada en formato AAAA-MM-DD', () => {
+        const fecha = fechaEntregaPorDefecto(new Date(2026, 9, 20));
+
+        expect(fecha).toBe('2026-10-20');
+    });
 });
