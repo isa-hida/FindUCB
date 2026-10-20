@@ -18,7 +18,7 @@ const crearEscenario = (objetos = []) => {
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
     const presenter = new RegistrarEntregaPresenter(vista, objetosRepository);
-    return { vista, presenter };
+    return { vista, objetosRepository,presenter };
 };
 
 describe('RegistrarEntregaPresenter', () => {
@@ -60,5 +60,14 @@ describe('RegistrarEntregaPresenter', () => {
         await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
 
         expect(vista.errores).toEqual([]);
+    });
+
+    it('registra la entrega y saca el objeto de los publicados', async () => {
+        const { objetosRepository, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
+
+        expect(await objetosRepository.listarPublicados()).toEqual([]);
     });
 });

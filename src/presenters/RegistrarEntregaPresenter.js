@@ -5,6 +5,7 @@ export class RegistrarEntregaPresenter {
     constructor(vista, objetosRepository) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
+        this.objetoId = null;
     }
 
     async cargar(objetoId, hoy = new Date()) {
@@ -13,6 +14,7 @@ export class RegistrarEntregaPresenter {
             this.vista.mostrarError(MENSAJES.OBJETO_NO_ENCONTRADO);
             return;
         }
+        this.objetoId = objetoId;
         this.vista.mostrarFechaEntrega(fechaEntregaPorDefecto(hoy));
     }
 
@@ -22,5 +24,6 @@ export class RegistrarEntregaPresenter {
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
         }
+        await this.objetosRepository.registrarEntrega(this.objetoId, datos);
     }
 }
