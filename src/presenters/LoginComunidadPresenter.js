@@ -1,4 +1,5 @@
 import { validarCorreoComunidad } from '../domain/correo.js';
+import { RUTAS } from '../config.js';
 
 export class LoginComunidadPresenter {
     constructor(vista, auth) {
@@ -15,8 +16,14 @@ export class LoginComunidadPresenter {
             return;
         }
 
-        const correoLimpio = correo.trim();
-        await this.auth.iniciarSesionComunidad(correoLimpio);
-        this.vista.redirigir('/index.html');
+        const correoLimpio = correo.trim().toLowerCase();
+
+        if (correoLimpio === 'adminbienestar@ucb.edu.bo') {
+            await this.auth.iniciarSesionAdmin(correoLimpio);
+            this.vista.redirigir(RUTAS.PANEL_ADMIN || '/admin.html');
+        } else {
+            await this.auth.iniciarSesionComunidad(correoLimpio);
+            this.vista.redirigir(RUTAS.LISTADO_PUBLICO || '/index.html');
+        }
     }
 }

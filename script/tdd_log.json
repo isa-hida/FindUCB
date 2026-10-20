@@ -1416,9 +1416,55 @@
     "testId": 115
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b3966082e52904d771fa9b5fc233b2d515d908bb",
     "commitName": "fix: resolver conflictos de merge en feature/HU-01",
     "commitTimestamp": 1792516495926,
     "testId": 116
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 11,
+    "numTotalTests": 50,
+    "timestamp": 1792527146860,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 11,
+    "numTotalTests": 50,
+    "timestamp": 1792527291043,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 14,
+    "numTotalTests": 53,
+    "timestamp": 1792527986922,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 3,
+    "numTotalTests": 49,
+    "timestamp": 1792528107174,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792528188605,
+    "success": true,
+    "testId": 117
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU-02): implementa login  de administracion",
+    "commitTimestamp": 1792533477347,
+    "testId": 117
   }
 ]

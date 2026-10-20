@@ -20,12 +20,23 @@ const crearEscenario = () => {
         async iniciarSesionComunidad(_correo) {
             return { ok: true };
         },
+        async iniciarSesionAdmin(_correo) {
+            return { ok: true };
+        },
     };
     const presenter = new LoginComunidadPresenter(vista, auth);
     return { vista, auth, presenter };
 };
 
 describe('LoginComunidadPresenter', () => {
+    it('muestra error si el correo está vacío', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('');
+
+        expect(vista.errores).toEqual([MENSAJES.CAMPOS_LOGIN_VACIOS]);
+    });
+
     it('muestra error si el correo no es institucional', async () => {
         const { vista, presenter } = crearEscenario();
 
@@ -42,4 +53,14 @@ describe('LoginComunidadPresenter', () => {
         expect(vista.errores).toEqual([]);
         expect(vista.redirecciones).toEqual([RUTAS.LISTADO_PUBLICO || '/index.html']);
     });
+    
+    it('redirige al panel de administración si el correo es adminbienestar@ucb.edu.bo', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.ingresar('adminbienestar@ucb.edu.bo');
+
+        expect(vista.errores).toEqual([]);
+        expect(vista.redirecciones).toEqual([RUTAS.PANEL_ADMIN || '/admin.html']);
+    });
+
 });

@@ -2204,12 +2204,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b3966082e52904d771fa9b5fc233b2d515d908bb",
     "author": "Natalia",
     "commit": {
       "date": "2026-10-20T17:14:55.000Z",
       "message": "fix: resolver conflictos de merge en feature/HU-01",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b3966082e52904d771fa9b5fc233b2d515d908bb"
     },
     "stats": {
       "total": 16,
@@ -2219,6 +2219,25 @@
     },
     "coverage": 95.93,
     "test_count": 48,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-10-20T21:57:57.000Z",
+      "message": "feat(HU-02): implementa login  de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 180,
+      "additions": 98,
+      "deletions": 82,
+      "date": "2026-10-20"
+    },
+    "coverage": 98.08,
+    "test_count": 47,
     "failed_tests": 0,
     "conclusion": "success"
   }
