@@ -12,6 +12,9 @@ const crearEscenario = (objetos = []) => {
         mostrarError(mensaje) {
             this.errores.push(mensaje);
         },
+        limpiarError() {
+            this.errores = [];
+        },
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
     const presenter = new RegistrarEntregaPresenter(vista, objetosRepository);
@@ -48,5 +51,14 @@ describe('RegistrarEntregaPresenter', () => {
         await presenter.confirmar({ nombre: '', ci: '1234567' });
 
         expect(vista.errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
+
+    it('limpia el aviso anterior en cada intento', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+
+        await presenter.confirmar({ nombre: '', ci: '' });
+        await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
+
+        expect(vista.errores).toEqual([]);
     });
 });

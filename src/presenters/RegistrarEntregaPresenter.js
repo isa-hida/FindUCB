@@ -1,4 +1,4 @@
-import { fechaEntregaPorDefecto } from '../domain/entrega';
+import { fechaEntregaPorDefecto , validarEntrega } from '../domain/entrega';
 import { MENSAJES } from '../domain/mensajes';
 
 export class RegistrarEntregaPresenter {
@@ -17,6 +17,7 @@ export class RegistrarEntregaPresenter {
     }
 
     async confirmar(datos) {
+        this.vista.limpiarError();
         const errores = validarEntrega(datos);
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
