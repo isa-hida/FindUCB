@@ -26,5 +26,6 @@ export class RegistrarEntregaPresenter {
             return;
         }
         await this.objetosRepository.registrarEntrega(this.objetoId, datos);
+        this.vista.mostrarExito(MENSAJES.ENTREGA_REGISTRADA);
     }
 }

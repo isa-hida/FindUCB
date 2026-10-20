@@ -6,6 +6,7 @@ const crearEscenario = (objetos = []) => {
     const vista = {
         fechas: [],
         errores: [],
+        exitos: [],
         mostrarFechaEntrega(fecha) {
             this.fechas.push(fecha);
         },
@@ -14,6 +15,9 @@ const crearEscenario = (objetos = []) => {
         },
         limpiarError() {
             this.errores = [];
+        },
+        mostrarExito(mensaje) {
+            this.exitos.push(mensaje);
         },
     };
     const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
@@ -78,5 +82,13 @@ describe('RegistrarEntregaPresenter', () => {
         await presenter.confirmar({ nombre: '', ci: '' });
 
         expect(await objetosRepository.listarPublicados()).toEqual([objeto]);
+    });
+    it('avisa que la entrega fue registrada', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
+
+        expect(vista.exitos).toEqual([MENSAJES.ENTREGA_REGISTRADA]);
     });
 });
