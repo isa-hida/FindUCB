@@ -1,4 +1,4 @@
-import { validarEntrega } from './entrega';
+import { validarEntrega ,fechaEntregaPorDefecto} from './entrega';
 import { MENSAJES } from './mensajes';
 
 describe('validarEntrega', () => {
@@ -30,5 +30,13 @@ describe('validarEntrega', () => {
         const errores = validarEntrega({ nombre: 'Ana Perez', ci: '   ' });
 
         expect(errores).toEqual([MENSAJES.FALTA_NOMBRE_CI]);
+    });
+});
+
+describe('fechaEntregaPorDefecto', () => {
+    it('devuelve la fecha de hoy con formato AAAA-MM-DD', () => {
+        const hoy = new Date(2026, 2, 5);
+
+        expect(fechaEntregaPorDefecto(hoy)).toBe('2026-03-05');
     });
 });
