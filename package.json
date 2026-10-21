@@ -5,7 +5,7 @@
   "default": "login.html",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html detalle.html admin/login.html admin/index.html admin/nuevo.html",
+    "start": "parcel login.html index.html detalle.html admin/login.html admin/index.html admin/nuevo.html",
     "build": "parcel build login.html index.html detalle.html admin/login.html admin/index.html admin/nuevo.html admin/entrega.html",
     "test": "node ./script/tddScript.js",
     "cypress": "cypress open",
@@ -15,21 +15,5 @@
     "semantic-commits-on": "node semantic-commits.js enable",
     "semantic-commits-off": "node semantic-commits.js disabled",
     "test-once": "jest"
-  },
-  "author": "Israel Antezana R.",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4",
-    "babel-jest": "^29.7.0",
-    "cross-spawn": "^7.0.3",
-    "cypress": "^13.13.3",
-    "eslint": "^9.10.0",
-    "husky": "^9.1.6",
-    "jest": "^29.7.0",
-    "parcel": "^2.12.0"
-  },
-  "dependencies": {
-    "parcel-jest-base": "file:"
   }
 }

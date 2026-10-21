@@ -18,12 +18,12 @@ export class LoginComunidadPresenter {
 
         const correoLimpio = correo.trim().toLowerCase();
 
-        if (correoLimpio === 'adminbienestar@ucb.edu.bo') {
+        if (correoLimpio === 'adminbienestar@ucb.edu.bo' || correoLimpio === 'admin@ucb.edu.bo') {
             await this.auth.iniciarSesionAdmin(correoLimpio);
-            this.vista.redirigir(RUTAS.PANEL_ADMIN || '/admin.html');
+            this.vista.redirigir(RUTAS.PANEL_ADMIN);
         } else {
             await this.auth.iniciarSesionComunidad(correoLimpio);
-            this.vista.redirigir(RUTAS.LISTADO_PUBLICO || '/index.html');
+            this.vista.redirigir('/index.html');
         }
     }
 }

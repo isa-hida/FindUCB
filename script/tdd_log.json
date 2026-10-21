@@ -1488,9 +1488,23 @@
     "testId": 124
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b033f9e85533a0a0ae432b5ac9b491f96e2f87a1",
     "commitName": "chore: corregir errores de lint",
     "commitTimestamp": 1792570312978,
     "testId": 125
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792570528528,
+    "success": true,
+    "testId": 126
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(auth): configurar login.html como ruta inicial y redireccion por rol",
+    "commitTimestamp": 1792572634811,
+    "testId": 126
   }
 ]

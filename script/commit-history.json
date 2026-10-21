@@ -2261,17 +2261,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b033f9e85533a0a0ae432b5ac9b491f96e2f87a1",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T08:11:50.000Z",
       "message": "chore: corregir errores de lint",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b033f9e85533a0a0ae432b5ac9b491f96e2f87a1"
     },
     "stats": {
       "total": 4,
       "additions": 4,
       "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T08:50:31.000Z",
+      "message": "feat(auth): configurar login.html como ruta inicial y redireccion por rol",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 4,
+      "deletions": 20,
       "date": "2026-10-21"
     },
     "coverage": 98.48,
