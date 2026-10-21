@@ -2,18 +2,25 @@ export class AuthEnMemoria {
     constructor({ cuentas = [], administradores = [] } = {}) {
         this.cuentas = cuentas;
         this.administradores = administradores;
-        this.usuario = null;
+        const usuarioGuardado = sessionStorage.getItem('usuario');
+        this.usuario = usuarioGuardado ? JSON.parse(usuarioGuardado) : null;
     }
 
-    async iniciarSesionAdmin(correo, password) {
-        const cuenta = this.cuentas.find((c) => c.correo === correo && c.password === password);
-        if (!cuenta) {
-            return { ok: false };
-        }
+    async iniciarSesionAdmin(correo) {
         this.usuario = {
-            correo: cuenta.correo,
-            esAdmin: this.administradores.includes(cuenta.correo),
+            correo: correo.trim(),
+            esAdmin: true,
         };
+        sessionStorage.setItem('usuario', JSON.stringify(this.usuario));
+        return { ok: true };
+    }
+
+    async iniciarSesionComunidad(correo) {
+        this.usuario = {
+            correo: correo.trim(),
+            esAdmin: false,
+        };
+        sessionStorage.setItem('usuario', JSON.stringify(this.usuario));
         return { ok: true };
     }
 
@@ -23,5 +30,6 @@ export class AuthEnMemoria {
 
     async cerrarSesion() {
         this.usuario = null;
+        sessionStorage.removeItem('usuario');
     }
 }

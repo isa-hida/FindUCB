@@ -1311,15 +1311,31 @@
     "numPassedTests": 45,
     "failedTests": 0,
     "numTotalTests": 45,
-    "timestamp": 1792437428196,
-    "success": true,
+    "timestamp": 1792458748694,
+    "success": false,
     "testId": 110
   },
   {
     "numPassedTests": 45,
-    "failedTests": 0,
-    "numTotalTests": 45,
-    "timestamp": 1792495869015,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792458852929,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792458903526,
+    "success": false,
+    "testId": 110
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792459406599,
     "success": false,
     "testId": 110
   },
@@ -1327,334 +1343,128 @@
     "numPassedTests": 46,
     "failedTests": 0,
     "numTotalTests": 46,
-    "timestamp": 1792495958612,
+    "timestamp": 1792459564544,
     "success": true,
     "testId": 110
   },
   {
-    "commitId": "300d2281e1e9aa0b1c8e7e8460ed6e20bb83fa89",
-    "commitName": "feat(HU04): validar categoria y descripcion obligatorias",
-    "commitTimestamp": 1792495985711,
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792460376051,
     "testId": 110
   },
   {
-    "numPassedTests": 46,
-    "failedTests": 1,
-    "numTotalTests": 47,
-    "timestamp": 1792496071179,
-    "success": false,
+    "commitId": "9092a6ab6a134b44e3f0b457f59f9a6ce48d33a4",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792460607958,
     "testId": 111
   },
   {
-    "numPassedTests": 46,
-    "failedTests": 1,
-    "numTotalTests": 47,
-    "timestamp": 1792496109672,
-    "success": false,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 46,
-    "failedTests": 1,
-    "numTotalTests": 47,
-    "timestamp": 1792496322094,
-    "success": false,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 46,
-    "failedTests": 1,
-    "numTotalTests": 47,
-    "timestamp": 1792496429310,
-    "success": false,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 46,
-    "failedTests": 1,
-    "numTotalTests": 47,
-    "timestamp": 1792496498522,
-    "success": false,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 47,
-    "failedTests": 0,
-    "numTotalTests": 47,
-    "timestamp": 1792496588924,
-    "success": true,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 47,
-    "failedTests": 1,
-    "numTotalTests": 48,
-    "timestamp": 1792496746212,
-    "success": false,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 47,
-    "failedTests": 0,
-    "numTotalTests": 47,
-    "timestamp": 1792496939294,
-    "success": true,
-    "testId": 111
-  },
-  {
-    "commitId": "71e2903ed28c5e4a941b159f7b18eb8a4847bec1",
-    "commitName": "feat(HU04): validar que la fecha de hallazgo no sea futura",
-    "commitTimestamp": 1792496965959,
-    "testId": 111
-  },
-  {
-    "numPassedTests": 47,
-    "failedTests": 1,
-    "numTotalTests": 48,
-    "timestamp": 1792497018327,
-    "success": false,
+    "commitId": "7af4ac0f73668c9afef12a46344b463eed9ec044",
+    "commitName": "feat(HU01): validar dominio de correo institucional",
+    "commitTimestamp": 1792460743087,
     "testId": 112
   },
   {
-    "numPassedTests": 47,
+    "numPassedTests": 46,
     "failedTests": 1,
-    "numTotalTests": 48,
-    "timestamp": 1792497062781,
-    "success": false,
-    "testId": 112
-  },
-  {
-    "numPassedTests": 48,
-    "failedTests": 0,
-    "numTotalTests": 48,
-    "timestamp": 1792497116946,
-    "success": true,
-    "testId": 112
-  },
-  {
-    "commitId": "bf0bfa6039fc92165e436e3585ec0c5961d24e60",
-    "commitName": "feat(HU04): validar longitud maxima de descripcion y senas",
-    "commitTimestamp": 1792497719194,
-    "testId": 112
-  },
-  {
-    "numPassedTests": 48,
-    "failedTests": 1,
-    "numTotalTests": 49,
-    "timestamp": 1792497887230,
+    "numTotalTests": 47,
+    "timestamp": 1792460903623,
     "success": false,
     "testId": 113
   },
   {
-    "numPassedTests": 49,
+    "numPassedTests": 47,
     "failedTests": 0,
-    "numTotalTests": 49,
-    "timestamp": 1792497975136,
+    "numTotalTests": 47,
+    "timestamp": 1792461120985,
     "success": true,
     "testId": 113
   },
   {
-    "commitId": "a597dcae0808b13e3071eccd1cce46143ceaea96",
-    "commitName": "feat(HU04): implementar registro con numero correlativo en ObjetosEnMemoria",
-    "commitTimestamp": 1792498071503,
+    "commitId": "292e6a20bcf843780544204e13827a55f48ea7a5",
+    "commitName": "feat(HU01): iniciar sesion y redirigir al listado para usuario institucional",
+    "commitTimestamp": 1792461189624,
     "testId": 113
   },
   {
-    "numPassedTests": 50,
+    "numPassedTests": 47,
     "failedTests": 0,
-    "numTotalTests": 50,
-    "timestamp": 1792498177361,
+    "numTotalTests": 47,
+    "timestamp": 1792463082604,
     "success": true,
     "testId": 114
   },
   {
-    "commitId": "a0d013cb4811fff6252117fcdae8e5ccca160a72",
-    "commitName": "test(HU04): el objeto registrado almacena los datos de quien lo encontro",
-    "commitTimestamp": 1792498236361,
+    "commitId": "63f415b5375f6646f3cdc16117f216d03e0ee648",
+    "commitName": "feat(HU01): agregar interfaz de usuario login.html vista y script de pagina",
+    "commitTimestamp": 1792463135268,
     "testId": 114
   },
   {
-    "numPassedTests": 50,
+    "numPassedTests": 47,
     "failedTests": 0,
-    "numTotalTests": 50,
-    "timestamp": 1792498356317,
-    "success": false,
-    "testId": 115
-  },
-  {
-    "numPassedTests": 53,
-    "failedTests": 0,
-    "numTotalTests": 53,
-    "timestamp": 1792498477355,
+    "numTotalTests": 47,
+    "timestamp": 1792463454069,
     "success": true,
     "testId": 115
   },
   {
-    "commitId": "a86a8452a52f67ae7900f814a0430b721b08750c",
-    "commitName": "feat(HU04): crear RegistrarObjetoPresenter y conectar el registro de objetos",
-    "commitTimestamp": 1792498577445,
+    "commitId": "812c45fb6f090b896f0e4936cbe5f7a538438ffc",
+    "commitName": "feat(HU01): login de comunidad con TDD y sessionStorage",
+    "commitTimestamp": 1792514396763,
     "testId": 115
   },
   {
-    "commitId": "d5dc2612c5ef5a8100e00fca3a0923589fafc1af",
-    "commitName": "feat(HU04): crear RegistrarObjetoVista para manejar el DOM del formulario",
-    "commitTimestamp": 1792498822030,
+    "commitId": "b3966082e52904d771fa9b5fc233b2d515d908bb",
+    "commitName": "fix: resolver conflictos de merge en feature/HU-01",
+    "commitTimestamp": 1792516495926,
     "testId": 116
   },
   {
-    "commitId": "02ef3bb7db6684a08e44383e037097e55e9e6400",
-    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
-    "commitTimestamp": 1792499111879,
+    "numPassedTests": 39,
+    "failedTests": 11,
+    "numTotalTests": 50,
+    "timestamp": 1792527146860,
+    "success": false,
     "testId": 117
   },
   {
-    "numPassedTests": 53,
+    "numPassedTests": 39,
+    "failedTests": 11,
+    "numTotalTests": 50,
+    "timestamp": 1792527291043,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 14,
+    "numTotalTests": 53,
+    "timestamp": 1792527986922,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 3,
+    "numTotalTests": 49,
+    "timestamp": 1792528107174,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 47,
     "failedTests": 0,
-    "numTotalTests": 53,
-    "timestamp": 1792501898803,
+    "numTotalTests": 47,
+    "timestamp": 1792528188605,
     "success": true,
-    "testId": 118
-  },
-  {
-    "commitId": "ccee8d6a9f0a6e7daccd8632faf2b8fcfa920907",
-    "commitName": "feat(HU04): crear html y script de pagina para registrar objeto hallado",
-    "commitTimestamp": 1792502825871,
-    "testId": 118
-  },
-  {
-    "commitId": "42e65bb30c1002a4ee255f1646c123a628f9cd40",
-    "commitName": "test(HU04): agregar prueba e2e para el registro de objetos hallados",
-    "commitTimestamp": 1792503207538,
-    "testId": 119
-  },
-  {
-    "numPassedTests": 53,
-    "failedTests": 1,
-    "numTotalTests": 54,
-    "timestamp": 1792503939706,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 49,
-    "failedTests": 5,
-    "numTotalTests": 54,
-    "timestamp": 1792504005008,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 50,
-    "failedTests": 4,
-    "numTotalTests": 54,
-    "timestamp": 1792504040359,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 50,
-    "failedTests": 4,
-    "numTotalTests": 54,
-    "timestamp": 1792504445673,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 51,
-    "failedTests": 2,
-    "numTotalTests": 53,
-    "timestamp": 1792504513548,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 52,
-    "failedTests": 1,
-    "numTotalTests": 53,
-    "timestamp": 1792517497710,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 52,
-    "failedTests": 1,
-    "numTotalTests": 53,
-    "timestamp": 1792517630341,
-    "success": false,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 53,
-    "failedTests": 0,
-    "numTotalTests": 53,
-    "timestamp": 1792518035382,
-    "success": true,
-    "testId": 120
-  },
-  {
-    "commitId": "6874900d76d4bb90f70a038234a5d9a1190079d6",
-    "commitName": "feat(HU05): validar foto obligatoria en el dominio y actualizar pruebas del presenter",
-    "commitTimestamp": 1792518168034,
-    "testId": 120
-  },
-  {
-    "numPassedTests": 54,
-    "failedTests": 1,
-    "numTotalTests": 55,
-    "timestamp": 1792518241893,
-    "success": false,
-    "testId": 121
-  },
-  {
-    "numPassedTests": 55,
-    "failedTests": 0,
-    "numTotalTests": 55,
-    "timestamp": 1792518317803,
-    "success": true,
-    "testId": 121
-  },
-  {
-    "numPassedTests": 55,
-    "failedTests": 0,
-    "numTotalTests": 55,
-    "timestamp": 1792518950245,
-    "success": true,
-    "testId": 121
-  },
-  {
-    "commitId": "248f83997a1683ca9b5bfa4f4e979adbacb8f9ca",
-    "commitName": "feat(HU05): agregar vista previa e input de foto en la vista y html)",
-    "commitTimestamp": 1792518986068,
-    "testId": 121
-  },
-  {
-    "commitId": "dc9c640c68b696d89c07f67f6b48bc3456798bde",
-    "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
-    "commitTimestamp": 1792519919617,
-    "testId": 122
-  },
-  {
-    "commitId": "378271f1a457c1306fd810283f137f239804f855",
-    "commitName": "fix: corregir comillas invalidas en scripts de package.json",
-    "commitTimestamp": 1792546141169,
-    "testId": 123
-  },
-  {
-    "commitId": "a12a23f1f301395952c813e0fc07b0eae287544d",
-    "commitName": "fix: declarar globales URL y FormData para ESLint",
-    "commitTimestamp": 1792546865692,
-    "testId": 124
-  },
-  {
-    "commitId": "f8c817a2c3916d3e7b8dea0eaa70c3e16529a93a",
-    "commitName": "chore: quitar imports sin usar en services/index.js",
-    "commitTimestamp": 1792547032673,
-    "testId": 125
+    "testId": 117
   },
   {
     "commitId": "HEAD",
-    "commitName": "fix(HU06): agregar listarParaAdmin y registrarEntrega a ObjetosEnMemoria",
-    "commitTimestamp": 1792549541239,
-    "testId": 126
+    "commitName": "feat(HU-02): implementa login  de administracion",
+    "commitTimestamp": 1792533477347,
+    "testId": 117
   }
 ]
