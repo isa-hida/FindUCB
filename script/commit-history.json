@@ -2299,17 +2299,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a12e934f484f6de89c7a01307ee2ff9a1f505952",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T08:55:52.000Z",
       "message": "feat(admin): rediseñar panel de administracion y agregar boton nuevo aviso",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a12e934f484f6de89c7a01307ee2ff9a1f505952"
     },
     "stats": {
       "total": 133,
       "additions": 80,
       "deletions": 53,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T09:07:25.000Z",
+      "message": "feat(admin): agregar evento de redireccion al formulario de nuevo aviso",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

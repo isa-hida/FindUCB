@@ -5,4 +5,8 @@ import { ListaObjetosAdminPresenter } from '../presenters/ListaObjetosAdminPrese
 const vista = new ListaObjetosAdminVista(document);
 const presenter = new ListaObjetosAdminPresenter(vista, objetosRepository, fotosStorage);
 
+vista.alClicNuevoAviso(() => {
+    window.location.assign('./nuevo.html');
+});
+
 presenter.cargar();

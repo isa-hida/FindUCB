@@ -1508,9 +1508,15 @@
     "testId": 126
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a12e934f484f6de89c7a01307ee2ff9a1f505952",
     "commitName": "feat(admin): rediseñar panel de administracion y agregar boton nuevo aviso",
     "commitTimestamp": 1792572953732,
     "testId": 127
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(admin): agregar evento de redireccion al formulario de nuevo aviso",
+    "commitTimestamp": 1792573646794,
+    "testId": 128
   }
 ]

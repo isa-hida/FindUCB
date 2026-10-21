@@ -37,4 +37,7 @@ export class ListaObjetosAdminVista {
 
         return nodo;
     }
+    redirigir(url) {
+        window.location.assign(url);
+    }
 }
