@@ -2,6 +2,9 @@ export class ObjetosEnMemoria {
     constructor({ objetos = [] } = {}) {
         this.objetos = objetos;
     }
+    async listarParaAdmin() {
+        return [...this.objetos];
+    }
 
     async listarPublicados() {
         return this.objetos.filter((objeto) => objeto.estado === 'publicado');
@@ -30,5 +33,12 @@ export class ObjetosEnMemoria {
 
         this.objetos.push(objetoRegistrado);
         return objetoRegistrado;
+    }
+    async registrarEntrega(objetoId, entrega) {
+        this.objetos = this.objetos.map((objeto) => (
+            String(objeto.id) === String(objetoId)
+                ? { ...objeto, estado: 'entregado', entrega }
+                : objeto
+        ));
     }
 }

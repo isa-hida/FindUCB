@@ -1,3 +1,4 @@
+/* global URL, FormData */
 export class RegistrarObjetoVista {
     constructor(documento) {
         this.documento = documento;

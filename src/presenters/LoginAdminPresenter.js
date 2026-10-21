@@ -1,4 +1,4 @@
-import { validarLoginAdmin } from '../domain/correo';
+import { validarCorreoComunidad } from '../domain/correo';
 import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
@@ -8,24 +8,23 @@ export class LoginAdminPresenter {
         this.auth = auth;
     }
 
-    async ingresar(correo, password) {
+    async ingresar(correo) {
         this.vista.limpiarError();
-        const errores = validarLoginAdmin({ correo, password });
+
+        const errores = validarCorreoComunidad(correo);
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
             return;
         }
-        const resultado = await this.auth.iniciarSesionAdmin(correo.trim(), password);
-        if (!resultado.ok) {
+
+        const correoLimpio = correo ? correo.trim().toLowerCase() : '';
+
+        if (correoLimpio !== 'adminbienestar@ucb.edu.bo') {
             this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
             return;
         }
-        const usuario = await this.auth.obtenerUsuario();
-        if (!usuario || !usuario.esAdmin) {
-            await this.auth.cerrarSesion();
-            this.vista.mostrarError(MENSAJES.CREDENCIALES_INVALIDAS);
-            return;
-        }
+
+        await this.auth.iniciarSesionAdmin(correoLimpio);
         this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 }

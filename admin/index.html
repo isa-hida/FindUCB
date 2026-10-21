@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Panel de administración | FindU</title>
     <link rel="stylesheet" href="../src/styles/base.css" />
+
+    <link rel="stylesheet" href="../src/styles/panel.css" />
 </head>
 
 <body>
-    <main class="contenedor">
-        <h1>Panel de administración</h1>
+    <main class="contenedor panel">
+        <h1 class="panel__titulo">Panel de administración</h1>
+
+        <section class="panel__seccion">
+            <h2 class="panel__subtitulo">Objetos publicados</h2>
+
+            <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
+
+            <div class="tabla-contenedor">
+                <table id="tabla-objetos" class="tabla" hidden>
+                    <caption class="tabla__caption">Lista de objetos publicados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Fecha de hallazgo</th>
+                            <th scope="col">Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-objetos"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <template id="plantilla-fila">
+            <tr class="tabla__fila">
+                <td class="tabla__numero"></td>
+                <td><img class="tabla__foto" alt="" loading="lazy" /></td>
+                <td class="tabla__categoria"></td>
+                <td class="tabla__fecha"></td>
+                <td><a class="tabla__enlace" href="#">Registrar entrega</a></td>
+            </tr>
+        </template>
     </main>
+    <script type="module" src="../src/pages/admin-panel.js"></script>
 </body>
 
 </html>
