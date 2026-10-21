@@ -7,6 +7,8 @@ import fotoLlaves from 'url:../assets/ejemplos/llaves.svg';
 import fotoTermo from 'url:../assets/ejemplos/termo.svg';
 import fotoCuaderno from 'url:../assets/ejemplos/cuaderno.svg';
 
+//import { ObjetosRepositoryEnMemoria } from './memoria/ObjetosRepositoryEnMemoria';
+//import { FotosStorageEnMemoria } from './memoria/FotosStorageEnMemoria';
 export const auth = new AuthEnMemoria({
     cuentas: [
         { correo: 'admin@ucb.edu.bo', password: 'Admin123' },

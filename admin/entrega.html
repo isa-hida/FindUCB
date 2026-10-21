@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrar entrega | FindU</title>
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/entrega.css" />
+</head>
+
+<body>
+    <main class="entrega">
+        <section class="tarjeta">
+            <h1 class="tarjeta__titulo">Registrar entrega</h1>
+            <p class="tarjeta__ayuda">Ingrese los datos de la persona que recibe el objeto.</p>
+
+            <p id="error-mensaje" class="error" role="alert" hidden></p>
+            <p id="exito-mensaje" class="exito" role="status" hidden></p>
+
+            <form id="entrega-form" class="formulario" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="off" />
+                </div>
+                <div class="campo">
+                    <label for="ci">C.I.</label>
+                    <input type="text" id="ci" name="ci" autocomplete="off" />
+                </div>
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" autocomplete="off" />
+                </div>
+                <div class="campo">
+                    <label for="fecha-entrega">Fecha de entrega</label>
+                    <input type="date" id="fecha-entrega" name="fechaEntrega" />
+                </div>
+
+                <div class="entrega__acciones">
+                    <button type="submit" id="confirmar-button" class="boton">Confirmar entrega</button>
+                    <button type="button" id="cancelar-button" class="boton boton--secundario">Cancelar</button>
+                </div>
+            </form>
+
+            <a id="volver-link" class="entrega__volver" href="/admin/index.html">Volver al panel</a>
+        </section>
+    </main>
+
+    <script type="module" src="../src/pages/admin-entrega.js"></script>
+</body>
+
+</html>
