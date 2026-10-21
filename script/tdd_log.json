@@ -1482,9 +1482,15 @@
     "testId": 123
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8f4e827da3ad07798fad2da85c030d75998e7834",
     "commitName": "Merge branch 'main' of https://github.com/isa-hida/FindUCB",
     "commitTimestamp": 1792569861579,
     "testId": 124
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: corregir errores de lint",
+    "commitTimestamp": 1792570312978,
+    "testId": 125
   }
 ]

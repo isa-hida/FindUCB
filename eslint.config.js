@@ -1,4 +1,5 @@
 export default [
+  { ignores: ['dist/**', '.parcel-cache/**', 'script/**', 'semantic-commits.js', 'cypress.config.js'] },
   {
     files: ['**/*.js'],
     languageOptions: {
@@ -15,6 +16,9 @@ export default [
         expect: 'readonly',
         document: 'readonly',
         window: 'readonly',
+        Cypress: 'readonly',
+        sessionStorage: 'readonly',
+        localStorage: 'readonly',
       },
     },
     rules: {

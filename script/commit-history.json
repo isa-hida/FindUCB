@@ -2242,17 +2242,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8f4e827da3ad07798fad2da85c030d75998e7834",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T08:04:18.000Z",
       "message": "Merge branch 'main' of https://github.com/isa-hida/FindUCB",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8f4e827da3ad07798fad2da85c030d75998e7834"
     },
     "stats": {
       "total": 1611,
       "additions": 1526,
       "deletions": 85,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T08:11:50.000Z",
+      "message": "chore: corregir errores de lint",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
       "date": "2026-10-21"
     },
     "coverage": 98.48,
