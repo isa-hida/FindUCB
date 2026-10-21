@@ -1560,9 +1560,23 @@
     "testId": 133
   },
   {
-    "commitId": "HEAD",
+    "commitId": "851ce6ebdd992d7f091b8bf5994b29fba42adf31",
     "commitName": "fix(ci): desactivar husky durante npm ci en github actions",
     "commitTimestamp": 1792578428391,
     "testId": 133
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792578648670,
+    "success": true,
+    "testId": 134
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: agregar dependencias de desarrollo para jest y babel",
+    "commitTimestamp": 1792580606941,
+    "testId": 134
   }
 ]

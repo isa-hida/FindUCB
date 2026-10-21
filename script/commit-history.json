@@ -2413,17 +2413,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "851ce6ebdd992d7f091b8bf5994b29fba42adf31",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T10:26:52.000Z",
       "message": "fix(ci): desactivar husky durante npm ci en github actions",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/851ce6ebdd992d7f091b8bf5994b29fba42adf31"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T11:03:23.000Z",
+      "message": "fix: agregar dependencias de desarrollo para jest y babel",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 35245,
+      "additions": 14667,
+      "deletions": 20578,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

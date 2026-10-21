@@ -15,5 +15,16 @@
     "semantic-commits-on": "node semantic-commits.js enable",
     "semantic-commits-off": "node semantic-commits.js disabled",
     "test-once": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
+    "babel-jest": "^30.5.2",
+    "cypress": "^16.2.0",
+    "eslint": "^10.13.0",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "parcel": "^2.16.4"
   }
 }
