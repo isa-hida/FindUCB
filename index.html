@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FindU: objetos perdidos UCB Cochabamba</title>
-  <link rel="stylesheet" href="./src/styles/base.css" />
   <link rel="stylesheet" href="./src/styles/listado.css" />
 </head>
 
-<body>
+<body class="pagina-listado">
   <header class="encabezado-minimal">
-    <div class="contenedor encabezado-minimal__contenido">
-      <a href="./login.html" class="encabezado-minimal__volver" aria-label="Volver al inicio de sesión">←</a>
+    <div class="encabezado-minimal__contenido">
+      <a class="encabezado-minimal__volver" href="./login.html" aria-label="Volver al inicio de sesión"
+        title="Volver al inicio de sesión">←</a>
       <div class="encabezado-minimal__textos">
         <h1 class="encabezado-minimal__titulo">FindU</h1>
         <p class="encabezado-minimal__subtitulo">Lo que perdiste, a un clic de volver.</p>
@@ -20,7 +20,11 @@
     </div>
   </header>
 
-  <main class="contenedor">
+  <main>
+    <h2 class="listado__titulo">Objetos hallados</h2>
+    <p class="listado__introduccion">Estos objetos fueron encontrados en el campus y están a resguardo de Bienestar
+      Estudiantil.</p>
+
     <form id="filtros-form" class="filtros" novalidate>
       <div class="filtros__campo">
         <label for="filtro-categoria">Categoría</label>

@@ -1540,9 +1540,15 @@
     "testId": 131
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4274ba03e242208151aedd15aedb8359bb4e5d09",
     "commitName": "fix: detalle.html y detalle.css",
     "commitTimestamp": 1792577529088,
     "testId": 131
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: modificacion de diseños",
+    "commitTimestamp": 1792577822089,
+    "testId": 132
   }
 ]

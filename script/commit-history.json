@@ -2375,17 +2375,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4274ba03e242208151aedd15aedb8359bb4e5d09",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T10:12:05.000Z",
       "message": "fix: detalle.html y detalle.css",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/4274ba03e242208151aedd15aedb8359bb4e5d09"
     },
     "stats": {
       "total": 360,
       "additions": 277,
       "deletions": 83,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T10:16:59.000Z",
+      "message": "fix: modificacion de diseños",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 321,
+      "additions": 236,
+      "deletions": 85,
       "date": "2026-10-21"
     },
     "coverage": 98.48,
