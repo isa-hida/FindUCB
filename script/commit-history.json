@@ -2356,17 +2356,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a12a23f1f301395952c813e0fc07b0eae287544d",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-10-21T01:41:03.000Z",
       "message": "fix: declarar globales URL y FormData para ESLint",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a12a23f1f301395952c813e0fc07b0eae287544d"
     },
     "stats": {
       "total": 1,
       "additions": 1,
       "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 99.47,
+    "test_count": 97,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-10-21T01:43:51.000Z",
+      "message": "chore: quitar imports sin usar en services/index.js",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2026-10-21"
     },
     "coverage": 99.47,

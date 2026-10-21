@@ -1640,9 +1640,15 @@
     "testId": 123
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a12a23f1f301395952c813e0fc07b0eae287544d",
     "commitName": "fix: declarar globales URL y FormData para ESLint",
     "commitTimestamp": 1792546865692,
     "testId": 124
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: quitar imports sin usar en services/index.js",
+    "commitTimestamp": 1792547032673,
+    "testId": 125
   }
 ]
