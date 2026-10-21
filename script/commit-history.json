@@ -2318,17 +2318,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "51128d89a9041ae235e89031aabbe12e719137aa",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T09:07:25.000Z",
       "message": "feat(admin): agregar evento de redireccion al formulario de nuevo aviso",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/51128d89a9041ae235e89031aabbe12e719137aa"
     },
     "stats": {
       "total": 11,
       "additions": 9,
       "deletions": 2,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T09:32:34.000Z",
+      "message": "feat(admin): agregar boton volver al panel en la pantalla de nuevo aviso",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 302,
+      "additions": 238,
+      "deletions": 64,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

@@ -1514,9 +1514,15 @@
     "testId": 127
   },
   {
-    "commitId": "HEAD",
+    "commitId": "51128d89a9041ae235e89031aabbe12e719137aa",
     "commitName": "feat(admin): agregar evento de redireccion al formulario de nuevo aviso",
     "commitTimestamp": 1792573646794,
     "testId": 128
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(admin): agregar boton volver al panel en la pantalla de nuevo aviso",
+    "commitTimestamp": 1792575155449,
+    "testId": 129
   }
 ]

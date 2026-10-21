@@ -1,3 +1,33 @@
+/* Fuente global de respaldo y contenedor general */
+.panel {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+}
+
+.panel__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin: 0 0 1.5rem 0;
+}
+
+.panel__cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.panel__subtitulo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
 /* Barra de navegación superior */
 .panel-encabezado {
     display: flex;
@@ -14,7 +44,7 @@
     left: 2rem;
     color: #2563eb;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -22,29 +52,6 @@
     font-size: 1.25rem;
     font-weight: 700;
     color: #1e3a8a;
-    margin: 0;
-}
-
-/* Layout del contenedor principal */
-.panel {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    font-family: system-ui, -apple-system, sans-serif;
-    background-color: #f8fafc;
-}
-
-.panel__cabecera-seccion {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-}
-
-.panel__subtitulo {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #1e293b;
     margin: 0;
 }
 
@@ -75,7 +82,7 @@
     color: #495057;
 }
 
-/* Estilos de la tabla tipo Tarjeta */
+/* Ocultamos los encabezados de la tabla de forma accesible */
 .tabla thead,
 .tabla__caption {
     position: absolute;
@@ -96,6 +103,7 @@
     border-spacing: 0 1rem;
 }
 
+/* Transformamos la fila en un contenedor Grid flexible */
 .tabla__fila {
     display: grid;
     grid-template-columns: auto 80px 1fr auto;
@@ -118,7 +126,6 @@
 
 .tabla__numero {
     display: none;
-    /* Se oculta si deseas coincidir con el diseño exacto de la imagen */
 }
 
 .tabla td:has(.tabla__foto) {
@@ -155,7 +162,7 @@
     background: #e9ecef;
 }
 
-/* Botón Retirar */
+/* Botón Retirar / Acción */
 .tabla__enlace {
     display: inline-flex;
     align-items: center;
@@ -183,6 +190,149 @@
     color: #1e293b;
 }
 
+.tabla__enlace:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* ==========================================
+   ESTILOS PARA LA PANTALLA DE NUEVO AVISO
+   ========================================== */
+
+.panel--formulario {
+    max-width: 680px;
+}
+
+.tarjeta--formulario {
+    max-width: 100%;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 16px rgba(15, 85, 165, 0.05);
+}
+
+.campo__requerido {
+    color: #b42318;
+}
+
+.campo__opcional {
+    color: #94a3b8;
+    font-weight: normal;
+}
+
+.campo__ayuda {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: -0.25rem;
+}
+
+.campo__textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo__textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.campo__contador {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+}
+
+.campo--oculto {
+    display: none;
+}
+
+/* Dropzone para carga de Foto */
+.dropzone-foto {
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    background: #f8fafc;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.2s;
+}
+
+.dropzone-foto:hover {
+    border-color: #2563eb;
+}
+
+.dropzone-foto__input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropzone-foto__icono {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.dropzone-foto__texto {
+    font-weight: 600;
+    color: #334155;
+}
+
+.dropzone-foto__subtexto {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+}
+
+.dropzone-foto__preview {
+    max-height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Acciones y Botones del Formulario */
+.formulario__acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.boton--secundario {
+    display: inline-block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.boton--secundario:hover {
+    background: #f8fafc;
+    color: #1e293b;
+    border-color: #94a3b8;
+}
+
+/* Controladores de visibilidad */
 .aviso[hidden],
 .tabla[hidden],
 [hidden] {

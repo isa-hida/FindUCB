@@ -7,6 +7,8 @@ export class RegistrarObjetoVista {
         this.exitoElemento = documento.getElementById('exito-mensaje');
         this.fotoInput = documento.getElementById('foto-input');
         this.previewImagen = documento.getElementById('foto-preview');
+        this.descripcionInput = documento.getElementById('descripcion');
+        this.contadorCaracteres = documento.getElementById('contador-caracteres');
         this.fotoPathActual = '';
 
         this._inicializarEventos();
@@ -28,6 +30,13 @@ export class RegistrarObjetoVista {
                         this.previewImagen.hidden = true;
                     }
                 }
+            });
+        }
+
+        if (this.descripcionInput && this.contadorCaracteres) {
+            this.descripcionInput.addEventListener('input', () => {
+                const longitud = this.descripcionInput.value.length;
+                this.contadorCaracteres.textContent = `${longitud} / 300`;
             });
         }
     }
@@ -73,6 +82,9 @@ export class RegistrarObjetoVista {
         if (this.previewImagen) {
             this.previewImagen.hidden = true;
             this.previewImagen.src = '';
+        }
+        if (this.contadorCaracteres) {
+            this.contadorCaracteres.textContent = '0 / 500';
         }
     }
 }

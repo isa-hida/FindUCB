@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registrar objeto hallado | FindU</title>
     <link rel="stylesheet" href="../src/styles/base.css" />
-    <link rel="stylesheet" href="../src/styles/login.css" />
+    <link rel="stylesheet" href="../src/styles/panel.css" />
+    <link rel="stylesheet" href="../src/styles/entrega.css" />
 </head>
 
 <body>
-    <main class="contenedor">
-        <header class="login__marca">
-            <h1 class="login__titulo">FindU</h1>
-            <p class="login__subtitulo">Panel de Bienestar Estudiantil</p>
-        </header>
+    <header class="panel-encabezado">
+        <a href="./index.html" class="panel-encabezado__volver">← Volver al panel</a>
+        <h1 class="panel-encabezado__titulo">Nuevo aviso</h1>
+    </header>
 
-        <section class="tarjeta" style="max-width: 600px; margin: 0 auto;">
-            <h2 class="tarjeta__titulo">Registrar objeto hallado</h2>
-            <p class="tarjeta__ayuda">Llena los datos del objeto recibido en el campus.</p>
-
+    <main class="contenedor panel panel--formulario">
+        <section class="tarjeta tarjeta--formulario">
             <form id="nuevo-objeto-form" class="formulario" novalidate>
+
                 <div class="campo">
-                    <label for="categoria">Categoría</label>
+                    <label for="foto-input">Foto del objeto <span class="campo__requerido">*</span></label>
+                    <span class="campo__ayuda">Solo JPG o PNG</span>
+                    <div class="dropzone-foto">
+                        <input type="file" id="foto-input" name="foto" accept="image/png, image/jpeg, image/jpg"
+                            class="dropzone-foto__input" />
+                        <div id="dropzone-contenido">
+                            <div class="dropzone-foto__icono">📤</div>
+                            <div class="dropzone-foto__texto">Click para subir una foto</div>
+                            <div class="dropzone-foto__subtexto">JPG o PNG</div>
+                        </div>
+                        <img id="foto-preview" alt="Vista previa" class="dropzone-foto__preview" hidden />
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría <span class="campo__requerido">*</span></label>
                     <select id="categoria" name="categoria">
-                        <option value="">Seleccione una categoría</option>
+                        <option value="">Seleccionar...</option>
                         <option value="Electrónicos">Electrónicos</option>
                         <option value="Documentos">Documentos</option>
                         <option value="Llaves">Llaves</option>
@@ -38,13 +52,31 @@
                 </div>
 
                 <div class="campo">
-                    <label for="descripcion">Descripción</label>
-                    <input type="text" id="descripcion" name="descripcion" />
+                    <label for="color">Color</label>
+                    <input type="text" id="color" name="color" placeholder="Seleccionar o escribir color..." />
+                </div>
+
+                <div class="campo">
+                    <label for="marca">Marca <span class="campo__opcional">(opcional)</span></label>
+                    <input type="text" id="marca" name="marca" placeholder="Ej. Samsung, Nike, etc." />
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción <span class="campo__requerido">*</span></label>
+                    <textarea id="descripcion" name="descripcion" rows="4" maxlength="500"
+                        placeholder="Describe el objeto: características, estado, detalles distintivos..."
+                        class="campo__textarea"></textarea>
+                    <div id="contador-caracteres" class="campo__contador">0 / 500</div>
                 </div>
 
                 <div class="campo">
                     <label for="senas">Señas particulares</label>
-                    <input type="text" id="senas" name="senas" />
+                    <input type="text" id="senas" name="senas" placeholder="Señas particulares adicionales..." />
+                </div>
+
+                <div class="campo">
+                    <label for="lugar">Lugar donde se encontró/perdió</label>
+                    <input type="text" id="lugar" name="lugar" placeholder="Seleccionar o escribir lugar..." />
                 </div>
 
                 <div class="campo">
@@ -52,44 +84,24 @@
                     <input type="date" id="fecha-hallazgo" name="fechaHallazgo" />
                 </div>
 
-                <div class="campo">
-                    <label for="lugar">Lugar de hallazgo</label>
-                    <input type="text" id="lugar" name="lugar" />
-                </div>
 
-                <div class="campo">
-                    <label for="color">Color</label>
-                    <input type="text" id="color" name="color" />
-                </div>
-
-                <div class="campo">
-                    <label for="marca">Marca (opcional)</label>
-                    <input type="text" id="marca" name="marca" />
-                </div>
-
-                <div class="campo">
+                <div class="campo campo--oculto">
                     <label for="encontrado-nombre">Encontrado por (Nombre)</label>
                     <input type="text" id="encontrado-nombre" name="encontradoNombre" />
                 </div>
 
-                <div class="campo">
+                <div class="campo campo--oculto">
                     <label for="encontrado-celular">Encontrado por (Celular)</label>
                     <input type="text" id="encontrado-celular" name="encontradoCelular" />
                 </div>
 
-                <div class="campo">
-                    <label for="foto-input">Foto del objeto (Tomar foto o subir archivo)</label>
-                    <input type="file" id="foto-input" name="foto" accept="image/png, image/jpeg, image/jpg"
-                        capture="environment" />
-                </div>
-
                 <p id="error-mensaje" class="error" role="alert" hidden></p>
-                <p id="exito-mensaje" class="error" style="background: #e6f4ea; color: #137333;" role="status" hidden>
-                </p>
+                <p id="exito-mensaje" class="exito" role="status" hidden></p>
 
-                <button type="submit" id="registrar-button" class="boton">Registrar objeto</button>
+                <div class="entrega__acciones formulario__acciones">
+                    <button type="submit" id="registrar-button" class="boton">Publicar aviso</button>
 
-
+                </div>
             </form>
         </section>
     </main>
