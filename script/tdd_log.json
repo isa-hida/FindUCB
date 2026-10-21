@@ -1546,9 +1546,23 @@
     "testId": 131
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0574287d2123ad633c5d9129a4c0d0068afe6ecc",
     "commitName": "fix: modificacion de diseños",
     "commitTimestamp": 1792577822089,
     "testId": 132
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792577844448,
+    "success": true,
+    "testId": 133
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix(ci): desactivar husky durante npm ci en github actions",
+    "commitTimestamp": 1792578428391,
+    "testId": 133
   }
 ]
