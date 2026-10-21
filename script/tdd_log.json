@@ -1646,9 +1646,15 @@
     "testId": 124
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f8c817a2c3916d3e7b8dea0eaa70c3e16529a93a",
     "commitName": "chore: quitar imports sin usar en services/index.js",
     "commitTimestamp": 1792547032673,
     "testId": 125
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix(HU06): agregar listarParaAdmin y registrarEntrega a ObjetosEnMemoria",
+    "commitTimestamp": 1792549541239,
+    "testId": 126
   }
 ]

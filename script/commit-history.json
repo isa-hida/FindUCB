@@ -2375,12 +2375,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f8c817a2c3916d3e7b8dea0eaa70c3e16529a93a",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-10-21T01:43:51.000Z",
       "message": "chore: quitar imports sin usar en services/index.js",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f8c817a2c3916d3e7b8dea0eaa70c3e16529a93a"
     },
     "stats": {
       "total": 4,
@@ -2390,6 +2390,25 @@
     },
     "coverage": 99.47,
     "test_count": 97,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-10-21T02:25:39.000Z",
+      "message": "fix(HU06): agregar listarParaAdmin y registrarEntrega a ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 67,
+      "deletions": 1,
+      "date": "2026-10-21"
+    },
+    "coverage": 99.48,
+    "test_count": 101,
     "failed_tests": 0,
     "conclusion": "success"
   }
