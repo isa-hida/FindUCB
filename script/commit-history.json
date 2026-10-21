@@ -2356,17 +2356,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c291a63d3889d5e5c0ec695ec94a473851190f09",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T09:50:22.000Z",
       "message": "style(base): actualizar archivo base.css completo con estilos generales y cabecera minimalista",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c291a63d3889d5e5c0ec695ec94a473851190f09"
     },
     "stats": {
       "total": 226,
       "additions": 105,
       "deletions": 121,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T10:12:05.000Z",
+      "message": "fix: detalle.html y detalle.css",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 360,
+      "additions": 277,
+      "deletions": 83,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

@@ -5,21 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Detalle del objeto | FindU</title>
-  <link rel="stylesheet" href="./src/styles/base.css" />
   <link rel="stylesheet" href="./src/styles/detalle.css" />
 </head>
 
-<body>
-  <header class="encabezado">
-    <div class="contenedor encabezado__contenido">
-      <h1 class="encabezado__titulo">FindU</h1>
-      <p class="encabezado__subtitulo">Objetos perdidos UCB Cochabamba</p>
+<body class="pagina-detalle">
+  <header class="encabezado-minimal">
+    <div class="encabezado-minimal__contenido">
+      <a id="volver-link" class="encabezado-minimal__volver" href="./index.html" aria-label="Volver al listado"
+        title="Volver al listado">←</a>
+      <div class="encabezado-minimal__textos">
+        <h1 class="encabezado-minimal__titulo">FindU</h1>
+        <p class="encabezado-minimal__subtitulo">Objetos perdidos UCB Cochabamba</p>
+      </div>
     </div>
   </header>
 
-  <main class="contenedor">
-    <a id="volver-link" class="volver" href="./index.html">← Volver al listado</a>
-
+  <main>
     <p id="no-encontrado-mensaje" class="detalle__no-encontrado" role="alert" hidden></p>
 
     <article id="detalle" class="detalle" hidden>

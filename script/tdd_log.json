@@ -1526,9 +1526,23 @@
     "testId": 129
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c291a63d3889d5e5c0ec695ec94a473851190f09",
     "commitName": "style(base): actualizar archivo base.css completo con estilos generales y cabecera minimalista",
     "commitTimestamp": 1792576223834,
     "testId": 130
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792576917872,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: detalle.html y detalle.css",
+    "commitTimestamp": 1792577529088,
+    "testId": 131
   }
 ]
