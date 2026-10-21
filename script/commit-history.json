@@ -2318,18 +2318,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "417885a1ea98c54c53a252c2ffa5c1c3e73e632c",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-20T18:11:57.000Z",
       "message": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/417885a1ea98c54c53a252c2ffa5c1c3e73e632c"
     },
     "stats": {
       "total": 44,
       "additions": 38,
       "deletions": 6,
       "date": "2026-10-20"
+    },
+    "coverage": 99.22,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T07:57:01.000Z",
+      "message": "fix: agregar la coma que faltaba en package.json",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-21"
     },
     "coverage": 99.22,
     "test_count": 55,

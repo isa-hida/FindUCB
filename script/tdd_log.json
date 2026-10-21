@@ -1628,9 +1628,23 @@
     "testId": 121
   },
   {
-    "commitId": "HEAD",
+    "commitId": "417885a1ea98c54c53a252c2ffa5c1c3e73e632c",
     "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
     "commitTimestamp": 1792519919617,
     "testId": 122
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1792520266662,
+    "success": true,
+    "testId": 123
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: agregar la coma que faltaba en package.json",
+    "commitTimestamp": 1792569424638,
+    "testId": 123
   }
 ]

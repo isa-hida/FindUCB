@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "parcel index.html detalle.html admin/login.html admin/index.html admin/nuevo.html",
-    "build": "parcel build index.html detalle.html admin/login.html admin/index.html admin/nuevo.html",
+    "build": "parcel build login.html index.html detalle.html admin/login.html admin/index.html admin/nuevo.html admin/entrega.html",
     "test": "node ./script/tddScript.js",
     "cypress": "cypress open",
     "cypress-run": "cypress run",
