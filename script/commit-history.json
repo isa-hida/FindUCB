@@ -2337,17 +2337,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "378271f1a457c1306fd810283f137f239804f855",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-10-21T01:28:59.000Z",
       "message": "fix: corregir comillas invalidas en scripts de package.json",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/378271f1a457c1306fd810283f137f239804f855"
     },
     "stats": {
       "total": 4,
       "additions": 2,
       "deletions": 2,
+      "date": "2026-10-21"
+    },
+    "coverage": 99.47,
+    "test_count": 97,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-10-21T01:41:03.000Z",
+      "message": "fix: declarar globales URL y FormData para ESLint",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
       "date": "2026-10-21"
     },
     "coverage": 99.47,

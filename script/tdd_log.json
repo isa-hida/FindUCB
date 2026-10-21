@@ -1634,9 +1634,15 @@
     "testId": 122
   },
   {
-    "commitId": "HEAD",
+    "commitId": "378271f1a457c1306fd810283f137f239804f855",
     "commitName": "fix: corregir comillas invalidas en scripts de package.json",
     "commitTimestamp": 1792546141169,
     "testId": 123
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: declarar globales URL y FormData para ESLint",
+    "commitTimestamp": 1792546865692,
+    "testId": 124
   }
 ]
