@@ -2432,17 +2432,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "536a1b548aa162f947a7a629813f260ab52c69ee",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T11:03:23.000Z",
       "message": "fix: agregar dependencias de desarrollo para jest y babel",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/536a1b548aa162f947a7a629813f260ab52c69ee"
     },
     "stats": {
       "total": 35245,
       "additions": 14667,
       "deletions": 20578,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-10-21T16:16:06.000Z",
+      "message": "fix: corregir renderizado de tabla admin y añadir metodo alClicNuevoAviso faltante",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 19,
+      "deletions": 5,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

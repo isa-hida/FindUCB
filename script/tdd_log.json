@@ -1574,9 +1574,23 @@
     "testId": 134
   },
   {
-    "commitId": "HEAD",
+    "commitId": "536a1b548aa162f947a7a629813f260ab52c69ee",
     "commitName": "fix: agregar dependencias de desarrollo para jest y babel",
     "commitTimestamp": 1792580606941,
     "testId": 134
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792599068699,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir renderizado de tabla admin y añadir metodo alClicNuevoAviso faltante",
+    "commitTimestamp": 1792599368500,
+    "testId": 135
   }
 ]
