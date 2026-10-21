@@ -1502,9 +1502,15 @@
     "testId": 126
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0a751c02fd5a81bc482cfed11301c4bb0a58d4c5",
     "commitName": "feat(auth): configurar login.html como ruta inicial y redireccion por rol",
     "commitTimestamp": 1792572634811,
     "testId": 126
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(admin): rediseñar panel de administracion y agregar boton nuevo aviso",
+    "commitTimestamp": 1792572953732,
+    "testId": 127
   }
 ]

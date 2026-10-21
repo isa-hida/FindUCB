@@ -2280,17 +2280,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0a751c02fd5a81bc482cfed11301c4bb0a58d4c5",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T08:50:31.000Z",
       "message": "feat(auth): configurar login.html como ruta inicial y redireccion por rol",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0a751c02fd5a81bc482cfed11301c4bb0a58d4c5"
     },
     "stats": {
       "total": 24,
       "additions": 4,
       "deletions": 20,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T08:55:52.000Z",
+      "message": "feat(admin): rediseñar panel de administracion y agregar boton nuevo aviso",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 133,
+      "additions": 80,
+      "deletions": 53,
       "date": "2026-10-21"
     },
     "coverage": 98.48,

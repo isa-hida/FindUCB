@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Panel de administración | FindU</title>
     <link rel="stylesheet" href="../src/styles/base.css" />
-
     <link rel="stylesheet" href="../src/styles/panel.css" />
 </head>
 
 <body>
-    <main class="contenedor panel">
-        <h1 class="panel__titulo">Panel de administración</h1>
+    <header class="panel-encabezado">
+        <a href="/login.html" class="panel-encabezado__volver" aria-label="Volver">←</a>
+        <h1 class="panel-encabezado__titulo">Panel de Administración</h1>
+    </header>
 
+    <main class="contenedor panel">
         <section class="panel__seccion">
-            <h2 class="panel__subtitulo">Objetos publicados</h2>
+            <div class="panel__cabecera-seccion">
+                <h2 class="panel__subtitulo">Avisos publicados</h2>
+                <a href="/admin/nuevo.html" id="nuevo-aviso-btn" class="boton-nuevo">+ Nuevo aviso</a>
+            </div>
 
             <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
 
@@ -42,7 +47,7 @@
                 <td><img class="tabla__foto" alt="" loading="lazy" /></td>
                 <td class="tabla__categoria"></td>
                 <td class="tabla__fecha"></td>
-                <td><a class="tabla__enlace" href="#">Registrar entrega</a></td>
+                <td><a class="tabla__enlace" href="#">Retirar</a></td>
             </tr>
         </template>
     </main>
