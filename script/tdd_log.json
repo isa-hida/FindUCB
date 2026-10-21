@@ -1520,9 +1520,15 @@
     "testId": 128
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bba2d270d084ea97706e7a98d3d8c9014595f66c",
     "commitName": "feat(admin): agregar boton volver al panel en la pantalla de nuevo aviso",
     "commitTimestamp": 1792575155449,
     "testId": 129
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style(base): actualizar archivo base.css completo con estilos generales y cabecera minimalista",
+    "commitTimestamp": 1792576223834,
+    "testId": 130
   }
 ]

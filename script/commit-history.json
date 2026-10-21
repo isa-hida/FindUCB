@@ -2337,17 +2337,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bba2d270d084ea97706e7a98d3d8c9014595f66c",
     "author": "isa-hida",
     "commit": {
       "date": "2026-10-21T09:32:34.000Z",
       "message": "feat(admin): agregar boton volver al panel en la pantalla de nuevo aviso",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/bba2d270d084ea97706e7a98d3d8c9014595f66c"
     },
     "stats": {
       "total": 302,
       "additions": 238,
       "deletions": 64,
+      "date": "2026-10-21"
+    },
+    "coverage": 98.48,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-10-21T09:50:22.000Z",
+      "message": "style(base): actualizar archivo base.css completo con estilos generales y cabecera minimalista",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 226,
+      "additions": 105,
+      "deletions": 121,
       "date": "2026-10-21"
     },
     "coverage": 98.48,
