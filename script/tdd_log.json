@@ -1628,9 +1628,27 @@
     "testId": 121
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dc9c640c68b696d89c07f67f6b48bc3456798bde",
     "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
     "commitTimestamp": 1792519919617,
     "testId": 122
+  },
+  {
+    "commitId": "378271f1a457c1306fd810283f137f239804f855",
+    "commitName": "fix: corregir comillas invalidas en scripts de package.json",
+    "commitTimestamp": 1792546141169,
+    "testId": 123
+  },
+  {
+    "commitId": "a12a23f1f301395952c813e0fc07b0eae287544d",
+    "commitName": "fix: declarar globales URL y FormData para ESLint",
+    "commitTimestamp": 1792546865692,
+    "testId": 124
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: quitar imports sin usar en services/index.js",
+    "commitTimestamp": 1792547032673,
+    "testId": 125
   }
 ]
