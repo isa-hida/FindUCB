@@ -1628,9 +1628,15 @@
     "testId": 121
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dc9c640c68b696d89c07f67f6b48bc3456798bde",
     "commitName": "feat(HU05): implementar vista previa de foto en la UI y controles HTML",
     "commitTimestamp": 1792519919617,
     "testId": 122
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir comillas invalidas en scripts de package.json",
+    "commitTimestamp": 1792546141169,
+    "testId": 123
   }
 ]
