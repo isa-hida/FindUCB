@@ -16,7 +16,7 @@ export class DetalleObjetoPresenter {
             return;
         }
         const detalle = prepararDetalle(objeto);
-        const [fotoUrl] = await this.fotosStorage.urlsFirmadas([detalle.fotoPath]);
+        const [fotoUrl] = await this.fotosStorage.urlsFirmadas([detalle.rutaFoto]);
         this.vista.mostrarDetalle({
             ...detalle,
             fotoUrl,

@@ -6,5 +6,5 @@ export function crearFilaAdmin(objeto) {
     return {
         id: objeto.id,
         numero: objeto.numero, categoria: objeto.categoria ,
-        fechaHallazgo: objeto.fechaHallazgo , fotoPath: objeto.fotoPath };
+        fechaHallazgo: objeto.fechaHallazgo , rutaFoto: objeto.rutaFoto };
 }

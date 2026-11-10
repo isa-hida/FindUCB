@@ -13,7 +13,7 @@ const crearObjeto = (datos) => ({
     marca: 'Stanley',
     descripcion: 'Termo de acero',
     senas: 'Tapa negra con un rayon',
-    fotoPath: 'objetos/4.jpg',
+    rutaFoto: 'objetos/4.jpg',
     estado: 'publicado',
     encontradoPor: { nombre: 'Jorge Mamani', celular: '70044444' },
     ...datos,
@@ -81,7 +81,7 @@ describe('DetalleObjetoPresenter', () => {
 
     it('muestra la url de la foto del objeto', async () => {
         const { vista, presenter } = crearEscenario(
-            [crearObjeto({ fotoPath: 'objetos/4.jpg' })],
+            [crearObjeto({ rutaFoto: 'objetos/4.jpg' })],
             { 'objetos/4.jpg': 'https://fotos.test/4.jpg' },
         );
 

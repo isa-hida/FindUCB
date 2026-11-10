@@ -14,7 +14,7 @@ export class ListaObjetosAdminPresenter {
         const objetos = await this.objetosRepository.listarParaAdmin();
         const publicados = filtrarPublicados(objetos);
         const urlsFotos = await this.fotosStorage.urlsFirmadas(
-            publicados.map((objeto) => objeto.fotoPath),
+            publicados.map((objeto) => objeto.rutaFoto),
         );
         const filas = publicados.map((objeto,indice) => ({
             ...crearFilaAdmin(objeto),

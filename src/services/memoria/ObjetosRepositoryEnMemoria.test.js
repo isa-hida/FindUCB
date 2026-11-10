@@ -10,7 +10,7 @@ const crearObjeto = (datos) => ({
     marca: '',
     descripcion: 'Billetera de cuero',
     senas: '',
-    fotoPath: 'fotos/1.jpg',
+    rutaFoto: 'fotos/1.jpg',
     estado: 'publicado',
     ...datos,
 });

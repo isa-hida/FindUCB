@@ -55,12 +55,12 @@ describe('prepararListado', () => {
             marca: 'Totto',
             descripcion: 'Mochila con cierre roto',
             senas: 'Llavero de llama',
-            fotoPath: 'objetos/7.jpg',
+            rutaFoto: 'objetos/7.jpg',
             encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
         });
 
         expect(prepararListado([objeto])).toEqual([
-            { id: 7, categoria: 'Mochila', fechaHallazgo: '2026-10-10', fotoPath: 'objetos/7.jpg' },
+            { id: 7, categoria: 'Mochila', fechaHallazgo: '2026-10-10', rutaFoto: 'objetos/7.jpg' },
         ]);
     });
 

@@ -44,9 +44,9 @@ describe('crearFilaAdmin', () => {
     });
 
     it('incluye la ruta de la foto del objeto', () => {
-        const fila = crearFilaAdmin({ fotoPath: 'fotos/1.jpg' });
+        const fila = crearFilaAdmin({ rutaFoto: 'fotos/1.jpg' });
 
-        expect(fila.fotoPath).toBe('fotos/1.jpg');
+        expect(fila.rutaFoto).toBe('fotos/1.jpg');
     });
 
     it('incluye el id del objeto', () => {

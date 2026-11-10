@@ -3,7 +3,7 @@ import { MENSAJES } from './mensajes';
 
 describe('validarObjetoHallado', () => {
     it('da error si falta la categoria o la descripcion', () => {
-        const errores = validarObjetoHallado({ categoria: '', descripcion: '', fotoPath: '/fotos/ejemplo.jpg' });
+        const errores = validarObjetoHallado({ categoria: '', descripcion: '', rutaFoto: '/fotos/ejemplo.jpg' });
 
         expect(errores).toEqual([MENSAJES.FALTA_CATEGORIA_DESCRIPCION]);
     });
@@ -12,7 +12,7 @@ describe('validarObjetoHallado', () => {
         const errores = validarObjetoHallado({
             categoria: 'Llaves',
             descripcion: 'Llaves de oficina',
-            fotoPath: '',
+            rutaFoto: '',
         });
 
         expect(errores).toEqual([MENSAJES.FOTO_OBLIGATORIA]);
@@ -22,7 +22,7 @@ describe('validarObjetoHallado', () => {
         const errores = validarObjetoHallado({
             categoria: 'Llaves',
             descripcion: 'Llaves de oficina',
-            fotoPath: '/fotos/llaves.jpg',
+            rutaFoto: '/fotos/llaves.jpg',
         });
 
         expect(errores).toEqual([]);
@@ -32,7 +32,7 @@ describe('validarObjetoHallado', () => {
         const errores = validarObjetoHallado({
             categoria: 'Llaves',
             descripcion: 'Llaves de oficina',
-            fotoPath: '/fotos/animacion.gif',
+            rutaFoto: '/fotos/animacion.gif',
         });
 
         expect(errores).toEqual(['El formato de la foto debe ser JPG o PNG']);
@@ -42,7 +42,7 @@ describe('validarObjetoHallado', () => {
         const errores = validarObjetoHallado({
             categoria: 'Llaves',
             descripcion: 'Llaves de oficina',
-            fotoPath: '/fotos/objeto.png',
+            rutaFoto: '/fotos/objeto.png',
         });
 
         expect(errores).toEqual([]);

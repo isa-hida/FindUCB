@@ -69,8 +69,8 @@ describe('ListadoPublicoPresenter', () => {
     it('cada tarjeta trae la url de su foto', async () => {
         const { vista, presenter } = crearEscenario(
             [
-                crearObjeto({ id: 1, fechaHallazgo: '2026-10-01', fotoPath: 'objetos/1.jpg' }),
-                crearObjeto({ id: 2, fechaHallazgo: '2026-10-15', fotoPath: 'objetos/2.jpg' }),
+                crearObjeto({ id: 1, fechaHallazgo: '2026-10-01', rutaFoto: 'objetos/1.jpg' }),
+                crearObjeto({ id: 2, fechaHallazgo: '2026-10-15', rutaFoto: 'objetos/2.jpg' }),
             ],
             {
                 'objetos/1.jpg': 'https://fotos.test/1.jpg',

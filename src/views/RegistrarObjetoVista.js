@@ -9,7 +9,7 @@ export class RegistrarObjetoVista {
         this.previewImagen = documento.getElementById('foto-preview');
         this.descripcionInput = documento.getElementById('descripcion');
         this.contadorCaracteres = documento.getElementById('contador-caracteres');
-        this.fotoPathActual = '';
+        this.rutaFotoActual = '';
 
         this._inicializarEventos();
     }
@@ -19,13 +19,13 @@ export class RegistrarObjetoVista {
             this.fotoInput.addEventListener('change', (e) => {
                 const archivo = e.target.files[0];
                 if (archivo) {
-                    this.fotoPathActual = archivo.name;
+                    this.rutaFotoActual = archivo.name;
                     if (this.previewImagen) {
                         this.previewImagen.src = URL.createObjectURL(archivo);
                         this.previewImagen.hidden = false;
                     }
                 } else {
-                    this.fotoPathActual = '';
+                    this.rutaFotoActual = '';
                     if (this.previewImagen) {
                         this.previewImagen.hidden = true;
                     }
@@ -53,7 +53,7 @@ export class RegistrarObjetoVista {
                 lugar: formData.get('lugar'),
                 color: formData.get('color'),
                 marca: formData.get('marca'),
-                fotoPath: this.fotoPathActual || formData.get('fotoPath') || '',
+                rutaFoto: this.rutaFotoActual || formData.get('rutaFoto') || '',
                 encontradoPor: {
                     nombre: formData.get('encontradoNombre'),
                     celular: formData.get('encontradoCelular'),
@@ -78,7 +78,7 @@ export class RegistrarObjetoVista {
         this.exitoElemento.hidden = false;
         this.errorElemento.hidden = true;
         this.formulario.reset();
-        this.fotoPathActual = '';
+        this.rutaFotoActual = '';
         if (this.previewImagen) {
             this.previewImagen.hidden = true;
             this.previewImagen.src = '';

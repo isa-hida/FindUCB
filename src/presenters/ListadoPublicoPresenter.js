@@ -20,7 +20,7 @@ export class ListadoPublicoPresenter {
             this.vista.mostrarVacio(MENSAJES.SIN_OBJETOS_HALLADOS);
             return;
         }
-        const urls = await this.fotosStorage.urlsFirmadas(tarjetas.map((tarjeta) => tarjeta.fotoPath));
+        const urls = await this.fotosStorage.urlsFirmadas(tarjetas.map((tarjeta) => tarjeta.rutaFoto));
         this.tarjetas = tarjetas.map((tarjeta, indice) => ({
             ...tarjeta,
             fotoUrl: urls[indice],

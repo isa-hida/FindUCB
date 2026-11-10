@@ -64,7 +64,7 @@ describe('ListaObjetosAdminPresenter', () => {
 
     it('cada fila trae la url de la foto de su objeto', async () => {
         const { vista, presenter } = crearEscenario([
-            { id: 1, numero: 7, estado: 'publicado', fotoPath: 'fotos/1.jpg' },
+            { id: 1, numero: 7, estado: 'publicado', rutaFoto: 'fotos/1.jpg' },
         ]);
 
         await presenter.cargar();
