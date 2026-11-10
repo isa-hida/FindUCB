@@ -18,7 +18,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         tarjetas: [],
         categorias: [],
         errores: [],
-        filtrosLimpiados: false,
+        seLimpiaronLosFiltros: false,
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
         },
@@ -35,7 +35,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
             this.errores = [];
         },
         limpiarFiltros() {
-            this.filtrosLimpiados = true;
+            this.seLimpiaronLosFiltros = true;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -176,7 +176,7 @@ describe('ListadoPublicoPresenter', () => {
 
         presenter.limpiarFiltros();
 
-        expect(vista.filtrosLimpiados).toEqual(true);
+        expect(vista.seLimpiaronLosFiltros).toEqual(true);
         expect(vista.tarjetas.map((tarjeta) => tarjeta.id)).toEqual([2, 1]);
     });
 
