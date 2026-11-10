@@ -5,9 +5,9 @@ import { ListaObjetosAdminPresenter } from '../presenters/ListaObjetosAdminPrese
 const vista = new ListaObjetosAdminVista(document);
 const presenter = new ListaObjetosAdminPresenter(vista, objetosRepository, fotosStorage);
 
-const btnNuevo = document.getElementById('nuevo-aviso-btn');
-if (btnNuevo) {
-    btnNuevo.addEventListener('click', (e) => {
+const botonNuevoAviso = document.getElementById('nuevo-aviso-btn');
+if (botonNuevoAviso) {
+    botonNuevoAviso.addEventListener('click', (e) => {
         e.preventDefault();
         window.location.assign('./nuevo.html');
     });

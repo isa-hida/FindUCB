@@ -5,7 +5,7 @@ export class ListaObjetosAdminVista {
         this.plantillaFila = documento.getElementById('plantilla-fila');
         this.cajaVacia = documento.getElementById('mensaje-vacio');
 
-        this.btnNuevo = documento.getElementById('nuevo-aviso-btn'); 
+        this.botonNuevoAviso = documento.getElementById('nuevo-aviso-btn'); 
     }
 
     mostrarFilas(filas) {
@@ -43,8 +43,8 @@ export class ListaObjetosAdminVista {
         window.location.assign(url);
     }
     alClicNuevoAviso(callback) {
-        if (this.btnNuevo) {
-            this.btnNuevo.addEventListener('click', (e) => {
+        if (this.botonNuevoAviso) {
+            this.botonNuevoAviso.addEventListener('click', (e) => {
                 e.preventDefault(); // Evita el comportamiento por defecto del enlace si es necesario
                 callback();
             });
