@@ -7,16 +7,16 @@ export class RegistrarObjetoPresenter {
         this.objetosRepository = objetosRepository;
     }
 
-    async registrar(datos) {
+    async registrar(datosObjeto) {
         this.vista.limpiarError();
 
-        const errores = validarObjetoHallado(datos);
+        const errores = validarObjetoHallado(datosObjeto);
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
             return;
         }
 
-        await this.objetosRepository.registrar(datos);
+        await this.objetosRepository.registrar(datosObjeto);
         this.vista.mostrarExito(MENSAJES.AVISO_PUBLICADO);
     }
 }
