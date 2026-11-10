@@ -1580,9 +1580,23 @@
     "testId": 134
   },
   {
+<<<<<<< HEAD
     "commitId": "HEAD",
     "commitName": "fix: datos por datosObjeto",
     "commitTimestamp": 1794319118478,
+=======
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1792599068699,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir renderizado de tabla admin y añadir metodo alClicNuevoAviso faltante",
+    "commitTimestamp": 1792599368500,
+>>>>>>> 09de49d6ee3449f7a6edb35e7eebae309b021625
     "testId": 135
   }
 ]
