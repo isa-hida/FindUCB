@@ -1,9 +1,9 @@
 import { LoginComunidadVista } from '../views/LoginComunidadVista.js';
 import { LoginComunidadPresenter } from '../presenters/LoginComunidadPresenter.js';
-import { auth } from '../services/index.js';
+import { autenticacion } from '../services/index.js';
 
 const vista = new LoginComunidadVista();
-const presenter = new LoginComunidadPresenter(vista, auth);
+const presenter = new LoginComunidadPresenter(vista, autenticacion);
 
 vista.alEnviar(async () => {
     const correo = vista.obtenerCorreo();

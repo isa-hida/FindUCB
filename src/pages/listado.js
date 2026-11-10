@@ -1,9 +1,9 @@
-import { objetosRepository, fotosStorage, auth } from '../services/index.js';
+import { objetosRepository, fotosStorage, autenticacion } from '../services/index.js';
 import { ListadoPublicoVista } from '../views/ListadoPublicoVista.js';
 import { ListadoPublicoPresenter } from '../presenters/ListadoPublicoPresenter.js';
 
 async function inicializarPagina() {
-    const usuario = await auth.obtenerUsuario();
+    const usuario = await autenticacion.obtenerUsuario();
 
     if (!usuario) {
         window.location.href = './login.html';

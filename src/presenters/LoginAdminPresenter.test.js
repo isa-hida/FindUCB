@@ -16,13 +16,13 @@ const crearEscenario = () => {
             this.redirecciones.push(url);
         },
     };
-    const auth = {
+    const autenticacion = {
         async iniciarSesionAdmin(_correo) {
             return { ok: true };
         },
     };
-    const presenter = new LoginAdminPresenter(vista, auth);
-    return { vista, auth, presenter };
+    const presenter = new LoginAdminPresenter(vista, autenticacion);
+    return { vista, autenticacion, presenter };
 };
 
 describe('LoginAdminPresenter', () => {

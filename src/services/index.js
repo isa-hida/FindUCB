@@ -9,7 +9,7 @@ import fotoCuaderno from 'url:../assets/ejemplos/cuaderno.svg';
 
 //import { ObjetosRepositoryEnMemoria } from './memoria/ObjetosRepositoryEnMemoria';
 //import { FotosStorageEnMemoria } from './memoria/FotosStorageEnMemoria';
-export const auth = new AuthEnMemoria({
+export const autenticacion = new AuthEnMemoria({
     cuentas: [
         { correo: 'admin@ucb.edu.bo', password: 'Admin123' },
         { correo: 'estudiante@ucb.edu.bo', password: 'Estudiante123' },

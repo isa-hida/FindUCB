@@ -2,9 +2,9 @@ import { validarCorreoComunidad } from '../domain/correo.js';
 import { RUTAS } from '../config.js';
 
 export class LoginComunidadPresenter {
-    constructor(vista, auth) {
+    constructor(vista, autenticacion) {
         this.vista = vista;
-        this.auth = auth;
+        this.autenticacion = autenticacion;
     }
 
     async ingresar(correo) {
@@ -19,10 +19,10 @@ export class LoginComunidadPresenter {
         const correoLimpio = correo.trim().toLowerCase();
 
         if (correoLimpio === 'adminbienestar@ucb.edu.bo' || correoLimpio === 'admin@ucb.edu.bo') {
-            await this.auth.iniciarSesionAdmin(correoLimpio);
+            await this.autenticacion.iniciarSesionAdmin(correoLimpio);
             this.vista.redirigir(RUTAS.PANEL_ADMIN);
         } else {
-            await this.auth.iniciarSesionComunidad(correoLimpio);
+            await this.autenticacion.iniciarSesionComunidad(correoLimpio);
             this.vista.redirigir('/index.html');
         }
     }

@@ -3,9 +3,9 @@ import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
 export class LoginAdminPresenter {
-    constructor(vista, auth) {
+    constructor(vista, autenticacion) {
         this.vista = vista;
-        this.auth = auth;
+        this.autenticacion = autenticacion;
     }
 
     async ingresar(correo) {
@@ -24,7 +24,7 @@ export class LoginAdminPresenter {
             return;
         }
 
-        await this.auth.iniciarSesionAdmin(correoLimpio);
+        await this.autenticacion.iniciarSesionAdmin(correoLimpio);
         this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 }

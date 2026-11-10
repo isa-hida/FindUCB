@@ -16,7 +16,7 @@ const crearEscenario = () => {
             this.redirecciones.push(url);
         },
     };
-    const auth = {
+    const autenticacion = {
         async iniciarSesionComunidad(_correo) {
             return { ok: true };
         },
@@ -24,8 +24,8 @@ const crearEscenario = () => {
             return { ok: true };
         },
     };
-    const presenter = new LoginComunidadPresenter(vista, auth);
-    return { vista, auth, presenter };
+    const presenter = new LoginComunidadPresenter(vista, autenticacion);
+    return { vista, autenticacion, presenter };
 };
 
 describe('LoginComunidadPresenter', () => {
