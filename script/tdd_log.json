@@ -1580,23 +1580,37 @@
     "testId": 134
   },
   {
-<<<<<<< HEAD
-    "commitId": "HEAD",
+    "commitId": "4e83b01bbfd89768d52d96f546b0122a6ea21e88",
     "commitName": "fix: datos por datosObjeto",
     "commitTimestamp": 1794319118478,
-=======
-    "numPassedTests": 103,
-    "failedTests": 0,
-    "numTotalTests": 103,
-    "timestamp": 1792599068699,
-    "success": true,
     "testId": 135
   },
   {
+    "commitId": "6532f2899faba400b35ba87bebc5bcb05498adf1",
+    "commitName": "fix: corregir conflicto en tdd_log.json tras cierre de sesion",
+    "commitTimestamp": 1794626562618,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1794627649941,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1794628447069,
+    "success": true,
+    "testId": 137
+  },
+  {
     "commitId": "HEAD",
-    "commitName": "fix: corregir renderizado de tabla admin y añadir metodo alClicNuevoAviso faltante",
-    "commitTimestamp": 1792599368500,
->>>>>>> 09de49d6ee3449f7a6edb35e7eebae309b021625
-    "testId": 135
+    "commitName": "test(auth): agregar mock de sessionStorage para entorno CI",
+    "commitTimestamp": 1794628481750,
+    "testId": 137
   }
 ]

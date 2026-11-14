@@ -255,7 +255,6 @@
     display: none;
 }
 
-/* Dropzone para carga de Foto */
 .dropzone-foto {
     border: 2px dashed #cbd5e1;
     border-radius: 8px;
@@ -301,7 +300,6 @@
     border-radius: 6px;
 }
 
-/* Acciones y Botones del Formulario */
 .formulario__acciones {
     display: flex;
     flex-direction: column;
@@ -337,4 +335,9 @@
 .tabla[hidden],
 [hidden] {
     display: none !important;
+}
+
+.panel-encabezado__salir {
+    position: absolute;
+    right: 2rem;
 }
