@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "39a5af4c0d5eafb939e7984ea12e3591b9fc1ffe",
     "author": "Natalia",
     "commit": {
       "date": "2026-11-14T03:54:41.000Z",
       "message": "test(auth): agregar mock de sessionStorage para entorno CI",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/39a5af4c0d5eafb939e7984ea12e3591b9fc1ffe"
     },
     "stats": {
       "total": 30,
@@ -34,6 +34,25 @@
     },
     "coverage": 97.41,
     "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-11-14T04:58:43.000Z",
+      "message": "feat(bienestar): implementar visualizacion de horario y ubicacion de Bienestar (HU-11)",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 57,
+      "deletions": 0,
+      "date": "2026-11-14"
+    },
+    "coverage": 97.42,
+    "test_count": 111,
     "failed_tests": 0,
     "conclusion": "success"
   }
