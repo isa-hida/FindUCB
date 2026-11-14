@@ -1608,9 +1608,39 @@
     "testId": 137
   },
   {
-    "commitId": "HEAD",
+    "commitId": "39a5af4c0d5eafb939e7984ea12e3591b9fc1ffe",
     "commitName": "test(auth): agregar mock de sessionStorage para entorno CI",
     "commitTimestamp": 1794628481750,
     "testId": 137
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1794630880892,
+    "success": false,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794631362357,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794632272416,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(bienestar): implementar visualizacion de horario y ubicacion de Bienestar (HU-11)",
+    "commitTimestamp": 1794632323465,
+    "testId": 138
   }
 ]
