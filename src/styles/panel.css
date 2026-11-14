@@ -338,3 +338,8 @@
 [hidden] {
     display: none !important;
 }
+
+.panel-encabezado__salir {
+    position: absolute;
+    right: 2rem;
+}

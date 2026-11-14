@@ -1,4 +1,5 @@
 export const RUTAS = {
+    LOGIN: '/login.html',
     LOGIN_ADMIN: '/admin/login.html',
     PANEL_ADMIN: '/admin/index.html',
 

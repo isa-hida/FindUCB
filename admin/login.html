@@ -20,14 +20,14 @@
             <h2 class="tarjeta__titulo">Acceso de administrador</h2>
             <p class="tarjeta__ayuda">Solo personal autorizado de Bienestar Estudiantil.</p>
 
-            <form id="login-form" class="formulario" novalidate>
+            <form id="login-form" class="formulario" autocomplete="off" novalidate>
                 <div class="campo">
                     <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" autocomplete="username" />
+                    <input type="email" id="correo" name="correo" autocomplete="off" />
                 </div>
                 <div class="campo">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" autocomplete="current-password" />
+                    <input type="password" id="password" name="password" autocomplete="new-password" />
                 </div>
 
                 <p id="error-mensaje" class="error" role="alert" hidden></p>
