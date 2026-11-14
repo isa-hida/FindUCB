@@ -14,6 +14,9 @@ describe('SesionAdminPresenter (HU-03)', () => {
             redirigir(url) {
                 this.redirecciones.push(url);
             },
+            reemplazar(url) {
+                this.redirecciones.push(url);
+            },
         };
         auth = new AuthEnMemoria();
         presenter = new SesionAdminPresenter(vista, auth);
@@ -49,6 +52,6 @@ describe('SesionAdminPresenter (HU-03)', () => {
         const usuarioActual = await auth.obtenerUsuario();
         expect(usuarioActual).toBeNull();
         expect(sessionStorage.getItem('usuario')).toBeNull();
-        expect(vista.redirecciones).toEqual([RUTAS.LOGIN_ADMIN]);
+        expect(vista.redirecciones).toEqual([RUTAS.LOGIN]);
     });
 });

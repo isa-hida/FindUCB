@@ -18,8 +18,8 @@ export class SesionAdminPresenter {
         const rutaDestino = RUTAS.LOGIN || '/login.html';
         if (typeof this.vista.reemplazar === 'function') {
             this.vista.reemplazar(rutaDestino);
-        } else {
-            window.location.replace(rutaDestino);
+        } else if (typeof this.vista.redirigir === 'function') {
+            this.vista.redirigir(rutaDestino);
         }
     }
 }

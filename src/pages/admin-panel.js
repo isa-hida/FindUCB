@@ -9,6 +9,9 @@ const vistaSesion = {
     redirigir(url) {
         window.location.assign(url);
     },
+    reemplazar(url) {
+        window.location.replace(url);
+    },
 }; 
 
 const sesionPresenter = new SesionAdminPresenter(vistaSesion, auth);
