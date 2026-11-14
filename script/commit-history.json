@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "6532f2899faba400b35ba87bebc5bcb05498adf1",
     "author": "Natalia",
     "commit": {
       "date": "2026-11-14T03:22:42.000Z",
       "message": "fix: corregir conflicto en tdd_log.json tras cierre de sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/6532f2899faba400b35ba87bebc5bcb05498adf1"
     },
     "stats": {
       "total": 0,
       "additions": 0,
       "deletions": 0,
+      "date": "2026-11-14"
+    },
+    "coverage": 97.41,
+    "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-11-14T03:54:41.000Z",
+      "message": "test(auth): agregar mock de sessionStorage para entorno CI",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 20,
+      "deletions": 10,
       "date": "2026-11-14"
     },
     "coverage": 97.41,

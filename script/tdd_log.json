@@ -1586,9 +1586,31 @@
     "testId": 135
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6532f2899faba400b35ba87bebc5bcb05498adf1",
     "commitName": "fix: corregir conflicto en tdd_log.json tras cierre de sesion",
     "commitTimestamp": 1794626562618,
     "testId": 136
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1794627649941,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1794628447069,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(auth): agregar mock de sessionStorage para entorno CI",
+    "commitTimestamp": 1794628481750,
+    "testId": 137
   }
 ]

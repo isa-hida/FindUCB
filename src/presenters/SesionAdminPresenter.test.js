@@ -2,6 +2,16 @@ import { SesionAdminPresenter } from './SesionAdminPresenter.js';
 import { AuthEnMemoria } from '../services/memoria/AuthEnMemoria.js';
 import { RUTAS } from '../config.js';
 
+const almacenamiento = {};
+global.sessionStorage = {
+    getItem: (clave) => almacenamiento[clave] || null,
+    setItem: (clave, valor) => { almacenamiento[clave] = String(valor); },
+    removeItem: (clave) => { delete almacenamiento[clave]; },
+    clear: () => {
+        Object.keys(almacenamiento).forEach((k) => delete almacenamiento[k]);
+    },
+};
+
 describe('SesionAdminPresenter (HU-03)', () => {
     let vista;
     let auth;
