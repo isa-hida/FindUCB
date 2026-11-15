@@ -1936,9 +1936,15 @@
     "testId": 153
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9a445599f1140f8f19bcd1f700a9405ccbf9d2d3",
     "commitName": "fix: guardar en el almacen las entregas registradas",
     "commitTimestamp": 1794708978006,
     "testId": 153
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: usar localStorage como almacen de los objetos de la app",
+    "commitTimestamp": 1794709084928,
+    "testId": 154
   }
 ]

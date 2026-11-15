@@ -323,16 +323,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9a445599f1140f8f19bcd1f700a9405ccbf9d2d3",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:16:15.000Z",
       "message": "fix: guardar en el almacen las entregas registradas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9a445599f1140f8f19bcd1f700a9405ccbf9d2d3"
     },
     "stats": {
       "total": 21,
       "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.63,
+    "test_count": 129,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:18:01.000Z",
+      "message": "feat: usar localStorage como almacen de los objetos de la app",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
       "deletions": 0,
       "date": "2026-11-15"
     },
