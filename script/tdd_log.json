@@ -2564,9 +2564,15 @@
     "testId": 206
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cd8377c3055e417521f1a0bdfb3fb7bf24be8183",
     "commitName": "feat(HU14): incluir la ruta de la foto en la fila del historial",
     "commitTimestamp": 1794764541244,
     "testId": 207
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): entregar a la vista la URL de la foto de cada objeto del historial",
+    "commitTimestamp": 1794764797111,
+    "testId": 208
   }
 ]

@@ -1,4 +1,4 @@
-import { objetosRepository } from '../services/index.js';
+import { objetosRepository,fotosStorage } from '../services/index.js';
 import { AuthEnMemoria } from '../services/memoria/AuthEnMemoria.js';
 import { HistorialEntregasVista } from '../views/HistorialEntregasVista.js';
 import { HistorialEntregasPresenter } from '../presenters/HistorialEntregasPresenter.js';
@@ -14,6 +14,6 @@ sesionPresenter.verificarAcceso();
 
 // Carga del historial
 const vista = new HistorialEntregasVista(document);
-const presenter = new HistorialEntregasPresenter(vista, objetosRepository);
+const presenter = new HistorialEntregasPresenter(vista, objetosRepository, fotosStorage);
 
 presenter.cargar();

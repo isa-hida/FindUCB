@@ -12,8 +12,11 @@ const crearEscenario = (objetos = []) => {
             this.mensajesVacios.push(mensaje);
         },
     };
+        const fotosStorage = {
+        urlsFirmadas: async (rutas) => rutas.map((ruta) => (ruta ? `url-de-${ruta}` : undefined)),
+    };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new HistorialEntregasPresenter(vista, objetosRepository);
+    const presenter = new HistorialEntregasPresenter(vista, objetosRepository, fotosStorage);
     return { vista, presenter };
 };
 
@@ -44,5 +47,20 @@ describe('HistorialEntregasPresenter', () => {
         await presenter.cargar();
 
         expect(vista.mensajesVacios).toEqual(['No hay objetos entregados']);
+    });
+    it('entrega a la vista la URL de la foto de cada objeto', async () => {
+        const entregado = {
+            id: 5,
+            numero: 5,
+            categoria: 'Útiles',
+            estado: 'entregado',
+            rutaFoto: 'ejemplos/cuaderno.svg',
+            entrega: { nombre: 'Pedro Gutiérrez', fechaEntrega: '2026-10-17' },
+        };
+        const { vista, presenter } = crearEscenario([entregado]);
+
+        await presenter.cargar();
+
+        expect(vista.filas[0].fotoUrl).toBe('url-de-ejemplos/cuaderno.svg');
     });
 });
