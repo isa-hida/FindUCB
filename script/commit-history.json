@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e5d0be7d52e444d78a0445bd2f730e5ed9df831d",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:24:31.000Z",
       "message": "test: actualizar e2e de HU05 con los mensajes y datos actuales",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e5d0be7d52e444d78a0445bd2f730e5ed9df831d"
     },
     "stats": {
       "total": 37,
@@ -414,6 +414,25 @@
     },
     "coverage": 97.63,
     "test_count": 129,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:30:26.000Z",
+      "message": "feat: FotosEnMemoria guarda fotos subidas y devuelve su ruta",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 43,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 131,
     "failed_tests": 0,
     "conclusion": "success"
   }

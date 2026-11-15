@@ -1960,9 +1960,31 @@
     "testId": 156
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e5d0be7d52e444d78a0445bd2f730e5ed9df831d",
     "commitName": "test: actualizar e2e de HU05 con los mensajes y datos actuales",
     "commitTimestamp": 1794709474111,
     "testId": 157
+  },
+  {
+    "numPassedTests": 129,
+    "failedTests": 2,
+    "numTotalTests": 131,
+    "timestamp": 1794709746581,
+    "success": false,
+    "testId": 158
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794709773761,
+    "success": true,
+    "testId": 158
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: FotosEnMemoria guarda fotos subidas y devuelve su ruta",
+    "commitTimestamp": 1794709829095,
+    "testId": 158
   }
 ]
