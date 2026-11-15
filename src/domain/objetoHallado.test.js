@@ -18,6 +18,24 @@ describe('validarObjetoHallado', () => {
 
         expect(errores).toEqual([MENSAJES.FALTA_CATEGORIA_DESCRIPCION]);
     });
+    it.each([
+        ['la fecha de hallazgo', { fechaHallazgo: '' }],
+        ['el lugar', { lugar: '' }],
+        ['el color', { color: '' }],
+        ['el nombre de quien lo encontro', { encontradoPor: { nombre: '', celular: '70011111' } }],
+        ['el celular de quien lo encontro', { encontradoPor: { nombre: 'Carla Rojas', celular: '' } }],
+        ['los datos de quien lo encontro', { encontradoPor: undefined }],
+    ])('da error si falta %s', (_campo, cambios) => {
+        const errores = validarObjetoHallado(crearDatosValidos(cambios));
+
+        expect(errores).toEqual([MENSAJES.FALTAN_DATOS_HALLAZGO]);
+    });
+
+    it('no exige la marca porque es opcional', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({ marca: '' }));
+
+        expect(errores).toEqual([]);
+    });
 
     it('da error si falta la foto del objeto', () => {
         const errores = validarObjetoHallado(crearDatosValidos({ rutaFoto: '' }));

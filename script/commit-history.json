@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8663def6b2b80c83c058a11cdda7a84ae1a5ccec",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:13:16.000Z",
       "message": "refactor: extraer datos validos de objeto hallado en los tests",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8663def6b2b80c83c058a11cdda7a84ae1a5ccec"
     },
     "stats": {
       "total": 37,
@@ -72,6 +72,25 @@
     },
     "coverage": 97.42,
     "test_count": 111,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:19:26.000Z",
+      "message": "feat: exigir fecha, lugar, color y datos de quien encontro el objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 37,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.49,
+    "test_count": 118,
     "failed_tests": 0,
     "conclusion": "success"
   }

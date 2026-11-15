@@ -40,6 +40,9 @@ describe('RegistrarObjetoPresenter', () => {
             fechaHallazgo: '2026-10-21',
             hoy: '2026-10-20',
             rutaFoto: '/fotos/llaves.jpg',
+            lugar: 'Biblioteca',
+            color: 'Dorado',
+            encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
         });
 
         expect(vista.errores).toEqual([MENSAJES.FECHA_FUTURA]);

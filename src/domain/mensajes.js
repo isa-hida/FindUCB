@@ -3,6 +3,7 @@ export const MENSAJES = {
     CREDENCIALES_INVALIDAS: 'Correo o contraseña no son válidos',
     CAMPOS_LOGIN_VACIOS: 'Por favor, ingrese correo y contraseña',
     FALTA_CATEGORIA_DESCRIPCION: 'Es necesario ingresar categoría y descripción',
+    FALTAN_DATOS_HALLAZGO: 'Es necesario completar fecha, lugar, color y datos de quien encontró el objeto',
     FECHA_FUTURA: 'La fecha de hallazgo no puede ser posterior a hoy',
     TEXTO_MUY_LARGO: 'La descripción y las señas admiten como máximo 300 caracteres',
     AVISO_PUBLICADO: 'Aviso publicado correctamente',

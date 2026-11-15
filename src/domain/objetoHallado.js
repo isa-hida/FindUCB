@@ -1,8 +1,22 @@
 import { MENSAJES } from './mensajes';
 
-export function validarObjetoHallado({ categoria, descripcion, senas, fechaHallazgo, hoy, rutaFoto }) {
+function falta(texto) {
+    return !texto || !texto.trim();
+}
+
+function faltanDatosDelHallazgo({ fechaHallazgo, lugar, color, encontradoPor }) {
+    const { nombre, celular } = encontradoPor ?? {};
+    return [fechaHallazgo, lugar, color, nombre, celular].some(falta);
+}
+
+export function validarObjetoHallado(datos) {
+    const { categoria, descripcion, senas, fechaHallazgo, hoy, rutaFoto } = datos;
+
     if (!categoria || !descripcion) {
         return [MENSAJES.FALTA_CATEGORIA_DESCRIPCION];
+    }
+    if (faltanDatosDelHallazgo(datos)) {
+        return [MENSAJES.FALTAN_DATOS_HALLAZGO];
     }
     if (!rutaFoto) {
         return [MENSAJES.FOTO_OBLIGATORIA];

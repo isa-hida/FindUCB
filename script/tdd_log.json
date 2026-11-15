@@ -1660,9 +1660,39 @@
     "testId": 139
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8663def6b2b80c83c058a11cdda7a84ae1a5ccec",
     "commitName": "refactor: extraer datos validos de objeto hallado en los tests",
     "commitTimestamp": 1794705197675,
     "testId": 139
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 0,
+    "numTotalTests": 118,
+    "timestamp": 1794705248399,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 117,
+    "failedTests": 1,
+    "numTotalTests": 118,
+    "timestamp": 1794705443379,
+    "success": false,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 0,
+    "numTotalTests": 118,
+    "timestamp": 1794705539727,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: exigir fecha, lugar, color y datos de quien encontro el objeto",
+    "commitTimestamp": 1794705567639,
+    "testId": 140
   }
 ]
