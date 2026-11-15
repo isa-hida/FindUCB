@@ -1,6 +1,8 @@
 import { MENSAJES } from './mensajes';
 import { MAX_CARACTERES_TEXTO } from './limites';
 
+const EXTENSIONES_FOTO = ['.jpg', '.jpeg', '.png'];
+
 function falta(texto) {
     return !texto || !texto.trim();
 }
@@ -10,8 +12,16 @@ function faltanDatosDelHallazgo({ fechaHallazgo, lugar, color, encontradoPor }) 
     return [fechaHallazgo, lugar, color, nombre, celular].some(falta);
 }
 
+function errorDeFoto({ rutaFoto, fotoActual }) {
+    if (!rutaFoto) {
+        return fotoActual ? null : MENSAJES.FOTO_OBLIGATORIA;
+    }
+    const esFormatoValido = EXTENSIONES_FOTO.some((ext) => rutaFoto.toLowerCase().endsWith(ext));
+    return esFormatoValido ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
+}
+
 export function validarObjetoHallado(datos) {
-    const { categoria, descripcion, senas, fechaHallazgo, hoy, rutaFoto } = datos;
+    const { categoria, descripcion, senas, fechaHallazgo, hoy } = datos;
 
     if (!categoria || !descripcion) {
         return [MENSAJES.FALTA_CATEGORIA_DESCRIPCION];
@@ -19,15 +29,10 @@ export function validarObjetoHallado(datos) {
     if (faltanDatosDelHallazgo(datos)) {
         return [MENSAJES.FALTAN_DATOS_HALLAZGO];
     }
-    if (!rutaFoto) {
-        return [MENSAJES.FOTO_OBLIGATORIA];
+    const mensajeFoto = errorDeFoto(datos);
+    if (mensajeFoto) {
+        return [mensajeFoto];
     }
-    const extensionesValidas = ['.jpg', '.jpeg', '.png'];
-    const esFormatoValido = extensionesValidas.some((ext) => rutaFoto.toLowerCase().endsWith(ext));
-    if (!esFormatoValido) {
-        return [MENSAJES.FORMATO_FOTO_INVALIDO];
-    }
-
     if ((descripcion && descripcion.length > MAX_CARACTERES_TEXTO) || (senas && senas.length > MAX_CARACTERES_TEXTO)) {
         return [MENSAJES.TEXTO_MUY_LARGO];
     }

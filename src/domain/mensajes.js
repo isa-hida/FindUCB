@@ -8,6 +8,7 @@ export const MENSAJES = {
     FECHA_FUTURA: 'La fecha de hallazgo no puede ser posterior a hoy',
     TEXTO_MUY_LARGO: `La descripción y las señas admiten como máximo ${MAX_CARACTERES_TEXTO} caracteres`,
     AVISO_PUBLICADO: 'Aviso publicado correctamente',
+    AVISO_ACTUALIZADO: 'Aviso actualizado correctamente',
     FOTO_INVALIDA: 'La foto debe ser una imagen de máximo 5 MB',
     FORMATO_FOTO_INVALIDO: 'El formato de la foto debe ser JPG o PNG',
     FOTO_OBLIGATORIA: 'Es necesario adjuntar la foto del objeto',

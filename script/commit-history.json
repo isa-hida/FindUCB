@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5dff1eaea619786e07c3bb796e051737f2651ce6",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:02:04.000Z",
       "message": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5dff1eaea619786e07c3bb796e051737f2651ce6"
     },
     "stats": {
       "total": 3,
@@ -699,6 +699,253 @@
     },
     "coverage": 97.64,
     "test_count": 131,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b371e08f39100e79b1777af42f2d02db0d86688e",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:13:53.000Z",
+      "message": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b371e08f39100e79b1777af42f2d02db0d86688e"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.66,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2a22111affea6f34c64f968d9b6c029aa1681ebe",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:15:32.000Z",
+      "message": "feat: guardar en el almacen los objetos actualizados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/2a22111affea6f34c64f968d9b6c029aa1681ebe"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 134,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d476654432ad1be9085b1524e104a237a1a5b801",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:20:16.000Z",
+      "message": "feat: validar la foto solo si es nueva cuando el aviso ya tiene una",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d476654432ad1be9085b1524e104a237a1a5b801"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 25,
+      "deletions": 7,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f9ffec5d3c3e52b48541dad3421303a99b20d205",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:21:09.000Z",
+      "message": "refactor: extraer la validacion de la foto del validador de objetos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f9ffec5d3c3e52b48541dad3421303a99b20d205"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 14,
+      "deletions": 10,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:25:59.000Z",
+      "message": "feat: el presenter de edicion carga los datos actuales del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3"
+    },
+    "stats": {
+      "total": 99,
+      "additions": 99,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.74,
+    "test_count": 138,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "385fffcdda5ae2af427a857e60ec532f5ad09bd4",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:29:14.000Z",
+      "message": "feat: avisar en la edicion si el objeto no existe o ya fue entregado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/385fffcdda5ae2af427a857e60ec532f5ad09bd4"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.77,
+    "test_count": 140,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "423312412c47890ead2cdcc2536d514589a13b46",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:33:26.000Z",
+      "message": "feat: guardar los cambios de un aviso y mostrar el mensaje de actualizado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/423312412c47890ead2cdcc2536d514589a13b46"
+    },
+    "stats": {
+      "total": 51,
+      "additions": 48,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.8,
+    "test_count": 141,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1bdb3eef38e66cc773776e24a36038acd9e5937b",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:35:31.000Z",
+      "message": "feat: validar los datos del aviso al editarlo con las reglas del registro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/1bdb3eef38e66cc773776e24a36038acd9e5937b"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 33,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.5,
+    "test_count": 143,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e075fc108bcc950b8e7b8f6d21a8ecae66e53a78",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:37:17.000Z",
+      "message": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e075fc108bcc950b8e7b8f6d21a8ecae66e53a78"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 48,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 147,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "461590e3dac8d3a52c23c7d07e268f639500d6e2",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:48:08.000Z",
+      "message": "feat: agregar la url de edicion a cada fila del listado de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/461590e3dac8d3a52c23c7d07e268f639500d6e2"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 148,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3a8662ebe4d97f7c386341ac3bdf69354f358de2",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:54:59.000Z",
+      "message": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/3a8662ebe4d97f7c386341ac3bdf69354f358de2"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 33,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 148,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3b1beb344e23e02b8b72ed126400ff87dfa627b4",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:57:59.000Z",
+      "message": "fix: recordar la foto nueva despues de guardar un aviso editado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/3b1beb344e23e02b8b72ed126400ff87dfa627b4"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T04:21:19.000Z",
+      "message": "feat: ruta a pantalla editar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 341,
+      "additions": 339,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
     "failed_tests": 0,
     "conclusion": "success"
   }

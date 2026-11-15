@@ -23,6 +23,14 @@ export class ObjetosEnMemoria {
         }
         return objeto;
     }
+    async actualizar(id, cambios) {
+        this.objetos = this.objetos.map((objeto) => (
+            String(objeto.id) === String(id)
+                ? { ...objeto, ...cambios, id: objeto.id, numero: objeto.numero, estado: objeto.estado }
+                : objeto
+        ));
+        this.guardar();
+    }
 
     async registrar(datos) {
         const ids = this.objetos.map((o) => Number(o.id) || 0);

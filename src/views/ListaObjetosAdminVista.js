@@ -5,7 +5,7 @@ export class ListaObjetosAdminVista {
         this.plantillaFila = documento.getElementById('plantilla-fila');
         this.cajaVacia = documento.getElementById('mensaje-vacio');
 
-        this.botonNuevoAviso = documento.getElementById('nuevo-aviso-btn'); 
+        this.botonNuevoAviso = documento.getElementById('nuevo-aviso-btn');
     }
 
     mostrarFilas(filas) {
@@ -33,9 +33,13 @@ export class ListaObjetosAdminVista {
         foto.src = fila.fotoUrl;
         foto.alt = fila.categoria;
 
-        const enlace = nodo.querySelector('.tabla__enlace');
-        enlace.id = `entrega-link-${fila.id}`;
-        enlace.href = fila.urlEntrega;
+        const enlaceEditar = nodo.querySelector('.tabla__enlace--editar');
+        enlaceEditar.id = `editar-link-${fila.id}`;
+        enlaceEditar.href = fila.urlEditar;
+
+        const enlaceRetirar = nodo.querySelector('.tabla__enlace--retirar');
+        enlaceRetirar.id = `entrega-link-${fila.id}`;
+        enlaceRetirar.href = fila.urlEntrega;
 
         return nodo;
     }

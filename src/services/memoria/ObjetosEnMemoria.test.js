@@ -131,7 +131,28 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
         expect(resultado).toEqual([{ ...objeto, estado: 'entregado', entrega }]);
     });
 });
+describe('ObjetosEnMemoria - actualizar', () => {
+    it('cambia los datos del objeto y conserva su id, numero y estado', async () => {
+        const repo = new ObjetosEnMemoria({
+            objetos: [crearObjeto({ id: 3, numero: 3, categoria: 'Llaves', color: 'Dorado' })],
+        });
 
+        await repo.actualizar(3, { categoria: 'Ropa', color: 'Azul', id: 99, numero: 99, estado: 'entregado' });
+
+        const [objeto] = await repo.listarParaAdmin();
+        expect(objeto).toMatchObject({ id: 3, numero: 3, estado: 'publicado', categoria: 'Ropa', color: 'Azul' });
+    });
+
+    it('acepta el id como texto y no modifica los otros objetos', async () => {
+        const otro = crearObjeto({ id: 2, numero: 2, categoria: 'Llaves' });
+        const repo = new ObjetosEnMemoria({ objetos: [otro, crearObjeto({ id: 3, numero: 3, categoria: 'Ropa' })] });
+
+        await repo.actualizar('3', { categoria: 'Útiles' });
+
+        expect((await repo.obtenerPorId(3)).categoria).toEqual('Útiles');
+        expect(await repo.obtenerPorId(2)).toEqual(otro);
+    });
+});
 describe('ObjetosEnMemoria - persistencia en almacen', () => {
     it('recuerda un objeto registrado en otro repositorio que use el mismo almacen', async () => {
         const almacen = crearAlmacenFalso();
@@ -165,5 +186,15 @@ describe('ObjetosEnMemoria - persistencia en almacen', () => {
         const segundo = new ObjetosEnMemoria({ objetos: [objeto], almacen });
 
         expect(await segundo.listarPublicados()).toEqual([]);
+    });
+    it('recuerda un objeto actualizado en otro repositorio que use el mismo almacen', async () => {
+        const almacen = crearAlmacenFalso();
+        const objeto = crearObjeto({ id: 1, numero: 1, categoria: 'Llaves' });
+        const primero = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        await primero.actualizar(1, { categoria: 'Ropa' });
+        const segundo = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        expect((await segundo.obtenerPorId(1)).categoria).toEqual('Ropa');
     });
 });

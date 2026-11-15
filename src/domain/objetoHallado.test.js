@@ -55,6 +55,23 @@ describe('validarObjetoHallado', () => {
 
         expect(errores).toEqual([MENSAJES.FORMATO_FOTO_INVALIDO]);
     });
+    it('acepta que no haya foto nueva si el aviso ya tiene una foto guardada', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({
+            rutaFoto: '',
+            fotoActual: 'ejemplos/celular.svg',
+        }));
+
+        expect(errores).toEqual([]);
+    });
+
+    it('sigue exigiendo JPG o PNG a la foto nueva aunque el aviso ya tenga una guardada', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({
+            rutaFoto: 'animacion.gif',
+            fotoActual: 'ejemplos/celular.svg',
+        }));
+
+        expect(errores).toEqual([MENSAJES.FORMATO_FOTO_INVALIDO]);
+    });
 
     it('acepta la foto si tiene formato JPG, JPEG o PNG', () => {
         const errores = validarObjetoHallado(crearDatosValidos({ rutaFoto: '/fotos/objeto.png' }));

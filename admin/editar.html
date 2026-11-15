@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editar aviso | FindU</title>
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/panel.css" />
+    <link rel="stylesheet" href="../src/styles/entrega.css" />
+</head>
+
+<body>
+    <header class="panel-encabezado">
+        <a href="./index.html" class="panel-encabezado__volver">← Volver al panel</a>
+        <h1 class="panel-encabezado__titulo">Editar aviso</h1>
+    </header>
+
+    <main class="contenedor panel panel--formulario">
+        <section class="tarjeta tarjeta--formulario">
+            <p id="mensaje-no-encontrado" class="aviso" role="alert" hidden></p>
+
+            <form id="editar-objeto-form" class="formulario" novalidate>
+
+                <div class="campo">
+                    <label for="numero">N° de objeto</label>
+                    <span class="campo__ayuda">No se puede modificar</span>
+                    <input type="text" id="numero" name="numero" readonly />
+                </div>
+
+                <div class="campo">
+                    <label for="foto-input">Foto del objeto</label>
+                    <span class="campo__ayuda">Solo JPG o PNG. Si no eliges una nueva, se conserva la actual</span>
+                    <div class="dropzone-foto">
+                        <input type="file" id="foto-input" name="foto" accept="image/png, image/jpeg, image/jpg"
+                            class="dropzone-foto__input" />
+                        <div id="dropzone-contenido">
+                            <div class="dropzone-foto__icono">📤</div>
+                            <div class="dropzone-foto__texto">Click para cambiar la foto</div>
+                            <div class="dropzone-foto__subtexto">JPG o PNG</div>
+                        </div>
+                        <img id="foto-preview" alt="Foto del objeto" class="dropzone-foto__preview" hidden />
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría <span class="campo__requerido">*</span></label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccionar...</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="lugar">Lugar de hallazgo <span class="campo__requerido">*</span></label>
+                    <input type="text" id="lugar" name="lugar" />
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-hallazgo">Fecha de hallazgo <span class="campo__requerido">*</span></label>
+                    <input type="date" id="fecha-hallazgo" name="fechaHallazgo" />
+                </div>
+
+                <div class="campo">
+                    <label for="color">Color <span class="campo__requerido">*</span></label>
+                    <input type="text" id="color" name="color" />
+                </div>
+
+                <div class="campo">
+                    <label for="marca">Marca <span class="campo__opcional">(opcional)</span></label>
+                    <input type="text" id="marca" name="marca" />
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción <span class="campo__requerido">*</span></label>
+                    <textarea id="descripcion" name="descripcion" rows="4" maxlength="500"
+                        class="campo__textarea"></textarea>
+                    <div id="contador-caracteres" class="campo__contador">0 / 500</div>
+                </div>
+
+                <div class="campo">
+                    <label for="senas">Señas particulares</label>
+                    <input type="text" id="senas" name="senas" />
+                </div>
+
+                <fieldset>
+                    <legend>Datos de quien lo encontró <span class="campo__ayuda">(solo los ve el administrador)</span>
+                    </legend>
+
+                    <div class="campo">
+                        <label for="encontrado-nombre">Nombre <span class="campo__requerido">*</span></label>
+                        <input type="text" id="encontrado-nombre" name="encontradoNombre" />
+                    </div>
+
+                    <div class="campo">
+                        <label for="encontrado-celular">Celular <span class="campo__requerido">*</span></label>
+                        <input type="text" id="encontrado-celular" name="encontradoCelular" />
+                    </div>
+                </fieldset>
+
+                <p id="error-mensaje" class="error" role="alert" hidden></p>
+                <p id="exito-mensaje" class="exito" role="status" hidden></p>
+
+                <div class="entrega__acciones formulario__acciones">
+                    <button type="submit" id="guardar-button" class="boton">Guardar cambios</button>
+                    <a href="./index.html" id="cancelar-link" class="boton boton--secundario">Cancelar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../src/pages/admin-editar.js"></script>
+</body>
+
+</html>

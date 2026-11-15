@@ -2154,9 +2154,279 @@
     "testId": 172
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5dff1eaea619786e07c3bb796e051737f2651ce6",
     "commitName": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
     "commitTimestamp": 1794711726723,
     "testId": 172
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 2,
+    "numTotalTests": 133,
+    "timestamp": 1794712384791,
+    "success": false,
+    "testId": 173
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 0,
+    "numTotalTests": 133,
+    "timestamp": 1794712407945,
+    "success": true,
+    "testId": 173
+  },
+  {
+    "commitId": "b371e08f39100e79b1777af42f2d02db0d86688e",
+    "commitName": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
+    "commitTimestamp": 1794712435847,
+    "testId": 173
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 1,
+    "numTotalTests": 134,
+    "timestamp": 1794712477766,
+    "success": false,
+    "testId": 174
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1794712514716,
+    "success": true,
+    "testId": 174
+  },
+  {
+    "commitId": "2a22111affea6f34c64f968d9b6c029aa1681ebe",
+    "commitName": "feat: guardar en el almacen los objetos actualizados",
+    "commitTimestamp": 1794712535692,
+    "testId": 174
+  },
+  {
+    "numPassedTests": 135,
+    "failedTests": 1,
+    "numTotalTests": 136,
+    "timestamp": 1794712621737,
+    "success": false,
+    "testId": 175
+  },
+  {
+    "numPassedTests": 112,
+    "failedTests": 0,
+    "numTotalTests": 112,
+    "timestamp": 1794712721075,
+    "success": false,
+    "testId": 175
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794712795420,
+    "success": true,
+    "testId": 175
+  },
+  {
+    "commitId": "d476654432ad1be9085b1524e104a237a1a5b801",
+    "commitName": "feat: validar la foto solo si es nueva cuando el aviso ya tiene una",
+    "commitTimestamp": 1794712819540,
+    "testId": 175
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794712851727,
+    "success": true,
+    "testId": 176
+  },
+  {
+    "commitId": "f9ffec5d3c3e52b48541dad3421303a99b20d205",
+    "commitName": "refactor: extraer la validacion de la foto del validador de objetos",
+    "commitTimestamp": 1794712872278,
+    "testId": 176
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794713117490,
+    "success": false,
+    "testId": 177
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794713141388,
+    "success": true,
+    "testId": 177
+  },
+  {
+    "commitId": "d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3",
+    "commitName": "feat: el presenter de edicion carga los datos actuales del objeto",
+    "commitTimestamp": 1794713161494,
+    "testId": 177
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 2,
+    "numTotalTests": 140,
+    "timestamp": 1794713204467,
+    "success": false,
+    "testId": 178
+  },
+  {
+    "numPassedTests": 140,
+    "failedTests": 0,
+    "numTotalTests": 140,
+    "timestamp": 1794713332063,
+    "success": true,
+    "testId": 178
+  },
+  {
+    "commitId": "385fffcdda5ae2af427a857e60ec532f5ad09bd4",
+    "commitName": "feat: avisar en la edicion si el objeto no existe o ya fue entregado",
+    "commitTimestamp": 1794713356888,
+    "testId": 178
+  },
+  {
+    "numPassedTests": 140,
+    "failedTests": 1,
+    "numTotalTests": 141,
+    "timestamp": 1794713489013,
+    "success": false,
+    "testId": 179
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 0,
+    "numTotalTests": 141,
+    "timestamp": 1794713588567,
+    "success": true,
+    "testId": 179
+  },
+  {
+    "commitId": "423312412c47890ead2cdcc2536d514589a13b46",
+    "commitName": "feat: guardar los cambios de un aviso y mostrar el mensaje de actualizado",
+    "commitTimestamp": 1794713609650,
+    "testId": 179
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 2,
+    "numTotalTests": 143,
+    "timestamp": 1794713641870,
+    "success": false,
+    "testId": 180
+  },
+  {
+    "numPassedTests": 143,
+    "failedTests": 0,
+    "numTotalTests": 143,
+    "timestamp": 1794713704403,
+    "success": true,
+    "testId": 180
+  },
+  {
+    "commitId": "1bdb3eef38e66cc773776e24a36038acd9e5937b",
+    "commitName": "feat: validar los datos del aviso al editarlo con las reglas del registro",
+    "commitTimestamp": 1794713734341,
+    "testId": 180
+  },
+  {
+    "numPassedTests": 145,
+    "failedTests": 2,
+    "numTotalTests": 147,
+    "timestamp": 1794713796915,
+    "success": false,
+    "testId": 181
+  },
+  {
+    "numPassedTests": 147,
+    "failedTests": 0,
+    "numTotalTests": 147,
+    "timestamp": 1794713819668,
+    "success": true,
+    "testId": 181
+  },
+  {
+    "commitId": "e075fc108bcc950b8e7b8f6d21a8ecae66e53a78",
+    "commitName": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
+    "commitTimestamp": 1794713840296,
+    "testId": 181
+  },
+  {
+    "numPassedTests": 147,
+    "failedTests": 1,
+    "numTotalTests": 148,
+    "timestamp": 1794714358848,
+    "success": false,
+    "testId": 182
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 0,
+    "numTotalTests": 148,
+    "timestamp": 1794714465561,
+    "success": true,
+    "testId": 182
+  },
+  {
+    "commitId": "461590e3dac8d3a52c23c7d07e268f639500d6e2",
+    "commitName": "feat: agregar la url de edicion a cada fila del listado de administracion",
+    "commitTimestamp": 1794714490793,
+    "testId": 182
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 0,
+    "numTotalTests": 148,
+    "timestamp": 1794714716385,
+    "success": true,
+    "testId": 183
+  },
+  {
+    "commitId": "3a8662ebe4d97f7c386341ac3bdf69354f358de2",
+    "commitName": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
+    "commitTimestamp": 1794714901722,
+    "testId": 183
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 1,
+    "numTotalTests": 149,
+    "timestamp": 1794715015037,
+    "success": false,
+    "testId": 184
+  },
+  {
+    "numPassedTests": 149,
+    "failedTests": 0,
+    "numTotalTests": 149,
+    "timestamp": 1794715061866,
+    "success": true,
+    "testId": 184
+  },
+  {
+    "commitId": "3b1beb344e23e02b8b72ed126400ff87dfa627b4",
+    "commitName": "fix: recordar la foto nueva despues de guardar un aviso editado",
+    "commitTimestamp": 1794715082913,
+    "testId": 184
+  },
+  {
+    "numPassedTests": 149,
+    "failedTests": 0,
+    "numTotalTests": 149,
+    "timestamp": 1794715278558,
+    "success": true,
+    "testId": 185
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ruta a pantalla editar",
+    "commitTimestamp": 1794716482056,
+    "testId": 185
   }
 ]

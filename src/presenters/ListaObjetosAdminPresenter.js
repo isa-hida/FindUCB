@@ -1,10 +1,10 @@
-import { crearFilaAdmin ,filtrarPublicados } from '../domain/listaAdmin';
+import { crearFilaAdmin, filtrarPublicados } from '../domain/listaAdmin';
 import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
 
 export class ListaObjetosAdminPresenter {
-    constructor(vista, objetosRepository,fotosStorage) {
+    constructor(vista, objetosRepository, fotosStorage) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
         this.fotosStorage = fotosStorage;
@@ -16,10 +16,12 @@ export class ListaObjetosAdminPresenter {
         const urlsFotos = await this.fotosStorage.urlsFirmadas(
             publicados.map((objeto) => objeto.rutaFoto),
         );
-        const filas = publicados.map((objeto,indice) => ({
+        const filas = publicados.map((objeto, indice) => ({
             ...crearFilaAdmin(objeto),
             fotoUrl: urlsFotos[indice],
             urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
+            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
+            urlEditar: `${RUTAS.EDITAR_OBJETO}?id=${objeto.id}`,
         }));
         this.vista.mostrarFilas(filas);
         if (publicados.length === 0) {

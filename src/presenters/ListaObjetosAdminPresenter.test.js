@@ -71,4 +71,15 @@ describe('ListaObjetosAdminPresenter', () => {
 
         expect(vista.filas.map((fila) => fila.fotoUrl)).toEqual(['memoria/fotos/1.jpg']);
     });
+    it('cada fila trae el enlace para editar su objeto', async () => {
+        const { vista, presenter } = crearEscenario([
+            { id: 3, numero: 7, estado: 'publicado' },
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.filas.map((fila) => fila.urlEditar)).toEqual([
+            `${RUTAS.EDITAR_OBJETO}?id=3`,
+        ]);
+    });
 });
