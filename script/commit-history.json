@@ -1045,17 +1045,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "931b4bbee4ca86fd83a1ee5cf572edaacd529211",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:17:15.000Z",
       "message": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/931b4bbee4ca86fd83a1ee5cf572edaacd529211"
     },
     "stats": {
       "total": 1,
       "additions": 0,
       "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:23:27.000Z",
+      "message": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
       "date": "2026-11-15"
     },
     "coverage": 97.53,

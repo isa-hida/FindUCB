@@ -2460,9 +2460,15 @@
     "testId": 190
   },
   {
-    "commitId": "HEAD",
+    "commitId": "931b4bbee4ca86fd83a1ee5cf572edaacd529211",
     "commitName": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
     "commitTimestamp": 1794741437991,
     "testId": 191
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
+    "commitTimestamp": 1794741809348,
+    "testId": 192
   }
 ]

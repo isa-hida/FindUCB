@@ -162,7 +162,7 @@
     background: #e9ecef;
 }
 
-/* Botón Retirar / Acción */
+/* Botón de acción de cada fila (Registrar entrega / Editar) */
 .tabla__enlace {
     display: inline-flex;
     align-items: center;
