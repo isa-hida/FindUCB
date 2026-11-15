@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "85e2543121afe4c3862c05c723888d62ad207791",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:00:34.000Z",
       "message": "refactor: reutilizar crearAlmacenFalso en los tests de ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/85e2543121afe4c3862c05c723888d62ad207791"
     },
     "stats": {
       "total": 112,
@@ -679,6 +679,25 @@
       "date": "2026-11-15"
     },
     "coverage": 97.65,
+    "test_count": 131,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:02:04.000Z",
+      "message": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
     "test_count": 131,
     "failed_tests": 0,
     "conclusion": "success"

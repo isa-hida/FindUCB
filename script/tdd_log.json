@@ -2140,9 +2140,23 @@
     "testId": 171
   },
   {
-    "commitId": "HEAD",
+    "commitId": "85e2543121afe4c3862c05c723888d62ad207791",
     "commitName": "refactor: reutilizar crearAlmacenFalso en los tests de ObjetosEnMemoria",
     "commitTimestamp": 1794711637135,
     "testId": 171
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794711700167,
+    "success": true,
+    "testId": 172
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
+    "commitTimestamp": 1794711726723,
+    "testId": 172
   }
 ]

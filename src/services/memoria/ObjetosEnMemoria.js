@@ -1,4 +1,5 @@
 const CLAVE_ALMACEN = 'findu.objetos';
+import { filtrarPublicados } from '../../domain/listaAdmin';
 
 export class ObjetosEnMemoria {
     constructor({ objetos = [], almacen = null } = {}) {
@@ -12,7 +13,7 @@ export class ObjetosEnMemoria {
     }
 
     async listarPublicados() {
-        return this.objetos.filter((objeto) => objeto.estado === 'publicado');
+        return filtrarPublicados(this.objetos);
     }
 
     async obtenerPorId(id) {
