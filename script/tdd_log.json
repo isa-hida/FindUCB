@@ -2076,9 +2076,23 @@
     "testId": 166
   },
   {
-    "commitId": "HEAD",
+    "commitId": "43fbd7a4838faf9edb5490f77830b0108117916c",
     "commitName": "test: actualizar e2e de HU02 con los ids y mensajes del login de admin",
     "commitTimestamp": 1794711021279,
     "testId": 167
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794711158034,
+    "success": true,
+    "testId": 168
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: cubrir listarPublicados y obtenerPorId en ObjetosEnMemoria",
+    "commitTimestamp": 1794711181574,
+    "testId": 168
   }
 ]

@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "43fbd7a4838faf9edb5490f77830b0108117916c",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:50:18.000Z",
       "message": "test: actualizar e2e de HU02 con los ids y mensajes del login de admin",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/43fbd7a4838faf9edb5490f77830b0108117916c"
     },
     "stats": {
       "total": 38,
@@ -604,6 +604,25 @@
     },
     "coverage": 97.79,
     "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:52:58.000Z",
+      "message": "test: cubrir listarPublicados y obtenerPorId en ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 35,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 138,
     "failed_tests": 0,
     "conclusion": "success"
   }

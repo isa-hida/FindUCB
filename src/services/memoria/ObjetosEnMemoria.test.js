@@ -133,4 +133,39 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
 
         expect(await segundo.listarPublicados()).toEqual([]);
     });
+    describe('ObjetosEnMemoria - listarPublicados y obtenerPorId', () => {
+        it('listarPublicados devuelve solo los objetos publicados', async () => {
+            const publicado = crearObjeto({ id: 1, numero: 1 });
+            const entregado = crearObjeto({ id: 2, numero: 2, estado: 'entregado' });
+            const repo = new ObjetosEnMemoria({ objetos: [publicado, entregado] });
+
+            expect(await repo.listarPublicados()).toEqual([publicado]);
+        });
+
+        it('obtenerPorId devuelve el objeto si existe y esta publicado', async () => {
+            const publicado = crearObjeto({ id: 1, numero: 1 });
+            const repo = new ObjetosEnMemoria({ objetos: [publicado, crearObjeto({ id: 2, numero: 2 })] });
+
+            expect(await repo.obtenerPorId(1)).toEqual(publicado);
+        });
+
+        it('obtenerPorId acepta el id como texto, tal como llega desde la URL', async () => {
+            const publicado = crearObjeto({ id: 1, numero: 1 });
+            const repo = new ObjetosEnMemoria({ objetos: [publicado] });
+
+            expect(await repo.obtenerPorId('1')).toEqual(publicado);
+        });
+
+        it('obtenerPorId devuelve null si el id no existe', async () => {
+            const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1 })] });
+
+            expect(await repo.obtenerPorId(99)).toBeNull();
+        });
+
+        it('obtenerPorId devuelve null si el objeto ya fue entregado', async () => {
+            const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1, estado: 'entregado' })] });
+
+            expect(await repo.obtenerPorId(1)).toBeNull();
+        });
+    });
 });
