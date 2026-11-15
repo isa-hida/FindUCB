@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3cc341accaa86d8c1e957a6e809c4d9c0a5c0e0d",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:19:26.000Z",
       "message": "feat: exigir fecha, lugar, color y datos de quien encontro el objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3cc341accaa86d8c1e957a6e809c4d9c0a5c0e0d"
     },
     "stats": {
       "total": 38,
@@ -91,6 +91,25 @@
     },
     "coverage": 97.49,
     "test_count": 118,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:23:06.000Z",
+      "message": "feat: agregar aFechaIso para obtener la fecha local",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 119,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1690,9 +1690,31 @@
     "testId": 140
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3cc341accaa86d8c1e957a6e809c4d9c0a5c0e0d",
     "commitName": "feat: exigir fecha, lugar, color y datos de quien encontro el objeto",
     "commitTimestamp": 1794705567639,
     "testId": 140
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 1,
+    "numTotalTests": 119,
+    "timestamp": 1794705741310,
+    "success": false,
+    "testId": 141
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794705763467,
+    "success": true,
+    "testId": 141
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar aFechaIso para obtener la fecha local",
+    "commitTimestamp": 1794705787859,
+    "testId": 141
   }
 ]
