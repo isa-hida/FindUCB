@@ -1,4 +1,5 @@
 import { MENSAJES } from './mensajes';
+import { MAX_CARACTERES_TEXTO } from './limites';
 
 function falta(texto) {
     return !texto || !texto.trim();
@@ -27,7 +28,7 @@ export function validarObjetoHallado(datos) {
         return [MENSAJES.FORMATO_FOTO_INVALIDO];
     }
 
-    if ((descripcion && descripcion.length > 500) || (senas && senas.length > 500)) {
+    if ((descripcion && descripcion.length > MAX_CARACTERES_TEXTO) || (senas && senas.length > MAX_CARACTERES_TEXTO)) {
         return [MENSAJES.TEXTO_MUY_LARGO];
     }
     if (fechaHallazgo && hoy && fechaHallazgo > hoy) {

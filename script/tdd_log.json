@@ -1748,9 +1748,31 @@
     "testId": 143
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b853f60f26e1cb4fb5cb72a93464576d9c47ef8d",
     "commitName": "refactor: mover mensaje de formato de foto a MENSAJES",
     "commitTimestamp": 1794706297191,
     "testId": 143
+  },
+  {
+    "numPassedTests": 122,
+    "failedTests": 0,
+    "numTotalTests": 122,
+    "timestamp": 1794706395796,
+    "success": true,
+    "testId": 144
+  },
+  {
+    "numPassedTests": 107,
+    "failedTests": 0,
+    "numTotalTests": 107,
+    "timestamp": 1794706451937,
+    "success": false,
+    "testId": 144
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+    "commitTimestamp": 1794706561505,
+    "testId": 144
   }
 ]

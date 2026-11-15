@@ -1,5 +1,6 @@
 import { validarObjetoHallado } from './objetoHallado';
 import { MENSAJES } from './mensajes';
+import { MAX_CARACTERES_TEXTO } from './limites';
 
 const crearDatosValidos = (cambios = {}) => ({
     categoria: 'Llaves',
@@ -59,5 +60,25 @@ describe('validarObjetoHallado', () => {
         const errores = validarObjetoHallado(crearDatosValidos({ rutaFoto: '/fotos/objeto.png' }));
 
         expect(errores).toEqual([]);
+    });
+    it('acepta una descripcion de exactamente 500 caracteres', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({ descripcion: 'a'.repeat(500) }));
+
+        expect(errores).toEqual([]);
+    });
+
+    it('da error si la descripcion supera los 500 caracteres', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({ descripcion: 'a'.repeat(501) }));
+
+        expect(errores).toEqual([MENSAJES.TEXTO_MUY_LARGO]);
+    });
+
+    it('da error si las senas particulares superan los 500 caracteres', () => {
+        const errores = validarObjetoHallado(crearDatosValidos({ senas: 'a'.repeat(501) }));
+
+        expect(errores).toEqual([MENSAJES.TEXTO_MUY_LARGO]);
+    });
+    it('el mensaje de texto muy largo indica el limite real', () => {
+        expect(MENSAJES.TEXTO_MUY_LARGO).toContain(String(MAX_CARACTERES_TEXTO));
     });
 });

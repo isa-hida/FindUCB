@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b853f60f26e1cb4fb5cb72a93464576d9c47ef8d",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:31:36.000Z",
       "message": "refactor: mover mensaje de formato de foto a MENSAJES",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b853f60f26e1cb4fb5cb72a93464576d9c47ef8d"
     },
     "stats": {
       "total": 5,
@@ -148,6 +148,25 @@
     },
     "coverage": 97.13,
     "test_count": 119,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:36:00.000Z",
+      "message": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 24,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 89.41,
+    "test_count": 33,
     "failed_tests": 0,
     "conclusion": "success"
   }
