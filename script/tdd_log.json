@@ -2018,9 +2018,31 @@
     "testId": 160
   },
   {
-    "commitId": "HEAD",
+    "commitId": "807038282ac46048e346dfb5f4c291a866a21260",
     "commitName": "refactor: el presenter de registro recibe el almacen de fotos",
     "commitTimestamp": 1794710036690,
     "testId": 160
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 1,
+    "numTotalTests": 133,
+    "timestamp": 1794710072888,
+    "success": false,
+    "testId": 161
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 0,
+    "numTotalTests": 133,
+    "timestamp": 1794710109179,
+    "success": true,
+    "testId": 161
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar la foto subida al registrar un objeto hallado",
+    "commitTimestamp": 1794710130918,
+    "testId": 161
   }
 ]

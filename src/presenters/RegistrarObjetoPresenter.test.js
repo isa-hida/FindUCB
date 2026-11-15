@@ -88,4 +88,16 @@ describe('RegistrarObjetoPresenter', () => {
             { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-18', rutaFoto: '/fotos/llaves.jpg' },
         ]);
     });
+    it('guarda la foto y registra el objeto con la ruta devuelta, sin el contenido', async () => {
+        const { objetosRepository, fotosStorage, presenter } = crearEscenario();
+
+        await presenter.registrar(crearDatosValidos({
+            rutaFoto: 'llaves.jpg',
+            fotoContenido: 'data:image/jpeg;base64,AAA',
+        }));
+
+        const [objeto] = await objetosRepository.listarPublicados();
+        expect(await fotosStorage.urlsFirmadas([objeto.rutaFoto])).toEqual(['data:image/jpeg;base64,AAA']);
+        expect(objeto).not.toHaveProperty('fotoContenido');
+    });
 });
