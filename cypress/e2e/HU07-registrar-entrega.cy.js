@@ -8,12 +8,26 @@ describe('HU-07: registrar la entrega de un objeto', () => {
     });
 
     it('al confirmar con nombre y C.I. muestra que la entrega fue registrada', () => {
-    cy.visitarComoAdmin('/admin/entrega.html?id=1');
+        cy.visitarComoAdmin('/admin/entrega.html?id=1');
+        cy.get('#nombre').type('Ana Perez');
+        cy.get('#ci').type('1234567');
+        cy.get('#confirmar-button').click();
 
-    cy.get('#nombre').type('Ana Perez');
-    cy.get('#ci').type('1234567');
-    cy.get('#confirmar-button').click();
+        cy.get('#exito-mensaje').should('contain', 'Entrega registrada correctamente');
+    })
+    it('tras entregar, el objeto ya no aparece en el panel ni al recargar', () => {
+        cy.visitarComoAdmin('/admin/entrega.html?id=1');
+        cy.get('#nombre').type('Ana Perez');
+        cy.get('#ci').type('1234567');
+        cy.get('#confirmar-button').click();
+        cy.get('#exito-mensaje').should('be.visible');
 
-    cy.get('#exito-mensaje').should('contain', 'Entrega registrada correctamente');
-});
+        cy.visitarComoAdmin('/admin/index.html');
+        cy.get('#fila-objeto-1').should('not.exist');
+        cy.get('#fila-objeto-2').should('be.visible');
+
+        cy.reload();
+        cy.get('#fila-objeto-1').should('not.exist');
+    });
+   
 });

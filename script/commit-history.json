@@ -969,17 +969,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "da4b6f005f22caa1b91ffc45ed77954114b926b4",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:06:57.000Z",
       "message": "test(HU07): verificar el mensaje al registrar la entrega",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/da4b6f005f22caa1b91ffc45ed77954114b926b4"
     },
     "stats": {
       "total": 10,
       "additions": 10,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:09:59.000Z",
+      "message": "test(HU07): verificar que el objeto entregado sale del panel y no vuelve",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 20,
+      "deletions": 6,
       "date": "2026-11-15"
     },
     "coverage": 97.53,

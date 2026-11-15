@@ -2436,9 +2436,15 @@
     "testId": 186
   },
   {
-    "commitId": "HEAD",
+    "commitId": "da4b6f005f22caa1b91ffc45ed77954114b926b4",
     "commitName": "test(HU07): verificar el mensaje al registrar la entrega",
     "commitTimestamp": 1794740819984,
     "testId": 187
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU07): verificar que el objeto entregado sale del panel y no vuelve",
+    "commitTimestamp": 1794741002101,
+    "testId": 188
   }
 ]
