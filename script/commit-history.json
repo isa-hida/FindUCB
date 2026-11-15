@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f64bd2318da92023d1952c4c9b9fe1c29612938f",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:36:00.000Z",
       "message": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f64bd2318da92023d1952c4c9b9fe1c29612938f"
     },
     "stats": {
       "total": 26,
@@ -167,6 +167,25 @@
     },
     "coverage": 89.41,
     "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:39:51.000Z",
+      "message": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.55,
+    "test_count": 123,
     "failed_tests": 0,
     "conclusion": "success"
   }

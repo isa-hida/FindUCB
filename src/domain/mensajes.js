@@ -1,3 +1,4 @@
+import { MAX_CARACTERES_TEXTO } from './limites';
 export const MENSAJES = {
     CORREO_NO_INSTITUCIONAL: 'Solo pueden ingresar miembros de la UCB con su correo institucional',
     CREDENCIALES_INVALIDAS: 'Correo o contraseña no son válidos',

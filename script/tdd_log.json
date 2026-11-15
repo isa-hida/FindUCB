@@ -1770,9 +1770,31 @@
     "testId": 144
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f64bd2318da92023d1952c4c9b9fe1c29612938f",
     "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
     "commitTimestamp": 1794706561505,
     "testId": 144
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1794706584140,
+    "success": false,
+    "testId": 145
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 0,
+    "numTotalTests": 123,
+    "timestamp": 1794706748346,
+    "success": true,
+    "testId": 145
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+    "commitTimestamp": 1794706792068,
+    "testId": 145
   }
 ]
