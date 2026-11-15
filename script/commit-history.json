@@ -1425,12 +1425,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b193bcf3db1d94b13ff0ae5345ee999ff3229c0e",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T18:00:49.000Z",
       "message": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b193bcf3db1d94b13ff0ae5345ee999ff3229c0e"
     },
     "stats": {
       "total": 11,
@@ -1439,6 +1439,25 @@
       "date": "2026-11-15"
     },
     "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:02:25.000Z",
+      "message": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 10,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
     "test_count": 156,
     "failed_tests": 0,
     "conclusion": "success"

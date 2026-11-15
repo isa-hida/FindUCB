@@ -10,16 +10,21 @@ export class HistorialEntregasPresenter {
 
     async cargar() {
         const entregados = await this.objetosRepository.listarEntregados();
-        const urlsFotos = await this.fotosStorage.urlsFirmadas(
-            entregados.map((objeto) => objeto.rutaFoto),
-        );
-        const filas = entregados.map((objeto, indice) => ({
-            ...crearFilaHistorial(objeto),
-            fotoUrl: urlsFotos[indice],
-        }));
+        const filas = await this.crearFilas(entregados);
+
         this.vista.mostrarFilas(filas);
         if (entregados.length === 0) {
             this.vista.mostrarMensajeVacio(MENSAJES.SIN_OBJETOS_ENTREGADOS);
         }
+    }
+
+    async crearFilas(entregados) {
+        const urlsFotos = await this.fotosStorage.urlsFirmadas(
+            entregados.map((objeto) => objeto.rutaFoto),
+        );
+        return entregados.map((objeto, indice) => ({
+            ...crearFilaHistorial(objeto),
+            fotoUrl: urlsFotos[indice],
+        }));
     }
 }

@@ -2588,9 +2588,15 @@
     "testId": 210
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b193bcf3db1d94b13ff0ae5345ee999ff3229c0e",
     "commitName": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
     "commitTimestamp": 1794765652188,
     "testId": 211
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
+    "commitTimestamp": 1794765747950,
+    "testId": 212
   }
 ]
