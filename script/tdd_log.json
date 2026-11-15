@@ -1848,9 +1848,31 @@
     "testId": 149
   },
   {
-    "commitId": "HEAD",
+    "commitId": "98fb5f32de6c3b5bf1c5853ab648e216e12f10a1",
     "commitName": "refactor: eliminar la clase css campo--oculto sin uso",
     "commitTimestamp": 1794708278297,
     "testId": 149
+  },
+  {
+    "numPassedTests": 125,
+    "failedTests": 0,
+    "numTotalTests": 125,
+    "timestamp": 1794708421891,
+    "success": true,
+    "testId": 150
+  },
+  {
+    "numPassedTests": 125,
+    "failedTests": 0,
+    "numTotalTests": 125,
+    "timestamp": 1794708478399,
+    "success": true,
+    "testId": 150
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer datos validos en los tests del presenter de registro",
+    "commitTimestamp": 1794708499205,
+    "testId": 150
   }
 ]

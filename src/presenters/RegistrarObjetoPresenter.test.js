@@ -3,10 +3,22 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { CATEGORIAS } from '../domain/catalogos';
 
+const crearDatosValidos = (cambios = {}) => ({
+    categoria: 'Llaves',
+    descripcion: 'Llaves de oficina',
+    fechaHallazgo: '2026-10-18',
+    lugar: 'Biblioteca',
+    color: 'Dorado',
+    rutaFoto: '/fotos/llaves.jpg',
+    encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
+    ...cambios,
+});
+
 const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
     const vista = {
         errores: [],
         mensajesExito: [],
+        categorias: [],
         mostrarError(mensaje) {
             this.errores.push(mensaje);
         },
@@ -16,7 +28,6 @@ const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
         mostrarExito(mensaje) {
             this.mensajesExito.push(mensaje);
         },
-        categorias: [],
         mostrarCategorias(categorias) {
             this.categorias = categorias;
         },
@@ -37,17 +48,9 @@ describe('RegistrarObjetoPresenter', () => {
     });
 
     it('muestra error si la fecha de hallazgo es futura', async () => {
-        const { vista, presenter } = crearEscenario();
+        const { vista, presenter } = crearEscenario([], '2026-10-20');
 
-        await presenter.registrar({
-            categoria: 'Llaves',
-            descripcion: 'Llaves de oficina',
-            fechaHallazgo: '2026-10-21',
-            rutaFoto: '/fotos/llaves.jpg',
-            lugar: 'Biblioteca',
-            color: 'Dorado',
-            encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
-        });
+        await presenter.registrar(crearDatosValidos({ fechaHallazgo: '2026-10-21' }));
 
         expect(vista.errores).toEqual([MENSAJES.FECHA_FUTURA]);
         expect(vista.mensajesExito).toEqual([]);
@@ -56,15 +59,7 @@ describe('RegistrarObjetoPresenter', () => {
     it('registra el objeto exitosamente y muestra el mensaje de aviso publicado', async () => {
         const { vista, objetosRepository, presenter } = crearEscenario();
 
-        await presenter.registrar({
-            categoria: 'Llaves',
-            descripcion: 'Llaves de oficina',
-            fechaHallazgo: '2026-10-18',
-            lugar: 'Biblioteca',
-            color: 'Dorado',
-            rutaFoto: '/fotos/llaves.jpg',
-            encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
-        });
+        await presenter.registrar(crearDatosValidos());
 
         expect(vista.errores).toEqual([]);
         expect(vista.mensajesExito).toEqual([MENSAJES.AVISO_PUBLICADO]);
@@ -72,6 +67,7 @@ describe('RegistrarObjetoPresenter', () => {
         expect(listado.length).toEqual(1);
         expect(listado[0].categoria).toEqual('Llaves');
     });
+
     it('muestra las categorias del catalogo al iniciar', () => {
         const { vista, presenter } = crearEscenario();
 

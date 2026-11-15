@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "98fb5f32de6c3b5bf1c5853ab648e216e12f10a1",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:04:36.000Z",
       "message": "refactor: eliminar la clase css campo--oculto sin uso",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/98fb5f32de6c3b5bf1c5853ab648e216e12f10a1"
     },
     "stats": {
       "total": 3,
@@ -262,6 +262,25 @@
     },
     "coverage": 97.56,
     "test_count": 124,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:08:16.000Z",
+      "message": "refactor: extraer datos validos en los tests del presenter de registro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 52,
+      "additions": 32,
+      "deletions": 20,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.56,
+    "test_count": 125,
     "failed_tests": 0,
     "conclusion": "success"
   }

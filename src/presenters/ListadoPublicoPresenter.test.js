@@ -188,4 +188,20 @@ describe('ListadoPublicoPresenter', () => {
 
         expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_OBJETOS_HALLADOS, MENSAJES.SIN_OBJETOS_HALLADOS]);
     });
+
+    it('no muestra datos de quien encontro el objeto en las tarjetas', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({
+                id: 1,
+                categoria: 'Llaves',
+                rutaFoto: 'objetos/1.jpg',
+                encontradoPor: { nombre: 'Juan Perez', celular: '70000000' },
+            }),
+        ]);
+
+        await presenter.cargar();
+
+        expect(vista.tarjetas[0]).not.toHaveProperty('encontradoPor');
+        expect(JSON.stringify(vista.tarjetas)).not.toContain('Juan Perez');
+    });
 });
