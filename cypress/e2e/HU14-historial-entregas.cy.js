@@ -22,4 +22,22 @@ describe('HU-14: historial de objetos entregados', () => {
 
         cy.url().should('include', '/admin/login.html');
     });
+    it('avisa que no hay objetos entregados cuando el historial esta vacio', () => {
+        cy.visit('/admin/historial.html', {
+            onBeforeLoad: (ventana) => {
+                ventana.sessionStorage.setItem(
+                    'usuario',
+                    JSON.stringify({ correo: 'admin@ucb.edu.bo', esAdmin: true }),
+                );
+                // Solo hay un objeto publicado: ninguno entregado
+                ventana.localStorage.setItem(
+                    'findu.objetos',
+                    JSON.stringify([{ id: 1, numero: 1, estado: 'publicado' }]),
+                );
+            },
+        });
+
+        cy.get('#mensaje-vacio').should('be.visible').and('have.text', 'No hay objetos entregados');
+        cy.get('#tabla-historial').should('not.be.visible');
+    });
 });

@@ -1273,16 +1273,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c1fb88b6f26a1b37a260edc7653d5588f9f8320f",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:31:23.000Z",
       "message": "feat(HU14): restringir el historial al administrador",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c1fb88b6f26a1b37a260edc7653d5588f9f8320f"
     },
     "stats": {
       "total": 16,
       "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:33:13.000Z",
+      "message": "test(HU14): verificar el aviso cuando el historial está vacío",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
       "deletions": 0,
       "date": "2026-11-15"
     },

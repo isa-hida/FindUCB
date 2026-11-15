@@ -2532,9 +2532,15 @@
     "testId": 202
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c1fb88b6f26a1b37a260edc7653d5588f9f8320f",
     "commitName": "feat(HU14): restringir el historial al administrador",
     "commitTimestamp": 1794745885055,
     "testId": 203
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU14): verificar el aviso cuando el historial está vacío",
+    "commitTimestamp": 1794745995401,
+    "testId": 204
   }
 ]
