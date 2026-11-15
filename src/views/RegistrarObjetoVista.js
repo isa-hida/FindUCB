@@ -1,4 +1,5 @@
 /* global URL, FormData */
+import { MAX_CARACTERES_TEXTO } from '../domain/limites.js';
 export class RegistrarObjetoVista {
     constructor(documento) {
         this.documento = documento;
@@ -35,12 +36,13 @@ export class RegistrarObjetoVista {
 
         if (this.descripcionInput && this.contadorCaracteres) {
             this.descripcionInput.addEventListener('input', () => {
-                const longitud = this.descripcionInput.value.length;
-                this.contadorCaracteres.textContent = `${longitud} / 300`;
+                this._mostrarContador(this.descripcionInput.value.length);
             });
         }
     }
-
+    _mostrarContador(longitud) {
+        this.contadorCaracteres.textContent = `${longitud} / ${MAX_CARACTERES_TEXTO}`;
+    }
     alEnviar(callback) {
         this.formulario.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -84,7 +86,7 @@ export class RegistrarObjetoVista {
             this.previewImagen.src = '';
         }
         if (this.contadorCaracteres) {
-            this.contadorCaracteres.textContent = '0 / 500';
+            this._mostrarContador(0);
         }
     }
 }

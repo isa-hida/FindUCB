@@ -1792,9 +1792,23 @@
     "testId": 145
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0a02f1fb33191eebfa416642390d6589d428ad0f",
     "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
     "commitTimestamp": 1794706792068,
     "testId": 145
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 0,
+    "numTotalTests": 123,
+    "timestamp": 1794706962350,
+    "success": true,
+    "testId": 146
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar MAX_CARACTERES_TEXTO en el contador de la vista",
+    "commitTimestamp": 1794706985033,
+    "testId": 146
   }
 ]

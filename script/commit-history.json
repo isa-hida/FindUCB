@@ -171,17 +171,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0a02f1fb33191eebfa416642390d6589d428ad0f",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:39:51.000Z",
       "message": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0a02f1fb33191eebfa416642390d6589d428ad0f"
     },
     "stats": {
       "total": 2,
       "additions": 2,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.55,
+    "test_count": 123,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:43:04.000Z",
+      "message": "refactor: usar MAX_CARACTERES_TEXTO en el contador de la vista",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 6,
+      "deletions": 4,
       "date": "2026-11-15"
     },
     "coverage": 97.55,
