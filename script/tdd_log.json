@@ -2594,9 +2594,15 @@
     "testId": 211
   },
   {
-    "commitId": "HEAD",
+    "commitId": "25adc37703a5789bc755ff24af5b0b9cf7dd673c",
     "commitName": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
     "commitTimestamp": 1794765747950,
     "testId": 212
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
+    "commitTimestamp": 1794765867099,
+    "testId": 213
   }
 ]

@@ -1444,17 +1444,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "25adc37703a5789bc755ff24af5b0b9cf7dd673c",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T18:02:25.000Z",
       "message": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/25adc37703a5789bc755ff24af5b0b9cf7dd673c"
     },
     "stats": {
       "total": 15,
       "additions": 10,
       "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:04:25.000Z",
+      "message": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 39,
+      "deletions": 21,
       "date": "2026-11-15"
     },
     "coverage": 97.68,
