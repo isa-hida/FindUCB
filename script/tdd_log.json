@@ -2090,9 +2090,23 @@
     "testId": 168
   },
   {
-    "commitId": "HEAD",
+    "commitId": "09f8041f1d717dc4cf5b80154ff846fd7be33eca",
     "commitName": "test: cubrir listarPublicados y obtenerPorId en ObjetosEnMemoria",
     "commitTimestamp": 1794711181574,
     "testId": 168
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794711346949,
+    "success": true,
+    "testId": 169
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar ObjetosEnMemoria en los tests de los presenters de admin",
+    "commitTimestamp": 1794711367548,
+    "testId": 169
   }
 ]

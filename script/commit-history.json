@@ -608,17 +608,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "09f8041f1d717dc4cf5b80154ff846fd7be33eca",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:52:58.000Z",
       "message": "test: cubrir listarPublicados y obtenerPorId en ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/09f8041f1d717dc4cf5b80154ff846fd7be33eca"
     },
     "stats": {
       "total": 35,
       "additions": 35,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 138,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:56:04.000Z",
+      "message": "refactor: usar ObjetosEnMemoria en los tests de los presenters de admin",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
       "date": "2026-11-15"
     },
     "coverage": 97.79,
