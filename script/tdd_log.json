@@ -2472,9 +2472,15 @@
     "testId": 192
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a04a2352aaa33c56fcca4eff70323cbbd020c79b",
     "commitName": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
     "commitTimestamp": 1794741961785,
     "testId": 193
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): separar con una línea en blanco el método cancelar",
+    "commitTimestamp": 1794742085371,
+    "testId": 194
   }
 ]

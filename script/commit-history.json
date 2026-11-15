@@ -1083,17 +1083,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a04a2352aaa33c56fcca4eff70323cbbd020c79b",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:25:59.000Z",
       "message": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a04a2352aaa33c56fcca4eff70323cbbd020c79b"
     },
     "stats": {
       "total": 14,
       "additions": 9,
       "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.54,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:28:01.000Z",
+      "message": "refactor(HU07): separar con una línea en blanco el método cancelar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
       "date": "2026-11-15"
     },
     "coverage": 97.54,
