@@ -2558,9 +2558,15 @@
     "testId": 205
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f400d0ec8686e2120cdacc4891f51046291757ea",
     "commitName": "style(HU14): mostrar el historial como tarjetas igual que el panel",
     "commitTimestamp": 1794764389142,
     "testId": 206
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): incluir la ruta de la foto en la fila del historial",
+    "commitTimestamp": 1794764541244,
+    "testId": 207
   }
 ]

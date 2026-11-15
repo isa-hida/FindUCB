@@ -1330,12 +1330,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f400d0ec8686e2120cdacc4891f51046291757ea",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T17:39:46.000Z",
       "message": "style(HU14): mostrar el historial como tarjetas igual que el panel",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f400d0ec8686e2120cdacc4891f51046291757ea"
     },
     "stats": {
       "total": 60,
@@ -1345,6 +1345,25 @@
     },
     "coverage": 97.64,
     "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:42:19.000Z",
+      "message": "feat(HU14): incluir la ruta de la foto en la fila del historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 155,
     "failed_tests": 0,
     "conclusion": "success"
   }
