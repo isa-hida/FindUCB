@@ -2242,9 +2242,31 @@
     "testId": 176
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f9ffec5d3c3e52b48541dad3421303a99b20d205",
     "commitName": "refactor: extraer la validacion de la foto del validador de objetos",
     "commitTimestamp": 1794712872278,
     "testId": 176
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794713117490,
+    "success": false,
+    "testId": 177
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794713141388,
+    "success": true,
+    "testId": 177
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: el presenter de edicion carga los datos actuales del objeto",
+    "commitTimestamp": 1794713161494,
+    "testId": 177
   }
 ]

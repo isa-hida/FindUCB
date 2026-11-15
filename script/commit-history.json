@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f9ffec5d3c3e52b48541dad3421303a99b20d205",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:21:09.000Z",
       "message": "refactor: extraer la validacion de la foto del validador de objetos",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f9ffec5d3c3e52b48541dad3421303a99b20d205"
     },
     "stats": {
       "total": 24,
@@ -775,6 +775,25 @@
     },
     "coverage": 97.68,
     "test_count": 136,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:25:59.000Z",
+      "message": "feat: el presenter de edicion carga los datos actuales del objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 99,
+      "additions": 99,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.74,
+    "test_count": 138,
     "failed_tests": 0,
     "conclusion": "success"
   }
