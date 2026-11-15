@@ -2502,9 +2502,15 @@
     "testId": 197
   },
   {
-    "commitId": "HEAD",
+    "commitId": "39041060a89a2cd526818b82cc4d9940ce6add47",
     "commitName": "feat(HU14): mostrar las filas del historial desde el presenter",
     "commitTimestamp": 1794744418517,
     "testId": 198
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): avisar cuando no hay objetos entregados en el historial",
+    "commitTimestamp": 1794744763870,
+    "testId": 199
   }
 ]

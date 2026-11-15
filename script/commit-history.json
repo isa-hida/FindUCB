@@ -1178,12 +1178,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "39041060a89a2cd526818b82cc4d9940ce6add47",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:06:56.000Z",
       "message": "feat(HU14): mostrar las filas del historial desde el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/39041060a89a2cd526818b82cc4d9940ce6add47"
     },
     "stats": {
       "total": 50,
@@ -1193,6 +1193,25 @@
     },
     "coverage": 97.62,
     "test_count": 153,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:12:41.000Z",
+      "message": "feat(HU14): avisar cuando no hay objetos entregados en el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
     "failed_tests": 0,
     "conclusion": "success"
   }

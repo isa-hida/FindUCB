@@ -4,8 +4,12 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 const crearEscenario = (objetos = []) => {
     const vista = {
         filas: [],
+        mensajesVacios: [],
         mostrarFilas(filas) {
             this.filas = filas;
+        },
+        mostrarMensajeVacio(mensaje) {
+            this.mensajesVacios.push(mensaje);
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -33,5 +37,12 @@ describe('HistorialEntregasPresenter', () => {
             nombreReceptor: 'Pedro Gutiérrez',
             fechaEntrega: '2026-10-17',
         }]);
+    });
+    it('avisa que no hay objetos entregados si el historial esta vacio', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, numero: 1, estado: 'publicado' }]);
+
+        await presenter.cargar();
+
+        expect(vista.mensajesVacios).toEqual(['No hay objetos entregados']);
     });
 });
