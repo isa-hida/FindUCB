@@ -2,7 +2,7 @@ import { RegistrarObjetoPresenter } from './RegistrarObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 
-const crearEscenario = (objetos = []) => {
+const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
     const vista = {
         errores: [],
         mensajesExito: [],
@@ -17,7 +17,7 @@ const crearEscenario = (objetos = []) => {
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository);
+    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository, () => hoy);
     return { vista, objetosRepository, presenter };
 };
 
@@ -38,7 +38,6 @@ describe('RegistrarObjetoPresenter', () => {
             categoria: 'Llaves',
             descripcion: 'Llaves de oficina',
             fechaHallazgo: '2026-10-21',
-            hoy: '2026-10-20',
             rutaFoto: '/fotos/llaves.jpg',
             lugar: 'Biblioteca',
             color: 'Dorado',

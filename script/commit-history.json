@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dbaa48a957764c9721a74d02df6dfd0a91f06dee",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:23:06.000Z",
       "message": "feat: agregar aFechaIso para obtener la fecha local",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/dbaa48a957764c9721a74d02df6dfd0a91f06dee"
     },
     "stats": {
       "total": 14,
@@ -109,6 +109,25 @@
       "date": "2026-11-15"
     },
     "coverage": 97.52,
+    "test_count": 119,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:29:22.000Z",
+      "message": "feat: validar fecha futura usando el dia actual en el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.13,
     "test_count": 119,
     "failed_tests": 0,
     "conclusion": "success"

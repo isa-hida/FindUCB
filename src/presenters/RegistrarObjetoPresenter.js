@@ -1,16 +1,17 @@
 import { MENSAJES } from '../domain/mensajes';
 import { validarObjetoHallado } from '../domain/objetoHallado';
+import { aFechaIso } from '../domain/fecha';
 
 export class RegistrarObjetoPresenter {
-    constructor(vista, objetosRepository) {
+    constructor(vista, objetosRepository, obtenerHoy = () => aFechaIso(new Date())) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
+        this.obtenerHoy = obtenerHoy;
     }
-
     async registrar(datosObjeto) {
         this.vista.limpiarError();
 
-        const errores = validarObjetoHallado(datosObjeto);
+        const errores = validarObjetoHallado({ ...datosObjeto, hoy: this.obtenerHoy() });
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
             return;

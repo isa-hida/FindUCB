@@ -1712,9 +1712,31 @@
     "testId": 141
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dbaa48a957764c9721a74d02df6dfd0a91f06dee",
     "commitName": "feat: agregar aFechaIso para obtener la fecha local",
     "commitTimestamp": 1794705787859,
     "testId": 141
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 1,
+    "numTotalTests": 119,
+    "timestamp": 1794705959052,
+    "success": false,
+    "testId": 142
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794706093215,
+    "success": true,
+    "testId": 142
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar fecha futura usando el dia actual en el presenter",
+    "commitTimestamp": 1794706164040,
+    "testId": 142
   }
 ]
