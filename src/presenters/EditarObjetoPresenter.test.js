@@ -187,5 +187,18 @@ describe('EditarObjetoPresenter - iniciar', () => {
 
             expect((await objetosRepository.obtenerPorId(3)).numero).toEqual(3);
         });
+        it('si se sube una foto nueva y luego se guarda sin foto, conserva la foto nueva', async () => {
+            const { objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+            await presenter.guardar(crearDatosEditados({
+                rutaFoto: 'chaqueta.jpg',
+                fotoContenido: 'data:image/jpeg;base64,AAA',
+            }));
+            const { rutaFoto } = await objetosRepository.obtenerPorId(3);
+
+            await presenter.guardar(crearDatosEditados({ lugar: 'Cafetería' }));
+
+            expect((await objetosRepository.obtenerPorId(3)).rutaFoto).toEqual(rutaFoto);
+        });
     });
 });

@@ -2388,9 +2388,31 @@
     "testId": 183
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3a8662ebe4d97f7c386341ac3bdf69354f358de2",
     "commitName": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
     "commitTimestamp": 1794714901722,
     "testId": 183
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 1,
+    "numTotalTests": 149,
+    "timestamp": 1794715015037,
+    "success": false,
+    "testId": 184
+  },
+  {
+    "numPassedTests": 149,
+    "failedTests": 0,
+    "numTotalTests": 149,
+    "timestamp": 1794715061866,
+    "success": true,
+    "testId": 184
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: recordar la foto nueva despues de guardar un aviso editado",
+    "commitTimestamp": 1794715082913,
+    "testId": 184
   }
 ]

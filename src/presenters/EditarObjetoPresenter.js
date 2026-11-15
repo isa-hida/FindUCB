@@ -50,6 +50,7 @@ export class EditarObjetoPresenter {
             ? await this.fotosStorage.guardar(datosObjeto.rutaFoto, fotoContenido)
             : this.fotoActual;
         await this.objetosRepository.actualizar(this.id, { ...datosObjeto, rutaFoto });
+        this.fotoActual = rutaFoto;
         this.vista.mostrarExito(MENSAJES.AVISO_ACTUALIZADO);
     }
 }

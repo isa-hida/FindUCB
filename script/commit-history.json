@@ -893,12 +893,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3a8662ebe4d97f7c386341ac3bdf69354f358de2",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:54:59.000Z",
       "message": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3a8662ebe4d97f7c386341ac3bdf69354f358de2"
     },
     "stats": {
       "total": 38,
@@ -908,6 +908,25 @@
     },
     "coverage": 97.52,
     "test_count": 148,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:57:59.000Z",
+      "message": "fix: recordar la foto nueva despues de guardar un aviso editado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
     "failed_tests": 0,
     "conclusion": "success"
   }
