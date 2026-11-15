@@ -1235,17 +1235,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f94cfca926075f503f7ce6c4b1bf01013b2c42ea",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:25:45.000Z",
       "message": "feat(HU14): mostrar los objetos entregados en la página de historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f94cfca926075f503f7ce6c4b1bf01013b2c42ea"
     },
     "stats": {
       "total": 69,
       "additions": 69,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:29:07.000Z",
+      "message": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
       "date": "2026-11-15"
     },
     "coverage": 97.64,

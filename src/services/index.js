@@ -87,7 +87,7 @@ export const objetosRepository = new ObjetosEnMemoria({
             rutaFoto: 'ejemplos/cuaderno.svg',
             estado: 'entregado',
             encontradoPor: { nombre: 'Rosa Flores', celular: '70055555' },
-            entrega: { nombre: 'Pedro Gutiérrez', ci: '1234567', celular: '70066666', fecha: '2026-10-17' },
+            entrega: { nombre: 'Pedro Gutiérrez', ci: '1234567', celular: '70066666', fechaEntrega: '2026-10-17' },
         },
     ],
 });

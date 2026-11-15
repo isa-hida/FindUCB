@@ -2520,9 +2520,15 @@
     "testId": 200
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f94cfca926075f503f7ce6c4b1bf01013b2c42ea",
     "commitName": "feat(HU14): mostrar los objetos entregados en la página de historial",
     "commitTimestamp": 1794745547691,
     "testId": 201
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
+    "commitTimestamp": 1794745750112,
+    "testId": 202
   }
 ]
