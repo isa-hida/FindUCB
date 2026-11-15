@@ -1,6 +1,6 @@
 describe('HU08: ver el listado de objetos hallados', () => {
     beforeEach(() => {
-        cy.visit('/');
+        cy.visitarComoComunidad('/');
     });
 
     it('muestra los objetos del mas reciente al mas antiguo', () => {

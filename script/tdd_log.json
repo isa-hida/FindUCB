@@ -2058,9 +2058,15 @@
     "testId": 163
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6ddd546bc164ec3b494642ff1f77f31b6e539743",
     "commitName": "refactor: agregar comando cypress para entrar con sesion de comunidad",
     "commitTimestamp": 1794710861637,
     "testId": 164
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: entrar con sesion de comunidad en los e2e del listado",
+    "commitTimestamp": 1794710956299,
+    "testId": 165
   }
 ]

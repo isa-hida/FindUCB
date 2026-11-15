@@ -38,7 +38,7 @@ describe('HU10: ver el detalle de un objeto', () => {
     });
 
     it('abre el detalle desde el listado y vuelve al listado', () => {
-        cy.visit('/');
+        cy.visitarComoComunidad('/');
         cy.get('#objeto-3').click();
         cy.get('#detalle-categoria').should('have.text', 'Llaves');
 

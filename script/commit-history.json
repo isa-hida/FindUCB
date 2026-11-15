@@ -532,17 +532,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ddd546bc164ec3b494642ff1f77f31b6e539743",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:47:38.000Z",
       "message": "refactor: agregar comando cypress para entrar con sesion de comunidad",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/6ddd546bc164ec3b494642ff1f77f31b6e539743"
     },
     "stats": {
       "total": 10,
       "additions": 6,
       "deletions": 4,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:49:13.000Z",
+      "message": "test: entrar con sesion de comunidad en los e2e del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
       "date": "2026-11-15"
     },
     "coverage": 97.79,
