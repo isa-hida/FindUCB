@@ -1834,9 +1834,23 @@
     "testId": 147
   },
   {
-    "commitId": "HEAD",
+    "commitId": "164d97a323908a965c3ee5867f7f8a8ed3bd1ff1",
     "commitName": "fix: mostrar los campos de quien encontro el objeto y marcar los obligatorios",
     "commitTimestamp": 1794708201354,
     "testId": 148
+  },
+  {
+    "numPassedTests": 124,
+    "failedTests": 0,
+    "numTotalTests": 124,
+    "timestamp": 1794708259094,
+    "success": true,
+    "testId": 149
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: eliminar la clase css campo--oculto sin uso",
+    "commitTimestamp": 1794708278297,
+    "testId": 149
   }
 ]

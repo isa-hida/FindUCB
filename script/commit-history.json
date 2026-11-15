@@ -228,17 +228,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "164d97a323908a965c3ee5867f7f8a8ed3bd1ff1",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:03:20.000Z",
       "message": "fix: mostrar los campos de quien encontro el objeto y marcar los obligatorios",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/164d97a323908a965c3ee5867f7f8a8ed3bd1ff1"
     },
     "stats": {
       "total": 49,
       "additions": 29,
       "deletions": 20,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.56,
+    "test_count": 124,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:04:36.000Z",
+      "message": "refactor: eliminar la clase css campo--oculto sin uso",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 0,
+      "deletions": 3,
       "date": "2026-11-15"
     },
     "coverage": 97.56,

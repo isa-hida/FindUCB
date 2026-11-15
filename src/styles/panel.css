@@ -251,9 +251,6 @@
     margin-top: 0.25rem;
 }
 
-.campo--oculto {
-    display: none;
-}
 
 .dropzone-foto {
     border: 2px dashed #cbd5e1;
