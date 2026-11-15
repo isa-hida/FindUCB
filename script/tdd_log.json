@@ -1906,9 +1906,39 @@
     "testId": 152
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7ccbdb1745c67eb41a0577c138af6155958a8492",
     "commitName": "feat: persistir en un almacen los objetos registrados",
     "commitTimestamp": 1794708819544,
     "testId": 152
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 0,
+    "numTotalTests": 128,
+    "timestamp": 1794708865331,
+    "success": true,
+    "testId": 153
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 1,
+    "numTotalTests": 129,
+    "timestamp": 1794708922347,
+    "success": false,
+    "testId": 153
+  },
+  {
+    "numPassedTests": 129,
+    "failedTests": 0,
+    "numTotalTests": 129,
+    "timestamp": 1794708955716,
+    "success": true,
+    "testId": 153
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: guardar en el almacen las entregas registradas",
+    "commitTimestamp": 1794708978006,
+    "testId": 153
   }
 ]

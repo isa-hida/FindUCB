@@ -113,4 +113,24 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
             expect(publicados[0].categoria).toEqual('Llaves');
         });
     });
+    it('el numero correlativo continua entre repositorios que comparten el almacen', async () => {
+        const almacen = crearAlmacen();
+        const primero = new ObjetosEnMemoria({ objetos: [{ id: 1, numero: 1, estado: 'publicado' }], almacen });
+        await primero.registrar({ categoria: 'Llaves', descripcion: 'Llaves de oficina' });
+
+        const segundo = new ObjetosEnMemoria({ objetos: [{ id: 1, numero: 1, estado: 'publicado' }], almacen });
+        const nuevo = await segundo.registrar({ categoria: 'Ropa', descripcion: 'Chaqueta azul' });
+
+        expect(nuevo).toMatchObject({ id: 3, numero: 3 });
+    });
+    it('recuerda una entrega registrada en otro repositorio que use el mismo almacen', async () => {
+        const almacen = crearAlmacen();
+        const objeto = crearObjeto({ id: 1, numero: 1 });
+        const primero = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        await primero.registrarEntrega(1, { nombre: 'Ana Perez', ci: '1234567' });
+        const segundo = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        expect(await segundo.listarPublicados()).toEqual([]);
+    });
 });

@@ -47,6 +47,7 @@ export class ObjetosEnMemoria {
                 ? { ...objeto, estado: 'entregado', entrega }
                 : objeto
         ));
+        this.guardar();
     }
 
     guardar() {
