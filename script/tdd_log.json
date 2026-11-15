@@ -2424,9 +2424,15 @@
     "testId": 185
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f58b7cdf5a79517764bba8d8282be243f9b15bed",
     "commitName": "feat: ruta a pantalla editar",
     "commitTimestamp": 1794716482056,
     "testId": 185
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
+    "commitTimestamp": 1794740478085,
+    "testId": 186
   }
 ]

@@ -931,17 +931,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f58b7cdf5a79517764bba8d8282be243f9b15bed",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T04:21:19.000Z",
       "message": "feat: ruta a pantalla editar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f58b7cdf5a79517764bba8d8282be243f9b15bed"
     },
     "stats": {
       "total": 341,
       "additions": 339,
       "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:01:15.000Z",
+      "message": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
       "date": "2026-11-15"
     },
     "coverage": 97.53,
