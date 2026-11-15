@@ -1007,17 +1007,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "55410398b29129d4365303d147e055ba63caf9a5",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:12:09.000Z",
       "message": "test(HU07): verificar que el objeto entregado sale del listado de la comunidad",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/55410398b29129d4365303d147e055ba63caf9a5"
     },
     "stats": {
       "total": 13,
       "additions": 13,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:14:22.000Z",
+      "message": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 20,
+      "deletions": 20,
       "date": "2026-11-15"
     },
     "coverage": 97.53,

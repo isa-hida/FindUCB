@@ -2448,9 +2448,15 @@
     "testId": 188
   },
   {
-    "commitId": "HEAD",
+    "commitId": "55410398b29129d4365303d147e055ba63caf9a5",
     "commitName": "test(HU07): verificar que el objeto entregado sale del listado de la comunidad",
     "commitTimestamp": 1794741132036,
     "testId": 189
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
+    "commitTimestamp": 1794741265267,
+    "testId": 190
   }
 ]
