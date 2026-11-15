@@ -1954,9 +1954,15 @@
     "testId": 155
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ba2b8403851e3f93c4c6caea8cb955317a21ae3a",
     "commitName": "test: actualizar e2e de HU04 con campos obligatorios y listas",
     "commitTimestamp": 1794709437557,
     "testId": 156
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: actualizar e2e de HU05 con los mensajes y datos actuales",
+    "commitTimestamp": 1794709474111,
+    "testId": 157
   }
 ]

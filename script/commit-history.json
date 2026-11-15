@@ -380,17 +380,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ba2b8403851e3f93c4c6caea8cb955317a21ae3a",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:23:54.000Z",
       "message": "test: actualizar e2e de HU04 con campos obligatorios y listas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ba2b8403851e3f93c4c6caea8cb955317a21ae3a"
     },
     "stats": {
       "total": 61,
       "additions": 44,
       "deletions": 17,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.63,
+    "test_count": 129,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:24:31.000Z",
+      "message": "test: actualizar e2e de HU05 con los mensajes y datos actuales",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 16,
+      "deletions": 21,
       "date": "2026-11-15"
     },
     "coverage": 97.63,
