@@ -2576,9 +2576,15 @@
     "testId": 208
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0af24139648a9e3526d57b786e4f08062063ff75",
     "commitName": "feat(HU14): mostrar la foto del objeto en cada fila del historial",
     "commitTimestamp": 1794765061942,
     "testId": 209
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style(HU14): ajustar el tamaño y la posición de la foto en el historial",
+    "commitTimestamp": 1794765095043,
+    "testId": 210
   }
 ]

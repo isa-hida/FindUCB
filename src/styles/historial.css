@@ -1,8 +1,22 @@
+/* Cuatro zonas por tarjeta: N°, foto, datos y fecha */
 .historial__fila {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 72px 1fr auto;
     grid-template-areas:
-        "numero categoria fecha"
-        "numero receptor  fecha";
+        "numero foto categoria fecha"
+        "numero foto receptor  fecha";
+}
+
+.tabla td:has(.historial__foto) {
+    grid-area: foto;
+}
+
+.historial__foto {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e9ecef;
 }
 
 .tabla td.historial__numero {
