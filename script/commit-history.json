@@ -570,17 +570,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "49d23f8afc91fb98dc4a05810ba3a5747552e250",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:49:46.000Z",
       "message": "test: actualizar e2e de HU06 con sesion de admin y datos actuales",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/49d23f8afc91fb98dc4a05810ba3a5747552e250"
     },
     "stats": {
       "total": 6,
       "additions": 3,
       "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:50:18.000Z",
+      "message": "test: actualizar e2e de HU02 con los ids y mensajes del login de admin",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 22,
+      "deletions": 16,
       "date": "2026-11-15"
     },
     "coverage": 97.79,

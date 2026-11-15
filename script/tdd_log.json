@@ -2070,9 +2070,15 @@
     "testId": 165
   },
   {
-    "commitId": "HEAD",
+    "commitId": "49d23f8afc91fb98dc4a05810ba3a5747552e250",
     "commitName": "test: actualizar e2e de HU06 con sesion de admin y datos actuales",
     "commitTimestamp": 1794710989501,
     "testId": 166
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: actualizar e2e de HU02 con los ids y mensajes del login de admin",
+    "commitTimestamp": 1794711021279,
+    "testId": 167
   }
 ]
