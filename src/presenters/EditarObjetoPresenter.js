@@ -39,13 +39,17 @@ export class EditarObjetoPresenter {
     async guardar(datos) {
         this.vista.limpiarError();
 
-        const errores = validarObjetoHallado({ ...datos, hoy: this.obtenerHoy(), fotoActual: this.fotoActual });
+        const { fotoContenido, ...datosObjeto } = datos;
+        const errores = validarObjetoHallado({ ...datosObjeto, hoy: this.obtenerHoy(), fotoActual: this.fotoActual });
         if (errores.length > 0) {
             this.vista.mostrarError(errores[0]);
             return;
         }
 
-        await this.objetosRepository.actualizar(this.id, datos);
+        const rutaFoto = fotoContenido
+            ? await this.fotosStorage.guardar(datosObjeto.rutaFoto, fotoContenido)
+            : this.fotoActual;
+        await this.objetosRepository.actualizar(this.id, { ...datosObjeto, rutaFoto });
         this.vista.mostrarExito(MENSAJES.AVISO_ACTUALIZADO);
     }
 }

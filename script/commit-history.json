@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1bdb3eef38e66cc773776e24a36038acd9e5937b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:35:31.000Z",
       "message": "feat: validar los datos del aviso al editarlo con las reglas del registro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1bdb3eef38e66cc773776e24a36038acd9e5937b"
     },
     "stats": {
       "total": 34,
@@ -851,6 +851,25 @@
     },
     "coverage": 97.5,
     "test_count": 143,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:37:17.000Z",
+      "message": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 48,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 147,
     "failed_tests": 0,
     "conclusion": "success"
   }

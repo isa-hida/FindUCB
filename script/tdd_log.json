@@ -2330,9 +2330,31 @@
     "testId": 180
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1bdb3eef38e66cc773776e24a36038acd9e5937b",
     "commitName": "feat: validar los datos del aviso al editarlo con las reglas del registro",
     "commitTimestamp": 1794713734341,
     "testId": 180
+  },
+  {
+    "numPassedTests": 145,
+    "failedTests": 2,
+    "numTotalTests": 147,
+    "timestamp": 1794713796915,
+    "success": false,
+    "testId": 181
+  },
+  {
+    "numPassedTests": 147,
+    "failedTests": 0,
+    "numTotalTests": 147,
+    "timestamp": 1794713819668,
+    "success": true,
+    "testId": 181
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
+    "commitTimestamp": 1794713840296,
+    "testId": 181
   }
 ]

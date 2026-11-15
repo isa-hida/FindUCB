@@ -145,5 +145,47 @@ describe('EditarObjetoPresenter - iniciar', () => {
             expect(vista.mensajesExito).toEqual([]);
             expect((await objetosRepository.obtenerPorId(3)).fechaHallazgo).toEqual('2026-10-14');
         });
+        it('conserva la foto actual si no se sube una foto nueva', async () => {
+            const { objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ rutaFoto: '', fotoContenido: '' }));
+
+            expect((await objetosRepository.obtenerPorId(3)).rutaFoto).toEqual('ejemplos/llaves.svg');
+        });
+
+        it('guarda la foto nueva, reemplaza la ruta y no deja el contenido dentro del objeto', async () => {
+            const { objetosRepository, fotosStorage, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({
+                rutaFoto: 'chaqueta.jpg',
+                fotoContenido: 'data:image/jpeg;base64,AAA',
+            }));
+
+            const objeto = await objetosRepository.obtenerPorId(3);
+            expect(await fotosStorage.urlsFirmadas([objeto.rutaFoto])).toEqual(['data:image/jpeg;base64,AAA']);
+            expect(objeto).not.toHaveProperty('fotoContenido');
+            expect(objeto).not.toHaveProperty('hoy');
+        });
+
+        it('rechaza una foto nueva que no es JPG ni PNG y no modifica el objeto', async () => {
+            const { vista, objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ rutaFoto: 'animacion.gif', fotoContenido: 'data:image/gif;base64,AAA' }));
+
+            expect(vista.errores).toEqual([MENSAJES.FORMATO_FOTO_INVALIDO]);
+            expect((await objetosRepository.obtenerPorId(3)).rutaFoto).toEqual('ejemplos/llaves.svg');
+        });
+
+        it('no permite cambiar el numero del objeto', async () => {
+            const { objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ numero: 99 }));
+
+            expect((await objetosRepository.obtenerPorId(3)).numero).toEqual(3);
+        });
     });
 });
