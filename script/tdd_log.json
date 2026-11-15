@@ -2442,9 +2442,15 @@
     "testId": 187
   },
   {
-    "commitId": "HEAD",
+    "commitId": "07035e14a9f7882e7c0c76cfc33f65d829d2f1e5",
     "commitName": "test(HU07): verificar que el objeto entregado sale del panel y no vuelve",
     "commitTimestamp": 1794741002101,
     "testId": 188
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU07): verificar que el objeto entregado sale del listado de la comunidad",
+    "commitTimestamp": 1794741132036,
+    "testId": 189
   }
 ]
