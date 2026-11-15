@@ -1311,17 +1311,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a37b02476893c79983669eaa921973702a5ce470",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T17:33:36.000Z",
       "message": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/a37b02476893c79983669eaa921973702a5ce470"
     },
     "stats": {
       "total": 15,
       "additions": 13,
       "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:39:46.000Z",
+      "message": "style(HU14): mostrar el historial como tarjetas igual que el panel",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 57,
+      "deletions": 3,
       "date": "2026-11-15"
     },
     "coverage": 97.64,

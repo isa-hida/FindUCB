@@ -7,6 +7,7 @@
     <title>Historial de entregas | FindU</title>
     <link rel="stylesheet" href="../src/styles/base.css" />
     <link rel="stylesheet" href="../src/styles/panel.css" />
+    <link rel="stylesheet" href="../src/styles/historial.css" />
 </head>
 
 <body>
@@ -18,8 +19,8 @@
         <h2 class="panel__subtitulo">Objetos entregados</h2>
         <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
 
-        <table id="tabla-historial" hidden>
-            <caption>Lista de objetos entregados</caption>
+        <table id="tabla-historial" class="tabla" hidden>
+          <caption class="tabla__caption">Lista de objetos entregados</caption>
             <thead>
                 <tr>
                     <th scope="col">N°</th>
@@ -32,7 +33,7 @@
         </table>
 
         <template id="plantilla-fila-historial">
-            <tr>
+            <tr class="tabla__fila historial__fila">
                 <td class="historial__numero"></td>
                 <td class="historial__categoria"></td>
                 <td class="historial__receptor"></td>

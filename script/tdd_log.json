@@ -2552,9 +2552,15 @@
     "testId": 205
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a37b02476893c79983669eaa921973702a5ce470",
     "commitName": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
     "commitTimestamp": 1794764019403,
     "testId": 205
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style(HU14): mostrar el historial como tarjetas igual que el panel",
+    "commitTimestamp": 1794764389142,
+    "testId": 206
   }
 ]
