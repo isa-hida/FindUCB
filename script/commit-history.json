@@ -646,17 +646,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c0894554547aab66201d67e1f85595d97ae5f91c",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:57:32.000Z",
       "message": "refactor: eliminar ObjetosRepositoryEnMemoria duplicado de ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c0894554547aab66201d67e1f85595d97ae5f91c"
     },
     "stats": {
       "total": 143,
       "additions": 0,
       "deletions": 143,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.65,
+    "test_count": 131,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:00:34.000Z",
+      "message": "refactor: reutilizar crearAlmacenFalso en los tests de ObjetosEnMemoria",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 112,
+      "additions": 55,
+      "deletions": 57,
       "date": "2026-11-15"
     },
     "coverage": 97.65,

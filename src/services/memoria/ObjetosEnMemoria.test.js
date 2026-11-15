@@ -1,18 +1,11 @@
 import { ObjetosEnMemoria } from './ObjetosEnMemoria';
+import { crearAlmacenFalso } from './crearAlmacenFalso';
+
 const crearObjeto = (datos) => ({
     id: 1,
     numero: 1,
     estado: 'publicado',
     ...datos,
-});
-const crearAlmacen = () => ({
-    datos: {},
-    getItem(clave) {
-        return this.datos[clave] === undefined ? null : this.datos[clave];
-    },
-    setItem(clave, valor) {
-        this.datos[clave] = valor;
-    },
 });
 
 describe('ObjetosEnMemoria - registrar', () => {
@@ -51,6 +44,7 @@ describe('ObjetosEnMemoria - registrar', () => {
         });
     });
 });
+
 // Pruebas del listado para el administrador (HU-06)
 describe('ObjetosEnMemoria - listarParaAdmin', () => {
     it('devuelve los objetos publicados y los entregados', async () => {
@@ -61,6 +55,42 @@ describe('ObjetosEnMemoria - listarParaAdmin', () => {
         const resultado = await repo.listarParaAdmin();
 
         expect(resultado).toEqual([publicado, entregado]);
+    });
+});
+
+describe('ObjetosEnMemoria - listarPublicados y obtenerPorId', () => {
+    it('listarPublicados devuelve solo los objetos publicados', async () => {
+        const publicado = crearObjeto({ id: 1, numero: 1 });
+        const entregado = crearObjeto({ id: 2, numero: 2, estado: 'entregado' });
+        const repo = new ObjetosEnMemoria({ objetos: [publicado, entregado] });
+
+        expect(await repo.listarPublicados()).toEqual([publicado]);
+    });
+
+    it('obtenerPorId devuelve el objeto si existe y esta publicado', async () => {
+        const publicado = crearObjeto({ id: 1, numero: 1 });
+        const repo = new ObjetosEnMemoria({ objetos: [publicado, crearObjeto({ id: 2, numero: 2 })] });
+
+        expect(await repo.obtenerPorId(1)).toEqual(publicado);
+    });
+
+    it('obtenerPorId acepta el id como texto, tal como llega desde la URL', async () => {
+        const publicado = crearObjeto({ id: 1, numero: 1 });
+        const repo = new ObjetosEnMemoria({ objetos: [publicado] });
+
+        expect(await repo.obtenerPorId('1')).toEqual(publicado);
+    });
+
+    it('obtenerPorId devuelve null si el id no existe', async () => {
+        const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1 })] });
+
+        expect(await repo.obtenerPorId(99)).toBeNull();
+    });
+
+    it('obtenerPorId devuelve null si el objeto ya fue entregado', async () => {
+        const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1, estado: 'entregado' })] });
+
+        expect(await repo.obtenerPorId(1)).toBeNull();
     });
 });
 
@@ -100,21 +130,23 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
 
         expect(resultado).toEqual([{ ...objeto, estado: 'entregado', entrega }]);
     });
-    describe('ObjetosEnMemoria - persistencia en almacen', () => {
-        it('recuerda un objeto registrado en otro repositorio que use el mismo almacen', async () => {
-            const almacen = crearAlmacen();
-            const primero = new ObjetosEnMemoria({ almacen });
+});
 
-            await primero.registrar({ categoria: 'Llaves', descripcion: 'Llaves de oficina' });
-            const segundo = new ObjetosEnMemoria({ almacen });
+describe('ObjetosEnMemoria - persistencia en almacen', () => {
+    it('recuerda un objeto registrado en otro repositorio que use el mismo almacen', async () => {
+        const almacen = crearAlmacenFalso();
+        const primero = new ObjetosEnMemoria({ almacen });
 
-            const publicados = await segundo.listarPublicados();
-            expect(publicados).toHaveLength(1);
-            expect(publicados[0].categoria).toEqual('Llaves');
-        });
+        await primero.registrar({ categoria: 'Llaves', descripcion: 'Llaves de oficina' });
+        const segundo = new ObjetosEnMemoria({ almacen });
+
+        const publicados = await segundo.listarPublicados();
+        expect(publicados).toHaveLength(1);
+        expect(publicados[0].categoria).toEqual('Llaves');
     });
+
     it('el numero correlativo continua entre repositorios que comparten el almacen', async () => {
-        const almacen = crearAlmacen();
+        const almacen = crearAlmacenFalso();
         const primero = new ObjetosEnMemoria({ objetos: [{ id: 1, numero: 1, estado: 'publicado' }], almacen });
         await primero.registrar({ categoria: 'Llaves', descripcion: 'Llaves de oficina' });
 
@@ -123,8 +155,9 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
 
         expect(nuevo).toMatchObject({ id: 3, numero: 3 });
     });
+
     it('recuerda una entrega registrada en otro repositorio que use el mismo almacen', async () => {
-        const almacen = crearAlmacen();
+        const almacen = crearAlmacenFalso();
         const objeto = crearObjeto({ id: 1, numero: 1 });
         const primero = new ObjetosEnMemoria({ objetos: [objeto], almacen });
 
@@ -132,40 +165,5 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
         const segundo = new ObjetosEnMemoria({ objetos: [objeto], almacen });
 
         expect(await segundo.listarPublicados()).toEqual([]);
-    });
-    describe('ObjetosEnMemoria - listarPublicados y obtenerPorId', () => {
-        it('listarPublicados devuelve solo los objetos publicados', async () => {
-            const publicado = crearObjeto({ id: 1, numero: 1 });
-            const entregado = crearObjeto({ id: 2, numero: 2, estado: 'entregado' });
-            const repo = new ObjetosEnMemoria({ objetos: [publicado, entregado] });
-
-            expect(await repo.listarPublicados()).toEqual([publicado]);
-        });
-
-        it('obtenerPorId devuelve el objeto si existe y esta publicado', async () => {
-            const publicado = crearObjeto({ id: 1, numero: 1 });
-            const repo = new ObjetosEnMemoria({ objetos: [publicado, crearObjeto({ id: 2, numero: 2 })] });
-
-            expect(await repo.obtenerPorId(1)).toEqual(publicado);
-        });
-
-        it('obtenerPorId acepta el id como texto, tal como llega desde la URL', async () => {
-            const publicado = crearObjeto({ id: 1, numero: 1 });
-            const repo = new ObjetosEnMemoria({ objetos: [publicado] });
-
-            expect(await repo.obtenerPorId('1')).toEqual(publicado);
-        });
-
-        it('obtenerPorId devuelve null si el id no existe', async () => {
-            const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1 })] });
-
-            expect(await repo.obtenerPorId(99)).toBeNull();
-        });
-
-        it('obtenerPorId devuelve null si el objeto ya fue entregado', async () => {
-            const repo = new ObjetosEnMemoria({ objetos: [crearObjeto({ id: 1, estado: 'entregado' })] });
-
-            expect(await repo.obtenerPorId(1)).toBeNull();
-        });
     });
 });
