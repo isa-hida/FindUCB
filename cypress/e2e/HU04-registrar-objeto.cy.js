@@ -34,4 +34,9 @@ describe('HU04: Registrar un objeto hallado', () => {
 
         cy.get('#exito-mensaje').should('be.visible').and('have.text', MENSAJES.AVISO_PUBLICADO);
     });
-}); satisfies
+    it('muestra los campos de quien encontro el objeto y las categorias del catalogo', () => {
+        cy.get('#encontrado-nombre').should('be.visible');
+        cy.get('#encontrado-celular').should('be.visible');
+        cy.get('#categoria').should('contain', 'Llaves');
+    });
+});

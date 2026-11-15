@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "87512bcca6888e425f6ea2bbd327d259ff555f73",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:53:53.000Z",
       "message": "refactor: cargar las categorias del formulario desde el catalogo",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/87512bcca6888e425f6ea2bbd327d259ff555f73"
     },
     "stats": {
       "total": 38,
       "additions": 28,
       "deletions": 10,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.56,
+    "test_count": 124,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:03:20.000Z",
+      "message": "fix: mostrar los campos de quien encontro el objeto y marcar los obligatorios",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 29,
+      "deletions": 20,
       "date": "2026-11-15"
     },
     "coverage": 97.56,

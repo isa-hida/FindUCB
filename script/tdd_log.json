@@ -1828,9 +1828,15 @@
     "testId": 147
   },
   {
-    "commitId": "HEAD",
+    "commitId": "87512bcca6888e425f6ea2bbd327d259ff555f73",
     "commitName": "refactor: cargar las categorias del formulario desde el catalogo",
     "commitTimestamp": 1794707634576,
     "testId": 147
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mostrar los campos de quien encontro el objeto y marcar los obligatorios",
+    "commitTimestamp": 1794708201354,
+    "testId": 148
   }
 ]
