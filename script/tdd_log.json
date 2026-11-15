@@ -1942,9 +1942,15 @@
     "testId": 153
   },
   {
-    "commitId": "HEAD",
+    "commitId": "76302f11e8bcbcc2440a5712bd82603cb0e2073b",
     "commitName": "feat: usar localStorage como almacen de los objetos de la app",
     "commitTimestamp": 1794709084928,
     "testId": 154
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar comandos cypress para llenar el formulario de objeto hallado",
+    "commitTimestamp": 1794709401333,
+    "testId": 155
   }
 ]

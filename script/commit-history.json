@@ -342,17 +342,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "76302f11e8bcbcc2440a5712bd82603cb0e2073b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:18:01.000Z",
       "message": "feat: usar localStorage como almacen de los objetos de la app",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/76302f11e8bcbcc2440a5712bd82603cb0e2073b"
     },
     "stats": {
       "total": 1,
       "additions": 1,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.63,
+    "test_count": 129,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:23:18.000Z",
+      "message": "test: agregar comandos cypress para llenar el formulario de objeto hallado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 41,
+      "deletions": 25,
       "date": "2026-11-15"
     },
     "coverage": 97.63,
