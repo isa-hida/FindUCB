@@ -38,18 +38,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "486f61214e5233140634e9657458c1533a1cb8ee",
     "author": "Natalia",
     "commit": {
       "date": "2026-11-14T04:58:43.000Z",
       "message": "feat(bienestar): implementar visualizacion de horario y ubicacion de Bienestar (HU-11)",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/486f61214e5233140634e9657458c1533a1cb8ee"
     },
     "stats": {
       "total": 57,
       "additions": 57,
       "deletions": 0,
       "date": "2026-11-14"
+    },
+    "coverage": 97.42,
+    "test_count": 111,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:13:16.000Z",
+      "message": "refactor: extraer datos validos de objeto hallado en los tests",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 16,
+      "deletions": 21,
+      "date": "2026-11-15"
     },
     "coverage": 97.42,
     "test_count": 111,

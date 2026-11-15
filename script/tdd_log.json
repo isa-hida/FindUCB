@@ -1638,9 +1638,31 @@
     "testId": 138
   },
   {
-    "commitId": "HEAD",
+    "commitId": "486f61214e5233140634e9657458c1533a1cb8ee",
     "commitName": "feat(bienestar): implementar visualizacion de horario y ubicacion de Bienestar (HU-11)",
     "commitTimestamp": 1794632323465,
     "testId": 138
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794705092159,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794705157795,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer datos validos de objeto hallado en los tests",
+    "commitTimestamp": 1794705197675,
+    "testId": 139
   }
 ]
