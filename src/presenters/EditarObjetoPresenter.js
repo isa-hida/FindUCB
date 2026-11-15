@@ -1,11 +1,14 @@
 import { CATEGORIAS } from '../domain/catalogos';
 import { MENSAJES } from '../domain/mensajes';
+import { validarObjetoHallado } from '../domain/objetoHallado';
+import { aFechaIso } from '../domain/fecha';
 
 export class EditarObjetoPresenter {
-    constructor(vista, objetosRepository, fotosStorage) {
+    constructor(vista, objetosRepository, fotosStorage, obtenerHoy = () => aFechaIso(new Date())) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
         this.fotosStorage = fotosStorage;
+        this.obtenerHoy = obtenerHoy;
     }
 
     async iniciar(id) {
@@ -16,6 +19,7 @@ export class EditarObjetoPresenter {
             this.vista.mostrarNoEncontrado(MENSAJES.OBJETO_NO_ENCONTRADO);
             return;
         }
+        this.fotoActual = objeto.rutaFoto;
         const [fotoUrl] = await this.fotosStorage.urlsFirmadas([objeto.rutaFoto]);
         this.vista.mostrarFormulario({
             numero: objeto.numero,
@@ -34,6 +38,13 @@ export class EditarObjetoPresenter {
 
     async guardar(datos) {
         this.vista.limpiarError();
+
+        const errores = validarObjetoHallado({ ...datos, hoy: this.obtenerHoy(), fotoActual: this.fotoActual });
+        if (errores.length > 0) {
+            this.vista.mostrarError(errores[0]);
+            return;
+        }
+
         await this.objetosRepository.actualizar(this.id, datos);
         this.vista.mostrarExito(MENSAJES.AVISO_ACTUALIZADO);
     }

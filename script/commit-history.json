@@ -817,12 +817,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "423312412c47890ead2cdcc2536d514589a13b46",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:33:26.000Z",
       "message": "feat: guardar los cambios de un aviso y mostrar el mensaje de actualizado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/423312412c47890ead2cdcc2536d514589a13b46"
     },
     "stats": {
       "total": 51,
@@ -832,6 +832,25 @@
     },
     "coverage": 97.8,
     "test_count": 141,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:35:31.000Z",
+      "message": "feat: validar los datos del aviso al editarlo con las reglas del registro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 33,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.5,
+    "test_count": 143,
     "failed_tests": 0,
     "conclusion": "success"
   }

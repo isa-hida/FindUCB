@@ -124,5 +124,26 @@ describe('EditarObjetoPresenter - iniciar', () => {
             const [objeto] = await objetosRepository.listarPublicados();
             expect(objeto).toMatchObject({ id: 3, numero: 3, categoria: 'Ropa', color: 'Azul' });
         });
+        it('muestra el error y no modifica el objeto si faltan la categoria o la descripcion', async () => {
+            const { vista, objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ categoria: '', descripcion: '' }));
+
+            expect(vista.errores).toEqual([MENSAJES.FALTA_CATEGORIA_DESCRIPCION]);
+            expect(vista.mensajesExito).toEqual([]);
+            expect((await objetosRepository.obtenerPorId(3)).categoria).toEqual('Llaves');
+        });
+
+        it('muestra el error y no modifica el objeto si la fecha de hallazgo es futura', async () => {
+            const { vista, objetosRepository, presenter } = crearEscenario([crearObjeto()], '2026-10-20');
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ fechaHallazgo: '2026-10-21' }));
+
+            expect(vista.errores).toEqual([MENSAJES.FECHA_FUTURA]);
+            expect(vista.mensajesExito).toEqual([]);
+            expect((await objetosRepository.obtenerPorId(3)).fechaHallazgo).toEqual('2026-10-14');
+        });
     });
 });

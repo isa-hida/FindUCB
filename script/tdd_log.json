@@ -2308,9 +2308,31 @@
     "testId": 179
   },
   {
-    "commitId": "HEAD",
+    "commitId": "423312412c47890ead2cdcc2536d514589a13b46",
     "commitName": "feat: guardar los cambios de un aviso y mostrar el mensaje de actualizado",
     "commitTimestamp": 1794713609650,
     "testId": 179
+  },
+  {
+    "numPassedTests": 141,
+    "failedTests": 2,
+    "numTotalTests": 143,
+    "timestamp": 1794713641870,
+    "success": false,
+    "testId": 180
+  },
+  {
+    "numPassedTests": 143,
+    "failedTests": 0,
+    "numTotalTests": 143,
+    "timestamp": 1794713704403,
+    "success": true,
+    "testId": 180
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar los datos del aviso al editarlo con las reglas del registro",
+    "commitTimestamp": 1794713734341,
+    "testId": 180
   }
 ]
