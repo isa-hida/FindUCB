@@ -2198,9 +2198,39 @@
     "testId": 174
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a22111affea6f34c64f968d9b6c029aa1681ebe",
     "commitName": "feat: guardar en el almacen los objetos actualizados",
     "commitTimestamp": 1794712535692,
     "testId": 174
+  },
+  {
+    "numPassedTests": 135,
+    "failedTests": 1,
+    "numTotalTests": 136,
+    "timestamp": 1794712621737,
+    "success": false,
+    "testId": 175
+  },
+  {
+    "numPassedTests": 112,
+    "failedTests": 0,
+    "numTotalTests": 112,
+    "timestamp": 1794712721075,
+    "success": false,
+    "testId": 175
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794712795420,
+    "success": true,
+    "testId": 175
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar la foto solo si es nueva cuando el aviso ya tiene una",
+    "commitTimestamp": 1794712819540,
+    "testId": 175
   }
 ]

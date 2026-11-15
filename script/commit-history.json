@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2a22111affea6f34c64f968d9b6c029aa1681ebe",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:15:32.000Z",
       "message": "feat: guardar en el almacen los objetos actualizados",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/2a22111affea6f34c64f968d9b6c029aa1681ebe"
     },
     "stats": {
       "total": 11,
@@ -737,6 +737,25 @@
     },
     "coverage": 97.67,
     "test_count": 134,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:20:16.000Z",
+      "message": "feat: validar la foto solo si es nueva cuando el aviso ya tiene una",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 25,
+      "deletions": 7,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 136,
     "failed_tests": 0,
     "conclusion": "success"
   }
