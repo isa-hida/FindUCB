@@ -24,7 +24,7 @@ export function validarObjetoHallado(datos) {
     const extensionesValidas = ['.jpg', '.jpeg', '.png'];
     const esFormatoValido = extensionesValidas.some((ext) => rutaFoto.toLowerCase().endsWith(ext));
     if (!esFormatoValido) {
-        return ['El formato de la foto debe ser JPG o PNG'];
+        return [MENSAJES.FORMATO_FOTO_INVALIDO];
     }
 
     if ((descripcion && descripcion.length > 500) || (senas && senas.length > 500)) {

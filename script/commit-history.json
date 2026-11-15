@@ -114,17 +114,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "311aaaaf3df30c076c5929ef6a8a3147b81ddea0",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:29:22.000Z",
       "message": "feat: validar fecha futura usando el dia actual en el presenter",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/311aaaaf3df30c076c5929ef6a8a3147b81ddea0"
     },
     "stats": {
       "total": 12,
       "additions": 6,
       "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.13,
+    "test_count": 119,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:31:36.000Z",
+      "message": "refactor: mover mensaje de formato de foto a MENSAJES",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
       "date": "2026-11-15"
     },
     "coverage": 97.13,

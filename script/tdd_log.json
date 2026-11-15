@@ -1734,9 +1734,23 @@
     "testId": 142
   },
   {
-    "commitId": "HEAD",
+    "commitId": "311aaaaf3df30c076c5929ef6a8a3147b81ddea0",
     "commitName": "feat: validar fecha futura usando el dia actual en el presenter",
     "commitTimestamp": 1794706164040,
     "testId": 142
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794706275112,
+    "success": true,
+    "testId": 143
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: mover mensaje de formato de foto a MENSAJES",
+    "commitTimestamp": 1794706297191,
+    "testId": 143
   }
 ]

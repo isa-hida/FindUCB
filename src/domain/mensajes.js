@@ -8,6 +8,7 @@ export const MENSAJES = {
     TEXTO_MUY_LARGO: 'La descripción y las señas admiten como máximo 300 caracteres',
     AVISO_PUBLICADO: 'Aviso publicado correctamente',
     FOTO_INVALIDA: 'La foto debe ser una imagen de máximo 5 MB',
+    FORMATO_FOTO_INVALIDO: 'El formato de la foto debe ser JPG o PNG',
     FOTO_OBLIGATORIA: 'Es necesario adjuntar la foto del objeto',
     SIN_OBJETOS_PUBLICADOS: 'No hay objetos publicados',
     FALTA_NOMBRE_CI: 'Es necesario ingresar nombre y C.I. de quien recibe el objeto',

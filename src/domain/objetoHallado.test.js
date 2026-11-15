@@ -52,7 +52,7 @@ describe('validarObjetoHallado', () => {
     it('da error si el formato de la foto no es JPG ni PNG', () => {
         const errores = validarObjetoHallado(crearDatosValidos({ rutaFoto: '/fotos/animacion.gif' }));
 
-        expect(errores).toEqual(['El formato de la foto debe ser JPG o PNG']);
+        expect(errores).toEqual([MENSAJES.FORMATO_FOTO_INVALIDO]);
     });
 
     it('acepta la foto si tiene formato JPG, JPEG o PNG', () => {
