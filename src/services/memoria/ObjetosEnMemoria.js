@@ -1,6 +1,8 @@
 const CLAVE_ALMACEN = 'findu.objetos';
 import { filtrarPublicados } from '../../domain/listaAdmin';
 
+const fechaDeEntrega = (objeto) => objeto.entrega?.fechaEntrega ?? '';
+
 export class ObjetosEnMemoria {
     constructor({ objetos = [], almacen = null } = {}) {
         this.almacen = almacen;
@@ -57,6 +59,12 @@ export class ObjetosEnMemoria {
                 : objeto
         ));
         this.guardar();
+    }
+
+    async listarEntregados() {
+        return this.objetos
+            .filter((objeto) => objeto.estado === 'entregado')
+            .sort((primero, segundo) => fechaDeEntrega(segundo).localeCompare(fechaDeEntrega(primero)));
     }
 
     guardar() {

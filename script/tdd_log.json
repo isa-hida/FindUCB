@@ -2478,9 +2478,137 @@
     "testId": 193
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1cc58dcf4a614dc505e3e828a4179f0d03320197",
     "commitName": "refactor(HU07): separar con una línea en blanco el método cancelar",
     "commitTimestamp": 1794742085371,
     "testId": 194
+  },
+  {
+    "commitId": "f3234a58e7726b00ebc9839ce82d0f3c9b77080a",
+    "commitName": "feat(HU14): listar los objetos entregados desde el repositorio",
+    "commitTimestamp": 1794742481367,
+    "testId": 195
+  },
+  {
+    "commitId": "d7e29900f2584fb35b58d36a69492b09d0b9fd34",
+    "commitName": "feat(HU14): ordenar el historial del más reciente al más antiguo",
+    "commitTimestamp": 1794744090065,
+    "testId": 196
+  },
+  {
+    "commitId": "e603718d20763ba4eeef73778121a07994d43d01",
+    "commitName": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
+    "commitTimestamp": 1794744293806,
+    "testId": 197
+  },
+  {
+    "commitId": "39041060a89a2cd526818b82cc4d9940ce6add47",
+    "commitName": "feat(HU14): mostrar las filas del historial desde el presenter",
+    "commitTimestamp": 1794744418517,
+    "testId": 198
+  },
+  {
+    "commitId": "ab48c52b93dc64c736573860af5cf15738155133",
+    "commitName": "feat(HU14): avisar cuando no hay objetos entregados en el historial",
+    "commitTimestamp": 1794744763870,
+    "testId": 199
+  },
+  {
+    "commitId": "cc9f5ed583194243a37d71c0d12063ed413952bb",
+    "commitName": "feat(HU14): mostrar el enlace Historial en el panel de administración",
+    "commitTimestamp": 1794745154434,
+    "testId": 200
+  },
+  {
+    "commitId": "f94cfca926075f503f7ce6c4b1bf01013b2c42ea",
+    "commitName": "feat(HU14): mostrar los objetos entregados en la página de historial",
+    "commitTimestamp": 1794745547691,
+    "testId": 201
+  },
+  {
+    "commitId": "818c172db352df283b4ca9aff8f21da9ababce15",
+    "commitName": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
+    "commitTimestamp": 1794745750112,
+    "testId": 202
+  },
+  {
+    "commitId": "c1fb88b6f26a1b37a260edc7653d5588f9f8320f",
+    "commitName": "feat(HU14): restringir el historial al administrador",
+    "commitTimestamp": 1794745885055,
+    "testId": 203
+  },
+  {
+    "commitId": "8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2",
+    "commitName": "test(HU14): verificar el aviso cuando el historial está vacío",
+    "commitTimestamp": 1794745995401,
+    "testId": 204
+  },
+  {
+    "numPassedTests": 154,
+    "failedTests": 0,
+    "numTotalTests": 154,
+    "timestamp": 1794763334277,
+    "success": true,
+    "testId": 205
+  },
+  {
+    "commitId": "a37b02476893c79983669eaa921973702a5ce470",
+    "commitName": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
+    "commitTimestamp": 1794764019403,
+    "testId": 205
+  },
+  {
+    "commitId": "f400d0ec8686e2120cdacc4891f51046291757ea",
+    "commitName": "style(HU14): mostrar el historial como tarjetas igual que el panel",
+    "commitTimestamp": 1794764389142,
+    "testId": 206
+  },
+  {
+    "commitId": "cd8377c3055e417521f1a0bdfb3fb7bf24be8183",
+    "commitName": "feat(HU14): incluir la ruta de la foto en la fila del historial",
+    "commitTimestamp": 1794764541244,
+    "testId": 207
+  },
+  {
+    "commitId": "41a0192e9063a8f4310ce7949de2cf16004a63d3",
+    "commitName": "feat(HU14): entregar a la vista la URL de la foto de cada objeto del historial",
+    "commitTimestamp": 1794764797111,
+    "testId": 208
+  },
+  {
+    "commitId": "0af24139648a9e3526d57b786e4f08062063ff75",
+    "commitName": "feat(HU14): mostrar la foto del objeto en cada fila del historial",
+    "commitTimestamp": 1794765061942,
+    "testId": 209
+  },
+  {
+    "commitId": "e4807a76cdccfc1b289935630c5b62238046b923",
+    "commitName": "style(HU14): ajustar el tamaño y la posición de la foto en el historial",
+    "commitTimestamp": 1794765095043,
+    "testId": 210
+  },
+  {
+    "commitId": "b193bcf3db1d94b13ff0ae5345ee999ff3229c0e",
+    "commitName": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
+    "commitTimestamp": 1794765652188,
+    "testId": 211
+  },
+  {
+    "commitId": "25adc37703a5789bc755ff24af5b0b9cf7dd673c",
+    "commitName": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
+    "commitTimestamp": 1794765747950,
+    "testId": 212
+  },
+  {
+    "commitId": "4f4310603b34172d8bd41a01dff04943ec63e49d",
+    "commitName": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
+    "commitTimestamp": 1794765867099,
+    "testId": 213
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU14): incluir admin/historial.html en los scripts start y build",
+    "commitTimestamp": 1794766431555,
+    "testId": 214
   }
 ]

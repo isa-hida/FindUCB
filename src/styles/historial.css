@@ -1,0 +1,67 @@
+/* Cuatro zonas por tarjeta: N°, foto, datos y fecha */
+.historial__fila {
+    grid-template-columns: auto 72px 1fr auto;
+    grid-template-areas:
+        "numero foto categoria fecha"
+        "numero foto receptor  fecha";
+}
+
+.tabla td:has(.historial__foto) {
+    grid-area: foto;
+}
+
+.historial__foto {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e9ecef;
+}
+
+.tabla td.historial__numero {
+    grid-area: numero;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.tabla td.historial__numero::before {
+    content: "N° ";
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.tabla td.historial__categoria {
+    grid-area: categoria;
+    justify-self: start;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.tabla td.historial__receptor {
+    grid-area: receptor;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.tabla td.historial__receptor::before {
+    content: "Recibió: ";
+    font-weight: 400;
+    color: #64748b;
+}
+
+.tabla td.historial__fecha {
+    grid-area: fecha;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.tabla td.historial__fecha::before {
+    content: "Entregado el ";
+}

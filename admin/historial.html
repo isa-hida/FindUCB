@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Historial de entregas | FindU</title>
+    <link rel="stylesheet" href="../src/styles/base.css" />
+    <link rel="stylesheet" href="../src/styles/panel.css" />
+    <link rel="stylesheet" href="../src/styles/historial.css" />
+</head>
+
+<body>
+    <header class="panel-encabezado">
+        <a href="./index.html" id="volver-link" class="panel-encabezado__volver" aria-label="Volver al panel">←</a>
+        <h1 class="panel-encabezado__titulo">Historial de entregas</h1>
+    </header>
+    <main class="contenedor panel">
+        <h2 class="panel__subtitulo">Objetos entregados</h2>
+        <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
+
+        <table id="tabla-historial" class="tabla" hidden>
+          <caption class="tabla__caption">Lista de objetos entregados</caption>
+            <thead>
+                <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Recibió</th>
+                    <th scope="col">Fecha de entrega</th>
+                </tr>
+            </thead>
+            <tbody id="lista-historial"></tbody>
+        </table>
+
+        <template id="plantilla-fila-historial">
+            <tr class="tabla__fila historial__fila">
+                <td class="historial__numero"></td>
+                <td><img class="historial__foto" alt="" loading="lazy" /></td>
+                <td class="historial__categoria"></td>
+                <td class="historial__receptor"></td>
+                <td class="historial__fecha"></td>
+            </tr>
+        </template>
+    </main>
+    <script type="module" src="../src/pages/admin-historial.js"></script>
+</body>
+
+</html>

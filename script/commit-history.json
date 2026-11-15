@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1cc58dcf4a614dc505e3e828a4179f0d03320197",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:28:01.000Z",
       "message": "refactor(HU07): separar con una línea en blanco el método cancelar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1cc58dcf4a614dc505e3e828a4179f0d03320197"
     },
     "stats": {
       "total": 1,
@@ -1117,6 +1117,386 @@
     },
     "coverage": 97.54,
     "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f3234a58e7726b00ebc9839ce82d0f3c9b77080a",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:34:38.000Z",
+      "message": "feat(HU14): listar los objetos entregados desde el repositorio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f3234a58e7726b00ebc9839ce82d0f3c9b77080a"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.55,
+    "test_count": 150,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d7e29900f2584fb35b58d36a69492b09d0b9fd34",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:01:27.000Z",
+      "message": "feat(HU14): ordenar el historial del más reciente al más antiguo",
+      "url": "https://github.com/isa-hida/FindUCB/commit/d7e29900f2584fb35b58d36a69492b09d0b9fd34"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 14,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.58,
+    "test_count": 151,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e603718d20763ba4eeef73778121a07994d43d01",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:04:51.000Z",
+      "message": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e603718d20763ba4eeef73778121a07994d43d01"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 29,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.59,
+    "test_count": 152,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "39041060a89a2cd526818b82cc4d9940ce6add47",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:06:56.000Z",
+      "message": "feat(HU14): mostrar las filas del historial desde el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/39041060a89a2cd526818b82cc4d9940ce6add47"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.62,
+    "test_count": 153,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ab48c52b93dc64c736573860af5cf15738155133",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:12:41.000Z",
+      "message": "feat(HU14): avisar cuando no hay objetos entregados en el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/ab48c52b93dc64c736573860af5cf15738155133"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cc9f5ed583194243a37d71c0d12063ed413952bb",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:19:12.000Z",
+      "message": "feat(HU14): mostrar el enlace Historial en el panel de administración",
+      "url": "https://github.com/isa-hida/FindUCB/commit/cc9f5ed583194243a37d71c0d12063ed413952bb"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f94cfca926075f503f7ce6c4b1bf01013b2c42ea",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:25:45.000Z",
+      "message": "feat(HU14): mostrar los objetos entregados en la página de historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f94cfca926075f503f7ce6c4b1bf01013b2c42ea"
+    },
+    "stats": {
+      "total": 69,
+      "additions": 69,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "818c172db352df283b4ca9aff8f21da9ababce15",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:29:07.000Z",
+      "message": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/818c172db352df283b4ca9aff8f21da9ababce15"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c1fb88b6f26a1b37a260edc7653d5588f9f8320f",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:31:23.000Z",
+      "message": "feat(HU14): restringir el historial al administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/c1fb88b6f26a1b37a260edc7653d5588f9f8320f"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:33:13.000Z",
+      "message": "test(HU14): verificar el aviso cuando el historial está vacío",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a37b02476893c79983669eaa921973702a5ce470",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:33:36.000Z",
+      "message": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a37b02476893c79983669eaa921973702a5ce470"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f400d0ec8686e2120cdacc4891f51046291757ea",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:39:46.000Z",
+      "message": "style(HU14): mostrar el historial como tarjetas igual que el panel",
+      "url": "https://github.com/isa-hida/FindUCB/commit/f400d0ec8686e2120cdacc4891f51046291757ea"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 57,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cd8377c3055e417521f1a0bdfb3fb7bf24be8183",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:42:19.000Z",
+      "message": "feat(HU14): incluir la ruta de la foto en la fila del historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/cd8377c3055e417521f1a0bdfb3fb7bf24be8183"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 155,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "41a0192e9063a8f4310ce7949de2cf16004a63d3",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:46:34.000Z",
+      "message": "feat(HU14): entregar a la vista la URL de la foto de cada objeto del historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/41a0192e9063a8f4310ce7949de2cf16004a63d3"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 31,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0af24139648a9e3526d57b786e4f08062063ff75",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:50:59.000Z",
+      "message": "feat(HU14): mostrar la foto del objeto en cada fila del historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/0af24139648a9e3526d57b786e4f08062063ff75"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e4807a76cdccfc1b289935630c5b62238046b923",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:51:32.000Z",
+      "message": "style(HU14): ajustar el tamaño y la posición de la foto en el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e4807a76cdccfc1b289935630c5b62238046b923"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b193bcf3db1d94b13ff0ae5345ee999ff3229c0e",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:00:49.000Z",
+      "message": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b193bcf3db1d94b13ff0ae5345ee999ff3229c0e"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 6,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "25adc37703a5789bc755ff24af5b0b9cf7dd673c",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:02:25.000Z",
+      "message": "refactor(HU14): extraer crearFilas de cargar para separar niveles de abstracción",
+      "url": "https://github.com/isa-hida/FindUCB/commit/25adc37703a5789bc755ff24af5b0b9cf7dd673c"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 10,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4f4310603b34172d8bd41a01dff04943ec63e49d",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:04:25.000Z",
+      "message": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/4f4310603b34172d8bd41a01dff04943ec63e49d"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 39,
+      "deletions": 21,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:13:48.000Z",
+      "message": "chore(HU14): incluir admin/historial.html en los scripts start y build",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 156,
     "failed_tests": 0,
     "conclusion": "success"
   }
