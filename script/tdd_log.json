@@ -2508,9 +2508,15 @@
     "testId": 198
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab48c52b93dc64c736573860af5cf15738155133",
     "commitName": "feat(HU14): avisar cuando no hay objetos entregados en el historial",
     "commitTimestamp": 1794744763870,
     "testId": 199
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): mostrar el enlace Historial en el panel de administración",
+    "commitTimestamp": 1794745154434,
+    "testId": 200
   }
 ]
