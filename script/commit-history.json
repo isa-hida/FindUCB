@@ -551,11 +551,30 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "50bf7f0fba47ad734a8c0af3a4756bf6285d7e5e",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:49:13.000Z",
       "message": "test: entrar con sesion de comunidad en los e2e del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/50bf7f0fba47ad734a8c0af3a4756bf6285d7e5e"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:49:46.000Z",
+      "message": "test: actualizar e2e de HU06 con sesion de admin y datos actuales",
       "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
     },
     "stats": {

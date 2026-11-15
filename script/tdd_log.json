@@ -2064,9 +2064,15 @@
     "testId": 164
   },
   {
-    "commitId": "HEAD",
+    "commitId": "50bf7f0fba47ad734a8c0af3a4756bf6285d7e5e",
     "commitName": "test: entrar con sesion de comunidad en los e2e del listado",
     "commitTimestamp": 1794710956299,
     "testId": 165
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: actualizar e2e de HU06 con sesion de admin y datos actuales",
+    "commitTimestamp": 1794710989501,
+    "testId": 166
   }
 ]
