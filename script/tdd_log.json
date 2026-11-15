@@ -2430,9 +2430,15 @@
     "testId": 185
   },
   {
-    "commitId": "HEAD",
+    "commitId": "63105a5a6489d9bcd3c3a38429e51c0d7f2fd608",
     "commitName": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
     "commitTimestamp": 1794740478085,
     "testId": 186
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU07): verificar el mensaje al registrar la entrega",
+    "commitTimestamp": 1794740819984,
+    "testId": 187
   }
 ]

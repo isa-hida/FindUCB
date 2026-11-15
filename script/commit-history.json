@@ -950,17 +950,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "63105a5a6489d9bcd3c3a38429e51c0d7f2fd608",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:01:15.000Z",
       "message": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/63105a5a6489d9bcd3c3a38429e51c0d7f2fd608"
     },
     "stats": {
       "total": 11,
       "additions": 10,
       "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:06:57.000Z",
+      "message": "test(HU07): verificar el mensaje al registrar la entrega",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
       "date": "2026-11-15"
     },
     "coverage": 97.53,
