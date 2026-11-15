@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9e50e8ae333d11b4b1548bdbab93f4ddc5086842",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:08:16.000Z",
       "message": "refactor: extraer datos validos en los tests del presenter de registro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/9e50e8ae333d11b4b1548bdbab93f4ddc5086842"
     },
     "stats": {
       "total": 52,
@@ -281,6 +281,25 @@
     },
     "coverage": 97.56,
     "test_count": 125,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:09:38.000Z",
+      "message": "test: el objeto registrado se publica sin datos privados de quien lo encontro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.56,
+    "test_count": 126,
     "failed_tests": 0,
     "conclusion": "success"
   }

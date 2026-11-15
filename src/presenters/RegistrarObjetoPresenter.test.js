@@ -2,6 +2,7 @@ import { RegistrarObjetoPresenter } from './RegistrarObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { CATEGORIAS } from '../domain/catalogos';
+import { prepararListado } from '../domain/listado';
 
 const crearDatosValidos = (cambios = {}) => ({
     categoria: 'Llaves',
@@ -74,5 +75,15 @@ describe('RegistrarObjetoPresenter', () => {
         presenter.iniciar();
 
         expect(vista.categorias).toEqual(CATEGORIAS);
+    });
+    it('el objeto registrado aparece en el listado publico sin los datos de quien lo encontro', async () => {
+        const { objetosRepository, presenter } = crearEscenario();
+
+        await presenter.registrar(crearDatosValidos());
+
+        const tarjetas = prepararListado(await objetosRepository.listarPublicados());
+        expect(tarjetas).toEqual([
+            { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-18', rutaFoto: '/fotos/llaves.jpg' },
+        ]);
     });
 });
