@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b209d8fd2490008f83cd45ac39d13e623e8303de",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:23:27.000Z",
       "message": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b209d8fd2490008f83cd45ac39d13e623e8303de"
     },
     "stats": {
       "total": 10,
@@ -1078,6 +1078,25 @@
       "date": "2026-11-15"
     },
     "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:25:59.000Z",
+      "message": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 9,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.54,
     "test_count": 149,
     "failed_tests": 0,
     "conclusion": "success"

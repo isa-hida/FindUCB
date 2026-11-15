@@ -2466,9 +2466,15 @@
     "testId": 191
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b209d8fd2490008f83cd45ac39d13e623e8303de",
     "commitName": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
     "commitTimestamp": 1794741809348,
     "testId": 192
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
+    "commitTimestamp": 1794741961785,
+    "testId": 193
   }
 ]
