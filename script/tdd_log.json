@@ -2538,9 +2538,23 @@
     "testId": 203
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2",
     "commitName": "test(HU14): verificar el aviso cuando el historial está vacío",
     "commitTimestamp": 1794745995401,
     "testId": 204
+  },
+  {
+    "numPassedTests": 154,
+    "failedTests": 0,
+    "numTotalTests": 154,
+    "timestamp": 1794763334277,
+    "success": true,
+    "testId": 205
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
+    "commitTimestamp": 1794764019403,
+    "testId": 205
   }
 ]

@@ -40,4 +40,11 @@ describe('HU-14: historial de objetos entregados', () => {
         cy.get('#mensaje-vacio').should('be.visible').and('have.text', 'No hay objetos entregados');
         cy.get('#tabla-historial').should('not.be.visible');
     });
+    it('el historial permite volver al panel de administración', () => {
+        cy.visitarComoAdmin('/admin/historial.html');
+
+        cy.get('#volver-link').click();
+
+        cy.url().should('include', '/admin/index.html');
+    });
 });

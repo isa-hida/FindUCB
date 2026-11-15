@@ -1292,17 +1292,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:33:13.000Z",
       "message": "test(HU14): verificar el aviso cuando el historial está vacío",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8ffa1814f2d81b0f1e15509df6c4ba8c2972e5d2"
     },
     "stats": {
       "total": 18,
       "additions": 18,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:33:36.000Z",
+      "message": "feat(HU14): agregar encabezado con flecha para volver al panel desde el historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
       "date": "2026-11-15"
     },
     "coverage": 97.64,
