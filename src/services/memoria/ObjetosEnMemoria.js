@@ -59,6 +59,10 @@ export class ObjetosEnMemoria {
         this.guardar();
     }
 
+    async listarEntregados() {
+        return this.objetos.filter((objeto) => objeto.estado === 'entregado');
+    }
+
     guardar() {
         if (this.almacen) {
             this.almacen.setItem(CLAVE_ALMACEN, JSON.stringify(this.objetos));

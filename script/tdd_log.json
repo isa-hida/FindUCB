@@ -2478,9 +2478,15 @@
     "testId": 193
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1cc58dcf4a614dc505e3e828a4179f0d03320197",
     "commitName": "refactor(HU07): separar con una línea en blanco el método cancelar",
     "commitTimestamp": 1794742085371,
     "testId": 194
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): listar los objetos entregados desde el repositorio",
+    "commitTimestamp": 1794742481367,
+    "testId": 195
   }
 ]

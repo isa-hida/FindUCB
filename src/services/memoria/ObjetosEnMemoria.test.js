@@ -197,4 +197,17 @@ describe('ObjetosEnMemoria - persistencia en almacen', () => {
 
         expect((await segundo.obtenerPorId(1)).categoria).toEqual('Ropa');
     });
+
+    // Pruebas del historial de entregas (HU-14)
+    describe('ObjetosEnMemoria - listarEntregados', () => {
+        it('devuelve solo los objetos entregados', async () => {
+            const publicado = crearObjeto({ id: 1, numero: 1 });
+            const entregado = crearObjeto({ id: 2, numero: 2, estado: 'entregado' });
+            const repo = new ObjetosEnMemoria({ objetos: [publicado, entregado] });
+
+            const resultado = await repo.listarEntregados();
+ 
+            expect(resultado).toEqual([entregado]);
+        });
+    });
 });

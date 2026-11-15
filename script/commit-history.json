@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1cc58dcf4a614dc505e3e828a4179f0d03320197",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:28:01.000Z",
       "message": "refactor(HU07): separar con una línea en blanco el método cancelar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1cc58dcf4a614dc505e3e828a4179f0d03320197"
     },
     "stats": {
       "total": 1,
@@ -1117,6 +1117,25 @@
     },
     "coverage": 97.54,
     "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:34:38.000Z",
+      "message": "feat(HU14): listar los objetos entregados desde el repositorio",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.55,
+    "test_count": 150,
     "failed_tests": 0,
     "conclusion": "success"
   }
