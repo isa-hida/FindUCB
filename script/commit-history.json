@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e075fc108bcc950b8e7b8f6d21a8ecae66e53a78",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:37:17.000Z",
       "message": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e075fc108bcc950b8e7b8f6d21a8ecae66e53a78"
     },
     "stats": {
       "total": 50,
@@ -870,6 +870,25 @@
     },
     "coverage": 97.52,
     "test_count": 147,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:48:08.000Z",
+      "message": "feat: agregar la url de edicion a cada fila del listado de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 148,
     "failed_tests": 0,
     "conclusion": "success"
   }

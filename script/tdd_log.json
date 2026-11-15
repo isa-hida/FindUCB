@@ -2352,9 +2352,31 @@
     "testId": 181
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e075fc108bcc950b8e7b8f6d21a8ecae66e53a78",
     "commitName": "feat: al editar un aviso conservar la foto actual o guardar la nueva",
     "commitTimestamp": 1794713840296,
     "testId": 181
+  },
+  {
+    "numPassedTests": 147,
+    "failedTests": 1,
+    "numTotalTests": 148,
+    "timestamp": 1794714358848,
+    "success": false,
+    "testId": 182
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 0,
+    "numTotalTests": 148,
+    "timestamp": 1794714465561,
+    "success": true,
+    "testId": 182
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar la url de edicion a cada fila del listado de administracion",
+    "commitTimestamp": 1794714490793,
+    "testId": 182
   }
 ]
