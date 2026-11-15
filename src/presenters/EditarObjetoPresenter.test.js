@@ -20,11 +20,13 @@ const crearObjeto = (datos) => ({
     ...datos,
 });
 
-const crearEscenario = (objetos = []) => {
+const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
     const vista = {
         categorias: [],
         formulario: null,
         mensajesNoEncontrado: [],
+        errores: [],
+        mensajesExito: [],
         mostrarCategorias(categorias) {
             this.categorias = categorias;
         },
@@ -34,15 +36,36 @@ const crearEscenario = (objetos = []) => {
         mostrarNoEncontrado(mensaje) {
             this.mensajesNoEncontrado.push(mensaje);
         },
+        mostrarError(mensaje) {
+            this.errores.push(mensaje);
+        },
+        limpiarError() {
+            this.errores = [];
+        },
+        mostrarExito(mensaje) {
+            this.mensajesExito.push(mensaje);
+        },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
     const fotosStorage = new FotosEnMemoria({
         urls: { 'ejemplos/llaves.svg': 'https://fotos.test/llaves.svg' },
     });
-    const presenter = new EditarObjetoPresenter(vista, objetosRepository, fotosStorage);
+    const presenter = new EditarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy);
     return { vista, objetosRepository, fotosStorage, presenter };
 };
-
+const crearDatosEditados = (cambios = {}) => ({
+    categoria: 'Ropa',
+    descripcion: 'Chaqueta azul',
+    fechaHallazgo: '2026-10-15',
+    lugar: 'Biblioteca',
+    color: 'Azul',
+    marca: '',
+    senas: '',
+    rutaFoto: '',
+    fotoContenido: '',
+    encontradoPor: { nombre: 'Ana Quispe', celular: '70033333' },
+    ...cambios,
+});
 describe('EditarObjetoPresenter - iniciar', () => {
     it('muestra las categorias del catalogo', async () => {
         const { vista, presenter } = crearEscenario([crearObjeto()]);
@@ -87,6 +110,19 @@ describe('EditarObjetoPresenter - iniciar', () => {
 
             expect(vista.mensajesNoEncontrado).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
             expect(vista.formulario).toBeNull();
+        });
+    });
+    describe('EditarObjetoPresenter - guardar', () => {
+        it('actualiza el objeto conservando su numero y muestra el mensaje de aviso actualizado', async () => {
+            const { vista, objetosRepository, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados());
+
+            expect(vista.errores).toEqual([]);
+            expect(vista.mensajesExito).toEqual([MENSAJES.AVISO_ACTUALIZADO]);
+            const [objeto] = await objetosRepository.listarPublicados();
+            expect(objeto).toMatchObject({ id: 3, numero: 3, categoria: 'Ropa', color: 'Azul' });
         });
     });
 });

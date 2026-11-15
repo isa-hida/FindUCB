@@ -9,6 +9,7 @@ export class EditarObjetoPresenter {
     }
 
     async iniciar(id) {
+        this.id = id;
         this.vista.mostrarCategorias(CATEGORIAS);
         const objeto = await this.objetosRepository.obtenerPorId(id);
         if (!objeto) {
@@ -28,5 +29,12 @@ export class EditarObjetoPresenter {
             encontradoPor: objeto.encontradoPor,
             fotoUrl,
         });
+    }
+
+
+    async guardar(datos) {
+        this.vista.limpiarError();
+        await this.objetosRepository.actualizar(this.id, datos);
+        this.vista.mostrarExito(MENSAJES.AVISO_ACTUALIZADO);
     }
 }
