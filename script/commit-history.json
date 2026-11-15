@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5dff1eaea619786e07c3bb796e051737f2651ce6",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:02:04.000Z",
       "message": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/5dff1eaea619786e07c3bb796e051737f2651ce6"
     },
     "stats": {
       "total": 3,
@@ -699,6 +699,25 @@
     },
     "coverage": 97.64,
     "test_count": 131,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:13:53.000Z",
+      "message": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.66,
+    "test_count": 133,
     "failed_tests": 0,
     "conclusion": "success"
   }

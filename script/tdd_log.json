@@ -2154,9 +2154,31 @@
     "testId": 172
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5dff1eaea619786e07c3bb796e051737f2651ce6",
     "commitName": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
     "commitTimestamp": 1794711726723,
     "testId": 172
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 2,
+    "numTotalTests": 133,
+    "timestamp": 1794712384791,
+    "success": false,
+    "testId": 173
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 0,
+    "numTotalTests": 133,
+    "timestamp": 1794712407945,
+    "success": true,
+    "testId": 173
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
+    "commitTimestamp": 1794712435847,
+    "testId": 173
   }
 ]
