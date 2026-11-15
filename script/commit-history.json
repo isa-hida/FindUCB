@@ -1463,17 +1463,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4f4310603b34172d8bd41a01dff04943ec63e49d",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T18:04:25.000Z",
       "message": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/4f4310603b34172d8bd41a01dff04943ec63e49d"
     },
     "stats": {
       "total": 60,
       "additions": 39,
       "deletions": 21,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.68,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:13:48.000Z",
+      "message": "chore(HU14): incluir admin/historial.html en los scripts start y build",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2026-11-15"
     },
     "coverage": 97.68,

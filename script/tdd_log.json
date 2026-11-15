@@ -2600,9 +2600,15 @@
     "testId": 212
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4f4310603b34172d8bd41a01dff04943ec63e49d",
     "commitName": "refactor(HU14): extraer abrirHistorial y constantes para evitar duplicación en las pruebas",
     "commitTimestamp": 1794765867099,
     "testId": 213
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore(HU14): incluir admin/historial.html en los scripts start y build",
+    "commitTimestamp": 1794766431555,
+    "testId": 214
   }
 ]
