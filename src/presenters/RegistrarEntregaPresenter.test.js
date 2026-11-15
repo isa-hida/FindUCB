@@ -1,5 +1,5 @@
 import { RegistrarEntregaPresenter } from './RegistrarEntregaPresenter';
-import { ObjetosRepositoryEnMemoria } from '../services/memoria/ObjetosRepositoryEnMemoria';
+import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
@@ -29,9 +29,9 @@ const crearEscenario = (objetos = []) => {
             this.elFormularioEstaVisible = false;
         },
     };
-    const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
+    const objetosRepository = new ObjetosEnMemoria({ objetos });
     const presenter = new RegistrarEntregaPresenter(vista, objetosRepository);
-    return { vista, objetosRepository,presenter };
+    return { vista, objetosRepository, presenter };
 };
 
 describe('RegistrarEntregaPresenter', () => {

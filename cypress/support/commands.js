@@ -1,25 +1,43 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+const SESION_ADMIN = JSON.stringify({ correo: 'admin@ucb.edu.bo', esAdmin: true });
+const SESION_COMUNIDAD = JSON.stringify({ correo: 'estudiante@ucb.edu.bo', esAdmin: false });
+
+const DATOS_BASE = {
+    categoria: 'Llaves',
+    descripcion: 'Llaves de oficina',
+    senas: 'Llavero azul',
+    fecha: '2026-10-18',
+    lugar: 'Biblioteca',
+    color: 'Plateado',
+    nombre: 'Carla Rojas',
+    celular: '70011111',
+    foto: 'llaves.jpg',
+};
+
+const visitarConSesion = (ruta, sesion) => cy.visit(ruta, {
+    onBeforeLoad: (ventana) => ventana.sessionStorage.setItem('usuario', sesion),
+});
+
+Cypress.Commands.add('visitarComoAdmin', (ruta) => visitarConSesion(ruta, SESION_ADMIN));
+Cypress.Commands.add('visitarComoComunidad', (ruta) => visitarConSesion(ruta, SESION_COMUNIDAD));
+
+// Llena el formulario de nuevo objeto con datos validos.
+// Para omitir un campo, pasalo vacio: llenarObjetoHallado({ lugar: '' })
+Cypress.Commands.add('llenarObjetoHallado', (cambios = {}) => {
+    const datos = { ...DATOS_BASE, ...cambios };
+
+    if (datos.categoria) cy.get('#categoria').select(datos.categoria);
+    if (datos.descripcion) cy.get('#descripcion').type(datos.descripcion);
+    if (datos.senas) cy.get('#senas').type(datos.senas);
+    if (datos.fecha) cy.get('#fecha-hallazgo').type(datos.fecha);
+    if (datos.lugar) cy.get('#lugar').type(datos.lugar);
+    if (datos.color) cy.get('#color').type(datos.color);
+    if (datos.nombre) cy.get('#encontrado-nombre').type(datos.nombre);
+    if (datos.celular) cy.get('#encontrado-celular').type(datos.celular);
+    if (datos.foto) {
+        cy.get('#foto-input').selectFile({
+            contents: Cypress.Buffer.from('contenido de prueba'),
+            fileName: datos.foto,
+            mimeType: 'image/jpeg',
+        });
+    }
+});

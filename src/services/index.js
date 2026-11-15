@@ -7,8 +7,6 @@ import fotoLlaves from 'url:../assets/ejemplos/llaves.svg';
 import fotoTermo from 'url:../assets/ejemplos/termo.svg';
 import fotoCuaderno from 'url:../assets/ejemplos/cuaderno.svg';
 
-//import { ObjetosRepositoryEnMemoria } from './memoria/ObjetosRepositoryEnMemoria';
-//import { FotosStorageEnMemoria } from './memoria/FotosStorageEnMemoria';
 export const autenticacion = new AuthEnMemoria({
     cuentas: [
         { correo: 'admin@ucb.edu.bo', password: 'Admin123' },
@@ -18,6 +16,7 @@ export const autenticacion = new AuthEnMemoria({
 });
 
 export const objetosRepository = new ObjetosEnMemoria({
+    almacen: window.localStorage,
     objetos: [
         {
             id: 1,
@@ -94,6 +93,7 @@ export const objetosRepository = new ObjetosEnMemoria({
 });
 
 export const fotosStorage = new FotosEnMemoria({
+    almacen: window.localStorage,
     urls: {
         'ejemplos/celular.svg': fotoCelular,
         'ejemplos/mochila.svg': fotoMochila,

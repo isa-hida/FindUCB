@@ -1,12 +1,15 @@
+import { MAX_CARACTERES_TEXTO } from './limites';
 export const MENSAJES = {
     CORREO_NO_INSTITUCIONAL: 'Solo pueden ingresar miembros de la UCB con su correo institucional',
     CREDENCIALES_INVALIDAS: 'Correo o contraseña no son válidos',
     CAMPOS_LOGIN_VACIOS: 'Por favor, ingrese correo y contraseña',
     FALTA_CATEGORIA_DESCRIPCION: 'Es necesario ingresar categoría y descripción',
+    FALTAN_DATOS_HALLAZGO: 'Es necesario completar fecha, lugar, color y datos de quien encontró el objeto',
     FECHA_FUTURA: 'La fecha de hallazgo no puede ser posterior a hoy',
-    TEXTO_MUY_LARGO: 'La descripción y las señas admiten como máximo 300 caracteres',
+    TEXTO_MUY_LARGO: `La descripción y las señas admiten como máximo ${MAX_CARACTERES_TEXTO} caracteres`,
     AVISO_PUBLICADO: 'Aviso publicado correctamente',
     FOTO_INVALIDA: 'La foto debe ser una imagen de máximo 5 MB',
+    FORMATO_FOTO_INVALIDO: 'El formato de la foto debe ser JPG o PNG',
     FOTO_OBLIGATORIA: 'Es necesario adjuntar la foto del objeto',
     SIN_OBJETOS_PUBLICADOS: 'No hay objetos publicados',
     FALTA_NOMBRE_CI: 'Es necesario ingresar nombre y C.I. de quien recibe el objeto',

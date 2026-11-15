@@ -5,7 +5,7 @@ const idsVisibles = () =>
 
 describe('HU09: filtrar por categoria y fecha', () => {
     beforeEach(() => {
-        cy.visit('/');
+        cy.visitarComoComunidad('/');
         cy.get('#listado .tarjeta-objeto').should('have.length', 4);
     });
 

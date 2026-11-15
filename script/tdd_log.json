@@ -1638,9 +1638,525 @@
     "testId": 138
   },
   {
-    "commitId": "HEAD",
+    "commitId": "486f61214e5233140634e9657458c1533a1cb8ee",
     "commitName": "feat(bienestar): implementar visualizacion de horario y ubicacion de Bienestar (HU-11)",
     "commitTimestamp": 1794632323465,
     "testId": 138
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794705092159,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 111,
+    "failedTests": 0,
+    "numTotalTests": 111,
+    "timestamp": 1794705157795,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "8663def6b2b80c83c058a11cdda7a84ae1a5ccec",
+    "commitName": "refactor: extraer datos validos de objeto hallado en los tests",
+    "commitTimestamp": 1794705197675,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 0,
+    "numTotalTests": 118,
+    "timestamp": 1794705248399,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 117,
+    "failedTests": 1,
+    "numTotalTests": 118,
+    "timestamp": 1794705443379,
+    "success": false,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 0,
+    "numTotalTests": 118,
+    "timestamp": 1794705539727,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "commitId": "3cc341accaa86d8c1e957a6e809c4d9c0a5c0e0d",
+    "commitName": "feat: exigir fecha, lugar, color y datos de quien encontro el objeto",
+    "commitTimestamp": 1794705567639,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 1,
+    "numTotalTests": 119,
+    "timestamp": 1794705741310,
+    "success": false,
+    "testId": 141
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794705763467,
+    "success": true,
+    "testId": 141
+  },
+  {
+    "commitId": "dbaa48a957764c9721a74d02df6dfd0a91f06dee",
+    "commitName": "feat: agregar aFechaIso para obtener la fecha local",
+    "commitTimestamp": 1794705787859,
+    "testId": 141
+  },
+  {
+    "numPassedTests": 118,
+    "failedTests": 1,
+    "numTotalTests": 119,
+    "timestamp": 1794705959052,
+    "success": false,
+    "testId": 142
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794706093215,
+    "success": true,
+    "testId": 142
+  },
+  {
+    "commitId": "311aaaaf3df30c076c5929ef6a8a3147b81ddea0",
+    "commitName": "feat: validar fecha futura usando el dia actual en el presenter",
+    "commitTimestamp": 1794706164040,
+    "testId": 142
+  },
+  {
+    "numPassedTests": 119,
+    "failedTests": 0,
+    "numTotalTests": 119,
+    "timestamp": 1794706275112,
+    "success": true,
+    "testId": 143
+  },
+  {
+    "commitId": "b853f60f26e1cb4fb5cb72a93464576d9c47ef8d",
+    "commitName": "refactor: mover mensaje de formato de foto a MENSAJES",
+    "commitTimestamp": 1794706297191,
+    "testId": 143
+  },
+  {
+    "numPassedTests": 122,
+    "failedTests": 0,
+    "numTotalTests": 122,
+    "timestamp": 1794706395796,
+    "success": true,
+    "testId": 144
+  },
+  {
+    "numPassedTests": 107,
+    "failedTests": 0,
+    "numTotalTests": 107,
+    "timestamp": 1794706451937,
+    "success": false,
+    "testId": 144
+  },
+  {
+    "commitId": "f64bd2318da92023d1952c4c9b9fe1c29612938f",
+    "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+    "commitTimestamp": 1794706561505,
+    "testId": 144
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1794706584140,
+    "success": false,
+    "testId": 145
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 0,
+    "numTotalTests": 123,
+    "timestamp": 1794706748346,
+    "success": true,
+    "testId": 145
+  },
+  {
+    "commitId": "0a02f1fb33191eebfa416642390d6589d428ad0f",
+    "commitName": "fix: unificar el limite de 500 caracteres en el mensaje y el validador",
+    "commitTimestamp": 1794706792068,
+    "testId": 145
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 0,
+    "numTotalTests": 123,
+    "timestamp": 1794706962350,
+    "success": true,
+    "testId": 146
+  },
+  {
+    "commitId": "94d14bd0f08c4cef5b17c250aad96ab6787f27c3",
+    "commitName": "refactor: usar MAX_CARACTERES_TEXTO en el contador de la vista",
+    "commitTimestamp": 1794706985033,
+    "testId": 146
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 1,
+    "numTotalTests": 124,
+    "timestamp": 1794707320077,
+    "success": false,
+    "testId": 147
+  },
+  {
+    "numPassedTests": 124,
+    "failedTests": 0,
+    "numTotalTests": 124,
+    "timestamp": 1794707367111,
+    "success": true,
+    "testId": 147
+  },
+  {
+    "commitId": "87512bcca6888e425f6ea2bbd327d259ff555f73",
+    "commitName": "refactor: cargar las categorias del formulario desde el catalogo",
+    "commitTimestamp": 1794707634576,
+    "testId": 147
+  },
+  {
+    "commitId": "164d97a323908a965c3ee5867f7f8a8ed3bd1ff1",
+    "commitName": "fix: mostrar los campos de quien encontro el objeto y marcar los obligatorios",
+    "commitTimestamp": 1794708201354,
+    "testId": 148
+  },
+  {
+    "numPassedTests": 124,
+    "failedTests": 0,
+    "numTotalTests": 124,
+    "timestamp": 1794708259094,
+    "success": true,
+    "testId": 149
+  },
+  {
+    "commitId": "98fb5f32de6c3b5bf1c5853ab648e216e12f10a1",
+    "commitName": "refactor: eliminar la clase css campo--oculto sin uso",
+    "commitTimestamp": 1794708278297,
+    "testId": 149
+  },
+  {
+    "numPassedTests": 125,
+    "failedTests": 0,
+    "numTotalTests": 125,
+    "timestamp": 1794708421891,
+    "success": true,
+    "testId": 150
+  },
+  {
+    "numPassedTests": 125,
+    "failedTests": 0,
+    "numTotalTests": 125,
+    "timestamp": 1794708478399,
+    "success": true,
+    "testId": 150
+  },
+  {
+    "commitId": "9e50e8ae333d11b4b1548bdbab93f4ddc5086842",
+    "commitName": "refactor: extraer datos validos en los tests del presenter de registro",
+    "commitTimestamp": 1794708499205,
+    "testId": 150
+  },
+  {
+    "numPassedTests": 126,
+    "failedTests": 0,
+    "numTotalTests": 126,
+    "timestamp": 1794708548446,
+    "success": true,
+    "testId": 151
+  },
+  {
+    "commitId": "4e2872449a5fa4dcfb3678f3a134d4da6afe29ad",
+    "commitName": "test: el objeto registrado se publica sin datos privados de quien lo encontro",
+    "commitTimestamp": 1794708581275,
+    "testId": 151
+  },
+  {
+    "numPassedTests": 126,
+    "failedTests": 1,
+    "numTotalTests": 127,
+    "timestamp": 1794708759966,
+    "success": false,
+    "testId": 152
+  },
+  {
+    "numPassedTests": 127,
+    "failedTests": 0,
+    "numTotalTests": 127,
+    "timestamp": 1794708799055,
+    "success": true,
+    "testId": 152
+  },
+  {
+    "commitId": "7ccbdb1745c67eb41a0577c138af6155958a8492",
+    "commitName": "feat: persistir en un almacen los objetos registrados",
+    "commitTimestamp": 1794708819544,
+    "testId": 152
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 0,
+    "numTotalTests": 128,
+    "timestamp": 1794708865331,
+    "success": true,
+    "testId": 153
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 1,
+    "numTotalTests": 129,
+    "timestamp": 1794708922347,
+    "success": false,
+    "testId": 153
+  },
+  {
+    "numPassedTests": 129,
+    "failedTests": 0,
+    "numTotalTests": 129,
+    "timestamp": 1794708955716,
+    "success": true,
+    "testId": 153
+  },
+  {
+    "commitId": "9a445599f1140f8f19bcd1f700a9405ccbf9d2d3",
+    "commitName": "fix: guardar en el almacen las entregas registradas",
+    "commitTimestamp": 1794708978006,
+    "testId": 153
+  },
+  {
+    "commitId": "76302f11e8bcbcc2440a5712bd82603cb0e2073b",
+    "commitName": "feat: usar localStorage como almacen de los objetos de la app",
+    "commitTimestamp": 1794709084928,
+    "testId": 154
+  },
+  {
+    "commitId": "783ca0f3e648db0fc886e775a57bbbac2f942e3d",
+    "commitName": "test: agregar comandos cypress para llenar el formulario de objeto hallado",
+    "commitTimestamp": 1794709401333,
+    "testId": 155
+  },
+  {
+    "commitId": "ba2b8403851e3f93c4c6caea8cb955317a21ae3a",
+    "commitName": "test: actualizar e2e de HU04 con campos obligatorios y listas",
+    "commitTimestamp": 1794709437557,
+    "testId": 156
+  },
+  {
+    "commitId": "e5d0be7d52e444d78a0445bd2f730e5ed9df831d",
+    "commitName": "test: actualizar e2e de HU05 con los mensajes y datos actuales",
+    "commitTimestamp": 1794709474111,
+    "testId": 157
+  },
+  {
+    "numPassedTests": 129,
+    "failedTests": 2,
+    "numTotalTests": 131,
+    "timestamp": 1794709746581,
+    "success": false,
+    "testId": 158
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794709773761,
+    "success": true,
+    "testId": 158
+  },
+  {
+    "commitId": "ecc0b0e3ebd2390cada7f3717a36f4495dead9a2",
+    "commitName": "feat: FotosEnMemoria guarda fotos subidas y devuelve su ruta",
+    "commitTimestamp": 1794709829095,
+    "testId": 158
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 1,
+    "numTotalTests": 132,
+    "timestamp": 1794709863736,
+    "success": false,
+    "testId": 159
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 0,
+    "numTotalTests": 132,
+    "timestamp": 1794709880658,
+    "success": true,
+    "testId": 159
+  },
+  {
+    "commitId": "47f7152accac14e8d1fc51b474022246affe2c67",
+    "commitName": "feat: persistir las fotos subidas en el almacen",
+    "commitTimestamp": 1794709906919,
+    "testId": 159
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 0,
+    "numTotalTests": 132,
+    "timestamp": 1794710015535,
+    "success": true,
+    "testId": 160
+  },
+  {
+    "commitId": "807038282ac46048e346dfb5f4c291a866a21260",
+    "commitName": "refactor: el presenter de registro recibe el almacen de fotos",
+    "commitTimestamp": 1794710036690,
+    "testId": 160
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 1,
+    "numTotalTests": 133,
+    "timestamp": 1794710072888,
+    "success": false,
+    "testId": 161
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 0,
+    "numTotalTests": 133,
+    "timestamp": 1794710109179,
+    "success": true,
+    "testId": 161
+  },
+  {
+    "commitId": "901abcba68e8a7d917763da6376e33333e2a6e70",
+    "commitName": "feat: guardar la foto subida al registrar un objeto hallado",
+    "commitTimestamp": 1794710130918,
+    "testId": 161
+  },
+  {
+    "commitId": "940e18716d12bacd3efc554fda709184b3d5a311",
+    "commitName": "feat: leer y guardar la foto del objeto en el formulario de registro",
+    "commitTimestamp": 1794710334780,
+    "testId": 162
+  },
+  {
+    "commitId": "e0fc3765e3b34bd04d3881b41d7c253122068d70",
+    "commitName": "test: e2e de la foto visible en el panel y el listado publico",
+    "commitTimestamp": 1794710671390,
+    "testId": 163
+  },
+  {
+    "commitId": "6ddd546bc164ec3b494642ff1f77f31b6e539743",
+    "commitName": "refactor: agregar comando cypress para entrar con sesion de comunidad",
+    "commitTimestamp": 1794710861637,
+    "testId": 164
+  },
+  {
+    "commitId": "50bf7f0fba47ad734a8c0af3a4756bf6285d7e5e",
+    "commitName": "test: entrar con sesion de comunidad en los e2e del listado",
+    "commitTimestamp": 1794710956299,
+    "testId": 165
+  },
+  {
+    "commitId": "49d23f8afc91fb98dc4a05810ba3a5747552e250",
+    "commitName": "test: actualizar e2e de HU06 con sesion de admin y datos actuales",
+    "commitTimestamp": 1794710989501,
+    "testId": 166
+  },
+  {
+    "commitId": "43fbd7a4838faf9edb5490f77830b0108117916c",
+    "commitName": "test: actualizar e2e de HU02 con los ids y mensajes del login de admin",
+    "commitTimestamp": 1794711021279,
+    "testId": 167
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794711158034,
+    "success": true,
+    "testId": 168
+  },
+  {
+    "commitId": "09f8041f1d717dc4cf5b80154ff846fd7be33eca",
+    "commitName": "test: cubrir listarPublicados y obtenerPorId en ObjetosEnMemoria",
+    "commitTimestamp": 1794711181574,
+    "testId": 168
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 0,
+    "numTotalTests": 138,
+    "timestamp": 1794711346949,
+    "success": true,
+    "testId": 169
+  },
+  {
+    "commitId": "cc77bc36e3c4c29051c66c7fa252a1617590bc17",
+    "commitName": "refactor: usar ObjetosEnMemoria en los tests de los presenters de admin",
+    "commitTimestamp": 1794711367548,
+    "testId": 169
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794711432979,
+    "success": true,
+    "testId": 170
+  },
+  {
+    "commitId": "c0894554547aab66201d67e1f85595d97ae5f91c",
+    "commitName": "refactor: eliminar ObjetosRepositoryEnMemoria duplicado de ObjetosEnMemoria",
+    "commitTimestamp": 1794711455603,
+    "testId": 170
+  },
+  {
+    "numPassedTests": 128,
+    "failedTests": 3,
+    "numTotalTests": 131,
+    "timestamp": 1794711523167,
+    "success": false,
+    "testId": 171
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794711616246,
+    "success": true,
+    "testId": 171
+  },
+  {
+    "commitId": "85e2543121afe4c3862c05c723888d62ad207791",
+    "commitName": "refactor: reutilizar crearAlmacenFalso en los tests de ObjetosEnMemoria",
+    "commitTimestamp": 1794711637135,
+    "testId": 171
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794711700167,
+    "success": true,
+    "testId": 172
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: reutilizar filtrarPublicados en ObjetosEnMemoria",
+    "commitTimestamp": 1794711726723,
+    "testId": 172
   }
 ]

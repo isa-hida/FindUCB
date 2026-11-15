@@ -1,5 +1,5 @@
 import { ListaObjetosAdminPresenter } from './ListaObjetosAdminPresenter';
-import { ObjetosRepositoryEnMemoria } from '../services/memoria/ObjetosRepositoryEnMemoria';
+import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { FotosStorageEnMemoria } from '../services/memoria/FotosStorageEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
@@ -15,7 +15,7 @@ const crearEscenario = (objetos = []) => {
             this.mensajes.push(mensaje);
         },
     };
-    const objetosRepository = new ObjetosRepositoryEnMemoria({ objetos });
+    const objetosRepository = new ObjetosEnMemoria({ objetos });
     const fotosStorage = new FotosStorageEnMemoria();
     const presenter = new ListaObjetosAdminPresenter(vista, objetosRepository, fotosStorage);
     return { vista, presenter };

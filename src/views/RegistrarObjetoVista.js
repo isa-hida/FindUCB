@@ -1,8 +1,10 @@
-/* global URL, FormData */
+/* global URL, FormData, FileReader */
+import { MAX_CARACTERES_TEXTO } from '../domain/limites.js';
 export class RegistrarObjetoVista {
     constructor(documento) {
         this.documento = documento;
         this.formulario = documento.getElementById('nuevo-objeto-form');
+        this.selectCategoria = documento.getElementById('categoria');
         this.errorElemento = documento.getElementById('error-mensaje');
         this.exitoElemento = documento.getElementById('exito-mensaje');
         this.fotoInput = documento.getElementById('foto-input');
@@ -10,6 +12,7 @@ export class RegistrarObjetoVista {
         this.descripcionInput = documento.getElementById('descripcion');
         this.contadorCaracteres = documento.getElementById('contador-caracteres');
         this.rutaFotoActual = '';
+        this.fotoContenidoActual = '';
 
         this._inicializarEventos();
     }
@@ -20,12 +23,16 @@ export class RegistrarObjetoVista {
                 const archivo = e.target.files[0];
                 if (archivo) {
                     this.rutaFotoActual = archivo.name;
+                    this._leerContenido(archivo).then((contenido) => {
+                        this.fotoContenidoActual = contenido;
+                    });
                     if (this.previewImagen) {
                         this.previewImagen.src = URL.createObjectURL(archivo);
                         this.previewImagen.hidden = false;
                     }
                 } else {
                     this.rutaFotoActual = '';
+                    this.fotoContenidoActual = '';
                     if (this.previewImagen) {
                         this.previewImagen.hidden = true;
                     }
@@ -35,12 +42,29 @@ export class RegistrarObjetoVista {
 
         if (this.descripcionInput && this.contadorCaracteres) {
             this.descripcionInput.addEventListener('input', () => {
-                const longitud = this.descripcionInput.value.length;
-                this.contadorCaracteres.textContent = `${longitud} / 300`;
+                this._mostrarContador(this.descripcionInput.value.length);
             });
         }
     }
-
+    mostrarCategorias(categorias) {
+        categorias.forEach((categoria) => {
+            const opcion = this.documento.createElement('option');
+            opcion.value = categoria;
+            opcion.textContent = categoria;
+            this.selectCategoria.appendChild(opcion);
+        });
+    }
+    _mostrarContador(longitud) {
+        this.contadorCaracteres.textContent = `${longitud} / ${MAX_CARACTERES_TEXTO}`;
+    }
+    _leerContenido(archivo) {
+        return new Promise((resolver) => {
+            const lector = new FileReader();
+            lector.onload = () => resolver(lector.result);
+            lector.onerror = () => resolver('');
+            lector.readAsDataURL(archivo);
+        });
+    }
     alEnviar(callback) {
         this.formulario.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -54,6 +78,7 @@ export class RegistrarObjetoVista {
                 color: formData.get('color'),
                 marca: formData.get('marca'),
                 rutaFoto: this.rutaFotoActual || formData.get('rutaFoto') || '',
+                fotoContenido: this.fotoContenidoActual,
                 encontradoPor: {
                     nombre: formData.get('encontradoNombre'),
                     celular: formData.get('encontradoCelular'),
@@ -79,12 +104,13 @@ export class RegistrarObjetoVista {
         this.errorElemento.hidden = true;
         this.formulario.reset();
         this.rutaFotoActual = '';
+        this.fotoContenidoActual = '';
         if (this.previewImagen) {
             this.previewImagen.hidden = true;
             this.previewImagen.src = '';
         }
         if (this.contadorCaracteres) {
-            this.contadorCaracteres.textContent = '0 / 500';
+            this._mostrarContador(0);
         }
     }
 }
