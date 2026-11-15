@@ -361,17 +361,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "783ca0f3e648db0fc886e775a57bbbac2f942e3d",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:23:18.000Z",
       "message": "test: agregar comandos cypress para llenar el formulario de objeto hallado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/783ca0f3e648db0fc886e775a57bbbac2f942e3d"
     },
     "stats": {
       "total": 66,
       "additions": 41,
       "deletions": 25,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.63,
+    "test_count": 129,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:23:54.000Z",
+      "message": "test: actualizar e2e de HU04 con campos obligatorios y listas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 61,
+      "additions": 44,
+      "deletions": 17,
       "date": "2026-11-15"
     },
     "coverage": 97.63,

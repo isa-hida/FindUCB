@@ -1948,9 +1948,15 @@
     "testId": 154
   },
   {
-    "commitId": "HEAD",
+    "commitId": "783ca0f3e648db0fc886e775a57bbbac2f942e3d",
     "commitName": "test: agregar comandos cypress para llenar el formulario de objeto hallado",
     "commitTimestamp": 1794709401333,
     "testId": 155
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: actualizar e2e de HU04 con campos obligatorios y listas",
+    "commitTimestamp": 1794709437557,
+    "testId": 156
   }
 ]
