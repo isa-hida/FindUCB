@@ -14,7 +14,7 @@ export class ListaObjetosAdminPresenter {
         const objetos = await this.objetosRepository.listarParaAdmin();
         const publicados = filtrarPublicados(objetos);
         const filas = await this.crearFilas(publicados);
-        
+
         this.vista.mostrarFilas(filas);
         if (publicados.length === 0) {
             this.vista.mostrarMensajeVacio(MENSAJES.SIN_OBJETOS_PUBLICADOS);

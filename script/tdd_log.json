@@ -2582,9 +2582,15 @@
     "testId": 209
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4807a76cdccfc1b289935630c5b62238046b923",
     "commitName": "style(HU14): ajustar el tamaño y la posición de la foto en el historial",
     "commitTimestamp": 1794765095043,
     "testId": 210
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
+    "commitTimestamp": 1794765652188,
+    "testId": 211
   }
 ]

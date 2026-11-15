@@ -31,7 +31,7 @@ export class RegistrarEntregaPresenter {
         this.vista.mostrarExito(MENSAJES.ENTREGA_REGISTRADA);
         this.vista.ocultarFormulario();
     }
-    
+
     cancelar() {
         this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }

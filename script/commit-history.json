@@ -1406,17 +1406,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e4807a76cdccfc1b289935630c5b62238046b923",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T17:51:32.000Z",
       "message": "style(HU14): ajustar el tamaño y la posición de la foto en el historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e4807a76cdccfc1b289935630c5b62238046b923"
     },
     "stats": {
       "total": 20,
       "additions": 17,
       "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T18:00:49.000Z",
+      "message": "style(HU07,HU14): corregir espacios que marcaba ESLint en mis archivos",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 6,
+      "deletions": 5,
       "date": "2026-11-15"
     },
     "coverage": 97.67,
