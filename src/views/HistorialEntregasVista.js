@@ -22,6 +22,9 @@ export class HistorialEntregasVista {
 
     crearFila(fila) {
         const nodo = this.plantillaFila.content.firstElementChild.cloneNode(true);
+        const foto = nodo.querySelector('.historial__foto');
+        foto.src = fila.fotoUrl;
+        foto.alt = fila.categoria;
         nodo.id = `fila-historial-${fila.id}`;
         nodo.querySelector('.historial__numero').textContent = fila.numero;
         nodo.querySelector('.historial__categoria').textContent = fila.categoria;

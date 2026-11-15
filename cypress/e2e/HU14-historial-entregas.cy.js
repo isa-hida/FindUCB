@@ -47,4 +47,12 @@ describe('HU-14: historial de objetos entregados', () => {
 
         cy.url().should('include', '/admin/index.html');
     });
+    it('la fila muestra la foto del objeto entregado', () => {
+        cy.visitarComoAdmin('/admin/historial.html');
+
+        cy.get('#fila-historial-5 .historial__foto')
+            .should('be.visible')
+            .and('have.attr', 'src')
+            .and('include', 'cuaderno');
+    });
 });

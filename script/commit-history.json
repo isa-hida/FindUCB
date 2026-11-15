@@ -1368,17 +1368,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "41a0192e9063a8f4310ce7949de2cf16004a63d3",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T17:46:34.000Z",
       "message": "feat(HU14): entregar a la vista la URL de la foto de cada objeto del historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/41a0192e9063a8f4310ce7949de2cf16004a63d3"
     },
     "stats": {
       "total": 36,
       "additions": 31,
       "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T17:50:59.000Z",
+      "message": "feat(HU14): mostrar la foto del objeto en cada fila del historial",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
       "date": "2026-11-15"
     },
     "coverage": 97.67,

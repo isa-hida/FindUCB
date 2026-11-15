@@ -2570,9 +2570,15 @@
     "testId": 207
   },
   {
-    "commitId": "HEAD",
+    "commitId": "41a0192e9063a8f4310ce7949de2cf16004a63d3",
     "commitName": "feat(HU14): entregar a la vista la URL de la foto de cada objeto del historial",
     "commitTimestamp": 1794764797111,
     "testId": 208
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): mostrar la foto del objeto en cada fila del historial",
+    "commitTimestamp": 1794765061942,
+    "testId": 209
   }
 ]
