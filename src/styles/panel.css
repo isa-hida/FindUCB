@@ -338,3 +338,8 @@
     position: absolute;
     right: 2rem;
 }
+
+.tabla__acciones {
+    display: flex;
+    gap: 12px;
+}

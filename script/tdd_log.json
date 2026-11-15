@@ -2374,9 +2374,23 @@
     "testId": 182
   },
   {
-    "commitId": "HEAD",
+    "commitId": "461590e3dac8d3a52c23c7d07e268f639500d6e2",
     "commitName": "feat: agregar la url de edicion a cada fila del listado de administracion",
     "commitTimestamp": 1794714490793,
     "testId": 182
+  },
+  {
+    "numPassedTests": 148,
+    "failedTests": 0,
+    "numTotalTests": 148,
+    "timestamp": 1794714716385,
+    "success": true,
+    "testId": 183
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
+    "commitTimestamp": 1794714901722,
+    "testId": 183
   }
 ]

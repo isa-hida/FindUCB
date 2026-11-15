@@ -874,17 +874,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "461590e3dac8d3a52c23c7d07e268f639500d6e2",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:48:08.000Z",
       "message": "feat: agregar la url de edicion a cada fila del listado de administracion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/461590e3dac8d3a52c23c7d07e268f639500d6e2"
     },
     "stats": {
       "total": 20,
       "additions": 17,
       "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.52,
+    "test_count": 148,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:54:59.000Z",
+      "message": "feat: mostrar la opcion Editar en cada fila del listado de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 33,
+      "deletions": 5,
       "date": "2026-11-15"
     },
     "coverage": 97.52,
