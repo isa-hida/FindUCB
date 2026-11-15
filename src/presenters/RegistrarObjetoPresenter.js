@@ -4,9 +4,10 @@ import { aFechaIso } from '../domain/fecha';
 import { CATEGORIAS } from '../domain/catalogos';
 
 export class RegistrarObjetoPresenter {
-    constructor(vista, objetosRepository, obtenerHoy = () => aFechaIso(new Date())) {
+    constructor(vista, objetosRepository, fotosStorage, obtenerHoy = () => aFechaIso(new Date())) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
+        this.fotosStorage = fotosStorage;
         this.obtenerHoy = obtenerHoy;
     }
     async registrar(datosObjeto) {

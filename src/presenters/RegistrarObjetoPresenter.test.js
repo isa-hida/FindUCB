@@ -3,6 +3,7 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { CATEGORIAS } from '../domain/catalogos';
 import { prepararListado } from '../domain/listado';
+import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 
 const crearDatosValidos = (cambios = {}) => ({
     categoria: 'Llaves',
@@ -34,8 +35,9 @@ const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository, () => hoy);
-    return { vista, objetosRepository, presenter };
+    const fotosStorage = new FotosEnMemoria();
+    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy);
+    return { vista, objetosRepository, fotosStorage, presenter };
 };
 
 describe('RegistrarObjetoPresenter', () => {

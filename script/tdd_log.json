@@ -2004,9 +2004,23 @@
     "testId": 159
   },
   {
-    "commitId": "HEAD",
+    "commitId": "47f7152accac14e8d1fc51b474022246affe2c67",
     "commitName": "feat: persistir las fotos subidas en el almacen",
     "commitTimestamp": 1794709906919,
     "testId": 159
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 0,
+    "numTotalTests": 132,
+    "timestamp": 1794710015535,
+    "success": true,
+    "testId": 160
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: el presenter de registro recibe el almacen de fotos",
+    "commitTimestamp": 1794710036690,
+    "testId": 160
   }
 ]
