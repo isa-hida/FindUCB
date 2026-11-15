@@ -2228,9 +2228,23 @@
     "testId": 175
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d476654432ad1be9085b1524e104a237a1a5b801",
     "commitName": "feat: validar la foto solo si es nueva cuando el aviso ya tiene una",
     "commitTimestamp": 1794712819540,
     "testId": 175
+  },
+  {
+    "numPassedTests": 136,
+    "failedTests": 0,
+    "numTotalTests": 136,
+    "timestamp": 1794712851727,
+    "success": true,
+    "testId": 176
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer la validacion de la foto del validador de objetos",
+    "commitTimestamp": 1794712872278,
+    "testId": 176
   }
 ]
