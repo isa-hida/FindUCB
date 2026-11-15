@@ -2410,9 +2410,23 @@
     "testId": 184
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3b1beb344e23e02b8b72ed126400ff87dfa627b4",
     "commitName": "fix: recordar la foto nueva despues de guardar un aviso editado",
     "commitTimestamp": 1794715082913,
     "testId": 184
+  },
+  {
+    "numPassedTests": 149,
+    "failedTests": 0,
+    "numTotalTests": 149,
+    "timestamp": 1794715278558,
+    "success": true,
+    "testId": 185
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ruta a pantalla editar",
+    "commitTimestamp": 1794716482056,
+    "testId": 185
   }
 ]

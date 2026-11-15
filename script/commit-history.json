@@ -912,17 +912,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3b1beb344e23e02b8b72ed126400ff87dfa627b4",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:57:59.000Z",
       "message": "fix: recordar la foto nueva despues de guardar un aviso editado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3b1beb344e23e02b8b72ed126400ff87dfa627b4"
     },
     "stats": {
       "total": 14,
       "additions": 14,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T04:21:19.000Z",
+      "message": "feat: ruta a pantalla editar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 341,
+      "additions": 339,
+      "deletions": 2,
       "date": "2026-11-15"
     },
     "coverage": 97.53,

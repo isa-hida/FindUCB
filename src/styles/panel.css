@@ -343,3 +343,8 @@
     display: flex;
     gap: 12px;
 }
+
+input[readonly] {
+    background: #f1f1f1;
+    cursor: not-allowed;
+}
