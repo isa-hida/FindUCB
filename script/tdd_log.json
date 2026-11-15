@@ -1884,9 +1884,31 @@
     "testId": 151
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4e2872449a5fa4dcfb3678f3a134d4da6afe29ad",
     "commitName": "test: el objeto registrado se publica sin datos privados de quien lo encontro",
     "commitTimestamp": 1794708581275,
     "testId": 151
+  },
+  {
+    "numPassedTests": 126,
+    "failedTests": 1,
+    "numTotalTests": 127,
+    "timestamp": 1794708759966,
+    "success": false,
+    "testId": 152
+  },
+  {
+    "numPassedTests": 127,
+    "failedTests": 0,
+    "numTotalTests": 127,
+    "timestamp": 1794708799055,
+    "success": true,
+    "testId": 152
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: persistir en un almacen los objetos registrados",
+    "commitTimestamp": 1794708819544,
+    "testId": 152
   }
 ]

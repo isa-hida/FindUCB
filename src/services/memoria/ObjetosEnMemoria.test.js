@@ -5,6 +5,15 @@ const crearObjeto = (datos) => ({
     estado: 'publicado',
     ...datos,
 });
+const crearAlmacen = () => ({
+    datos: {},
+    getItem(clave) {
+        return this.datos[clave] === undefined ? null : this.datos[clave];
+    },
+    setItem(clave, valor) {
+        this.datos[clave] = valor;
+    },
+});
 
 describe('ObjetosEnMemoria - registrar', () => {
     it('asigna un id y un numero correlativo automatico al registrar un objeto', async () => {
@@ -90,5 +99,18 @@ describe('ObjetosEnMemoria - registrarEntrega', () => {
         const resultado = await repo.listarParaAdmin();
 
         expect(resultado).toEqual([{ ...objeto, estado: 'entregado', entrega }]);
+    });
+    describe('ObjetosEnMemoria - persistencia en almacen', () => {
+        it('recuerda un objeto registrado en otro repositorio que use el mismo almacen', async () => {
+            const almacen = crearAlmacen();
+            const primero = new ObjetosEnMemoria({ almacen });
+
+            await primero.registrar({ categoria: 'Llaves', descripcion: 'Llaves de oficina' });
+            const segundo = new ObjetosEnMemoria({ almacen });
+
+            const publicados = await segundo.listarPublicados();
+            expect(publicados).toHaveLength(1);
+            expect(publicados[0].categoria).toEqual('Llaves');
+        });
     });
 });

@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4e2872449a5fa4dcfb3678f3a134d4da6afe29ad",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:09:38.000Z",
       "message": "test: el objeto registrado se publica sin datos privados de quien lo encontro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/4e2872449a5fa4dcfb3678f3a134d4da6afe29ad"
     },
     "stats": {
       "total": 11,
@@ -300,6 +300,25 @@
     },
     "coverage": 97.56,
     "test_count": 126,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:13:37.000Z",
+      "message": "feat: persistir en un almacen los objetos registrados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 38,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.62,
+    "test_count": 127,
     "failed_tests": 0,
     "conclusion": "success"
   }

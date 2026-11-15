@@ -1,7 +1,12 @@
+const CLAVE_ALMACEN = 'findu.objetos';
+
 export class ObjetosEnMemoria {
-    constructor({ objetos = [] } = {}) {
-        this.objetos = objetos;
+    constructor({ objetos = [], almacen = null } = {}) {
+        this.almacen = almacen;
+        const guardados = almacen ? almacen.getItem(CLAVE_ALMACEN) : null;
+        this.objetos = guardados ? JSON.parse(guardados) : objetos;
     }
+
     async listarParaAdmin() {
         return [...this.objetos];
     }
@@ -32,13 +37,21 @@ export class ObjetosEnMemoria {
         };
 
         this.objetos.push(objetoRegistrado);
+        this.guardar();
         return objetoRegistrado;
     }
+
     async registrarEntrega(objetoId, entrega) {
         this.objetos = this.objetos.map((objeto) => (
             String(objeto.id) === String(objetoId)
                 ? { ...objeto, estado: 'entregado', entrega }
                 : objeto
         ));
+    }
+
+    guardar() {
+        if (this.almacen) {
+            this.almacen.setItem(CLAVE_ALMACEN, JSON.stringify(this.objetos));
+        }
     }
 }
