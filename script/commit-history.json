@@ -1026,17 +1026,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bde8356c9e861eb676dc0021f27409d248744b48",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:14:22.000Z",
       "message": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/bde8356c9e861eb676dc0021f27409d248744b48"
     },
     "stats": {
       "total": 40,
       "additions": 20,
       "deletions": 20,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:17:15.000Z",
+      "message": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
       "date": "2026-11-15"
     },
     "coverage": 97.53,

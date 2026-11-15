@@ -20,7 +20,6 @@ export class ListaObjetosAdminPresenter {
             ...crearFilaAdmin(objeto),
             fotoUrl: urlsFotos[indice],
             urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
-            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
             urlEditar: `${RUTAS.EDITAR_OBJETO}?id=${objeto.id}`,
         }));
         this.vista.mostrarFilas(filas);

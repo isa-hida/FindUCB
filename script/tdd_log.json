@@ -2454,9 +2454,15 @@
     "testId": 189
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bde8356c9e861eb676dc0021f27409d248744b48",
     "commitName": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
     "commitTimestamp": 1794741265267,
     "testId": 190
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
+    "commitTimestamp": 1794741437991,
+    "testId": 191
   }
 ]
