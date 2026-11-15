@@ -2424,9 +2424,63 @@
     "testId": 185
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f58b7cdf5a79517764bba8d8282be243f9b15bed",
     "commitName": "feat: ruta a pantalla editar",
     "commitTimestamp": 1794716482056,
     "testId": 185
+  },
+  {
+    "commitId": "63105a5a6489d9bcd3c3a38429e51c0d7f2fd608",
+    "commitName": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
+    "commitTimestamp": 1794740478085,
+    "testId": 186
+  },
+  {
+    "commitId": "da4b6f005f22caa1b91ffc45ed77954114b926b4",
+    "commitName": "test(HU07): verificar el mensaje al registrar la entrega",
+    "commitTimestamp": 1794740819984,
+    "testId": 187
+  },
+  {
+    "commitId": "07035e14a9f7882e7c0c76cfc33f65d829d2f1e5",
+    "commitName": "test(HU07): verificar que el objeto entregado sale del panel y no vuelve",
+    "commitTimestamp": 1794741002101,
+    "testId": 188
+  },
+  {
+    "commitId": "55410398b29129d4365303d147e055ba63caf9a5",
+    "commitName": "test(HU07): verificar que el objeto entregado sale del listado de la comunidad",
+    "commitTimestamp": 1794741132036,
+    "testId": 189
+  },
+  {
+    "commitId": "bde8356c9e861eb676dc0021f27409d248744b48",
+    "commitName": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
+    "commitTimestamp": 1794741265267,
+    "testId": 190
+  },
+  {
+    "commitId": "931b4bbee4ca86fd83a1ee5cf572edaacd529211",
+    "commitName": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
+    "commitTimestamp": 1794741437991,
+    "testId": 191
+  },
+  {
+    "commitId": "b209d8fd2490008f83cd45ac39d13e623e8303de",
+    "commitName": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
+    "commitTimestamp": 1794741809348,
+    "testId": 192
+  },
+  {
+    "commitId": "a04a2352aaa33c56fcca4eff70323cbbd020c79b",
+    "commitName": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
+    "commitTimestamp": 1794741961785,
+    "testId": 193
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU07): separar con una línea en blanco el método cancelar",
+    "commitTimestamp": 1794742085371,
+    "testId": 194
   }
 ]

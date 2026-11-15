@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f58b7cdf5a79517764bba8d8282be243f9b15bed",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T04:21:19.000Z",
       "message": "feat: ruta a pantalla editar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f58b7cdf5a79517764bba8d8282be243f9b15bed"
     },
     "stats": {
       "total": 341,
@@ -945,6 +945,177 @@
       "date": "2026-11-15"
     },
     "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "63105a5a6489d9bcd3c3a38429e51c0d7f2fd608",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:01:15.000Z",
+      "message": "feat(HU07): mostrar la opción Registrar entrega en cada fila",
+      "url": "https://github.com/isa-hida/FindUCB/commit/63105a5a6489d9bcd3c3a38429e51c0d7f2fd608"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "da4b6f005f22caa1b91ffc45ed77954114b926b4",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:06:57.000Z",
+      "message": "test(HU07): verificar el mensaje al registrar la entrega",
+      "url": "https://github.com/isa-hida/FindUCB/commit/da4b6f005f22caa1b91ffc45ed77954114b926b4"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "07035e14a9f7882e7c0c76cfc33f65d829d2f1e5",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:09:59.000Z",
+      "message": "test(HU07): verificar que el objeto entregado sale del panel y no vuelve",
+      "url": "https://github.com/isa-hida/FindUCB/commit/07035e14a9f7882e7c0c76cfc33f65d829d2f1e5"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 20,
+      "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "55410398b29129d4365303d147e055ba63caf9a5",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:12:09.000Z",
+      "message": "test(HU07): verificar que el objeto entregado sale del listado de la comunidad",
+      "url": "https://github.com/isa-hida/FindUCB/commit/55410398b29129d4365303d147e055ba63caf9a5"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bde8356c9e861eb676dc0021f27409d248744b48",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:14:22.000Z",
+      "message": "refactor(HU07): extraer entregarObjeto para evitar pasos duplicados en las pruebas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/bde8356c9e861eb676dc0021f27409d248744b48"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 20,
+      "deletions": 20,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "931b4bbee4ca86fd83a1ee5cf572edaacd529211",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:17:15.000Z",
+      "message": "refactor(HU07): eliminar la línea duplicada de urlEntrega en la lista del administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/931b4bbee4ca86fd83a1ee5cf572edaacd529211"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b209d8fd2490008f83cd45ac39d13e623e8303de",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:23:27.000Z",
+      "message": "refactor(HU07): renombrar retirar a entrega para que el nombre revele la intención",
+      "url": "https://github.com/isa-hida/FindUCB/commit/b209d8fd2490008f83cd45ac39d13e623e8303de"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.53,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a04a2352aaa33c56fcca4eff70323cbbd020c79b",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:25:59.000Z",
+      "message": "refactor(HU07): extraer crearFilas de cargar para separar niveles de abstracción",
+      "url": "https://github.com/isa-hida/FindUCB/commit/a04a2352aaa33c56fcca4eff70323cbbd020c79b"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 9,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.54,
+    "test_count": 149,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T11:28:01.000Z",
+      "message": "refactor(HU07): separar con una línea en blanco el método cancelar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.54,
     "test_count": 149,
     "failed_tests": 0,
     "conclusion": "success"

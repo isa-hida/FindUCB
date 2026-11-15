@@ -37,9 +37,9 @@ export class ListaObjetosAdminVista {
         enlaceEditar.id = `editar-link-${fila.id}`;
         enlaceEditar.href = fila.urlEditar;
 
-        const enlaceRetirar = nodo.querySelector('.tabla__enlace--retirar');
-        enlaceRetirar.id = `entrega-link-${fila.id}`;
-        enlaceRetirar.href = fila.urlEntrega;
+        const enlaceEntrega = nodo.querySelector('.tabla__enlace--entrega');
+        enlaceEntrega.id = `entrega-link-${fila.id}`;
+        enlaceEntrega.href = fila.urlEntrega;
 
         return nodo;
     }

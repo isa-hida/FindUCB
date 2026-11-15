@@ -13,19 +13,22 @@ export class ListaObjetosAdminPresenter {
     async cargar() {
         const objetos = await this.objetosRepository.listarParaAdmin();
         const publicados = filtrarPublicados(objetos);
-        const urlsFotos = await this.fotosStorage.urlsFirmadas(
-            publicados.map((objeto) => objeto.rutaFoto),
-        );
-        const filas = publicados.map((objeto, indice) => ({
-            ...crearFilaAdmin(objeto),
-            fotoUrl: urlsFotos[indice],
-            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
-            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
-            urlEditar: `${RUTAS.EDITAR_OBJETO}?id=${objeto.id}`,
-        }));
+        const filas = await this.crearFilas(publicados);
+        
         this.vista.mostrarFilas(filas);
         if (publicados.length === 0) {
             this.vista.mostrarMensajeVacio(MENSAJES.SIN_OBJETOS_PUBLICADOS);
         }
+    }
+    async crearFilas(publicados) {
+        const urlsFotos = await this.fotosStorage.urlsFirmadas(
+            publicados.map((objeto) => objeto.rutaFoto),
+        );
+        return publicados.map((objeto, indice) => ({
+            ...crearFilaAdmin(objeto),
+            fotoUrl: urlsFotos[indice],
+            urlEntrega: `${RUTAS.REGISTRAR_ENTREGA}?id=${objeto.id}`,
+            urlEditar: `${RUTAS.EDITAR_OBJETO}?id=${objeto.id}`,
+        }));
     }
 }
