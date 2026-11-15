@@ -29,6 +29,7 @@ export class ObjetosEnMemoria {
                 ? { ...objeto, ...cambios, id: objeto.id, numero: objeto.numero, estado: objeto.estado }
                 : objeto
         ));
+        this.guardar();
     }
 
     async registrar(datos) {

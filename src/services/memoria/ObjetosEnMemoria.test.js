@@ -187,4 +187,14 @@ describe('ObjetosEnMemoria - persistencia en almacen', () => {
 
         expect(await segundo.listarPublicados()).toEqual([]);
     });
+    it('recuerda un objeto actualizado en otro repositorio que use el mismo almacen', async () => {
+        const almacen = crearAlmacenFalso();
+        const objeto = crearObjeto({ id: 1, numero: 1, categoria: 'Llaves' });
+        const primero = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        await primero.actualizar(1, { categoria: 'Ropa' });
+        const segundo = new ObjetosEnMemoria({ objetos: [objeto], almacen });
+
+        expect((await segundo.obtenerPorId(1)).categoria).toEqual('Ropa');
+    });
 });

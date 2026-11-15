@@ -2176,9 +2176,31 @@
     "testId": 173
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b371e08f39100e79b1777af42f2d02db0d86688e",
     "commitName": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
     "commitTimestamp": 1794712435847,
     "testId": 173
+  },
+  {
+    "numPassedTests": 133,
+    "failedTests": 1,
+    "numTotalTests": 134,
+    "timestamp": 1794712477766,
+    "success": false,
+    "testId": 174
+  },
+  {
+    "numPassedTests": 134,
+    "failedTests": 0,
+    "numTotalTests": 134,
+    "timestamp": 1794712514716,
+    "success": true,
+    "testId": 174
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar en el almacen los objetos actualizados",
+    "commitTimestamp": 1794712535692,
+    "testId": 174
   }
 ]

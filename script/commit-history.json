@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b371e08f39100e79b1777af42f2d02db0d86688e",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:13:53.000Z",
       "message": "feat: ObjetosEnMemoria.actualizar protege el id, el numero y el estado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/b371e08f39100e79b1777af42f2d02db0d86688e"
     },
     "stats": {
       "total": 28,
@@ -718,6 +718,25 @@
     },
     "coverage": 97.66,
     "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:15:32.000Z",
+      "message": "feat: guardar en el almacen los objetos actualizados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.67,
+    "test_count": 134,
     "failed_tests": 0,
     "conclusion": "success"
   }
