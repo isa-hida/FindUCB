@@ -1,4 +1,5 @@
 import { FotosEnMemoria } from './FotosEnMemoria';
+import { crearAlmacenFalso } from './crearAlmacenFalso';
 
 const CONTENIDO = 'data:image/jpeg;base64,AAA';
 
@@ -20,5 +21,16 @@ describe('FotosEnMemoria - guardar', () => {
 
         expect(primera).not.toEqual(segunda);
         expect(await fotos.urlsFirmadas([primera, segunda])).toEqual([CONTENIDO, 'data:image/jpeg;base64,BBB']);
+    });
+    describe('FotosEnMemoria - persistencia en almacen', () => {
+        it('recuerda una foto guardada en otra instancia que use el mismo almacen', async () => {
+            const almacen = crearAlmacenFalso();
+            const primera = new FotosEnMemoria({ almacen });
+            const ruta = await primera.guardar('llaves.jpg', CONTENIDO);
+
+            const segunda = new FotosEnMemoria({ almacen });
+
+            expect(await segunda.urlsFirmadas([ruta])).toEqual([CONTENIDO]);
+        });
     });
 });

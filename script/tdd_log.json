@@ -1982,9 +1982,31 @@
     "testId": 158
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ecc0b0e3ebd2390cada7f3717a36f4495dead9a2",
     "commitName": "feat: FotosEnMemoria guarda fotos subidas y devuelve su ruta",
     "commitTimestamp": 1794709829095,
     "testId": 158
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 1,
+    "numTotalTests": 132,
+    "timestamp": 1794709863736,
+    "success": false,
+    "testId": 159
+  },
+  {
+    "numPassedTests": 132,
+    "failedTests": 0,
+    "numTotalTests": 132,
+    "timestamp": 1794709880658,
+    "success": true,
+    "testId": 159
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: persistir las fotos subidas en el almacen",
+    "commitTimestamp": 1794709906919,
+    "testId": 159
   }
 ]

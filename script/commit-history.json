@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ecc0b0e3ebd2390cada7f3717a36f4495dead9a2",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:30:26.000Z",
       "message": "feat: FotosEnMemoria guarda fotos subidas y devuelve su ruta",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/ecc0b0e3ebd2390cada7f3717a36f4495dead9a2"
     },
     "stats": {
       "total": 45,
@@ -433,6 +433,25 @@
     },
     "coverage": 97.67,
     "test_count": 131,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:31:43.000Z",
+      "message": "feat: persistir las fotos subidas en el almacen",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 26,
+      "deletions": 3,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.76,
+    "test_count": 132,
     "failed_tests": 0,
     "conclusion": "success"
   }
