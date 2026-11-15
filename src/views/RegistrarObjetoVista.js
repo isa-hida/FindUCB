@@ -4,6 +4,7 @@ export class RegistrarObjetoVista {
     constructor(documento) {
         this.documento = documento;
         this.formulario = documento.getElementById('nuevo-objeto-form');
+        this.selectCategoria = documento.getElementById('categoria');
         this.errorElemento = documento.getElementById('error-mensaje');
         this.exitoElemento = documento.getElementById('exito-mensaje');
         this.fotoInput = documento.getElementById('foto-input');
@@ -39,6 +40,14 @@ export class RegistrarObjetoVista {
                 this._mostrarContador(this.descripcionInput.value.length);
             });
         }
+    }
+    mostrarCategorias(categorias) {
+        categorias.forEach((categoria) => {
+            const opcion = this.documento.createElement('option');
+            opcion.value = categoria;
+            opcion.textContent = categoria;
+            this.selectCategoria.appendChild(opcion);
+        });
     }
     _mostrarContador(longitud) {
         this.contadorCaracteres.textContent = `${longitud} / ${MAX_CARACTERES_TEXTO}`;

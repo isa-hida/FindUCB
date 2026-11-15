@@ -1806,9 +1806,31 @@
     "testId": 146
   },
   {
-    "commitId": "HEAD",
+    "commitId": "94d14bd0f08c4cef5b17c250aad96ab6787f27c3",
     "commitName": "refactor: usar MAX_CARACTERES_TEXTO en el contador de la vista",
     "commitTimestamp": 1794706985033,
     "testId": 146
+  },
+  {
+    "numPassedTests": 123,
+    "failedTests": 1,
+    "numTotalTests": 124,
+    "timestamp": 1794707320077,
+    "success": false,
+    "testId": 147
+  },
+  {
+    "numPassedTests": 124,
+    "failedTests": 0,
+    "numTotalTests": 124,
+    "timestamp": 1794707367111,
+    "success": true,
+    "testId": 147
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: cargar las categorias del formulario desde el catalogo",
+    "commitTimestamp": 1794707634576,
+    "testId": 147
   }
 ]

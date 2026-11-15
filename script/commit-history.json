@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "94d14bd0f08c4cef5b17c250aad96ab6787f27c3",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T01:43:04.000Z",
       "message": "refactor: usar MAX_CARACTERES_TEXTO en el contador de la vista",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/94d14bd0f08c4cef5b17c250aad96ab6787f27c3"
     },
     "stats": {
       "total": 10,
@@ -205,6 +205,25 @@
     },
     "coverage": 97.55,
     "test_count": 123,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T01:53:53.000Z",
+      "message": "refactor: cargar las categorias del formulario desde el catalogo",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 28,
+      "deletions": 10,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.56,
+    "test_count": 124,
     "failed_tests": 0,
     "conclusion": "success"
   }

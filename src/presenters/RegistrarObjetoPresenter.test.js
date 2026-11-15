@@ -1,6 +1,7 @@
 import { RegistrarObjetoPresenter } from './RegistrarObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
+import { CATEGORIAS } from '../domain/catalogos';
 
 const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
     const vista = {
@@ -14,6 +15,10 @@ const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
         },
         mostrarExito(mensaje) {
             this.mensajesExito.push(mensaje);
+        },
+        categorias: [],
+        mostrarCategorias(categorias) {
+            this.categorias = categorias;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -66,5 +71,12 @@ describe('RegistrarObjetoPresenter', () => {
         const listado = await objetosRepository.listarPublicados();
         expect(listado.length).toEqual(1);
         expect(listado[0].categoria).toEqual('Llaves');
+    });
+    it('muestra las categorias del catalogo al iniciar', () => {
+        const { vista, presenter } = crearEscenario();
+
+        presenter.iniciar();
+
+        expect(vista.categorias).toEqual(CATEGORIAS);
     });
 });

@@ -6,3 +6,5 @@ const vista = new RegistrarObjetoVista(document);
 const presenter = new RegistrarObjetoPresenter(vista, objetosRepository);
 
 vista.alEnviar((datos) => presenter.registrar(datos));
+
+presenter.iniciar();
