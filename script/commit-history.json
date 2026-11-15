@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e603718d20763ba4eeef73778121a07994d43d01",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:04:51.000Z",
       "message": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e603718d20763ba4eeef73778121a07994d43d01"
     },
     "stats": {
       "total": 29,
@@ -1174,6 +1174,25 @@
     },
     "coverage": 97.59,
     "test_count": 152,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:06:56.000Z",
+      "message": "feat(HU14): mostrar las filas del historial desde el presenter",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.62,
+    "test_count": 153,
     "failed_tests": 0,
     "conclusion": "success"
   }

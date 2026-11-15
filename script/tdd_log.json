@@ -2496,9 +2496,15 @@
     "testId": 196
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e603718d20763ba4eeef73778121a07994d43d01",
     "commitName": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
     "commitTimestamp": 1794744293806,
     "testId": 197
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): mostrar las filas del historial desde el presenter",
+    "commitTimestamp": 1794744418517,
+    "testId": 198
   }
 ]
