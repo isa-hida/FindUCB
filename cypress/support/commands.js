@@ -1,4 +1,5 @@
 const SESION_ADMIN = JSON.stringify({ correo: 'admin@ucb.edu.bo', esAdmin: true });
+const SESION_COMUNIDAD = JSON.stringify({ correo: 'estudiante@ucb.edu.bo', esAdmin: false });
 
 const DATOS_BASE = {
     categoria: 'Llaves',
@@ -12,11 +13,12 @@ const DATOS_BASE = {
     foto: 'llaves.jpg',
 };
 
-Cypress.Commands.add('visitarComoAdmin', (ruta) => {
-    cy.visit(ruta, {
-        onBeforeLoad: (ventana) => ventana.sessionStorage.setItem('usuario', SESION_ADMIN),
-    });
+const visitarConSesion = (ruta, sesion) => cy.visit(ruta, {
+    onBeforeLoad: (ventana) => ventana.sessionStorage.setItem('usuario', sesion),
 });
+
+Cypress.Commands.add('visitarComoAdmin', (ruta) => visitarConSesion(ruta, SESION_ADMIN));
+Cypress.Commands.add('visitarComoComunidad', (ruta) => visitarConSesion(ruta, SESION_COMUNIDAD));
 
 // Llena el formulario de nuevo objeto con datos validos.
 // Para omitir un campo, pasalo vacio: llenarObjetoHallado({ lugar: '' })

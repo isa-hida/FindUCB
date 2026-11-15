@@ -2052,9 +2052,15 @@
     "testId": 162
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e0fc3765e3b34bd04d3881b41d7c253122068d70",
     "commitName": "test: e2e de la foto visible en el panel y el listado publico",
     "commitTimestamp": 1794710671390,
     "testId": 163
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: agregar comando cypress para entrar con sesion de comunidad",
+    "commitTimestamp": 1794710861637,
+    "testId": 164
   }
 ]
