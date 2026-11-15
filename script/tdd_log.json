@@ -2046,9 +2046,15 @@
     "testId": 161
   },
   {
-    "commitId": "HEAD",
+    "commitId": "940e18716d12bacd3efc554fda709184b3d5a311",
     "commitName": "feat: leer y guardar la foto del objeto en el formulario de registro",
     "commitTimestamp": 1794710334780,
     "testId": 162
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: e2e de la foto visible en el panel y el listado publico",
+    "commitTimestamp": 1794710671390,
+    "testId": 163
   }
 ]

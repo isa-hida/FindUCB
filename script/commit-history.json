@@ -494,16 +494,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "940e18716d12bacd3efc554fda709184b3d5a311",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:38:52.000Z",
       "message": "feat: leer y guardar la foto del objeto en el formulario de registro",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/940e18716d12bacd3efc554fda709184b3d5a311"
     },
     "stats": {
       "total": 18,
       "additions": 17,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:44:28.000Z",
+      "message": "test: e2e de la foto visible en el panel y el listado publico",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
       "deletions": 1,
       "date": "2026-11-15"
     },

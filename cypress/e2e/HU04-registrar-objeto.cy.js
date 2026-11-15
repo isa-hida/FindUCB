@@ -65,5 +65,13 @@ describe('HU04: Registrar un objeto hallado', () => {
             cy.get('#listado').should('not.contain', 'Carla Rojas');
             cy.get('#listado').should('not.contain', '70011111');
         });
+
+        it('muestra la foto del objeto en el panel y en el listado publico', () => {
+            cy.contains('a', 'Volver al panel').click();
+            cy.get('#fila-objeto-6 .tabla__foto').should('have.attr', 'src').and('match', /^data:image/);
+
+            cy.visit('/index.html');
+            cy.get('#objeto-6 .tarjeta-objeto__foto').should('have.attr', 'src').and('match', /^data:image/);
+        });
     });
 });
