@@ -95,6 +95,7 @@ export const objetosRepository = new ObjetosEnMemoria({
 });
 
 export const fotosStorage = new FotosEnMemoria({
+    almacen: window.localStorage,
     urls: {
         'ejemplos/celular.svg': fotoCelular,
         'ejemplos/mochila.svg': fotoMochila,

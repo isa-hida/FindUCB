@@ -475,17 +475,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "901abcba68e8a7d917763da6376e33333e2a6e70",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T02:35:28.000Z",
       "message": "feat: guardar la foto subida al registrar un objeto hallado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/901abcba68e8a7d917763da6376e33333e2a6e70"
     },
     "stats": {
       "total": 20,
       "additions": 18,
       "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.79,
+    "test_count": 133,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T02:38:52.000Z",
+      "message": "feat: leer y guardar la foto del objeto en el formulario de registro",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
       "date": "2026-11-15"
     },
     "coverage": 97.79,

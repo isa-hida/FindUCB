@@ -2040,9 +2040,15 @@
     "testId": 161
   },
   {
-    "commitId": "HEAD",
+    "commitId": "901abcba68e8a7d917763da6376e33333e2a6e70",
     "commitName": "feat: guardar la foto subida al registrar un objeto hallado",
     "commitTimestamp": 1794710130918,
     "testId": 161
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: leer y guardar la foto del objeto en el formulario de registro",
+    "commitTimestamp": 1794710334780,
+    "testId": 162
   }
 ]
