@@ -2,6 +2,7 @@ import { EditarObjetoPresenter } from './EditarObjetoPresenter';
 import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { CATEGORIAS } from '../domain/catalogos';
+import { MENSAJES } from '../domain/mensajes';
 
 const crearObjeto = (datos) => ({
     id: 3,
@@ -67,6 +68,25 @@ describe('EditarObjetoPresenter - iniciar', () => {
             senas: 'Una llave dorada y una plateada',
             encontradoPor: { nombre: 'Ana Quispe', celular: '70033333' },
             fotoUrl: 'https://fotos.test/llaves.svg',
+        });
+    });
+    describe('EditarObjetoPresenter - iniciar con un aviso que no se puede editar', () => {
+        it('avisa que el objeto no existe si el id no esta registrado', async () => {
+            const { vista, presenter } = crearEscenario([crearObjeto()]);
+
+            await presenter.iniciar('99');
+
+            expect(vista.mensajesNoEncontrado).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
+            expect(vista.formulario).toBeNull();
+        });
+
+        it('avisa que el objeto no existe si ya fue entregado', async () => {
+            const { vista, presenter } = crearEscenario([crearObjeto({ estado: 'entregado' })]);
+
+            await presenter.iniciar('3');
+
+            expect(vista.mensajesNoEncontrado).toEqual([MENSAJES.OBJETO_NO_ENCONTRADO]);
+            expect(vista.formulario).toBeNull();
         });
     });
 });

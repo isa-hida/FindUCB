@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-15T03:25:59.000Z",
       "message": "feat: el presenter de edicion carga los datos actuales del objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3"
     },
     "stats": {
       "total": 99,
@@ -794,6 +794,25 @@
     },
     "coverage": 97.74,
     "test_count": 138,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-15T03:29:14.000Z",
+      "message": "feat: avisar en la edicion si el objeto no existe o ya fue entregado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.77,
+    "test_count": 140,
     "failed_tests": 0,
     "conclusion": "success"
   }

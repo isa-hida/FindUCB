@@ -2264,9 +2264,31 @@
     "testId": 177
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d9eeb6c38a7d8fdfa8e3c57e3d72d097cb7c0bf3",
     "commitName": "feat: el presenter de edicion carga los datos actuales del objeto",
     "commitTimestamp": 1794713161494,
     "testId": 177
+  },
+  {
+    "numPassedTests": 138,
+    "failedTests": 2,
+    "numTotalTests": 140,
+    "timestamp": 1794713204467,
+    "success": false,
+    "testId": 178
+  },
+  {
+    "numPassedTests": 140,
+    "failedTests": 0,
+    "numTotalTests": 140,
+    "timestamp": 1794713332063,
+    "success": true,
+    "testId": 178
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: avisar en la edicion si el objeto no existe o ya fue entregado",
+    "commitTimestamp": 1794713356888,
+    "testId": 178
   }
 ]

@@ -1,4 +1,5 @@
 import { CATEGORIAS } from '../domain/catalogos';
+import { MENSAJES } from '../domain/mensajes';
 
 export class EditarObjetoPresenter {
     constructor(vista, objetosRepository, fotosStorage) {
@@ -10,6 +11,10 @@ export class EditarObjetoPresenter {
     async iniciar(id) {
         this.vista.mostrarCategorias(CATEGORIAS);
         const objeto = await this.objetosRepository.obtenerPorId(id);
+        if (!objeto) {
+            this.vista.mostrarNoEncontrado(MENSAJES.OBJETO_NO_ENCONTRADO);
+            return;
+        }
         const [fotoUrl] = await this.fotosStorage.urlsFirmadas([objeto.rutaFoto]);
         this.vista.mostrarFormulario({
             numero: objeto.numero,
