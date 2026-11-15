@@ -2490,9 +2490,15 @@
     "testId": 195
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d7e29900f2584fb35b58d36a69492b09d0b9fd34",
     "commitName": "feat(HU14): ordenar el historial del más reciente al más antiguo",
     "commitTimestamp": 1794744090065,
     "testId": 196
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
+    "commitTimestamp": 1794744293806,
+    "testId": 197
   }
 ]

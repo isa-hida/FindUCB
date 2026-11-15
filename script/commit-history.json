@@ -1140,12 +1140,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d7e29900f2584fb35b58d36a69492b09d0b9fd34",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:01:27.000Z",
       "message": "feat(HU14): ordenar el historial del más reciente al más antiguo",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/d7e29900f2584fb35b58d36a69492b09d0b9fd34"
     },
     "stats": {
       "total": 16,
@@ -1155,6 +1155,25 @@
     },
     "coverage": 97.58,
     "test_count": 151,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:04:51.000Z",
+      "message": "feat(HU14): crear la fila del historial con N°, categoría, receptor y fecha",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 29,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.59,
+    "test_count": 152,
     "failed_tests": 0,
     "conclusion": "success"
   }
