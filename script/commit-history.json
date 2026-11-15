@@ -1121,12 +1121,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3234a58e7726b00ebc9839ce82d0f3c9b77080a",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T11:34:38.000Z",
       "message": "feat(HU14): listar los objetos entregados desde el repositorio",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f3234a58e7726b00ebc9839ce82d0f3c9b77080a"
     },
     "stats": {
       "total": 17,
@@ -1136,6 +1136,25 @@
     },
     "coverage": 97.55,
     "test_count": 150,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:01:27.000Z",
+      "message": "feat(HU14): ordenar el historial del más reciente al más antiguo",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 14,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.58,
+    "test_count": 151,
     "failed_tests": 0,
     "conclusion": "success"
   }

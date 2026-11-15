@@ -2484,9 +2484,15 @@
     "testId": 194
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f3234a58e7726b00ebc9839ce82d0f3c9b77080a",
     "commitName": "feat(HU14): listar los objetos entregados desde el repositorio",
     "commitTimestamp": 1794742481367,
     "testId": 195
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): ordenar el historial del más reciente al más antiguo",
+    "commitTimestamp": 1794744090065,
+    "testId": 196
   }
 ]
