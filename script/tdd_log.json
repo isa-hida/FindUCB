@@ -2104,9 +2104,23 @@
     "testId": 169
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc77bc36e3c4c29051c66c7fa252a1617590bc17",
     "commitName": "refactor: usar ObjetosEnMemoria en los tests de los presenters de admin",
     "commitTimestamp": 1794711367548,
     "testId": 169
+  },
+  {
+    "numPassedTests": 131,
+    "failedTests": 0,
+    "numTotalTests": 131,
+    "timestamp": 1794711432979,
+    "success": true,
+    "testId": 170
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: eliminar ObjetosRepositoryEnMemoria duplicado de ObjetosEnMemoria",
+    "commitTimestamp": 1794711455603,
+    "testId": 170
   }
 ]
