@@ -12,7 +12,31 @@
 <body>
     <main class="contenedor panel">
         <h1 class="panel__titulo">Historial de entregas</h1>
+                <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
+
+        <table id="tabla-historial" hidden>
+            <caption>Lista de objetos entregados</caption>
+            <thead>
+                <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Recibió</th>
+                    <th scope="col">Fecha de entrega</th>
+                </tr>
+            </thead>
+            <tbody id="lista-historial"></tbody>
+        </table>
+
+        <template id="plantilla-fila-historial">
+            <tr>
+                <td class="historial__numero"></td>
+                <td class="historial__categoria"></td>
+                <td class="historial__receptor"></td>
+                <td class="historial__fecha"></td>
+            </tr>
+        </template>
     </main>
+    <script type="module" src="../src/pages/admin-historial.js"></script>
 </body>
 
 </html>

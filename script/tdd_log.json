@@ -2514,9 +2514,15 @@
     "testId": 199
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc9f5ed583194243a37d71c0d12063ed413952bb",
     "commitName": "feat(HU14): mostrar el enlace Historial en el panel de administración",
     "commitTimestamp": 1794745154434,
     "testId": 200
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): mostrar los objetos entregados en la página de historial",
+    "commitTimestamp": 1794745547691,
+    "testId": 201
   }
 ]

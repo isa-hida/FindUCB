@@ -4,4 +4,9 @@ describe('HU-14: historial de objetos entregados', () => {
 
         cy.get('#historial-link').should('be.visible').and('contain', 'Historial');
     });
+    it('el historial muestra el objeto ya entregado', () => {
+        cy.visitarComoAdmin('/admin/historial.html');
+
+        cy.get('#fila-historial-5').should('be.visible');
+    });
 });
