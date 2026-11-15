@@ -17,4 +17,9 @@ describe('HU-14: historial de objetos entregados', () => {
             cy.get('.historial__fecha').should('have.text', '2026-10-17');
         });
     });
+    it('un miembro de la comunidad no puede entrar al historial', () => {
+        cy.visitarComoComunidad('/admin/historial.html');
+
+        cy.url().should('include', '/admin/login.html');
+    });
 });

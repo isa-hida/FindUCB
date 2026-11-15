@@ -1254,17 +1254,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "818c172db352df283b4ca9aff8f21da9ababce15",
     "author": "shalure10lure",
     "commit": {
       "date": "2026-11-15T12:29:07.000Z",
       "message": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/818c172db352df283b4ca9aff8f21da9ababce15"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.64,
+    "test_count": 154,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "shalure10lure",
+    "commit": {
+      "date": "2026-11-15T12:31:23.000Z",
+      "message": "feat(HU14): restringir el historial al administrador",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
       "date": "2026-11-15"
     },
     "coverage": 97.64,

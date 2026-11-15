@@ -2526,9 +2526,15 @@
     "testId": 201
   },
   {
-    "commitId": "HEAD",
+    "commitId": "818c172db352df283b4ca9aff8f21da9ababce15",
     "commitName": "feat(HU14): mostrar quién recibió y la fecha de entrega en el historial",
     "commitTimestamp": 1794745750112,
     "testId": 202
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU14): restringir el historial al administrador",
+    "commitTimestamp": 1794745885055,
+    "testId": 203
   }
 ]
