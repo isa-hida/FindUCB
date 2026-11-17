@@ -2818,9 +2818,39 @@
     "testId": 224
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4b57d458fb7d97bbb3d9b8215f79633ce576207",
     "commitName": "feat(HU15): indicar que no hay objetos con ese color cuando solo se filtra por color",
     "commitTimestamp": 1794888785998,
     "testId": 224
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 0,
+    "numTotalTests": 165,
+    "timestamp": 1794888807758,
+    "success": true,
+    "testId": 225
+  },
+  {
+    "numPassedTests": 164,
+    "failedTests": 1,
+    "numTotalTests": 165,
+    "timestamp": 1794888815892,
+    "success": false,
+    "testId": 225
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 0,
+    "numTotalTests": 165,
+    "timestamp": 1794888821187,
+    "success": true,
+    "testId": 225
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): indicar que no hay objetos en ese rango de fechas cuando solo se filtra por fechas",
+    "commitTimestamp": 1794888877556,
+    "testId": 225
   }
 ]

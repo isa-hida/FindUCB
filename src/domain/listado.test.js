@@ -153,6 +153,10 @@ describe('mensajeSinResultados', () => {
     it('con solo color indica que no hay objetos con ese color', () => {
         expect(mensajeSinResultados({ color: 'Azul' })).toEqual(MENSAJES.SIN_OBJETOS_DEL_COLOR);
     });
+
+    it('con solo rango de fechas indica que no hay objetos en ese rango', () => {
+        expect(mensajeSinResultados({ desde: '2026-10-01', hasta: '2026-10-05' })).toEqual(MENSAJES.SIN_OBJETOS_EN_FECHAS);
+    });
 });
 
 describe('validarFiltros', () => {

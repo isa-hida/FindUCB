@@ -25,6 +25,7 @@ const CRITERIOS_DE_FILTRO = [
         estaActivo: ({ desde, hasta }) => Boolean(desde || hasta),
         cumple: ({ fechaHallazgo }, { desde, hasta }) =>
             esPosteriorA(fechaHallazgo, desde) && esAnteriorA(fechaHallazgo, hasta),
+        mensajeSinResultados: MENSAJES.SIN_OBJETOS_EN_FECHAS,
     },
     {
         estaActivo: ({ color }) => Boolean(color),
