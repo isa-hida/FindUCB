@@ -153,6 +153,17 @@ describe('ListadoPublicoPresenter', () => {
         expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_COINCIDENCIAS]);
     });
 
+    it('muestra que no hay objetos con ese color si ningun objeto es del color elegido', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, color: 'Negro' }),
+        ]);
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: '', desde: '', hasta: '', color: 'Azul' });
+
+        expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_OBJETOS_DEL_COLOR]);
+    });
+
     it('muestra un error y no cambia el listado si la fecha de inicio es posterior a la final', async () => {
         const { vista, presenter } = crearEscenario([
             crearObjeto({ id: 1, fechaHallazgo: '2026-10-01' }),

@@ -1729,12 +1729,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "aec8ee170476f8c85b9efeadf76ae5861378ba19",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:16:05.000Z",
       "message": "feat(HU15): indicar que no hay coincidencias con los filtros seleccionados cuando se combinan",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/aec8ee170476f8c85b9efeadf76ae5861378ba19"
     },
     "stats": {
       "total": 12,
@@ -1744,6 +1744,25 @@
     },
     "coverage": 97.87,
     "test_count": 167,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:16:44.000Z",
+      "message": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.87,
+    "test_count": 168,
     "failed_tests": 0,
     "conclusion": "success"
   }

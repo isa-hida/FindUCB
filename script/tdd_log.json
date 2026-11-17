@@ -2892,9 +2892,31 @@
     "testId": 227
   },
   {
-    "commitId": "HEAD",
+    "commitId": "aec8ee170476f8c85b9efeadf76ae5861378ba19",
     "commitName": "feat(HU15): indicar que no hay coincidencias con los filtros seleccionados cuando se combinan",
     "commitTimestamp": 1794888965722,
     "testId": 227
+  },
+  {
+    "numPassedTests": 167,
+    "failedTests": 1,
+    "numTotalTests": 168,
+    "timestamp": 1794888980405,
+    "success": false,
+    "testId": 228
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794888987112,
+    "success": true,
+    "testId": 228
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
+    "commitTimestamp": 1794889004526,
+    "testId": 228
   }
 ]
