@@ -2071,16 +2071,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f5363e9587e7dbc8440e06da70b6b71e7ebd4069",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:15:04.000Z",
       "message": "refactor: extraer la validacion de longitud del texto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f5363e9587e7dbc8440e06da70b6b71e7ebd4069"
     },
     "stats": {
       "total": 6,
       "additions": 5,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.94,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:17:25.000Z",
+      "message": "refactor: extraer esFechaFutura a fecha.js",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
       "deletions": 1,
       "date": "2026-11-17"
     },

@@ -8,3 +8,7 @@ const conCeros = (numero) => String(numero).padStart(2, '0');
 export function aFechaIso(fecha) {
     return `${fecha.getFullYear()}-${conCeros(fecha.getMonth() + 1)}-${conCeros(fecha.getDate())}`;
 }
+
+export function esFechaFutura(fecha, referencia) {
+    return Boolean(fecha) && Boolean(referencia) && fecha > referencia;
+}

@@ -1,5 +1,6 @@
 import { MENSAJES } from './mensajes';
 import { MAX_CARACTERES_TEXTO } from './limites';
+import { esFechaFutura } from './fecha';
 import { estaVacio } from './texto';
 
 const EXTENSIONES_FOTO = ['.jpg', '.jpeg', '.png'];
@@ -40,7 +41,7 @@ export function validarObjetoHallado(datos) {
     if (superaElLimiteDeCaracteres(descripcion) || superaElLimiteDeCaracteres(senas)) {
         return [MENSAJES.TEXTO_MUY_LARGO];
     }
-    if (fechaHallazgo && hoy && fechaHallazgo > hoy) {
+    if (esFechaFutura(fechaHallazgo, hoy)) {
         return [MENSAJES.FECHA_FUTURA];
     }
     return [];

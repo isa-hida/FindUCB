@@ -3032,9 +3032,15 @@
     "testId": 244
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f5363e9587e7dbc8440e06da70b6b71e7ebd4069",
     "commitName": "refactor: extraer la validacion de longitud del texto",
     "commitTimestamp": 1794935706791,
     "testId": 245
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer esFechaFutura a fecha.js",
+    "commitTimestamp": 1794935847156,
+    "testId": 246
   }
 ]
