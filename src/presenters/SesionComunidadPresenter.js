@@ -7,7 +7,12 @@ export class SesionComunidadPresenter {
     }
 
     async verificarAcceso() {
-        await this.auth.obtenerUsuario();
+        const usuario = await this.auth.obtenerUsuario();
+        if (!usuario) {
+            this.vista.reemplazar(RUTAS.LOGIN);
+            return false;
+        }
+        return true;
     }
 
     async cerrarSesion() {

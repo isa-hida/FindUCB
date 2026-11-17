@@ -3070,5 +3070,29 @@
     "commitName": "feat: añadiendo script",
     "commitTimestamp": 1794940074001,
     "testId": 248
+  },
+  {
+    "numPassedTests": 175,
+    "failedTests": 1,
+    "numTotalTests": 176,
+    "timestamp": 1794940394568,
+    "success": false,
+    "testId": 249
+  },
+  {
+    "numPassedTests": 176,
+    "failedTests": 0,
+    "numTotalTests": 176,
+    "timestamp": 1794940643823,
+    "success": true,
+    "testId": 249
+  },
+  {
+    "numPassedTests": 176,
+    "failedTests": 0,
+    "numTotalTests": 176,
+    "timestamp": 1794940654630,
+    "success": true,
+    "testId": 249
   }
 ]

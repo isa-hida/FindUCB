@@ -4,6 +4,7 @@ import { ListadoPublicoPresenter } from '../presenters/ListadoPublicoPresenter.j
 import { SesionComunidadPresenter } from '../presenters/SesionComunidadPresenter.js';
 
 async function inicializarPagina() {
+
     const auth = autenticacion;
     const vistaSesion = {
         redirigir(url) {
@@ -15,13 +16,16 @@ async function inicializarPagina() {
     };
     const sesionPresenter = new SesionComunidadPresenter(vistaSesion, auth);
 
-    await sesionPresenter.verificarAcceso();
+    const accesoPermitido = await sesionPresenter.verificarAcceso();
+    if (!accesoPermitido) {
+        return;
+    }
 
     const botonCerrarSesion = document.getElementById('cerrar-sesion-btn');
     if (botonCerrarSesion) {
         botonCerrarSesion.replaceWith(botonCerrarSesion.cloneNode(true));
         const botonActualizado = document.getElementById('cerrar-sesion-btn');
-        
+
         botonActualizado.addEventListener('click', async (e) => {
             e.preventDefault();
             await sesionPresenter.cerrarSesion();
