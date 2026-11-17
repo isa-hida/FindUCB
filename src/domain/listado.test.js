@@ -1,4 +1,4 @@
-import { prepararListado, filtrarListado, validarFiltros } from './listado';
+import { prepararListado, filtrarListado, validarFiltros, mensajeSinResultados } from './listado';
 import { MENSAJES } from './mensajes';
 
 const crearObjeto = (datos) => ({
@@ -44,7 +44,7 @@ describe('prepararListado', () => {
         expect(idsDe(prepararListado(objetos))).toEqual([3, 1, 2]);
     });
 
-        it('cada tarjeta lleva solo id, categoria, fecha y foto', () => {
+        it('cada tarjeta lleva solo id, categoria, color, fecha y foto', () => {
         const objeto = crearObjeto({
             id: 7,
             numero: 7,
@@ -60,7 +60,7 @@ describe('prepararListado', () => {
         });
 
         expect(prepararListado([objeto])).toEqual([
-            { id: 7, categoria: 'Mochila', fechaHallazgo: '2026-10-10', rutaFoto: 'objetos/7.jpg' },
+            { id: 7, categoria: 'Mochila', color: 'Negro', fechaHallazgo: '2026-10-10', rutaFoto: 'objetos/7.jpg' },
         ]);
     });
 
@@ -68,9 +68,9 @@ describe('prepararListado', () => {
 
 describe('filtrarListado', () => {
     const TARJETAS = [
-        { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-14' },
-        { id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-10' },
-        { id: 3, categoria: 'Llaves', fechaHallazgo: '2026-10-02' },
+        { id: 1, categoria: 'Llaves', color: 'Dorado', fechaHallazgo: '2026-10-14' },
+        { id: 2, categoria: 'Electrónicos', color: 'Negro', fechaHallazgo: '2026-10-10' },
+        { id: 3, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-02' },
     ];
 
     it('sin filtros devuelve todas las tarjetas', () => {
@@ -93,6 +93,77 @@ describe('filtrarListado', () => {
         const filtros = { categoria: 'Llaves', desde: '2026-10-05', hasta: '2026-10-20' };
 
         expect(idsDe(filtrarListado(TARJETAS, filtros))).toEqual([1]);
+    });
+
+    it('filtra por color', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { color: 'Azul' }))).toEqual([3]);
+    });
+
+    it('filtra por color aunque el texto del objeto tenga mas palabras', () => {
+        const tarjetas = [
+            { id: 1, color: 'Azul oscuro' },
+            { id: 2, color: 'Negro' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Azul' }))).toEqual([1]);
+    });
+
+    it('filtra por color sin distinguir mayusculas', () => {
+        const tarjetas = [
+            { id: 1, color: 'negro con detalles AZUL' },
+            { id: 2, color: 'Rojo' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Azul' }))).toEqual([1]);
+    });
+
+    it('filtra por color sin distinguir tildes', () => {
+        const tarjetas = [
+            { id: 1, color: 'Cafe claro' },
+            { id: 2, color: 'Gris' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Café' }))).toEqual([1]);
+    });
+
+    it('filtra por color aceptando femenino y plural', () => {
+        const tarjetas = [
+            { id: 1, color: 'Mochila negra' },
+            { id: 2, color: 'Blanco con franjas negras' },
+            { id: 3, color: 'Blanco' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Negro' }))).toEqual([1, 2]);
+    });
+
+    it('combina color con categoria y rango de fechas', () => {
+        const tarjetas = [
+            { id: 1, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-02' },
+            { id: 2, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-20' },
+            { id: 3, categoria: 'Electrónicos', color: 'Azul', fechaHallazgo: '2026-10-02' },
+            { id: 4, categoria: 'Llaves', color: 'Negro', fechaHallazgo: '2026-10-02' },
+        ];
+        const filtros = { categoria: 'Llaves', color: 'Azul', desde: '2026-10-01', hasta: '2026-10-10' };
+
+        expect(idsDe(filtrarListado(tarjetas, filtros))).toEqual([1]);
+    });
+});
+
+describe('mensajeSinResultados', () => {
+    it('con solo color indica que no hay objetos con ese color', () => {
+        expect(mensajeSinResultados({ color: 'Azul' })).toEqual(MENSAJES.SIN_OBJETOS_DEL_COLOR);
+    });
+
+    it('con solo rango de fechas indica que no hay objetos en ese rango', () => {
+        expect(mensajeSinResultados({ desde: '2026-10-01', hasta: '2026-10-05' })).toEqual(MENSAJES.SIN_OBJETOS_EN_FECHAS);
+    });
+
+    it('con solo categoria mantiene el mensaje de sin coincidencias', () => {
+        expect(mensajeSinResultados({ categoria: 'Llaves' })).toEqual(MENSAJES.SIN_COINCIDENCIAS);
+    });
+
+    it('con dos o mas filtros indica que no hay objetos que coincidan con los filtros', () => {
+        expect(mensajeSinResultados({ categoria: 'Llaves', color: 'Azul' })).toEqual(MENSAJES.SIN_COINCIDENCIAS_COMBINADAS);
     });
 });
 

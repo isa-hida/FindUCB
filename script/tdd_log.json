@@ -2615,88 +2615,336 @@
     "numPassedTests": 156,
     "failedTests": 0,
     "numTotalTests": 156,
-    "timestamp": 1794881781628,
+    "timestamp": 1794887176152,
     "success": true,
     "testId": 215
+  },
+  {
+    "commitId": "84d93a445ff7778bb5e3be7c65bc6951c47bf569",
+    "commitName": "refactor(HU15): expresar los filtros del listado como una lista de criterios",
+    "commitTimestamp": 1794887304371,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 155,
+    "failedTests": 1,
+    "numTotalTests": 156,
+    "timestamp": 1794887321726,
+    "success": false,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 155,
+    "failedTests": 1,
+    "numTotalTests": 156,
+    "timestamp": 1794887326741,
+    "success": false,
+    "testId": 216
   },
   {
     "numPassedTests": 156,
     "failedTests": 0,
     "numTotalTests": 156,
-    "timestamp": 1794886218906,
+    "timestamp": 1794887596259,
+    "success": true,
+    "testId": 216
+  },
+  {
+    "commitId": "1e1fa56a091088da2ba9a3c0e9be793a0f5d07db",
+    "commitName": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
+    "commitTimestamp": 1794887692910,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 1,
+    "numTotalTests": 157,
+    "timestamp": 1794887723975,
     "success": false,
-    "testId": 215
+    "testId": 217
   },
   {
     "numPassedTests": 157,
     "failedTests": 0,
     "numTotalTests": 157,
-    "timestamp": 1794886225110,
+    "timestamp": 1794887729297,
     "success": true,
-    "testId": 215
+    "testId": 217
   },
   {
-    "commitId": "0be11d5901e0518ee6da9938ea1c7772ea6b8817",
-    "commitName": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
-    "commitTimestamp": 1794886335025,
-    "testId": 215
+    "commitId": "9942b1ff29735ce3db68abdd2f12763d923e0055",
+    "commitName": "feat(HU15): filtrar el listado por color",
+    "commitTimestamp": 1794887818902,
+    "testId": 217
   },
   {
     "numPassedTests": 157,
     "failedTests": 1,
     "numTotalTests": 158,
-    "timestamp": 1794886356067,
+    "timestamp": 1794887841822,
     "success": false,
-    "testId": 216
+    "testId": 218
   },
   {
     "numPassedTests": 158,
     "failedTests": 0,
     "numTotalTests": 158,
-    "timestamp": 1794886361743,
+    "timestamp": 1794887846532,
     "success": true,
-    "testId": 216
+    "testId": 218
   },
   {
-    "commitId": "1ca746dd2c28820e5bab26414c34e2232bc58485",
-    "commitName": "feat(HU12): explicar los pasos para recuperar un objeto",
-    "commitTimestamp": 1794886452837,
-    "testId": 216
+    "commitId": "367faec7706118d15f6c50377c4f16ad9bcb6bd8",
+    "commitName": "feat(HU15): encontrar el color aunque el texto del objeto tenga más palabras",
+    "commitTimestamp": 1794887902938,
+    "testId": 218
   },
   {
     "numPassedTests": 158,
     "failedTests": 1,
     "numTotalTests": 159,
-    "timestamp": 1794886488787,
+    "timestamp": 1794888435458,
     "success": false,
-    "testId": 217
+    "testId": 219
   },
   {
     "numPassedTests": 159,
     "failedTests": 0,
     "numTotalTests": 159,
-    "timestamp": 1794886495332,
+    "timestamp": 1794888440073,
     "success": true,
-    "testId": 217
+    "testId": 219
   },
   {
-    "commitId": "b0b091477797012903008ebf0e7b600ab52bb715",
-    "commitName": "feat(HU12): mostrar la información de FindU al cargar el listado",
-    "commitTimestamp": 1794886571427,
-    "testId": 217
+    "commitId": "20e013b6981a7fe4366f649d9c3e341b056cc9bc",
+    "commitName": "feat(HU15): filtrar por color sin distinguir mayúsculas",
+    "commitTimestamp": 1794888492548,
+    "testId": 219
   },
   {
     "numPassedTests": 159,
+    "failedTests": 1,
+    "numTotalTests": 160,
+    "timestamp": 1794888510354,
+    "success": false,
+    "testId": 220
+  },
+  {
+    "numPassedTests": 160,
     "failedTests": 0,
-    "numTotalTests": 159,
-    "timestamp": 1794886886147,
+    "numTotalTests": 160,
+    "timestamp": 1794888517101,
     "success": true,
-    "testId": 218
+    "testId": 220
+  },
+  {
+    "commitId": "95a769b335f8b94e1dc9f1ee18a1c62bf4909d88",
+    "commitName": "feat(HU15): filtrar por color sin distinguir tildes",
+    "commitTimestamp": 1794888542708,
+    "testId": 220
+  },
+  {
+    "numPassedTests": 160,
+    "failedTests": 1,
+    "numTotalTests": 161,
+    "timestamp": 1794888560464,
+    "success": false,
+    "testId": 221
+  },
+  {
+    "numPassedTests": 161,
+    "failedTests": 0,
+    "numTotalTests": 161,
+    "timestamp": 1794888567566,
+    "success": true,
+    "testId": 221
+  },
+  {
+    "commitId": "71a6551c19c08e345ce5194ef25a541420313f8d",
+    "commitName": "feat(HU15): filtrar por color aceptando femenino y plural",
+    "commitTimestamp": 1794888593978,
+    "testId": 221
+  },
+  {
+    "numPassedTests": 162,
+    "failedTests": 0,
+    "numTotalTests": 162,
+    "timestamp": 1794888610119,
+    "success": true,
+    "testId": 222
+  },
+  {
+    "commitId": "c00258a29533c87f3412ef9feca435736ebd4898",
+    "commitName": "test(HU15): documentar que el color se combina con categoría y fechas",
+    "commitTimestamp": 1794888640913,
+    "testId": 222
+  },
+  {
+    "numPassedTests": 162,
+    "failedTests": 1,
+    "numTotalTests": 163,
+    "timestamp": 1794888656624,
+    "success": false,
+    "testId": 223
+  },
+  {
+    "numPassedTests": 163,
+    "failedTests": 0,
+    "numTotalTests": 163,
+    "timestamp": 1794888665031,
+    "success": true,
+    "testId": 223
+  },
+  {
+    "commitId": "8db6ec709ed39b6930c43e87fe7f900b3f2c122e",
+    "commitName": "feat(HU15): mostrar el catálogo de colores para filtrar",
+    "commitTimestamp": 1794888719403,
+    "testId": 223
+  },
+  {
+    "numPassedTests": 163,
+    "failedTests": 1,
+    "numTotalTests": 164,
+    "timestamp": 1794888745835,
+    "success": false,
+    "testId": 224
+  },
+  {
+    "numPassedTests": 164,
+    "failedTests": 0,
+    "numTotalTests": 164,
+    "timestamp": 1794888754732,
+    "success": true,
+    "testId": 224
+  },
+  {
+    "commitId": "e4b57d458fb7d97bbb3d9b8215f79633ce576207",
+    "commitName": "feat(HU15): indicar que no hay objetos con ese color cuando solo se filtra por color",
+    "commitTimestamp": 1794888785998,
+    "testId": 224
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 0,
+    "numTotalTests": 165,
+    "timestamp": 1794888807758,
+    "success": true,
+    "testId": 225
+  },
+  {
+    "numPassedTests": 164,
+    "failedTests": 1,
+    "numTotalTests": 165,
+    "timestamp": 1794888815892,
+    "success": false,
+    "testId": 225
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 0,
+    "numTotalTests": 165,
+    "timestamp": 1794888821187,
+    "success": true,
+    "testId": 225
+  },
+  {
+    "commitId": "270a2e262a5977b5d5dd486ecae5c63c4cd482fe",
+    "commitName": "feat(HU15): indicar que no hay objetos en ese rango de fechas cuando solo se filtra por fechas",
+    "commitTimestamp": 1794888877556,
+    "testId": 225
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 1,
+    "numTotalTests": 166,
+    "timestamp": 1794888904105,
+    "success": false,
+    "testId": 226
+  },
+  {
+    "numPassedTests": 166,
+    "failedTests": 0,
+    "numTotalTests": 166,
+    "timestamp": 1794888909190,
+    "success": true,
+    "testId": 226
+  },
+  {
+    "commitId": "92ddf702210cb8b2c7a4992b5951aca4e2df6cd0",
+    "commitName": "feat(HU15): mantener el mensaje de sin coincidencias cuando solo se filtra por categoría",
+    "commitTimestamp": 1794888929335,
+    "testId": 226
+  },
+  {
+    "numPassedTests": 166,
+    "failedTests": 1,
+    "numTotalTests": 167,
+    "timestamp": 1794888944646,
+    "success": false,
+    "testId": 227
+  },
+  {
+    "numPassedTests": 167,
+    "failedTests": 0,
+    "numTotalTests": 167,
+    "timestamp": 1794888949743,
+    "success": true,
+    "testId": 227
+  },
+  {
+    "commitId": "aec8ee170476f8c85b9efeadf76ae5861378ba19",
+    "commitName": "feat(HU15): indicar que no hay coincidencias con los filtros seleccionados cuando se combinan",
+    "commitTimestamp": 1794888965722,
+    "testId": 227
+  },
+  {
+    "numPassedTests": 167,
+    "failedTests": 1,
+    "numTotalTests": 168,
+    "timestamp": 1794888980405,
+    "success": false,
+    "testId": 228
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794888987112,
+    "success": true,
+    "testId": 228
+  },
+  {
+    "commitId": "c0a334bae73196825fde392ca27861e77700b96a",
+    "commitName": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
+    "commitTimestamp": 1794889004526,
+    "testId": 228
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794889066551,
+    "success": true,
+    "testId": 229
+  },
+  {
+    "commitId": "9c7d2d8b2e0d26ccebf0a10e2b83b0d0e5b4d51c",
+    "commitName": "feat(HU15): agregar el filtro de color en el listado público",
+    "commitTimestamp": 1794889085866,
+    "testId": 229
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794889109791,
+    "success": true,
+    "testId": 230
   },
   {
     "commitId": "HEAD",
-    "commitName": "feat(HU12): mostrar la sección ¿Qué es FindU? en el listado público",
-    "commitTimestamp": 1794887052638,
-    "testId": 218
+    "commitName": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
+    "commitTimestamp": 1794889139863,
+    "testId": 230
   }
 ]

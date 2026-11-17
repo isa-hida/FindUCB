@@ -3,7 +3,8 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { RUTAS } from '../config';
-import { CATEGORIAS } from '../domain/catalogos';
+import { CATEGORIAS, COLORES } from '../domain/catalogos';
+
 import { INFORMACION_FINDU } from '../domain/informacionFindU';
 
 const crearObjeto = (datos) => ({
@@ -18,6 +19,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         mensajesVacio: [],
         tarjetas: [],
         categorias: [],
+        colores: [],
         errores: [],
         informacionFindU: null,
         seLimpiaronLosFiltros: false,
@@ -29,6 +31,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         mostrarCategorias(categorias) {
             this.categorias.push(...categorias);
+        },
+        mostrarColores(colores) {
+            this.colores.push(...colores);
         },
         mostrarError(mensaje) {
             this.errores.push(mensaje);
@@ -123,12 +128,12 @@ describe('ListadoPublicoPresenter', () => {
         expect(vista.categorias).toEqual(CATEGORIAS);
     });
 
-    it('muestra que es FindU aunque no haya objetos publicados', async () => {
+    it('muestra los colores del catalogo para filtrar', async () => {
         const { vista, presenter } = crearEscenario();
 
         await presenter.cargar();
 
-        expect(vista.informacionFindU).toEqual(INFORMACION_FINDU);
+        expect(vista.colores).toEqual(COLORES);
     });
 
     it('al filtrar por categoria muestra solo esas tarjetas', async () => {
@@ -152,6 +157,17 @@ describe('ListadoPublicoPresenter', () => {
         presenter.filtrar({ categoria: 'Documentos', desde: '', hasta: '' });
 
         expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_COINCIDENCIAS]);
+    });
+
+    it('muestra que no hay objetos con ese color si ningun objeto es del color elegido', async () => {
+        const { vista, presenter } = crearEscenario([
+            crearObjeto({ id: 1, color: 'Negro' }),
+        ]);
+        await presenter.cargar();
+
+        presenter.filtrar({ categoria: '', desde: '', hasta: '', color: 'Azul' });
+
+        expect(vista.mensajesVacio).toEqual([MENSAJES.SIN_OBJETOS_DEL_COLOR]);
     });
 
     it('muestra un error y no cambia el listado si la fecha de inicio es posterior a la final', async () => {

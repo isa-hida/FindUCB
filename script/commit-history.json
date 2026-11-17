@@ -1501,12 +1501,145 @@
     "conclusion": "success"
   },
   {
-    "sha": "0be11d5901e0518ee6da9938ea1c7772ea6b8817",
+    "sha": "84d93a445ff7778bb5e3be7c65bc6951c47bf569",
     "author": "Shanayna De Ugarte",
     "commit": {
-      "date": "2026-11-17T03:32:14.000Z",
-      "message": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
-      "url": "https://github.com/isa-hida/FindUCB/commit/0be11d5901e0518ee6da9938ea1c7772ea6b8817"
+      "date": "2026-11-17T03:48:24.000Z",
+      "message": "refactor(HU15): expresar los filtros del listado como una lista de criterios",
+      "url": "https://github.com/isa-hida/FindUCB/commit/84d93a445ff7778bb5e3be7c65bc6951c47bf569"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 20,
+      "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.78,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1e1fa56a091088da2ba9a3c0e9be793a0f5d07db",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:54:52.000Z",
+      "message": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
+      "url": "https://github.com/isa-hida/FindUCB/commit/1e1fa56a091088da2ba9a3c0e9be793a0f5d07db"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.78,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9942b1ff29735ce3db68abdd2f12763d923e0055",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:56:58.000Z",
+      "message": "feat(HU15): filtrar el listado por color",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9942b1ff29735ce3db68abdd2f12763d923e0055"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 11,
+      "deletions": 3,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.8,
+    "test_count": 157,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "367faec7706118d15f6c50377c4f16ad9bcb6bd8",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:58:22.000Z",
+      "message": "feat(HU15): encontrar el color aunque el texto del objeto tenga más palabras",
+      "url": "https://github.com/isa-hida/FindUCB/commit/367faec7706118d15f6c50377c4f16ad9bcb6bd8"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.8,
+    "test_count": 158,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "20e013b6981a7fe4366f649d9c3e341b056cc9bc",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:08:12.000Z",
+      "message": "feat(HU15): filtrar por color sin distinguir mayúsculas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/20e013b6981a7fe4366f649d9c3e341b056cc9bc"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.8,
+    "test_count": 159,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "95a769b335f8b94e1dc9f1ee18a1c62bf4909d88",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:09:02.000Z",
+      "message": "feat(HU15): filtrar por color sin distinguir tildes",
+      "url": "https://github.com/isa-hida/FindUCB/commit/95a769b335f8b94e1dc9f1ee18a1c62bf4909d88"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.81,
+    "test_count": 160,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "71a6551c19c08e345ce5194ef25a541420313f8d",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:09:53.000Z",
+      "message": "feat(HU15): filtrar por color aceptando femenino y plural",
+      "url": "https://github.com/isa-hida/FindUCB/commit/71a6551c19c08e345ce5194ef25a541420313f8d"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.83,
+    "test_count": 161,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c00258a29533c87f3412ef9feca435736ebd4898",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:10:40.000Z",
+      "message": "test(HU15): documentar que el color se combina con categoría y fechas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/c00258a29533c87f3412ef9feca435736ebd4898"
     },
     "stats": {
       "total": 12,
@@ -1514,46 +1647,141 @@
       "deletions": 0,
       "date": "2026-11-17"
     },
-    "coverage": 97.69,
-    "test_count": 157,
+    "coverage": 97.83,
+    "test_count": 162,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "1ca746dd2c28820e5bab26414c34e2232bc58485",
+    "sha": "8db6ec709ed39b6930c43e87fe7f900b3f2c122e",
     "author": "Shanayna De Ugarte",
     "commit": {
-      "date": "2026-11-17T03:34:12.000Z",
-      "message": "feat(HU12): explicar los pasos para recuperar un objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/1ca746dd2c28820e5bab26414c34e2232bc58485"
+      "date": "2026-11-17T04:11:59.000Z",
+      "message": "feat(HU15): mostrar el catálogo de colores para filtrar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/8db6ec709ed39b6930c43e87fe7f900b3f2c122e"
     },
     "stats": {
-      "total": 11,
-      "additions": 11,
-      "deletions": 0,
+      "total": 37,
+      "additions": 35,
+      "deletions": 2,
       "date": "2026-11-17"
     },
-    "coverage": 97.69,
-    "test_count": 158,
+    "coverage": 97.84,
+    "test_count": 163,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "b0b091477797012903008ebf0e7b600ab52bb715",
+    "sha": "e4b57d458fb7d97bbb3d9b8215f79633ce576207",
     "author": "Shanayna De Ugarte",
     "commit": {
-      "date": "2026-11-17T03:36:11.000Z",
-      "message": "feat(HU12): mostrar la información de FindU al cargar el listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/b0b091477797012903008ebf0e7b600ab52bb715"
+      "date": "2026-11-17T04:13:05.000Z",
+      "message": "feat(HU15): indicar que no hay objetos con ese color cuando solo se filtra por color",
+      "url": "https://github.com/isa-hida/FindUCB/commit/e4b57d458fb7d97bbb3d9b8215f79633ce576207"
     },
     "stats": {
       "total": 15,
-      "additions": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.85,
+    "test_count": 164,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "270a2e262a5977b5d5dd486ecae5c63c4cd482fe",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:14:37.000Z",
+      "message": "feat(HU15): indicar que no hay objetos en ese rango de fechas cuando solo se filtra por fechas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/270a2e262a5977b5d5dd486ecae5c63c4cd482fe"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
       "deletions": 0,
       "date": "2026-11-17"
     },
-    "coverage": 97.7,
-    "test_count": 159,
+    "coverage": 97.85,
+    "test_count": 165,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "92ddf702210cb8b2c7a4992b5951aca4e2df6cd0",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:15:29.000Z",
+      "message": "feat(HU15): mantener el mensaje de sin coincidencias cuando solo se filtra por categoría",
+      "url": "https://github.com/isa-hida/FindUCB/commit/92ddf702210cb8b2c7a4992b5951aca4e2df6cd0"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.85,
+    "test_count": 166,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "aec8ee170476f8c85b9efeadf76ae5861378ba19",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:16:05.000Z",
+      "message": "feat(HU15): indicar que no hay coincidencias con los filtros seleccionados cuando se combinan",
+      "url": "https://github.com/isa-hida/FindUCB/commit/aec8ee170476f8c85b9efeadf76ae5861378ba19"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 10,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.87,
+    "test_count": 167,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c0a334bae73196825fde392ca27861e77700b96a",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:16:44.000Z",
+      "message": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
+      "url": "https://github.com/isa-hida/FindUCB/commit/c0a334bae73196825fde392ca27861e77700b96a"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.87,
+    "test_count": 168,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9c7d2d8b2e0d26ccebf0a10e2b83b0d0e5b4d51c",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:18:05.000Z",
+      "message": "feat(HU15): agregar el filtro de color en el listado público",
+      "url": "https://github.com/isa-hida/FindUCB/commit/9c7d2d8b2e0d26ccebf0a10e2b83b0d0e5b4d51c"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 86,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.87,
+    "test_count": 168,
     "failed_tests": 0,
     "conclusion": "success"
   },
@@ -1561,18 +1789,18 @@
     "sha": "HEAD",
     "author": "Shanayna De Ugarte",
     "commit": {
-      "date": "2026-11-17T03:44:12.000Z",
-      "message": "feat(HU12): mostrar la sección ¿Qué es FindU? en el listado público",
+      "date": "2026-11-17T04:18:59.000Z",
+      "message": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
       "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
     },
     "stats": {
-      "total": 92,
-      "additions": 88,
-      "deletions": 4,
+      "total": 20,
+      "additions": 9,
+      "deletions": 11,
       "date": "2026-11-17"
     },
-    "coverage": 97.7,
-    "test_count": 159,
+    "coverage": 97.87,
+    "test_count": 168,
     "failed_tests": 0,
     "conclusion": "success"
   }

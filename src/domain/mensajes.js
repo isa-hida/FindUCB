@@ -19,5 +19,8 @@ export const MENSAJES = {
     OBJETO_NO_ENCONTRADO: 'Objeto no encontrado',
     FECHAS_INVERTIDAS: 'La fecha de inicio debe ser anterior a la fecha final',
     SIN_COINCIDENCIAS: 'No hay objetos con esas características',
+    SIN_OBJETOS_DEL_COLOR: 'No hay objetos con ese color',
+    SIN_OBJETOS_EN_FECHAS: 'No hay objetos en ese rango de fechas',
+    SIN_COINCIDENCIAS_COMBINADAS: 'No hay objetos que coincidan con los filtros seleccionados',
     SIN_OBJETOS_ENTREGADOS: 'No hay objetos entregados',
 };

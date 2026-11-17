@@ -1,7 +1,7 @@
 import { MENSAJES } from '../domain/mensajes';
-import { prepararListado, filtrarListado, validarFiltros } from '../domain/listado';
+import { prepararListado, filtrarListado, validarFiltros, mensajeSinResultados } from '../domain/listado';
 import { formatearFecha } from '../domain/fecha';
-import { CATEGORIAS } from '../domain/catalogos';
+import { CATEGORIAS, COLORES } from '../domain/catalogos';
 import { INFORMACION_FINDU } from '../domain/informacionFindU';
 import { RUTAS } from '../config';
 
@@ -16,6 +16,7 @@ export class ListadoPublicoPresenter {
     async cargar() {
         this.vista.mostrarInformacionFindU(INFORMACION_FINDU);
         this.vista.mostrarCategorias(CATEGORIAS);
+        this.vista.mostrarColores(COLORES);
         const objetos = await this.objetosRepository.listarPublicados();
         const tarjetas = prepararListado(objetos);
         if (tarjetas.length === 0) {
@@ -45,7 +46,7 @@ export class ListadoPublicoPresenter {
         }
         const filtradas = filtrarListado(this.tarjetas, filtros);
         if (filtradas.length === 0) {
-            this.vista.mostrarVacio(MENSAJES.SIN_COINCIDENCIAS);
+            this.vista.mostrarVacio(mensajeSinResultados(filtros));
             return;
         }
         this.vista.mostrarTarjetas(filtradas);
