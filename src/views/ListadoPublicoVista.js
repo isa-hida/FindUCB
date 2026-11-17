@@ -29,23 +29,21 @@ export class ListadoPublicoVista {
     }
 
     mostrarCategorias(categorias) {
-        const opciones = categorias.map((categoria) => {
-            const opcion = this.documento.createElement('option');
-            opcion.value = categoria;
-            opcion.textContent = categoria;
-            return opcion;
-        });
-        this.campoCategoria.append(...opciones);
+        this.llenarOpciones(this.campoCategoria, categorias);
     }
 
     mostrarColores(colores) {
-        const opciones = colores.map((color) => {
+        this.llenarOpciones(this.campoColor, colores);
+    }
+
+    llenarOpciones(campo, valores) {
+        const opciones = valores.map((valor) => {
             const opcion = this.documento.createElement('option');
-            opcion.value = color;
-            opcion.textContent = color;
+            opcion.value = valor;
+            opcion.textContent = valor;
             return opcion;
         });
-        this.campoColor.append(...opciones);
+        campo.append(...opciones);
     }
 
     limpiarFiltros() {

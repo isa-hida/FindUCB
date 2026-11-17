@@ -2928,9 +2928,23 @@
     "testId": 229
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9c7d2d8b2e0d26ccebf0a10e2b83b0d0e5b4d51c",
     "commitName": "feat(HU15): agregar el filtro de color en el listado público",
     "commitTimestamp": 1794889085866,
     "testId": 229
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794889109791,
+    "success": true,
+    "testId": 230
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
+    "commitTimestamp": 1794889139863,
+    "testId": 230
   }
 ]
