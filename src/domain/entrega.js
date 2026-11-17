@@ -1,8 +1,8 @@
 import { MENSAJES } from './mensajes';
 import { aFechaIso } from './fecha';
 
-export function validarEntrega(datos) {
-    if (!datos.nombre.trim() || !datos.ci.trim()) {
+export function validarEntrega(entrega) {
+    if (!entrega.nombre.trim() || !entrega.ci.trim()) {
         return [MENSAJES.FALTA_NOMBRE_CI];
     }
     return [];

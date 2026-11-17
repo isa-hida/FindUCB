@@ -25,16 +25,16 @@ function superaElLimiteDeCaracteres(texto) {
     return Boolean(texto) && texto.length > MAX_CARACTERES_TEXTO;
 }
 
-export function validarObjetoHallado(datos) {
-    const { categoria, descripcion, senas, fechaHallazgo, hoy } = datos;
+export function validarObjetoHallado(aviso) {
+    const { categoria, descripcion, senas, fechaHallazgo, hoy } = aviso;
 
     if (!categoria || !descripcion) {
         return [MENSAJES.FALTA_CATEGORIA_DESCRIPCION];
     }
-    if (faltanDatosDelHallazgo(datos)) {
+    if (faltanDatosDelHallazgo(aviso)) {
         return [MENSAJES.FALTAN_DATOS_HALLAZGO];
     }
-    const mensajeFoto = mensajeDeFotoInvalida(datos);
+    const mensajeFoto = mensajeDeFotoInvalida(aviso);
     if (mensajeFoto) {
         return [mensajeFoto];
     }

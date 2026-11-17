@@ -2090,17 +2090,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1b71b2e6ad48a9434c940267ac3cc02dfd6a7ea4",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:17:25.000Z",
       "message": "refactor: extraer esFechaFutura a fecha.js",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1b71b2e6ad48a9434c940267ac3cc02dfd6a7ea4"
     },
     "stats": {
       "total": 7,
       "additions": 6,
       "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.94,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:22:27.000Z",
+      "message": "refactor: datos por entrega",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 536,
+      "additions": 530,
+      "deletions": 6,
       "date": "2026-11-17"
     },
     "coverage": 97.94,

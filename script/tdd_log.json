@@ -3038,9 +3038,23 @@
     "testId": 245
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1b71b2e6ad48a9434c940267ac3cc02dfd6a7ea4",
     "commitName": "refactor: extraer esFechaFutura a fecha.js",
     "commitTimestamp": 1794935847156,
     "testId": 246
+  },
+  {
+    "numPassedTests": 176,
+    "failedTests": 0,
+    "numTotalTests": 176,
+    "timestamp": 1794936023985,
+    "success": true,
+    "testId": 247
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: datos por entrega",
+    "commitTimestamp": 1794936148636,
+    "testId": 247
   }
 ]
