@@ -2738,9 +2738,31 @@
     "testId": 220
   },
   {
-    "commitId": "HEAD",
+    "commitId": "95a769b335f8b94e1dc9f1ee18a1c62bf4909d88",
     "commitName": "feat(HU15): filtrar por color sin distinguir tildes",
     "commitTimestamp": 1794888542708,
     "testId": 220
+  },
+  {
+    "numPassedTests": 160,
+    "failedTests": 1,
+    "numTotalTests": 161,
+    "timestamp": 1794888560464,
+    "success": false,
+    "testId": 221
+  },
+  {
+    "numPassedTests": 161,
+    "failedTests": 0,
+    "numTotalTests": 161,
+    "timestamp": 1794888567566,
+    "success": true,
+    "testId": 221
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): filtrar por color aceptando femenino y plural",
+    "commitTimestamp": 1794888593978,
+    "testId": 221
   }
 ]

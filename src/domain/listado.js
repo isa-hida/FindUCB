@@ -10,6 +10,9 @@ export function prepararListado(objetos) {
 
 const normalizar = (texto) => texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
+// "Negro" queda en "negr" para que coincida con negra, negros y negras
+const raizDeColor = (color) => normalizar(color).replace(/[oa]$/, '');
+
 const esPosteriorA =(fecha, desde) => !desde || fecha >= desde;
 const esAnteriorA = (fecha, hasta) => !hasta || fecha <= hasta;
 
@@ -25,7 +28,7 @@ const CRITERIOS_DE_FILTRO = [
     },
     {
         estaActivo: ({ color }) => Boolean(color),
-        cumple: (tarjeta, { color }) => normalizar(tarjeta.color).includes(normalizar(color)),
+        cumple: (tarjeta, { color }) => normalizar(tarjeta.color).includes(raizDeColor(color)),
     },
 ];
 

@@ -125,6 +125,16 @@ describe('filtrarListado', () => {
 
         expect(idsDe(filtrarListado(tarjetas, { color: 'Café' }))).toEqual([1]);
     });
+
+    it('filtra por color aceptando femenino y plural', () => {
+        const tarjetas = [
+            { id: 1, color: 'Mochila negra' },
+            { id: 2, color: 'Blanco con franjas negras' },
+            { id: 3, color: 'Blanco' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Negro' }))).toEqual([1, 2]);
+    });
 });
 
 describe('validarFiltros', () => {
