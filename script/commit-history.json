@@ -1634,12 +1634,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c00258a29533c87f3412ef9feca435736ebd4898",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:10:40.000Z",
       "message": "test(HU15): documentar que el color se combina con categoría y fechas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c00258a29533c87f3412ef9feca435736ebd4898"
     },
     "stats": {
       "total": 12,
@@ -1649,6 +1649,25 @@
     },
     "coverage": 97.83,
     "test_count": 162,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:11:59.000Z",
+      "message": "feat(HU15): mostrar el catálogo de colores para filtrar",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 35,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.84,
+    "test_count": 163,
     "failed_tests": 0,
     "conclusion": "success"
   }

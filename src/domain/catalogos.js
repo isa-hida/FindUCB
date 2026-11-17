@@ -9,3 +9,23 @@ export const CATEGORIAS = [
     'Botellas y termos',
     'Otros',
 ];
+
+export const COLORES = [
+    'Negro',
+    'Blanco',
+    'Gris',
+    'Plateado',
+    'Dorado',
+    'Azul',
+    'Celeste',
+    'Rojo',
+    'Rosado',
+    'Verde',
+    'Amarillo',
+    'Naranja',
+    'Morado',
+    'Café',
+    'Beige',
+    'Multicolor',
+    'Transparente',
+];

@@ -3,7 +3,7 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { MENSAJES } from '../domain/mensajes';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { RUTAS } from '../config';
-import { CATEGORIAS } from '../domain/catalogos';
+import { CATEGORIAS, COLORES } from '../domain/catalogos';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -17,6 +17,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         mensajesVacio: [],
         tarjetas: [],
         categorias: [],
+        colores: [],
         errores: [],
         seLimpiaronLosFiltros: false,
         mostrarVacio(mensaje) {
@@ -27,6 +28,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         mostrarCategorias(categorias) {
             this.categorias.push(...categorias);
+        },
+        mostrarColores(colores) {
+            this.colores.push(...colores);
         },
         mostrarError(mensaje) {
             this.errores.push(mensaje);
@@ -116,6 +120,14 @@ describe('ListadoPublicoPresenter', () => {
         await presenter.cargar();
 
         expect(vista.categorias).toEqual(CATEGORIAS);
+    });
+
+    it('muestra los colores del catalogo para filtrar', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.cargar();
+
+        expect(vista.colores).toEqual(COLORES);
     });
 
     it('al filtrar por categoria muestra solo esas tarjetas', async () => {
