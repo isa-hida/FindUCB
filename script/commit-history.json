@@ -1577,12 +1577,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "20e013b6981a7fe4366f649d9c3e341b056cc9bc",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:08:12.000Z",
       "message": "feat(HU15): filtrar por color sin distinguir mayúsculas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/20e013b6981a7fe4366f649d9c3e341b056cc9bc"
     },
     "stats": {
       "total": 11,
@@ -1592,6 +1592,25 @@
     },
     "coverage": 97.8,
     "test_count": 159,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:09:02.000Z",
+      "message": "feat(HU15): filtrar por color sin distinguir tildes",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.81,
+    "test_count": 160,
     "failed_tests": 0,
     "conclusion": "success"
   }

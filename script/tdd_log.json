@@ -2716,9 +2716,31 @@
     "testId": 219
   },
   {
-    "commitId": "HEAD",
+    "commitId": "20e013b6981a7fe4366f649d9c3e341b056cc9bc",
     "commitName": "feat(HU15): filtrar por color sin distinguir mayúsculas",
     "commitTimestamp": 1794888492548,
     "testId": 219
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 1,
+    "numTotalTests": 160,
+    "timestamp": 1794888510354,
+    "success": false,
+    "testId": 220
+  },
+  {
+    "numPassedTests": 160,
+    "failedTests": 0,
+    "numTotalTests": 160,
+    "timestamp": 1794888517101,
+    "success": true,
+    "testId": 220
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): filtrar por color sin distinguir tildes",
+    "commitTimestamp": 1794888542708,
+    "testId": 220
   }
 ]

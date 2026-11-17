@@ -116,6 +116,15 @@ describe('filtrarListado', () => {
 
         expect(idsDe(filtrarListado(tarjetas, { color: 'Azul' }))).toEqual([1]);
     });
+
+    it('filtra por color sin distinguir tildes', () => {
+        const tarjetas = [
+            { id: 1, color: 'Cafe claro' },
+            { id: 2, color: 'Gris' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Café' }))).toEqual([1]);
+    });
 });
 
 describe('validarFiltros', () => {

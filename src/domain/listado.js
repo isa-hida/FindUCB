@@ -8,7 +8,9 @@ export function prepararListado(objetos) {
         .map(({ id, categoria, color, fechaHallazgo, rutaFoto }) => ({ id, categoria, color, fechaHallazgo, rutaFoto }));
 }
 
-const esPosteriorA = (fecha, desde) => !desde || fecha >= desde;
+const normalizar = (texto) => texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+const esPosteriorA =(fecha, desde) => !desde || fecha >= desde;
 const esAnteriorA = (fecha, hasta) => !hasta || fecha <= hasta;
 
 const CRITERIOS_DE_FILTRO = [
@@ -23,7 +25,7 @@ const CRITERIOS_DE_FILTRO = [
     },
     {
         estaActivo: ({ color }) => Boolean(color),
-        cumple: (tarjeta, { color }) => tarjeta.color.toLowerCase().includes(color.toLowerCase()),
+        cumple: (tarjeta, { color }) => normalizar(tarjeta.color).includes(normalizar(color)),
     },
 ];
 
