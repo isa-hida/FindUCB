@@ -157,6 +157,10 @@ describe('mensajeSinResultados', () => {
     it('con solo rango de fechas indica que no hay objetos en ese rango', () => {
         expect(mensajeSinResultados({ desde: '2026-10-01', hasta: '2026-10-05' })).toEqual(MENSAJES.SIN_OBJETOS_EN_FECHAS);
     });
+
+    it('con solo categoria mantiene el mensaje de sin coincidencias', () => {
+        expect(mensajeSinResultados({ categoria: 'Llaves' })).toEqual(MENSAJES.SIN_COINCIDENCIAS);
+    });
 });
 
 describe('validarFiltros', () => {

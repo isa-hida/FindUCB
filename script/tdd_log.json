@@ -2848,9 +2848,31 @@
     "testId": 225
   },
   {
-    "commitId": "HEAD",
+    "commitId": "270a2e262a5977b5d5dd486ecae5c63c4cd482fe",
     "commitName": "feat(HU15): indicar que no hay objetos en ese rango de fechas cuando solo se filtra por fechas",
     "commitTimestamp": 1794888877556,
     "testId": 225
+  },
+  {
+    "numPassedTests": 165,
+    "failedTests": 1,
+    "numTotalTests": 166,
+    "timestamp": 1794888904105,
+    "success": false,
+    "testId": 226
+  },
+  {
+    "numPassedTests": 166,
+    "failedTests": 0,
+    "numTotalTests": 166,
+    "timestamp": 1794888909190,
+    "success": true,
+    "testId": 226
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): mantener el mensaje de sin coincidencias cuando solo se filtra por categoría",
+    "commitTimestamp": 1794888929335,
+    "testId": 226
   }
 ]

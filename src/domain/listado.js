@@ -20,6 +20,7 @@ const CRITERIOS_DE_FILTRO = [
     {
         estaActivo: ({ categoria }) => Boolean(categoria),
         cumple: (tarjeta, { categoria }) => tarjeta.categoria === categoria,
+        mensajeSinResultados: MENSAJES.SIN_COINCIDENCIAS,
     },
     {
         estaActivo: ({ desde, hasta }) => Boolean(desde || hasta),
