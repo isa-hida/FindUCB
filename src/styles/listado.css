@@ -8,6 +8,10 @@
     --fondo-foto: #eff6ff;
     --error: #b42318;
     --error-fondo: #fdecea;
+    --azul-ucb: #005289;
+    --amarillo-ucb: #ffcc00;
+    --crema: #fffbea;
+    --texto-pizarra: #304254;
 
     margin: 0;
     min-height: 100vh;
@@ -92,6 +96,45 @@
 .pagina-listado .listado__introduccion {
     margin: 0 0 20px;
     color: var(--texto-suave);
+}
+
+/* Tarjetas informativas: Bienestar y ¿Qué es FindU? */
+.pagina-listado .tarjeta-informativa {
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    background: var(--crema);
+    border: 1px solid var(--borde);
+    border-left: 6px solid var(--amarillo-ucb);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+    color: var(--texto-pizarra);
+}
+
+.pagina-listado .tarjeta-informativa__titulo {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--azul-ucb);
+}
+
+.pagina-listado .tarjeta-informativa__subtitulo {
+    margin: 14px 0 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--azul-ucb);
+}
+
+.pagina-listado .tarjeta-informativa__texto {
+    margin: 0 0 4px;
+}
+
+.pagina-listado .tarjeta-informativa__pasos {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.pagina-listado .tarjeta-informativa__pasos li + li {
+    margin-top: 4px;
 }
 
 /* Filtros */

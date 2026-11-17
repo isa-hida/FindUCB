@@ -9,6 +9,17 @@ export class ListadoPublicoVista {
         this.campoHasta = documento.getElementById('filtro-hasta');
         this.botonLimpiar = documento.getElementById('limpiar-filtros-button');
         this.cajaError = documento.getElementById('error-filtros');
+        this.descripcionFindU = documento.getElementById('findu-descripcion');
+        this.pasosFindU = documento.getElementById('findu-pasos');
+    }
+
+    mostrarInformacionFindU({ descripcion, pasos }) {
+        this.descripcionFindU.textContent = descripcion;
+        this.pasosFindU.replaceChildren(...pasos.map((paso) => {
+            const elemento = this.documento.createElement('li');
+            elemento.textContent = paso;
+            return elemento;
+        }));
     }
 
     alFiltrar(manejador) {

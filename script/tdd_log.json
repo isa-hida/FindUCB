@@ -2606,9 +2606,97 @@
     "testId": 213
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f55ef092f15d1468ff89db23ed3266ceb3135d1d",
     "commitName": "chore(HU14): incluir admin/historial.html en los scripts start y build",
     "commitTimestamp": 1794766431555,
     "testId": 214
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794881781628,
+    "success": true,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794886218906,
+    "success": false,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 0,
+    "numTotalTests": 157,
+    "timestamp": 1794886225110,
+    "success": true,
+    "testId": 215
+  },
+  {
+    "commitId": "0be11d5901e0518ee6da9938ea1c7772ea6b8817",
+    "commitName": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
+    "commitTimestamp": 1794886335025,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 1,
+    "numTotalTests": 158,
+    "timestamp": 1794886356067,
+    "success": false,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 0,
+    "numTotalTests": 158,
+    "timestamp": 1794886361743,
+    "success": true,
+    "testId": 216
+  },
+  {
+    "commitId": "1ca746dd2c28820e5bab26414c34e2232bc58485",
+    "commitName": "feat(HU12): explicar los pasos para recuperar un objeto",
+    "commitTimestamp": 1794886452837,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 1,
+    "numTotalTests": 159,
+    "timestamp": 1794886488787,
+    "success": false,
+    "testId": 217
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 0,
+    "numTotalTests": 159,
+    "timestamp": 1794886495332,
+    "success": true,
+    "testId": 217
+  },
+  {
+    "commitId": "b0b091477797012903008ebf0e7b600ab52bb715",
+    "commitName": "feat(HU12): mostrar la información de FindU al cargar el listado",
+    "commitTimestamp": 1794886571427,
+    "testId": 217
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 0,
+    "numTotalTests": 159,
+    "timestamp": 1794886886147,
+    "success": true,
+    "testId": 218
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU12): mostrar la sección ¿Qué es FindU? en el listado público",
+    "commitTimestamp": 1794887052638,
+    "testId": 218
   }
 ]
