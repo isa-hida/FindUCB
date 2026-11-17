@@ -23,7 +23,7 @@ const CRITERIOS_DE_FILTRO = [
     },
     {
         estaActivo: ({ color }) => Boolean(color),
-        cumple: (tarjeta, { color }) => tarjeta.color.includes(color),
+        cumple: (tarjeta, { color }) => tarjeta.color.toLowerCase().includes(color.toLowerCase()),
     },
 ];
 

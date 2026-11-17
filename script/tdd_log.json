@@ -2694,9 +2694,31 @@
     "testId": 218
   },
   {
-    "commitId": "HEAD",
+    "commitId": "367faec7706118d15f6c50377c4f16ad9bcb6bd8",
     "commitName": "feat(HU15): encontrar el color aunque el texto del objeto tenga más palabras",
     "commitTimestamp": 1794887902938,
     "testId": 218
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 1,
+    "numTotalTests": 159,
+    "timestamp": 1794888435458,
+    "success": false,
+    "testId": 219
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 0,
+    "numTotalTests": 159,
+    "timestamp": 1794888440073,
+    "success": true,
+    "testId": 219
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): filtrar por color sin distinguir mayúsculas",
+    "commitTimestamp": 1794888492548,
+    "testId": 219
   }
 ]

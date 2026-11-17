@@ -1558,12 +1558,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "367faec7706118d15f6c50377c4f16ad9bcb6bd8",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T03:58:22.000Z",
       "message": "feat(HU15): encontrar el color aunque el texto del objeto tenga más palabras",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/367faec7706118d15f6c50377c4f16ad9bcb6bd8"
     },
     "stats": {
       "total": 11,
@@ -1573,6 +1573,25 @@
     },
     "coverage": 97.8,
     "test_count": 158,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:08:12.000Z",
+      "message": "feat(HU15): filtrar por color sin distinguir mayúsculas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.8,
+    "test_count": 159,
     "failed_tests": 0,
     "conclusion": "success"
   }
