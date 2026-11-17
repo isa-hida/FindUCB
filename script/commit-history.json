@@ -2128,12 +2128,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3030fc7eabc1ddd7cc82522207ded870776757b8",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T18:27:52.000Z",
       "message": "feat: añadiendo script",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3030fc7eabc1ddd7cc82522207ded870776757b8"
     },
     "stats": {
       "total": 0,
@@ -2142,6 +2142,25 @@
       "date": "2026-11-17"
     },
     "coverage": 97.94,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T18:39:51.000Z",
+      "message": "fix: Primera pantalla login",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.97,
     "test_count": 176,
     "failed_tests": 0,
     "conclusion": "success"

@@ -3066,7 +3066,7 @@
     "testId": 248
   },
   {
-    "commitId": "HEAD",
+    "commitId": "10bac81fcb1227ce71e27e10919016ff8bf39447",
     "commitName": "feat: añadiendo script",
     "commitTimestamp": 1794940074001,
     "testId": 248
@@ -3094,5 +3094,17 @@
     "timestamp": 1794940654630,
     "success": true,
     "testId": 249
+  },
+  {
+    "commitId": "3030fc7eabc1ddd7cc82522207ded870776757b8",
+    "commitName": "feat: primera pantalla login",
+    "commitTimestamp": 1794940760122,
+    "testId": 249
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Primera pantalla login",
+    "commitTimestamp": 1794940793984,
+    "testId": 250
   }
 ]
