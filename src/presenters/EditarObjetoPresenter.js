@@ -2,13 +2,15 @@ import { CATEGORIAS } from '../domain/catalogos';
 import { MENSAJES } from '../domain/mensajes';
 import { validarObjetoHallado } from '../domain/objetoHallado';
 import { aFechaIso } from '../domain/fecha';
+import { RUTAS } from '../config';
 
 export class EditarObjetoPresenter {
-    constructor(vista, objetosRepository, fotosStorage, obtenerHoy = () => aFechaIso(new Date())) {
+    constructor(vista, objetosRepository, fotosStorage, obtenerHoy = () => aFechaIso(new Date()), retardo = 1500) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
         this.fotosStorage = fotosStorage;
         this.obtenerHoy = obtenerHoy;
+        this.retardo = retardo;
     }
 
     async iniciar(id) {
@@ -52,5 +54,11 @@ export class EditarObjetoPresenter {
         await this.objetosRepository.actualizar(this.id, { ...datosObjeto, rutaFoto });
         this.fotoActual = rutaFoto;
         this.vista.mostrarExito(MENSAJES.AVISO_ACTUALIZADO);
+        await this._redirigirAlPanel();
+    }
+
+    async _redirigirAlPanel() {
+        await new Promise((resolver) => setTimeout(resolver, this.retardo));
+        this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 }

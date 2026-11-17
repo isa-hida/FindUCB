@@ -3,10 +3,11 @@ import { MENSAJES } from '../domain/mensajes';
 import { RUTAS } from '../config';
 
 export class RegistrarEntregaPresenter {
-    constructor(vista, objetosRepository) {
+    constructor(vista, objetosRepository, retardo = 1500) {
         this.vista = vista;
         this.objetosRepository = objetosRepository;
         this.objetoId = null;
+        this.retardo = retardo;
     }
 
     async cargar(objetoId, hoy = new Date()) {
@@ -30,6 +31,12 @@ export class RegistrarEntregaPresenter {
         await this.objetosRepository.registrarEntrega(this.objetoId, datos);
         this.vista.mostrarExito(MENSAJES.ENTREGA_REGISTRADA);
         this.vista.ocultarFormulario();
+        await this._redirigirAlPanel();
+    }
+
+    async _redirigirAlPanel() {
+        await new Promise((resolver) => setTimeout(resolver, this.retardo));
+        this.vista.redirigir(RUTAS.PANEL_ADMIN);
     }
 
     cancelar() {

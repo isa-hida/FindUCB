@@ -2948,9 +2948,15 @@
     "testId": 230
   },
   {
-    "commitId": "HEAD",
+    "commitId": "23fdff848838336b8731b557110bcbfb69c24d5c",
     "commitName": "test: exigir la redireccion al panel del admin tras guardar con exito",
     "commitTimestamp": 1794925688957,
     "testId": 231
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: redirigir al panel del admin tras guardar un formulario con exito",
+    "commitTimestamp": 1794930804023,
+    "testId": 232
   }
 ]
