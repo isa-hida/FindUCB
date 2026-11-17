@@ -1501,12 +1501,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0be11d5901e0518ee6da9938ea1c7772ea6b8817",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T03:32:14.000Z",
       "message": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/0be11d5901e0518ee6da9938ea1c7772ea6b8817"
     },
     "stats": {
       "total": 12,
@@ -1516,6 +1516,25 @@
     },
     "coverage": 97.69,
     "test_count": 157,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:34:12.000Z",
+      "message": "feat(HU12): explicar los pasos para recuperar un objeto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.69,
+    "test_count": 158,
     "failed_tests": 0,
     "conclusion": "success"
   }

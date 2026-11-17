@@ -2636,9 +2636,31 @@
     "testId": 215
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0be11d5901e0518ee6da9938ea1c7772ea6b8817",
     "commitName": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
     "commitTimestamp": 1794886335025,
     "testId": 215
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 1,
+    "numTotalTests": 158,
+    "timestamp": 1794886356067,
+    "success": false,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 0,
+    "numTotalTests": 158,
+    "timestamp": 1794886361743,
+    "success": true,
+    "testId": 216
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU12): explicar los pasos para recuperar un objeto",
+    "commitTimestamp": 1794886452837,
+    "testId": 216
   }
 ]
