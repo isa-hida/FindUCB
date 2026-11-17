@@ -1748,17 +1748,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c0a334bae73196825fde392ca27861e77700b96a",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:16:44.000Z",
       "message": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/c0a334bae73196825fde392ca27861e77700b96a"
     },
     "stats": {
       "total": 15,
       "additions": 13,
       "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.87,
+    "test_count": 168,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:18:05.000Z",
+      "message": "feat(HU15): agregar el filtro de color en el listado público",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 86,
+      "deletions": 0,
       "date": "2026-11-17"
     },
     "coverage": 97.87,

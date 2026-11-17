@@ -2914,9 +2914,23 @@
     "testId": 228
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c0a334bae73196825fde392ca27861e77700b96a",
     "commitName": "feat(HU15): mostrar el mensaje según los filtros aplicados cuando no hay resultados",
     "commitTimestamp": 1794889004526,
     "testId": 228
+  },
+  {
+    "numPassedTests": 168,
+    "failedTests": 0,
+    "numTotalTests": 168,
+    "timestamp": 1794889066551,
+    "success": true,
+    "testId": 229
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): agregar el filtro de color en el listado público",
+    "commitTimestamp": 1794889085866,
+    "testId": 229
   }
 ]

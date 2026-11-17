@@ -5,6 +5,7 @@ export class ListadoPublicoVista {
         this.mensajeVacio = documento.getElementById('sin-objetos-mensaje');
         this.formularioFiltros = documento.getElementById('filtros-form');
         this.campoCategoria = documento.getElementById('filtro-categoria');
+        this.campoColor = documento.getElementById('filtro-color');
         this.campoDesde = documento.getElementById('filtro-desde');
         this.campoHasta = documento.getElementById('filtro-hasta');
         this.botonLimpiar = documento.getElementById('limpiar-filtros-button');
@@ -18,6 +19,7 @@ export class ListadoPublicoVista {
                 categoria: this.campoCategoria.value,
                 desde: this.campoDesde.value,
                 hasta: this.campoHasta.value,
+                color: this.campoColor.value,
             });
         });
     }
@@ -34,6 +36,16 @@ export class ListadoPublicoVista {
             return opcion;
         });
         this.campoCategoria.append(...opciones);
+    }
+
+    mostrarColores(colores) {
+        const opciones = colores.map((color) => {
+            const opcion = this.documento.createElement('option');
+            opcion.value = color;
+            opcion.textContent = color;
+            return opcion;
+        });
+        this.campoColor.append(...opciones);
     }
 
     limpiarFiltros() {
