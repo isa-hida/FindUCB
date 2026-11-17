@@ -161,6 +161,10 @@ describe('mensajeSinResultados', () => {
     it('con solo categoria mantiene el mensaje de sin coincidencias', () => {
         expect(mensajeSinResultados({ categoria: 'Llaves' })).toEqual(MENSAJES.SIN_COINCIDENCIAS);
     });
+
+    it('con dos o mas filtros indica que no hay objetos que coincidan con los filtros', () => {
+        expect(mensajeSinResultados({ categoria: 'Llaves', color: 'Azul' })).toEqual(MENSAJES.SIN_COINCIDENCIAS_COMBINADAS);
+    });
 });
 
 describe('validarFiltros', () => {

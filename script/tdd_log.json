@@ -2870,9 +2870,31 @@
     "testId": 226
   },
   {
-    "commitId": "HEAD",
+    "commitId": "92ddf702210cb8b2c7a4992b5951aca4e2df6cd0",
     "commitName": "feat(HU15): mantener el mensaje de sin coincidencias cuando solo se filtra por categoría",
     "commitTimestamp": 1794888929335,
     "testId": 226
+  },
+  {
+    "numPassedTests": 166,
+    "failedTests": 1,
+    "numTotalTests": 167,
+    "timestamp": 1794888944646,
+    "success": false,
+    "testId": 227
+  },
+  {
+    "numPassedTests": 167,
+    "failedTests": 0,
+    "numTotalTests": 167,
+    "timestamp": 1794888949743,
+    "success": true,
+    "testId": 227
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): indicar que no hay coincidencias con los filtros seleccionados cuando se combinan",
+    "commitTimestamp": 1794888965722,
+    "testId": 227
   }
 ]

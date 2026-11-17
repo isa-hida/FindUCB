@@ -43,8 +43,11 @@ export function filtrarListado(tarjetas, filtros) {
 }
 
 export function mensajeSinResultados(filtros) {
-    const [criterio] = criteriosActivos(filtros);
-    return criterio.mensajeSinResultados;
+    const criterios = criteriosActivos(filtros);
+    if (criterios.length > 1) {
+        return MENSAJES.SIN_COINCIDENCIAS_COMBINADAS;
+    }
+    return criterios[0].mensajeSinResultados;
 }
 
 export function validarFiltros({ desde, hasta }) {
