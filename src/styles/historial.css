@@ -1,67 +1,48 @@
-/* Cuatro zonas por tarjeta: N°, foto, datos y fecha */
-.historial__fila {
-    grid-template-columns: auto 72px 1fr auto;
-    grid-template-areas:
-        "numero foto categoria fecha"
-        "numero foto receptor  fecha";
-}
+/* ============================================================
+   FindU · historial de entregas
+   Celdas propias de la tabla de objetos entregados.
+   ============================================================ */
 
-.tabla td:has(.historial__foto) {
-    grid-area: foto;
+.tabla td.historial__numero {
+    width: 64px;
+    color: var(--azul-ucb);
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 .historial__foto {
     display: block;
-    width: 72px;
-    height: 72px;
-    border-radius: 8px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--borde-suave);
+    border-radius: var(--radio-sm);
+    background: var(--fondo-foto);
     object-fit: cover;
-    background: #e9ecef;
-}
-
-.tabla td.historial__numero {
-    grid-area: numero;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1e3a8a;
-}
-
-.tabla td.historial__numero::before {
-    content: "N° ";
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #94a3b8;
+    object-position: center;
 }
 
 .tabla td.historial__categoria {
-    grid-area: categoria;
-    justify-self: start;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #2563eb;
+    white-space: nowrap;
+}
+
+.historial__categoria {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #cfe0ff;
+    border-radius: var(--radio-pill);
     background: #eff6ff;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+    color: #1d4ed8;
+    font-size: 0.82rem;
+    font-weight: 700;
 }
 
 .tabla td.historial__receptor {
-    grid-area: receptor;
-    font-weight: 600;
-    color: #1e293b;
-}
-
-.tabla td.historial__receptor::before {
-    content: "Recibió: ";
-    font-weight: 400;
-    color: #64748b;
+    color: var(--texto);
+    font-weight: 700;
 }
 
 .tabla td.historial__fecha {
-    grid-area: fecha;
-    font-size: 0.85rem;
-    color: #94a3b8;
-}
-
-.tabla td.historial__fecha::before {
-    content: "Entregado el ";
+    color: var(--texto-suave);
+    font-size: 0.86rem;
+    white-space: nowrap;
 }

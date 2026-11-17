@@ -2984,9 +2984,15 @@
     "testId": 236
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f3bd0a2063b62fba440b7923c17e84d5a246ff70",
     "commitName": "style: quitar la etiqueta Hallado de las tarjetas",
     "commitTimestamp": 1794933304182,
     "testId": 237
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: renovar el diseno de las pantallas de administracion",
+    "commitTimestamp": 1794934186208,
+    "testId": 238
   }
 ]

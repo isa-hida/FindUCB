@@ -19,18 +19,21 @@
         <h2 class="panel__subtitulo">Objetos entregados</h2>
         <p id="mensaje-vacio" class="aviso" role="status" hidden></p>
 
-        <table id="tabla-historial" class="tabla" hidden>
-          <caption class="tabla__caption">Lista de objetos entregados</caption>
-            <thead>
-                <tr>
-                    <th scope="col">N°</th>
-                    <th scope="col">Categoría</th>
-                    <th scope="col">Recibió</th>
-                    <th scope="col">Fecha de entrega</th>
-                </tr>
-            </thead>
-            <tbody id="lista-historial"></tbody>
-        </table>
+        <div class="tabla-contenedor">
+            <table id="tabla-historial" class="tabla" hidden>
+                <caption class="tabla__caption">Lista de objetos entregados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">N°</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Recibió</th>
+                        <th scope="col">Fecha de entrega</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-historial"></tbody>
+            </table>
+        </div>
 
         <template id="plantilla-fila-historial">
             <tr class="tabla__fila historial__fila">

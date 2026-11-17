@@ -1,3 +1,361 @@
+/* ============================================================
+   FindU · base compartida de las pantallas de administración
+   Tokens de diseño + componentes reutilizables.
+   ============================================================ */
+
+:root {
+    /* Colores institucionales UCB */
+    --azul-ucb: #005289;
+    --azul-ucb-oscuro: #003f6b;
+    --azul: #2563eb;
+    --azul-oscuro: #1e3a8a;
+    --amarillo-ucb: #ffcc00;
+    --amarillo-ucb-oscuro: #e6b800;
+
+    /* Superficies y texto */
+    --texto: #0f172a;
+    --texto-suave: #52606d;
+    --borde: #dbe4f0;
+    --borde-suave: #eef2f8;
+    --fondo: #f8fafc;
+    --fondo-tarjeta: #ffffff;
+    --fondo-foto: #eff6ff;
+    --fondo-cabecera-tabla: #eaf3fc;
+    --crema: #fffbea;
+    --borde-crema: #f2e7b5;
+    --texto-pizarra: #304254;
+
+    /* Mensajes */
+    --error: #b42318;
+    --error-fondo: #fdecea;
+    --error-borde: #f5c2bd;
+    --exito: #166534;
+    --exito-fondo: #f0fdf4;
+    --exito-borde: #bbf7d0;
+
+    /* Radios */
+    --radio-sm: 8px;
+    --radio: 12px;
+    --radio-lg: 16px;
+    --radio-pill: 999px;
+
+    /* Sombras */
+    --sombra-suave: 0 2px 10px rgba(15, 23, 42, 0.06);
+    --sombra-tarjeta: 0 8px 24px rgba(0, 82, 137, 0.1);
+    --sombra-elevada: 0 16px 32px rgba(0, 82, 137, 0.18);
+    --foco-halo: 0 0 0 4px rgba(37, 99, 235, 0.18);
+
+    /* Espaciados */
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 0.75rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 1.5rem;
+    --espacio-xl: 2rem;
+
+    /* Tipografía */
+    --fuente: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+    color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #eff6ff 0%, var(--fondo) 45%);
+    color: var(--texto);
+    font-family: var(--fuente);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.6);
+    outline-offset: 2px;
+}
+
+/* Contenedor general de contenido */
+.contenedor {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--espacio-xl) var(--espacio-lg);
+}
+
+/* ------------------------------------------------------------
+   Tarjetas
+   ------------------------------------------------------------ */
+.tarjeta {
+    background: var(--fondo-tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-lg);
+    padding: var(--espacio-xl);
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.tarjeta__titulo {
+    margin: 0 0 0.35rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--azul-ucb);
+}
+
+.tarjeta__ayuda {
+    margin: 0 0 var(--espacio-xl);
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+}
+
+/* ------------------------------------------------------------
+   Formularios
+   ------------------------------------------------------------ */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-lg);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+}
+
+.campo label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #243447;
+}
+
+.campo input:not([type='file']),
+.campo select,
+.campo textarea {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #cbd8e6;
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--texto);
+    font: inherit;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo input:not([type='file']):hover,
+.campo select:hover,
+.campo textarea:hover {
+    border-color: #9fb6cd;
+}
+
+.campo input:not([type='file']):focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--azul);
+    box-shadow: var(--foco-halo);
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #94a3b8;
+}
+
+.campo input:focus-visible,
+.campo select:focus-visible,
+.campo textarea:focus-visible {
+    outline: none;
+}
+
+.campo select {
+    cursor: pointer;
+}
+
+.campo__textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.campo__requerido {
+    color: var(--error);
+    font-weight: 700;
+}
+
+.campo__opcional {
+    color: var(--texto-suave);
+    font-weight: 500;
+}
+
+.campo__ayuda {
+    font-size: 0.83rem;
+    font-weight: 400;
+    color: var(--texto-suave);
+}
+
+.campo__contador {
+    margin-top: -0.1rem;
+    color: var(--texto-suave);
+    font-size: 0.82rem;
+    text-align: right;
+}
+
+.campo input[readonly] {
+    background: #f1f5f9;
+    color: #475569;
+    cursor: not-allowed;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: var(--espacio-lg);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    background: #fbfdff;
+}
+
+fieldset legend {
+    padding: 0 0.5rem;
+    color: var(--azul-ucb);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------
+   Botones
+   ------------------------------------------------------------ */
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid var(--azul-ucb);
+    border-radius: 10px;
+    background: var(--azul-ucb);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.boton:hover {
+    background: var(--azul-ucb-oscuro);
+    border-color: var(--azul-ucb-oscuro);
+    box-shadow: 0 6px 16px rgba(0, 82, 137, 0.22);
+    transform: translateY(-1px);
+}
+
+.boton:active {
+    transform: translateY(0);
+}
+
+.boton--secundario {
+    background: #ffffff;
+    border-color: #c7d7e8;
+    color: var(--azul-ucb);
+    box-shadow: none;
+}
+
+.boton--secundario:hover {
+    background: #eff6ff;
+    border-color: var(--azul);
+    color: var(--azul-oscuro);
+    box-shadow: none;
+}
+
+/* ------------------------------------------------------------
+   Mensajes de estado
+   ------------------------------------------------------------ */
+.error,
+.exito {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    line-height: 1.4;
+}
+
+.error {
+    background: var(--error-fondo);
+    border-color: var(--error-borde);
+    color: var(--error);
+}
+
+.error::before {
+    content: '!';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.05rem;
+    border-radius: 50%;
+    background: var(--error);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.exito {
+    background: var(--exito-fondo);
+    border-color: var(--exito-borde);
+    color: var(--exito);
+}
+
+.exito::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.05rem;
+    border-radius: 50%;
+    background: var(--exito);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.aviso {
+    margin: 0 0 var(--espacio-md);
+    padding: 1.35rem 1rem;
+    border: 2px dashed #b9cde0;
+    border-radius: var(--radio);
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--texto-suave);
+    font-size: 0.98rem;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------
+   Encabezado mínimo (compatibilidad con vistas existentes)
+   ------------------------------------------------------------ */
 .encabezado-minimal {
     background: transparent;
     padding: 2.5rem 1rem 1.5rem 1rem;
@@ -43,4 +401,15 @@
     color: #2563eb;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* Respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }

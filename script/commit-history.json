@@ -1919,17 +1919,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3bd0a2063b62fba440b7923c17e84d5a246ff70",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:35:01.000Z",
       "message": "style: quitar la etiqueta Hallado de las tarjetas",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/f3bd0a2063b62fba440b7923c17e84d5a246ff70"
     },
     "stats": {
       "total": 19,
       "additions": 0,
       "deletions": 19,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:49:42.000Z",
+      "message": "style: renovar el diseno de las pantallas de administracion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 1380,
+      "additions": 963,
+      "deletions": 417,
       "date": "2026-11-17"
     },
     "coverage": 97.95,
