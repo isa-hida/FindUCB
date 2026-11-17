@@ -1938,17 +1938,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1410ec69ae172a1c031bc6acc0820fb2cd122f70",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:49:42.000Z",
       "message": "style: renovar el diseno de las pantallas de administracion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1410ec69ae172a1c031bc6acc0820fb2cd122f70"
     },
     "stats": {
       "total": 1380,
       "additions": 963,
       "deletions": 417,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:50:34.000Z",
+      "message": "style: conservar el espaciado del titulo de seccion en movil",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
       "date": "2026-11-17"
     },
     "coverage": 97.95,

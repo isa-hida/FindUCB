@@ -2990,9 +2990,15 @@
     "testId": 237
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1410ec69ae172a1c031bc6acc0820fb2cd122f70",
     "commitName": "style: renovar el diseno de las pantallas de administracion",
     "commitTimestamp": 1794934186208,
     "testId": 238
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: conservar el espaciado del titulo de seccion en movil",
+    "commitTimestamp": 1794934238062,
+    "testId": 239
   }
 ]

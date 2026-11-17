@@ -490,8 +490,11 @@
     }
 
     .panel__subtitulo {
-        margin: 0;
         font-size: 1.3rem;
+    }
+
+    .panel__cabecera-seccion .panel__subtitulo {
+        margin: 0;
     }
 
     .panel__cabecera-seccion .boton-nuevo {
