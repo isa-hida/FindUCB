@@ -22,15 +22,15 @@ const crearEscenario = (objetos = []) => {
         mostrarExito(mensaje) {
             this.exitos.push(mensaje);
         },
-        redirigir(url) {
-            this.redirecciones.push(url);
-        },
+        redirigir: jest.fn((url) => {
+            vista.redirecciones.push(url);
+        }),
         ocultarFormulario() {
             this.elFormularioEstaVisible = false;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
-    const presenter = new RegistrarEntregaPresenter(vista, objetosRepository);
+    const presenter = new RegistrarEntregaPresenter(vista, objetosRepository, 0);
     return { vista, objetosRepository, presenter };
 };
 
@@ -150,5 +150,23 @@ describe('RegistrarEntregaPresenter', () => {
         await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
 
         expect(vista.elFormularioEstaVisible).toBe(false);
+    });
+
+    it('redirige al panel de administración tras guardar con éxito', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: 'Ana Perez', ci: '1234567' });
+
+        expect(vista.redirigir).toHaveBeenCalledWith(RUTAS.PANEL_ADMIN);
+    });
+
+    it('no redirige cuando hay errores de validación', async () => {
+        const { vista, presenter } = crearEscenario([{ id: 1, estado: 'publicado' }]);
+        await presenter.cargar(1);
+
+        await presenter.confirmar({ nombre: '', ci: '' });
+
+        expect(vista.redirigir).not.toHaveBeenCalled();
     });
 });

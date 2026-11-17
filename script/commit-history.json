@@ -1786,12 +1786,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1648f848fe2c4d2445da30f0a35f5370670e5d86",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:18:59.000Z",
       "message": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1648f848fe2c4d2445da30f0a35f5370670e5d86"
     },
     "stats": {
       "total": 20,
@@ -1803,5 +1803,24 @@
     "test_count": 168,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T14:28:05.000Z",
+      "message": "test: exigir la redireccion al panel del admin tras guardar con exito",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 60,
+      "deletions": 6,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.88,
+    "test_count": 176,
+    "failed_tests": 3,
+    "conclusion": "failure"
   }
 ]

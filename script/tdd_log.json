@@ -2942,9 +2942,15 @@
     "testId": 230
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1648f848fe2c4d2445da30f0a35f5370670e5d86",
     "commitName": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
     "commitTimestamp": 1794889139863,
     "testId": 230
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir la redireccion al panel del admin tras guardar con exito",
+    "commitTimestamp": 1794925688957,
+    "testId": 231
   }
 ]
