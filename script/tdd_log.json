@@ -2972,9 +2972,15 @@
     "testId": 234
   },
   {
-    "commitId": "HEAD",
+    "commitId": "276836c6f15ec38ac5339c5ece149d5320d5a79a",
     "commitName": "feat: dejar de redirigir al login cuando no hay sesion",
     "commitTimestamp": 1794931831015,
     "testId": 235
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: renovar la grilla, las tarjetas y los filtros del listado",
+    "commitTimestamp": 1794933054918,
+    "testId": 236
   }
 ]

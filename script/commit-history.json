@@ -1881,17 +1881,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "276836c6f15ec38ac5339c5ece149d5320d5a79a",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:10:27.000Z",
       "message": "feat: dejar de redirigir al login cuando no hay sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/276836c6f15ec38ac5339c5ece149d5320d5a79a"
     },
     "stats": {
       "total": 13,
       "additions": 2,
       "deletions": 11,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:30:52.000Z",
+      "message": "style: renovar la grilla, las tarjetas y los filtros del listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 302,
+      "additions": 203,
+      "deletions": 99,
       "date": "2026-11-17"
     },
     "coverage": 97.95,
