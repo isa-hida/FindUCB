@@ -2033,16 +2033,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e4c0115404312381c1c1bf059573b68e8afc1ef6",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:09:34.000Z",
       "message": "refactor: extraer el predicado de formato de foto valido",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/e4c0115404312381c1c1bf059573b68e8afc1ef6"
     },
     "stats": {
       "total": 7,
       "additions": 5,
+      "deletions": 2,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.93,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:12:59.000Z",
+      "message": "refactor: renombrar errorDeFoto a mensajeDeFotoInvalida",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
       "deletions": 2,
       "date": "2026-11-17"
     },

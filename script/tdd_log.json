@@ -3020,9 +3020,15 @@
     "testId": 242
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4c0115404312381c1c1bf059573b68e8afc1ef6",
     "commitName": "refactor: extraer el predicado de formato de foto valido",
     "commitTimestamp": 1794935376837,
     "testId": 243
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: renombrar errorDeFoto a mensajeDeFotoInvalida",
+    "commitTimestamp": 1794935583296,
+    "testId": 244
   }
 ]

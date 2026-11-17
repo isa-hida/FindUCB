@@ -13,7 +13,7 @@ function tieneFormatoDeFotoValido(rutaFoto) {
     return EXTENSIONES_FOTO.some((extension) => rutaFoto.toLowerCase().endsWith(extension));
 }
 
-function errorDeFoto({ rutaFoto, fotoActual }) {
+function mensajeDeFotoInvalida({ rutaFoto, fotoActual }) {
     if (!rutaFoto) {
         return fotoActual ? null : MENSAJES.FOTO_OBLIGATORIA;
     }
@@ -29,7 +29,7 @@ export function validarObjetoHallado(datos) {
     if (faltanDatosDelHallazgo(datos)) {
         return [MENSAJES.FALTAN_DATOS_HALLAZGO];
     }
-    const mensajeFoto = errorDeFoto(datos);
+    const mensajeFoto = mensajeDeFotoInvalida(datos);
     if (mensajeFoto) {
         return [mensajeFoto];
     }
