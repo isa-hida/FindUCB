@@ -2996,9 +2996,15 @@
     "testId": 238
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f081a35a1049b43500ca8508f41e1d1c6403c2d2",
     "commitName": "style: conservar el espaciado del titulo de seccion en movil",
     "commitTimestamp": 1794934238062,
     "testId": 239
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: quitar ovalos de categoria y mostrar celular en el historial",
+    "commitTimestamp": 1794934670837,
+    "testId": 240
   }
 ]

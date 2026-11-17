@@ -3,6 +3,10 @@
    Celdas propias de la tabla de objetos entregados.
    ============================================================ */
 
+#tabla-historial {
+    min-width: 800px;
+}
+
 .tabla td.historial__numero {
     width: 64px;
     color: var(--azul-ucb);
@@ -22,23 +26,21 @@
 }
 
 .tabla td.historial__categoria {
-    white-space: nowrap;
-}
-
-.historial__categoria {
-    display: inline-block;
-    padding: 0.2rem 0.7rem;
-    border: 1px solid #cfe0ff;
-    border-radius: var(--radio-pill);
-    background: #eff6ff;
-    color: #1d4ed8;
-    font-size: 0.82rem;
+    color: var(--azul-ucb);
+    font-size: 0.9rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .tabla td.historial__receptor {
     color: var(--texto);
     font-weight: 700;
+}
+
+.tabla td.historial__celular {
+    color: var(--texto-suave);
+    font-size: 0.86rem;
+    white-space: nowrap;
 }
 
 .tabla td.historial__fecha {

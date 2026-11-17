@@ -5,6 +5,7 @@ export function crearFilaHistorial(objeto) {
         categoria: objeto.categoria,
         rutaFoto: objeto.rutaFoto,
         nombreReceptor: objeto.entrega.nombre,
+        celularReceptor: objeto.entrega.celular,
         fechaEntrega: objeto.entrega.fechaEntrega,
     };
 }
