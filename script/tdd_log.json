@@ -2680,9 +2680,23 @@
     "testId": 217
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b0b091477797012903008ebf0e7b600ab52bb715",
     "commitName": "feat(HU12): mostrar la información de FindU al cargar el listado",
     "commitTimestamp": 1794886571427,
     "testId": 217
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 0,
+    "numTotalTests": 159,
+    "timestamp": 1794886886147,
+    "success": true,
+    "testId": 218
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU12): mostrar la sección ¿Qué es FindU? en el listado público",
+    "commitTimestamp": 1794887052638,
+    "testId": 218
   }
 ]
