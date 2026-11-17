@@ -44,7 +44,7 @@ describe('prepararListado', () => {
         expect(idsDe(prepararListado(objetos))).toEqual([3, 1, 2]);
     });
 
-        it('cada tarjeta lleva solo id, categoria, fecha y foto', () => {
+        it('cada tarjeta lleva solo id, categoria, color, fecha y foto', () => {
         const objeto = crearObjeto({
             id: 7,
             numero: 7,
@@ -60,7 +60,7 @@ describe('prepararListado', () => {
         });
 
         expect(prepararListado([objeto])).toEqual([
-            { id: 7, categoria: 'Mochila', fechaHallazgo: '2026-10-10', rutaFoto: 'objetos/7.jpg' },
+            { id: 7, categoria: 'Mochila', color: 'Negro', fechaHallazgo: '2026-10-10', rutaFoto: 'objetos/7.jpg' },
         ]);
     });
 

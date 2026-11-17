@@ -1501,17 +1501,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "84d93a445ff7778bb5e3be7c65bc6951c47bf569",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T03:48:24.000Z",
       "message": "refactor(HU15): expresar los filtros del listado como una lista de criterios",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/84d93a445ff7778bb5e3be7c65bc6951c47bf569"
     },
     "stats": {
       "total": 25,
       "additions": 20,
       "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.78,
+    "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:54:52.000Z",
+      "message": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
       "date": "2026-11-17"
     },
     "coverage": 97.78,

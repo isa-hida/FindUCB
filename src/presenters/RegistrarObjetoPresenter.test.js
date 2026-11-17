@@ -85,7 +85,7 @@ describe('RegistrarObjetoPresenter', () => {
 
         const tarjetas = prepararListado(await objetosRepository.listarPublicados());
         expect(tarjetas).toEqual([
-            { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-18', rutaFoto: '/fotos/llaves.jpg' },
+            { id: 1, categoria: 'Llaves', color: 'Dorado', fechaHallazgo: '2026-10-18', rutaFoto: '/fotos/llaves.jpg' },
         ]);
     });
     it('guarda la foto y registra el objeto con la ruta devuelta, sin el contenido', async () => {

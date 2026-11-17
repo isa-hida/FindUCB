@@ -2620,9 +2620,39 @@
     "testId": 215
   },
   {
-    "commitId": "HEAD",
+    "commitId": "84d93a445ff7778bb5e3be7c65bc6951c47bf569",
     "commitName": "refactor(HU15): expresar los filtros del listado como una lista de criterios",
     "commitTimestamp": 1794887304371,
     "testId": 215
+  },
+  {
+    "numPassedTests": 155,
+    "failedTests": 1,
+    "numTotalTests": 156,
+    "timestamp": 1794887321726,
+    "success": false,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 155,
+    "failedTests": 1,
+    "numTotalTests": 156,
+    "timestamp": 1794887326741,
+    "success": false,
+    "testId": 216
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794887596259,
+    "success": true,
+    "testId": 216
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
+    "commitTimestamp": 1794887692910,
+    "testId": 216
   }
 ]
