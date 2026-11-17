@@ -1995,12 +1995,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "928a9954128358412dfa608343d21b5801ad207e",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:05:00.000Z",
       "message": "refactor: extraer el predicado de texto vacio a texto.js",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/928a9954128358412dfa608343d21b5801ad207e"
     },
     "stats": {
       "total": 13,
@@ -2009,6 +2009,25 @@
       "date": "2026-11-17"
     },
     "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:07:21.000Z",
+      "message": "refactor: reutilizar aFechaIso en la fecha de entrega por defecto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 2,
+      "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.93,
     "test_count": 176,
     "failed_tests": 0,
     "conclusion": "success"

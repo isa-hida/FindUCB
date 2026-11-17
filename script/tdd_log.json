@@ -3008,9 +3008,15 @@
     "testId": 240
   },
   {
-    "commitId": "HEAD",
+    "commitId": "928a9954128358412dfa608343d21b5801ad207e",
     "commitName": "refactor: extraer el predicado de texto vacio a texto.js",
     "commitTimestamp": 1794935102228,
     "testId": 241
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: reutilizar aFechaIso en la fecha de entrega por defecto",
+    "commitTimestamp": 1794935243886,
+    "testId": 242
   }
 ]
