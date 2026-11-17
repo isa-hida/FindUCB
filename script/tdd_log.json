@@ -2606,9 +2606,39 @@
     "testId": 213
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f55ef092f15d1468ff89db23ed3266ceb3135d1d",
     "commitName": "chore(HU14): incluir admin/historial.html en los scripts start y build",
     "commitTimestamp": 1794766431555,
     "testId": 214
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794881781628,
+    "success": true,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794886218906,
+    "success": false,
+    "testId": 215
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 0,
+    "numTotalTests": 157,
+    "timestamp": 1794886225110,
+    "success": true,
+    "testId": 215
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU12): indicar que FindU corresponde a UCB Cochabamba",
+    "commitTimestamp": 1794886335025,
+    "testId": 215
   }
 ]
