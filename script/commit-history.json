@@ -1653,12 +1653,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8db6ec709ed39b6930c43e87fe7f900b3f2c122e",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:11:59.000Z",
       "message": "feat(HU15): mostrar el catálogo de colores para filtrar",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/8db6ec709ed39b6930c43e87fe7f900b3f2c122e"
     },
     "stats": {
       "total": 37,
@@ -1668,6 +1668,25 @@
     },
     "coverage": 97.84,
     "test_count": 163,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:13:05.000Z",
+      "message": "feat(HU15): indicar que no hay objetos con ese color cuando solo se filtra por color",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.85,
+    "test_count": 164,
     "failed_tests": 0,
     "conclusion": "success"
   }

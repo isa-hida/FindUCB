@@ -29,6 +29,7 @@ const CRITERIOS_DE_FILTRO = [
     {
         estaActivo: ({ color }) => Boolean(color),
         cumple: (tarjeta, { color }) => normalizar(tarjeta.color).includes(raizDeColor(color)),
+        mensajeSinResultados: MENSAJES.SIN_OBJETOS_DEL_COLOR,
     },
 ];
 
@@ -37,6 +38,11 @@ const criteriosActivos = (filtros) => CRITERIOS_DE_FILTRO.filter((criterio) => c
 export function filtrarListado(tarjetas, filtros) {
     const criterios = criteriosActivos(filtros);
     return tarjetas.filter((tarjeta) => criterios.every((criterio) => criterio.cumple(tarjeta, filtros)));
+}
+
+export function mensajeSinResultados(filtros) {
+    const [criterio] = criteriosActivos(filtros);
+    return criterio.mensajeSinResultados;
 }
 
 export function validarFiltros({ desde, hasta }) {

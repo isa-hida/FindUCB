@@ -1,4 +1,4 @@
-import { prepararListado, filtrarListado, validarFiltros } from './listado';
+import { prepararListado, filtrarListado, validarFiltros, mensajeSinResultados } from './listado';
 import { MENSAJES } from './mensajes';
 
 const crearObjeto = (datos) => ({
@@ -146,6 +146,12 @@ describe('filtrarListado', () => {
         const filtros = { categoria: 'Llaves', color: 'Azul', desde: '2026-10-01', hasta: '2026-10-10' };
 
         expect(idsDe(filtrarListado(tarjetas, filtros))).toEqual([1]);
+    });
+});
+
+describe('mensajeSinResultados', () => {
+    it('con solo color indica que no hay objetos con ese color', () => {
+        expect(mensajeSinResultados({ color: 'Azul' })).toEqual(MENSAJES.SIN_OBJETOS_DEL_COLOR);
     });
 });
 

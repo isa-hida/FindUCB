@@ -2796,9 +2796,31 @@
     "testId": 223
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8db6ec709ed39b6930c43e87fe7f900b3f2c122e",
     "commitName": "feat(HU15): mostrar el catálogo de colores para filtrar",
     "commitTimestamp": 1794888719403,
     "testId": 223
+  },
+  {
+    "numPassedTests": 163,
+    "failedTests": 1,
+    "numTotalTests": 164,
+    "timestamp": 1794888745835,
+    "success": false,
+    "testId": 224
+  },
+  {
+    "numPassedTests": 164,
+    "failedTests": 0,
+    "numTotalTests": 164,
+    "timestamp": 1794888754732,
+    "success": true,
+    "testId": 224
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): indicar que no hay objetos con ese color cuando solo se filtra por color",
+    "commitTimestamp": 1794888785998,
+    "testId": 224
   }
 ]
