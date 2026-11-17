@@ -98,6 +98,15 @@ describe('filtrarListado', () => {
     it('filtra por color', () => {
         expect(idsDe(filtrarListado(TARJETAS, { color: 'Azul' }))).toEqual([3]);
     });
+
+    it('filtra por color aunque el texto del objeto tenga mas palabras', () => {
+        const tarjetas = [
+            { id: 1, color: 'Azul oscuro' },
+            { id: 2, color: 'Negro' },
+        ];
+
+        expect(idsDe(filtrarListado(tarjetas, { color: 'Azul' }))).toEqual([1]);
+    });
 });
 
 describe('validarFiltros', () => {

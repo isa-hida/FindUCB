@@ -2672,9 +2672,31 @@
     "testId": 217
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9942b1ff29735ce3db68abdd2f12763d923e0055",
     "commitName": "feat(HU15): filtrar el listado por color",
     "commitTimestamp": 1794887818902,
     "testId": 217
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 1,
+    "numTotalTests": 158,
+    "timestamp": 1794887841822,
+    "success": false,
+    "testId": 218
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 0,
+    "numTotalTests": 158,
+    "timestamp": 1794887846532,
+    "success": true,
+    "testId": 218
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): encontrar el color aunque el texto del objeto tenga más palabras",
+    "commitTimestamp": 1794887902938,
+    "testId": 218
   }
 ]
