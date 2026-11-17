@@ -1824,16 +1824,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "518685b2c29e4cdfb1154cee099510db00115b62",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T15:53:20.000Z",
       "message": "feat: redirigir al panel del admin tras guardar un formulario con exito",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/518685b2c29e4cdfb1154cee099510db00115b62"
     },
     "stats": {
       "total": 37,
       "additions": 34,
+      "deletions": 3,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.97,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T15:53:55.000Z",
+      "message": "test: verificar la redireccion al panel en las pruebas de extremo a extremo",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
       "deletions": 3,
       "date": "2026-11-17"
     },

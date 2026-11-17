@@ -3,6 +3,7 @@ const CI_RECEPTOR = '1234567';
 
 const entregarObjeto = (id) => {
     cy.visitarComoAdmin(`/admin/entrega.html?id=${id}`);
+    cy.clock(Date.now());
     cy.get('#nombre').type(NOMBRE_RECEPTOR);
     cy.get('#ci').type(CI_RECEPTOR);
     cy.get('#confirmar-button').click();
@@ -18,10 +19,13 @@ describe('HU-07: registrar la entrega de un objeto', () => {
         cy.get('#entrega-link-1').should('contain', 'Registrar entrega');
     });
 
-    it('al confirmar con nombre y C.I. muestra que la entrega fue registrada', () => {
+    it('al confirmar con nombre y C.I. muestra que la entrega fue registrada y redirige al panel', () => {
         entregarObjeto(1);
 
         cy.get('#exito-mensaje').should('contain', 'Entrega registrada correctamente');
+
+        cy.tick(1500);
+        cy.location('pathname').should('eq', '/admin/index.html');
     });
 
     it('tras entregar, el objeto ya no aparece en el panel ni al recargar', () => {

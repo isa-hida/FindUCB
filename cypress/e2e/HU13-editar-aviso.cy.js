@@ -29,14 +29,18 @@ describe('HU-13: editar un aviso publicado', () => {
             cy.get('#foto-preview').should('be.visible').and('have.attr', 'src').and('not.be.empty');
         });
 
-        it('al guardar muestra el mensaje y conserva el N°', () => {
+        it('al guardar muestra el mensaje, conserva el N° y redirige al panel', () => {
             cy.visitarComoAdmin('/admin/editar.html?id=3');
+            cy.clock(Date.now());
 
             cy.get('#lugar').clear().type('Biblioteca');
             cy.get('#guardar-button').click();
 
             cy.get('#exito-mensaje').should('contain', 'Aviso actualizado correctamente');
             cy.get('#numero').should('have.value', '3');
+
+            cy.tick(1500);
+            cy.location('pathname').should('eq', '/admin/index.html');
         });
 
         it('aplica las mismas validaciones del registro', () => {
@@ -58,6 +62,7 @@ describe('HU-13: editar un aviso publicado', () => {
 
         it('el listado público refleja los cambios guardados', () => {
             cy.visitarComoAdmin('/admin/editar.html?id=3');
+            cy.clock(Date.now());
             cy.get('#fecha-hallazgo').clear().type('2026-10-12');
             cy.get('#guardar-button').click();
             cy.get('#exito-mensaje').should('be.visible');
