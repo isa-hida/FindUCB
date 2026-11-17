@@ -2658,9 +2658,31 @@
     "testId": 216
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1ca746dd2c28820e5bab26414c34e2232bc58485",
     "commitName": "feat(HU12): explicar los pasos para recuperar un objeto",
     "commitTimestamp": 1794886452837,
     "testId": 216
+  },
+  {
+    "numPassedTests": 158,
+    "failedTests": 1,
+    "numTotalTests": 159,
+    "timestamp": 1794886488787,
+    "success": false,
+    "testId": 217
+  },
+  {
+    "numPassedTests": 159,
+    "failedTests": 0,
+    "numTotalTests": 159,
+    "timestamp": 1794886495332,
+    "success": true,
+    "testId": 217
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU12): mostrar la información de FindU al cargar el listado",
+    "commitTimestamp": 1794886571427,
+    "testId": 217
   }
 ]

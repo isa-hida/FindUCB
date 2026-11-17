@@ -2,6 +2,7 @@ import { MENSAJES } from '../domain/mensajes';
 import { prepararListado, filtrarListado, validarFiltros } from '../domain/listado';
 import { formatearFecha } from '../domain/fecha';
 import { CATEGORIAS } from '../domain/catalogos';
+import { INFORMACION_FINDU } from '../domain/informacionFindU';
 import { RUTAS } from '../config';
 
 export class ListadoPublicoPresenter {
@@ -13,6 +14,7 @@ export class ListadoPublicoPresenter {
     }
 
     async cargar() {
+        this.vista.mostrarInformacionFindU(INFORMACION_FINDU);
         this.vista.mostrarCategorias(CATEGORIAS);
         const objetos = await this.objetosRepository.listarPublicados();
         const tarjetas = prepararListado(objetos);

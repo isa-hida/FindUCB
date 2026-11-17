@@ -1520,12 +1520,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1ca746dd2c28820e5bab26414c34e2232bc58485",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T03:34:12.000Z",
       "message": "feat(HU12): explicar los pasos para recuperar un objeto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1ca746dd2c28820e5bab26414c34e2232bc58485"
     },
     "stats": {
       "total": 11,
@@ -1535,6 +1535,25 @@
     },
     "coverage": 97.69,
     "test_count": 158,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:36:11.000Z",
+      "message": "feat(HU12): mostrar la información de FindU al cargar el listado",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.7,
+    "test_count": 159,
     "failed_tests": 0,
     "conclusion": "success"
   }

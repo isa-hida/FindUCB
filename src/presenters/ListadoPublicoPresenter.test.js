@@ -4,6 +4,7 @@ import { MENSAJES } from '../domain/mensajes';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { RUTAS } from '../config';
 import { CATEGORIAS } from '../domain/catalogos';
+import { INFORMACION_FINDU } from '../domain/informacionFindU';
 
 const crearObjeto = (datos) => ({
     numero: 1,
@@ -18,6 +19,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         tarjetas: [],
         categorias: [],
         errores: [],
+        informacionFindU: null,
         seLimpiaronLosFiltros: false,
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
@@ -36,6 +38,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         limpiarFiltros() {
             this.seLimpiaronLosFiltros = true;
+        },
+        mostrarInformacionFindU(informacion) {
+            this.informacionFindU = informacion;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
@@ -116,6 +121,14 @@ describe('ListadoPublicoPresenter', () => {
         await presenter.cargar();
 
         expect(vista.categorias).toEqual(CATEGORIAS);
+    });
+
+    it('muestra que es FindU aunque no haya objetos publicados', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.cargar();
+
+        expect(vista.informacionFindU).toEqual(INFORMACION_FINDU);
     });
 
     it('al filtrar por categoria muestra solo esas tarjetas', async () => {
