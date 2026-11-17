@@ -2760,9 +2760,23 @@
     "testId": 221
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71a6551c19c08e345ce5194ef25a541420313f8d",
     "commitName": "feat(HU15): filtrar por color aceptando femenino y plural",
     "commitTimestamp": 1794888593978,
     "testId": 221
+  },
+  {
+    "numPassedTests": 162,
+    "failedTests": 0,
+    "numTotalTests": 162,
+    "timestamp": 1794888610119,
+    "success": true,
+    "testId": 222
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(HU15): documentar que el color se combina con categoría y fechas",
+    "commitTimestamp": 1794888640913,
+    "testId": 222
   }
 ]

@@ -1615,12 +1615,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "71a6551c19c08e345ce5194ef25a541420313f8d",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T04:09:53.000Z",
       "message": "feat(HU15): filtrar por color aceptando femenino y plural",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/71a6551c19c08e345ce5194ef25a541420313f8d"
     },
     "stats": {
       "total": 15,
@@ -1630,6 +1630,25 @@
     },
     "coverage": 97.83,
     "test_count": 161,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T04:10:40.000Z",
+      "message": "test(HU15): documentar que el color se combina con categoría y fechas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.83,
+    "test_count": 162,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -135,6 +135,18 @@ describe('filtrarListado', () => {
 
         expect(idsDe(filtrarListado(tarjetas, { color: 'Negro' }))).toEqual([1, 2]);
     });
+
+    it('combina color con categoria y rango de fechas', () => {
+        const tarjetas = [
+            { id: 1, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-02' },
+            { id: 2, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-20' },
+            { id: 3, categoria: 'Electrónicos', color: 'Azul', fechaHallazgo: '2026-10-02' },
+            { id: 4, categoria: 'Llaves', color: 'Negro', fechaHallazgo: '2026-10-02' },
+        ];
+        const filtros = { categoria: 'Llaves', color: 'Azul', desde: '2026-10-01', hasta: '2026-10-10' };
+
+        expect(idsDe(filtrarListado(tarjetas, filtros))).toEqual([1]);
+    });
 });
 
 describe('validarFiltros', () => {
