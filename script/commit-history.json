@@ -1520,12 +1520,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1e1fa56a091088da2ba9a3c0e9be793a0f5d07db",
     "author": "Shanayna De Ugarte",
     "commit": {
       "date": "2026-11-17T03:54:52.000Z",
       "message": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/1e1fa56a091088da2ba9a3c0e9be793a0f5d07db"
     },
     "stats": {
       "total": 8,
@@ -1535,6 +1535,25 @@
     },
     "coverage": 97.78,
     "test_count": 156,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Shanayna De Ugarte",
+    "commit": {
+      "date": "2026-11-17T03:56:58.000Z",
+      "message": "feat(HU15): filtrar el listado por color",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 11,
+      "deletions": 3,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.8,
+    "test_count": 157,
     "failed_tests": 0,
     "conclusion": "success"
   }

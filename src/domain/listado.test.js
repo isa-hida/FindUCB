@@ -68,9 +68,9 @@ describe('prepararListado', () => {
 
 describe('filtrarListado', () => {
     const TARJETAS = [
-        { id: 1, categoria: 'Llaves', fechaHallazgo: '2026-10-14' },
-        { id: 2, categoria: 'Electrónicos', fechaHallazgo: '2026-10-10' },
-        { id: 3, categoria: 'Llaves', fechaHallazgo: '2026-10-02' },
+        { id: 1, categoria: 'Llaves', color: 'Dorado', fechaHallazgo: '2026-10-14' },
+        { id: 2, categoria: 'Electrónicos', color: 'Negro', fechaHallazgo: '2026-10-10' },
+        { id: 3, categoria: 'Llaves', color: 'Azul', fechaHallazgo: '2026-10-02' },
     ];
 
     it('sin filtros devuelve todas las tarjetas', () => {
@@ -93,6 +93,10 @@ describe('filtrarListado', () => {
         const filtros = { categoria: 'Llaves', desde: '2026-10-05', hasta: '2026-10-20' };
 
         expect(idsDe(filtrarListado(TARJETAS, filtros))).toEqual([1]);
+    });
+
+    it('filtra por color', () => {
+        expect(idsDe(filtrarListado(TARJETAS, { color: 'Azul' }))).toEqual([3]);
     });
 });
 

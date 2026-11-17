@@ -21,6 +21,10 @@ const CRITERIOS_DE_FILTRO = [
         cumple: ({ fechaHallazgo }, { desde, hasta }) =>
             esPosteriorA(fechaHallazgo, desde) && esAnteriorA(fechaHallazgo, hasta),
     },
+    {
+        estaActivo: ({ color }) => Boolean(color),
+        cumple: (tarjeta, { color }) => tarjeta.color === color,
+    },
 ];
 
 const criteriosActivos = (filtros) => CRITERIOS_DE_FILTRO.filter((criterio) => criterio.estaActivo(filtros));

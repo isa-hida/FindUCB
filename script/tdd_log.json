@@ -2650,9 +2650,31 @@
     "testId": 216
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e1fa56a091088da2ba9a3c0e9be793a0f5d07db",
     "commitName": "feat(HU15): incluir el color en cada tarjeta del listado\n\nSe actualizó el objeto esperado en la prueba de HU-04 (RegistrarObjetoPresenter) para incluir el nuevo campo color de HU-15.",
     "commitTimestamp": 1794887692910,
     "testId": 216
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 1,
+    "numTotalTests": 157,
+    "timestamp": 1794887723975,
+    "success": false,
+    "testId": 217
+  },
+  {
+    "numPassedTests": 157,
+    "failedTests": 0,
+    "numTotalTests": 157,
+    "timestamp": 1794887729297,
+    "success": true,
+    "testId": 217
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(HU15): filtrar el listado por color",
+    "commitTimestamp": 1794887818902,
+    "testId": 217
   }
 ]
