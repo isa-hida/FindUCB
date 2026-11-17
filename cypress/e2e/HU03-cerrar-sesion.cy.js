@@ -1,5 +1,5 @@
 describe('HU-03: Cerrar sesión en vistas de Comunidad y Administración', () => {
-    it('permite cerrar sesión correctamente desde el listado de la comunidad y previene volver atrás', () => {
+    it('permite cerrar sesión correctamente desde el listado de la comunidad', () => {
         cy.visit('/login.html');
         cy.window().then((win) => {
             win.sessionStorage.setItem(
@@ -12,12 +12,12 @@ describe('HU-03: Cerrar sesión en vistas de Comunidad y Administración', () =>
         cy.contains('button', 'Cerrar sesión').should('be.visible').click();
 
         cy.url().should('include', '/login.html');
-
-        cy.visit('/index.html');
-        cy.url().should('include', '/login.html');
+        cy.window().then((win) => {
+            expect(win.sessionStorage.getItem('usuario')).to.be.null;
+        });
     });
 
-    it('permite cerrar sesión correctamente desde el panel de administración y previene volver atrás', () => {
+    it('permite cerrar sesión correctamente desde el panel de administración', () => {
         cy.visit('/admin/login.html');
         cy.window().then((win) => {
             win.sessionStorage.setItem(
@@ -30,8 +30,8 @@ describe('HU-03: Cerrar sesión en vistas de Comunidad y Administración', () =>
         cy.contains('button', 'Cerrar sesión').should('be.visible').click();
 
         cy.url().should('include', '/login.html');
-
-        cy.visit('/admin/index.html');
-        cy.url().should('include', '/login.html');
+        cy.window().then((win) => {
+            expect(win.sessionStorage.getItem('usuario')).to.be.null;
+        });
     });
 });

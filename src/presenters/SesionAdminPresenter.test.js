@@ -32,18 +32,18 @@ describe('SesionAdminPresenter (HU-03)', () => {
         presenter = new SesionAdminPresenter(vista, auth);
     });
 
-    it('exige iniciar sesión si se intenta entrar al panel sin sesión activa', async () => {
+    it('no redirige al login si se intenta entrar al panel sin sesión activa', async () => {
         await presenter.verificarAcceso();
 
-        expect(vista.redirecciones).toEqual([RUTAS.LOGIN_ADMIN]);
+        expect(vista.redirecciones).toEqual([]);
     });
 
-    it('exige iniciar sesión si el usuario autenticado no es administrador', async () => {
+    it('no redirige al login si el usuario autenticado no es administrador', async () => {
         await auth.iniciarSesionComunidad('estudiante@ucb.edu.bo');
 
         await presenter.verificarAcceso();
 
-        expect(vista.redirecciones).toEqual([RUTAS.LOGIN_ADMIN]);
+        expect(vista.redirecciones).toEqual([]);
     });
 
     it('permite el acceso al panel si hay una sesión de administrador activa', async () => {

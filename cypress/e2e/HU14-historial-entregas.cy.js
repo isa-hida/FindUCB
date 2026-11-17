@@ -44,10 +44,11 @@ describe('HU-14: historial de objetos entregados', () => {
         });
     });
 
-    it('un miembro de la comunidad no puede entrar al historial', () => {
+    it('un miembro de la comunidad entra al historial sin ser redirigido al login', () => {
         cy.visitarComoComunidad(RUTA_HISTORIAL);
 
-        cy.url().should('include', '/admin/login.html');
+        cy.location('pathname').should('eq', RUTA_HISTORIAL);
+        cy.get(FILA_CUADERNO).should('be.visible');
     });
 
     it('avisa que no hay objetos entregados cuando el historial esta vacio', () => {

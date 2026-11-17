@@ -2960,9 +2960,15 @@
     "testId": 232
   },
   {
-    "commitId": "HEAD",
+    "commitId": "01f9372827419c025ad0cb00c26621e671f60389",
     "commitName": "test: verificar la redireccion al panel en las pruebas de extremo a extremo",
     "commitTimestamp": 1794930838617,
     "testId": 233
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: dejar de esperar la redireccion al login fuera del cierre de sesion",
+    "commitTimestamp": 1794931802454,
+    "testId": 234
   }
 ]

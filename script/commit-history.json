@@ -1843,12 +1843,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "01f9372827419c025ad0cb00c26621e671f60389",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T15:53:55.000Z",
       "message": "test: verificar la redireccion al panel en las pruebas de extremo a extremo",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/01f9372827419c025ad0cb00c26621e671f60389"
     },
     "stats": {
       "total": 20,
@@ -1857,6 +1857,25 @@
       "date": "2026-11-17"
     },
     "coverage": 97.97,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:09:59.000Z",
+      "message": "test: dejar de esperar la redireccion al login fuera del cierre de sesion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 18,
+      "deletions": 17,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
     "test_count": 176,
     "failed_tests": 0,
     "conclusion": "success"
