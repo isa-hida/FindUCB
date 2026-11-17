@@ -1,15 +1,12 @@
 import { MENSAJES } from './mensajes';
 import { MAX_CARACTERES_TEXTO } from './limites';
+import { estaVacio } from './texto';
 
 const EXTENSIONES_FOTO = ['.jpg', '.jpeg', '.png'];
 
-function falta(texto) {
-    return !texto || !texto.trim();
-}
-
 function faltanDatosDelHallazgo({ fechaHallazgo, lugar, color, encontradoPor }) {
     const { nombre, celular } = encontradoPor ?? {};
-    return [fechaHallazgo, lugar, color, nombre, celular].some(falta);
+    return [fechaHallazgo, lugar, color, nombre, celular].some(estaVacio);
 }
 
 function errorDeFoto({ rutaFoto, fotoActual }) {

@@ -1976,17 +1976,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "16f1ec18bd84cc2e604952bda4cc1f2345ddd6e1",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:57:47.000Z",
       "message": "style: quitar ovalos de categoria y mostrar celular en el historial",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/16f1ec18bd84cc2e604952bda4cc1f2345ddd6e1"
     },
     "stats": {
       "total": 37,
       "additions": 19,
       "deletions": 18,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:05:00.000Z",
+      "message": "refactor: extraer el predicado de texto vacio a texto.js",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 7,
+      "deletions": 6,
       "date": "2026-11-17"
     },
     "coverage": 97.95,
