@@ -3052,9 +3052,23 @@
     "testId": 247
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d92bc9179a28834262a1f98beaddd7a50188250c",
     "commitName": "refactor: datos por entrega",
     "commitTimestamp": 1794936148636,
     "testId": 247
+  },
+  {
+    "numPassedTests": 176,
+    "failedTests": 0,
+    "numTotalTests": 176,
+    "timestamp": 1794936483601,
+    "success": true,
+    "testId": 248
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: añadiendo script",
+    "commitTimestamp": 1794940074001,
+    "testId": 248
   }
 ]
