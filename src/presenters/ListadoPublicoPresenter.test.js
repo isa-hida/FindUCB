@@ -5,6 +5,8 @@ import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { RUTAS } from '../config';
 import { CATEGORIAS, COLORES } from '../domain/catalogos';
 
+import { INFORMACION_FINDU } from '../domain/informacionFindU';
+
 const crearObjeto = (datos) => ({
     numero: 1,
     fechaHallazgo: '2026-10-01',
@@ -19,6 +21,7 @@ const crearEscenario = (objetos = [], urls = {}) => {
         categorias: [],
         colores: [],
         errores: [],
+        informacionFindU: null,
         seLimpiaronLosFiltros: false,
         mostrarVacio(mensaje) {
             this.mensajesVacio.push(mensaje);
@@ -40,6 +43,9 @@ const crearEscenario = (objetos = [], urls = {}) => {
         },
         limpiarFiltros() {
             this.seLimpiaronLosFiltros = true;
+        },
+        mostrarInformacionFindU(informacion) {
+            this.informacionFindU = informacion;
         },
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
