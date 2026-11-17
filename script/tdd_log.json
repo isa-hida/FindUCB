@@ -2966,9 +2966,15 @@
     "testId": 233
   },
   {
-    "commitId": "HEAD",
+    "commitId": "aa23e8d3bee2c47fa9c0bc4117fefea62254562b",
     "commitName": "test: dejar de esperar la redireccion al login fuera del cierre de sesion",
     "commitTimestamp": 1794931802454,
     "testId": 234
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: dejar de redirigir al login cuando no hay sesion",
+    "commitTimestamp": 1794931831015,
+    "testId": 235
   }
 ]

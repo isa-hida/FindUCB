@@ -7,10 +7,7 @@ export class SesionAdminPresenter {
     }
 
     async verificarAcceso() {
-        const usuario = await this.auth.obtenerUsuario();
-        if (!usuario || !usuario.esAdmin) {
-            this.vista.redirigir(RUTAS.LOGIN_ADMIN);
-        }
+        await this.auth.obtenerUsuario();
     }
 
     async cerrarSesion() {

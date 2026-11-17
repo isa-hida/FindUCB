@@ -1862,17 +1862,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "aa23e8d3bee2c47fa9c0bc4117fefea62254562b",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:09:59.000Z",
       "message": "test: dejar de esperar la redireccion al login fuera del cierre de sesion",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/aa23e8d3bee2c47fa9c0bc4117fefea62254562b"
     },
     "stats": {
       "total": 35,
       "additions": 18,
       "deletions": 17,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:10:27.000Z",
+      "message": "feat: dejar de redirigir al login cuando no hay sesion",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 2,
+      "deletions": 11,
       "date": "2026-11-17"
     },
     "coverage": 97.95,
