@@ -2942,9 +2942,119 @@
     "testId": 230
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1648f848fe2c4d2445da30f0a35f5370670e5d86",
     "commitName": "refactor(HU15): extraer llenarOpciones para no duplicar la carga de opciones de los filtros",
     "commitTimestamp": 1794889139863,
     "testId": 230
+  },
+  {
+    "commitId": "23fdff848838336b8731b557110bcbfb69c24d5c",
+    "commitName": "test: exigir la redireccion al panel del admin tras guardar con exito",
+    "commitTimestamp": 1794925688957,
+    "testId": 231
+  },
+  {
+    "commitId": "518685b2c29e4cdfb1154cee099510db00115b62",
+    "commitName": "feat: redirigir al panel del admin tras guardar un formulario con exito",
+    "commitTimestamp": 1794930804023,
+    "testId": 232
+  },
+  {
+    "commitId": "01f9372827419c025ad0cb00c26621e671f60389",
+    "commitName": "test: verificar la redireccion al panel en las pruebas de extremo a extremo",
+    "commitTimestamp": 1794930838617,
+    "testId": 233
+  },
+  {
+    "commitId": "aa23e8d3bee2c47fa9c0bc4117fefea62254562b",
+    "commitName": "test: dejar de esperar la redireccion al login fuera del cierre de sesion",
+    "commitTimestamp": 1794931802454,
+    "testId": 234
+  },
+  {
+    "commitId": "276836c6f15ec38ac5339c5ece149d5320d5a79a",
+    "commitName": "feat: dejar de redirigir al login cuando no hay sesion",
+    "commitTimestamp": 1794931831015,
+    "testId": 235
+  },
+  {
+    "commitId": "cfdc8a0e7907e5d4d4d113b07897a3ba265815cf",
+    "commitName": "style: renovar la grilla, las tarjetas y los filtros del listado",
+    "commitTimestamp": 1794933054918,
+    "testId": 236
+  },
+  {
+    "commitId": "f3bd0a2063b62fba440b7923c17e84d5a246ff70",
+    "commitName": "style: quitar la etiqueta Hallado de las tarjetas",
+    "commitTimestamp": 1794933304182,
+    "testId": 237
+  },
+  {
+    "commitId": "1410ec69ae172a1c031bc6acc0820fb2cd122f70",
+    "commitName": "style: renovar el diseno de las pantallas de administracion",
+    "commitTimestamp": 1794934186208,
+    "testId": 238
+  },
+  {
+    "commitId": "f081a35a1049b43500ca8508f41e1d1c6403c2d2",
+    "commitName": "style: conservar el espaciado del titulo de seccion en movil",
+    "commitTimestamp": 1794934238062,
+    "testId": 239
+  },
+  {
+    "commitId": "16f1ec18bd84cc2e604952bda4cc1f2345ddd6e1",
+    "commitName": "style: quitar ovalos de categoria y mostrar celular en el historial",
+    "commitTimestamp": 1794934670837,
+    "testId": 240
+  },
+  {
+    "commitId": "928a9954128358412dfa608343d21b5801ad207e",
+    "commitName": "refactor: extraer el predicado de texto vacio a texto.js",
+    "commitTimestamp": 1794935102228,
+    "testId": 241
+  },
+  {
+    "commitId": "3a7daf55ce1b92659be583c18f1c7874eecd1880",
+    "commitName": "refactor: reutilizar aFechaIso en la fecha de entrega por defecto",
+    "commitTimestamp": 1794935243886,
+    "testId": 242
+  },
+  {
+    "commitId": "e4c0115404312381c1c1bf059573b68e8afc1ef6",
+    "commitName": "refactor: extraer el predicado de formato de foto valido",
+    "commitTimestamp": 1794935376837,
+    "testId": 243
+  },
+  {
+    "commitId": "56d2169c81413fc2be635e609f921354fac6078d",
+    "commitName": "refactor: renombrar errorDeFoto a mensajeDeFotoInvalida",
+    "commitTimestamp": 1794935583296,
+    "testId": 244
+  },
+  {
+    "commitId": "f5363e9587e7dbc8440e06da70b6b71e7ebd4069",
+    "commitName": "refactor: extraer la validacion de longitud del texto",
+    "commitTimestamp": 1794935706791,
+    "testId": 245
+  },
+  {
+    "commitId": "1b71b2e6ad48a9434c940267ac3cc02dfd6a7ea4",
+    "commitName": "refactor: extraer esFechaFutura a fecha.js",
+    "commitTimestamp": 1794935847156,
+    "testId": 246
+  },
+  {
+    "numPassedTests": 176,
+    "failedTests": 0,
+    "numTotalTests": 176,
+    "timestamp": 1794936023985,
+    "success": true,
+    "testId": 247
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: datos por entrega",
+    "commitTimestamp": 1794936148636,
+    "testId": 247
   }
 ]

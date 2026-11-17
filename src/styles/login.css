@@ -160,3 +160,106 @@
     outline: 3px solid rgba(15, 85, 165, 0.4);
     outline-offset: 2px;
 }
+
+/* ============================================================
+   Login del administrador (admin/login.html)
+   ============================================================ */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 16px;
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 55%);
+    color: var(--texto);
+    font-family: var(--fuente);
+    line-height: 1.5;
+}
+
+.login *,
+.login *::before,
+.login *::after {
+    box-sizing: border-box;
+}
+
+.login__marca {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* Marca gráfica de FindU */
+.login__marca::before {
+    content: 'F';
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    border-radius: 18px;
+    background: var(--azul-ucb);
+    color: var(--amarillo-ucb);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    box-shadow: 0 10px 24px rgba(0, 82, 137, 0.28);
+}
+
+.login__titulo {
+    margin: 0;
+    color: var(--azul-ucb);
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.login__subtitulo {
+    margin: 6px 0 0;
+    color: var(--texto-suave);
+    font-size: 1rem;
+}
+
+.login .tarjeta {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 28px;
+    border-top: 5px solid var(--amarillo-ucb);
+    box-shadow: var(--sombra-elevada);
+}
+
+.login .tarjeta__titulo {
+    font-size: 1.35rem;
+}
+
+.login .tarjeta__ayuda {
+    margin-bottom: var(--espacio-lg);
+}
+
+.login .formulario {
+    gap: 1.1rem;
+}
+
+.login .boton {
+    width: 100%;
+    margin-top: 0.35rem;
+}
+
+@media (max-width: 420px) {
+    .login {
+        padding: 28px 14px;
+    }
+
+    .login__marca {
+        margin-bottom: 22px;
+    }
+
+    .login__titulo {
+        font-size: 2.25rem;
+    }
+
+    .login .tarjeta {
+        padding: 24px 20px;
+    }
+}

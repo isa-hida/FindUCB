@@ -1,42 +1,47 @@
 import { MENSAJES } from './mensajes';
 import { MAX_CARACTERES_TEXTO } from './limites';
+import { esFechaFutura } from './fecha';
+import { estaVacio } from './texto';
 
 const EXTENSIONES_FOTO = ['.jpg', '.jpeg', '.png'];
 
-function falta(texto) {
-    return !texto || !texto.trim();
-}
-
 function faltanDatosDelHallazgo({ fechaHallazgo, lugar, color, encontradoPor }) {
     const { nombre, celular } = encontradoPor ?? {};
-    return [fechaHallazgo, lugar, color, nombre, celular].some(falta);
+    return [fechaHallazgo, lugar, color, nombre, celular].some(estaVacio);
 }
 
-function errorDeFoto({ rutaFoto, fotoActual }) {
+function tieneFormatoDeFotoValido(rutaFoto) {
+    return EXTENSIONES_FOTO.some((extension) => rutaFoto.toLowerCase().endsWith(extension));
+}
+
+function mensajeDeFotoInvalida({ rutaFoto, fotoActual }) {
     if (!rutaFoto) {
         return fotoActual ? null : MENSAJES.FOTO_OBLIGATORIA;
     }
-    const esFormatoValido = EXTENSIONES_FOTO.some((ext) => rutaFoto.toLowerCase().endsWith(ext));
-    return esFormatoValido ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
+    return tieneFormatoDeFotoValido(rutaFoto) ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
 }
 
-export function validarObjetoHallado(datos) {
-    const { categoria, descripcion, senas, fechaHallazgo, hoy } = datos;
+function superaElLimiteDeCaracteres(texto) {
+    return Boolean(texto) && texto.length > MAX_CARACTERES_TEXTO;
+}
+
+export function validarObjetoHallado(aviso) {
+    const { categoria, descripcion, senas, fechaHallazgo, hoy } = aviso;
 
     if (!categoria || !descripcion) {
         return [MENSAJES.FALTA_CATEGORIA_DESCRIPCION];
     }
-    if (faltanDatosDelHallazgo(datos)) {
+    if (faltanDatosDelHallazgo(aviso)) {
         return [MENSAJES.FALTAN_DATOS_HALLAZGO];
     }
-    const mensajeFoto = errorDeFoto(datos);
+    const mensajeFoto = mensajeDeFotoInvalida(aviso);
     if (mensajeFoto) {
         return [mensajeFoto];
     }
-    if ((descripcion && descripcion.length > MAX_CARACTERES_TEXTO) || (senas && senas.length > MAX_CARACTERES_TEXTO)) {
+    if (superaElLimiteDeCaracteres(descripcion) || superaElLimiteDeCaracteres(senas)) {
         return [MENSAJES.TEXTO_MUY_LARGO];
     }
-    if (fechaHallazgo && hoy && fechaHallazgo > hoy) {
+    if (esFechaFutura(fechaHallazgo, hoy)) {
         return [MENSAJES.FECHA_FUTURA];
     }
     return [];

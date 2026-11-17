@@ -7,10 +7,7 @@ export class SesionComunidadPresenter {
     }
 
     async verificarAcceso() {
-        const usuario = await this.auth.obtenerUsuario();
-        if (!usuario) {
-            this.vista.redirigir(RUTAS.LOGIN);
-        }
+        await this.auth.obtenerUsuario();
     }
 
     async cerrarSesion() {

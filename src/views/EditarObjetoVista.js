@@ -129,6 +129,10 @@ export class EditarObjetoVista {
         this.contadorCaracteres.textContent = `${longitud} / ${MAX_CARACTERES_TEXTO}`;
     }
 
+    redirigir(url) {
+        window.location.assign(url);
+    }
+
     _leerContenido(archivo) {
         return new Promise((resolver) => {
             const lector = new FileReader();

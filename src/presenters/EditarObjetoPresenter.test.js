@@ -3,6 +3,7 @@ import { ObjetosEnMemoria } from '../services/memoria/ObjetosEnMemoria';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
 import { CATEGORIAS } from '../domain/catalogos';
 import { MENSAJES } from '../domain/mensajes';
+import { RUTAS } from '../config';
 
 const crearObjeto = (datos) => ({
     id: 3,
@@ -45,12 +46,13 @@ const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
         mostrarExito(mensaje) {
             this.mensajesExito.push(mensaje);
         },
+        redirigir: jest.fn(),
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
     const fotosStorage = new FotosEnMemoria({
         urls: { 'ejemplos/llaves.svg': 'https://fotos.test/llaves.svg' },
     });
-    const presenter = new EditarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy);
+    const presenter = new EditarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy, 0);
     return { vista, objetosRepository, fotosStorage, presenter };
 };
 const crearDatosEditados = (cambios = {}) => ({
@@ -199,6 +201,22 @@ describe('EditarObjetoPresenter - iniciar', () => {
             await presenter.guardar(crearDatosEditados({ lugar: 'Cafetería' }));
 
             expect((await objetosRepository.obtenerPorId(3)).rutaFoto).toEqual(rutaFoto);
+        });
+        it('redirige al panel de administración tras guardar con éxito', async () => {
+            const { vista, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados());
+
+            expect(vista.redirigir).toHaveBeenCalledWith(RUTAS.PANEL_ADMIN);
+        });
+        it('no redirige cuando hay errores de validación', async () => {
+            const { vista, presenter } = crearEscenario([crearObjeto()]);
+            await presenter.iniciar('3');
+
+            await presenter.guardar(crearDatosEditados({ categoria: '', descripcion: '' }));
+
+            expect(vista.redirigir).not.toHaveBeenCalled();
         });
     });
 });

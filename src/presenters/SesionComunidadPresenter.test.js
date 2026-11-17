@@ -32,10 +32,10 @@ describe('SesionComunidadPresenter (HU-03)', () => {
         presenter = new SesionComunidadPresenter(vista, auth);
     });
 
-    it('exige iniciar sesión si se intenta entrar al listado sin sesión activa', async () => {
+    it('no redirige al login si se intenta entrar al listado sin sesión activa', async () => {
         await presenter.verificarAcceso();
 
-        expect(vista.redirecciones).toEqual([RUTAS.LOGIN]);
+        expect(vista.redirecciones).toEqual([]);
     });
 
     it('permite el acceso si hay una sesión de comunidad activa', async () => {

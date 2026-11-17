@@ -113,4 +113,8 @@ export class RegistrarObjetoVista {
             this._mostrarContador(0);
         }
     }
+
+    redirigir(url) {
+        window.location.assign(url);
+    }
 }

@@ -29,6 +29,7 @@ export class HistorialEntregasVista {
         nodo.querySelector('.historial__numero').textContent = fila.numero;
         nodo.querySelector('.historial__categoria').textContent = fila.categoria;
         nodo.querySelector('.historial__receptor').textContent = fila.nombreReceptor;
+        nodo.querySelector('.historial__celular').textContent = fila.celularReceptor ?? '';
         nodo.querySelector('.historial__fecha').textContent = fila.fechaEntrega;
         return nodo;
     }

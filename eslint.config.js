@@ -19,6 +19,7 @@ export default [
         Cypress: 'readonly',
         sessionStorage: 'readonly',
         localStorage: 'readonly',
+        setTimeout: 'readonly',
       },
     },
     rules: {

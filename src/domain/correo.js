@@ -1,4 +1,5 @@
 import { MENSAJES } from './mensajes';
+import { estaVacio } from './texto';
 
 export function esCorreoInstitucional(correo) {
     if (!correo) {
@@ -8,7 +9,7 @@ export function esCorreoInstitucional(correo) {
 }
 
 export function validarCorreoComunidad(correo) {
-    if (!correo || !correo.trim()) {
+    if (estaVacio(correo)) {
         return [MENSAJES.CAMPOS_LOGIN_VACIOS];
     }
     if (!esCorreoInstitucional(correo)) {

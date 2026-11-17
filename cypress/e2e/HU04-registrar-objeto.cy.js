@@ -37,16 +37,21 @@ describe('HU04: Registrar un objeto hallado', () => {
         cy.get('#contador-caracteres').should('have.text', '6 / 500');
     });
 
-    it('registra el objeto correctamente y muestra el mensaje de exito', () => {
+    it('registra el objeto correctamente, muestra el mensaje de exito y redirige al panel', () => {
         cy.llenarObjetoHallado();
+        cy.clock(Date.now());
         cy.get('#registrar-button').click();
 
         cy.get('#exito-mensaje').should('be.visible').and('have.text', MENSAJES.AVISO_PUBLICADO);
+
+        cy.tick(1500);
+        cy.location('pathname').should('eq', '/admin/index.html');
     });
 
     describe('despues de registrar un objeto', () => {
         beforeEach(() => {
             cy.llenarObjetoHallado();
+            cy.clock(Date.now());
             cy.get('#registrar-button').click();
             cy.get('#exito-mensaje').should('be.visible');
         });

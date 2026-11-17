@@ -4,6 +4,7 @@ import { MENSAJES } from '../domain/mensajes';
 import { CATEGORIAS } from '../domain/catalogos';
 import { prepararListado } from '../domain/listado';
 import { FotosEnMemoria } from '../services/memoria/FotosEnMemoria';
+import { RUTAS } from '../config';
 
 const crearDatosValidos = (cambios = {}) => ({
     categoria: 'Llaves',
@@ -33,10 +34,11 @@ const crearEscenario = (objetos = [], hoy = '2026-10-20') => {
         mostrarCategorias(categorias) {
             this.categorias = categorias;
         },
+        redirigir: jest.fn(),
     };
     const objetosRepository = new ObjetosEnMemoria({ objetos });
     const fotosStorage = new FotosEnMemoria();
-    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy);
+    const presenter = new RegistrarObjetoPresenter(vista, objetosRepository, fotosStorage, () => hoy, 0);
     return { vista, objetosRepository, fotosStorage, presenter };
 };
 
@@ -99,5 +101,21 @@ describe('RegistrarObjetoPresenter', () => {
         const [objeto] = await objetosRepository.listarPublicados();
         expect(await fotosStorage.urlsFirmadas([objeto.rutaFoto])).toEqual(['data:image/jpeg;base64,AAA']);
         expect(objeto).not.toHaveProperty('fotoContenido');
+    });
+
+    it('redirige al panel de administración tras guardar con éxito', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.registrar(crearDatosValidos());
+
+        expect(vista.redirigir).toHaveBeenCalledWith(RUTAS.PANEL_ADMIN);
+    });
+
+    it('no redirige cuando hay errores de validación', async () => {
+        const { vista, presenter } = crearEscenario();
+
+        await presenter.registrar({ categoria: '', descripcion: '' });
+
+        expect(vista.redirigir).not.toHaveBeenCalled();
     });
 });
