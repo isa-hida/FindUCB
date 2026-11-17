@@ -2052,12 +2052,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "56d2169c81413fc2be635e609f921354fac6078d",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:12:59.000Z",
       "message": "refactor: renombrar errorDeFoto a mensajeDeFotoInvalida",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/56d2169c81413fc2be635e609f921354fac6078d"
     },
     "stats": {
       "total": 4,
@@ -2066,6 +2066,25 @@
       "date": "2026-11-17"
     },
     "coverage": 97.93,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:15:04.000Z",
+      "message": "refactor: extraer la validacion de longitud del texto",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.94,
     "test_count": 176,
     "failed_tests": 0,
     "conclusion": "success"

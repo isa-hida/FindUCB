@@ -20,6 +20,10 @@ function mensajeDeFotoInvalida({ rutaFoto, fotoActual }) {
     return tieneFormatoDeFotoValido(rutaFoto) ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
 }
 
+function superaElLimiteDeCaracteres(texto) {
+    return Boolean(texto) && texto.length > MAX_CARACTERES_TEXTO;
+}
+
 export function validarObjetoHallado(datos) {
     const { categoria, descripcion, senas, fechaHallazgo, hoy } = datos;
 
@@ -33,7 +37,7 @@ export function validarObjetoHallado(datos) {
     if (mensajeFoto) {
         return [mensajeFoto];
     }
-    if ((descripcion && descripcion.length > MAX_CARACTERES_TEXTO) || (senas && senas.length > MAX_CARACTERES_TEXTO)) {
+    if (superaElLimiteDeCaracteres(descripcion) || superaElLimiteDeCaracteres(senas)) {
         return [MENSAJES.TEXTO_MUY_LARGO];
     }
     if (fechaHallazgo && hoy && fechaHallazgo > hoy) {

@@ -3026,9 +3026,15 @@
     "testId": 243
   },
   {
-    "commitId": "HEAD",
+    "commitId": "56d2169c81413fc2be635e609f921354fac6078d",
     "commitName": "refactor: renombrar errorDeFoto a mensajeDeFotoInvalida",
     "commitTimestamp": 1794935583296,
     "testId": 244
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer la validacion de longitud del texto",
+    "commitTimestamp": 1794935706791,
+    "testId": 245
   }
 ]
