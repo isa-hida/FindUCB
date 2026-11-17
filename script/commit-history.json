@@ -1900,17 +1900,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cfdc8a0e7907e5d4d4d113b07897a3ba265815cf",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T16:30:52.000Z",
       "message": "style: renovar la grilla, las tarjetas y los filtros del listado",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/cfdc8a0e7907e5d4d4d113b07897a3ba265815cf"
     },
     "stats": {
       "total": 302,
       "additions": 203,
       "deletions": 99,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.95,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T16:35:01.000Z",
+      "message": "style: quitar la etiqueta Hallado de las tarjetas",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 0,
+      "deletions": 19,
       "date": "2026-11-17"
     },
     "coverage": 97.95,

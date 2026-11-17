@@ -2978,9 +2978,15 @@
     "testId": 235
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cfdc8a0e7907e5d4d4d113b07897a3ba265815cf",
     "commitName": "style: renovar la grilla, las tarjetas y los filtros del listado",
     "commitTimestamp": 1794933054918,
     "testId": 236
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: quitar la etiqueta Hallado de las tarjetas",
+    "commitTimestamp": 1794933304182,
+    "testId": 237
   }
 ]
