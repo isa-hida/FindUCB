@@ -2606,9 +2606,23 @@
     "testId": 213
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f55ef092f15d1468ff89db23ed3266ceb3135d1d",
     "commitName": "chore(HU14): incluir admin/historial.html en los scripts start y build",
     "commitTimestamp": 1794766431555,
     "testId": 214
+  },
+  {
+    "numPassedTests": 156,
+    "failedTests": 0,
+    "numTotalTests": 156,
+    "timestamp": 1794887176152,
+    "success": true,
+    "testId": 215
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor(HU15): expresar los filtros del listado como una lista de criterios",
+    "commitTimestamp": 1794887304371,
+    "testId": 215
   }
 ]

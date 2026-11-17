@@ -8,11 +8,26 @@ export function prepararListado(objetos) {
         .map(({ id, categoria, fechaHallazgo, rutaFoto }) => ({ id, categoria, fechaHallazgo, rutaFoto }));
 }
 
-export function filtrarListado(tarjetas, { categoria, desde, hasta }) {
-    return tarjetas.filter((tarjeta) =>
-        (!categoria || tarjeta.categoria === categoria) &&
-        (!desde || tarjeta.fechaHallazgo >= desde) &&
-        (!hasta || tarjeta.fechaHallazgo <= hasta));
+const esPosteriorA = (fecha, desde) => !desde || fecha >= desde;
+const esAnteriorA = (fecha, hasta) => !hasta || fecha <= hasta;
+
+const CRITERIOS_DE_FILTRO = [
+    {
+        estaActivo: ({ categoria }) => Boolean(categoria),
+        cumple: (tarjeta, { categoria }) => tarjeta.categoria === categoria,
+    },
+    {
+        estaActivo: ({ desde, hasta }) => Boolean(desde || hasta),
+        cumple: ({ fechaHallazgo }, { desde, hasta }) =>
+            esPosteriorA(fechaHallazgo, desde) && esAnteriorA(fechaHallazgo, hasta),
+    },
+];
+
+const criteriosActivos = (filtros) => CRITERIOS_DE_FILTRO.filter((criterio) => criterio.estaActivo(filtros));
+
+export function filtrarListado(tarjetas, filtros) {
+    const criterios = criteriosActivos(filtros);
+    return tarjetas.filter((tarjeta) => criterios.every((criterio) => criterio.cumple(tarjeta, filtros)));
 }
 
 export function validarFiltros({ desde, hasta }) {
