@@ -9,12 +9,15 @@ function faltanDatosDelHallazgo({ fechaHallazgo, lugar, color, encontradoPor }) 
     return [fechaHallazgo, lugar, color, nombre, celular].some(estaVacio);
 }
 
+function tieneFormatoDeFotoValido(rutaFoto) {
+    return EXTENSIONES_FOTO.some((extension) => rutaFoto.toLowerCase().endsWith(extension));
+}
+
 function errorDeFoto({ rutaFoto, fotoActual }) {
     if (!rutaFoto) {
         return fotoActual ? null : MENSAJES.FOTO_OBLIGATORIA;
     }
-    const esFormatoValido = EXTENSIONES_FOTO.some((ext) => rutaFoto.toLowerCase().endsWith(ext));
-    return esFormatoValido ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
+    return tieneFormatoDeFotoValido(rutaFoto) ? null : MENSAJES.FORMATO_FOTO_INVALIDO;
 }
 
 export function validarObjetoHallado(datos) {

@@ -3014,9 +3014,15 @@
     "testId": 241
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3a7daf55ce1b92659be583c18f1c7874eecd1880",
     "commitName": "refactor: reutilizar aFechaIso en la fecha de entrega por defecto",
     "commitTimestamp": 1794935243886,
     "testId": 242
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer el predicado de formato de foto valido",
+    "commitTimestamp": 1794935376837,
+    "testId": 243
   }
 ]

@@ -2014,17 +2014,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3a7daf55ce1b92659be583c18f1c7874eecd1880",
     "author": "isa-hida",
     "commit": {
       "date": "2026-11-17T17:07:21.000Z",
       "message": "refactor: reutilizar aFechaIso en la fecha de entrega por defecto",
-      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+      "url": "https://github.com/isa-hida/FindUCB/commit/3a7daf55ce1b92659be583c18f1c7874eecd1880"
     },
     "stats": {
       "total": 7,
       "additions": 2,
       "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 97.93,
+    "test_count": 176,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "isa-hida",
+    "commit": {
+      "date": "2026-11-17T17:09:34.000Z",
+      "message": "refactor: extraer el predicado de formato de foto valido",
+      "url": "https://github.com/isa-hida/FindUCB/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
       "date": "2026-11-17"
     },
     "coverage": 97.93,
